@@ -1,14 +1,21 @@
-import './App.css'
-
-function App() {
-
+import Navbar from "./Components/Navbar/Navbar"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import TeamSelectionPage from "./Components/TeamSelection/TeamSelectionPage";
+import InjuryPage from "./Components/InjuryPage/InjuryPage";
+const App = () => {
   return (
+    <div>
+      <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/TeamSelection" element={<TeamSelectionPage />} />
+        <Route path="/Injury" element={<InjuryPage />} />
+      </Routes>
+
+
+      </Router>
+    </div>
     
-    <p class="underline underline-offset-1">
-    “Tailwind CSS is the only framework that I've seen scale
-    on large teams. It’s easy to customize, adapts to any design,
-    and the build size is tiny.”
-  </p>
   )
 }
 
