@@ -1,6 +1,6 @@
 import Navbar from "./Components/Navbar/Navbar"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import TeamSelectionPage from "./Components/TeamSelection/TeamSelectionPage";
+import TeamSelectionPage from "./Components/TeamSelectionPage/TeamSelectionPage";
 import InjuryPage from "./Components/InjuryPage/InjuryPage";
 const App = () => {
   return (
