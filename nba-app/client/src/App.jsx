@@ -1,22 +1,20 @@
-import Navbar from "./Components/Navbar/Navbar"
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import TeamSelectionPage from "./Components/TeamSelectionPage/TeamSelectionPage";
-import InjuryPage from "./Components/InjuryPage/InjuryPage";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import TeamSelectionPage from "./pages/TeamSelectionPage";
+import InjuryPage from "./pages/InjuryPage";
+
 const App = () => {
   return (
     <div>
       <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/TeamSelection" element={<TeamSelectionPage />} />
-        <Route path="/Injury" element={<InjuryPage />} />
-      </Routes>
-
-
+        <Navbar />
+        <Routes>
+          <Route path="/team-selection" element={<TeamSelectionPage />} />
+          <Route path="/injury" element={<InjuryPage />} />
+        </Routes>
       </Router>
     </div>
-    
-  )
-}
+  );
+};
 
-export default App
+export default App;
