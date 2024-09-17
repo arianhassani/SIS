@@ -1,17 +1,21 @@
+import React from 'react'
 import './Navbar.css'
+import logo from '../../assets/nba-logo-transparent.png'
 
 const Navbar = () => {
   return (
-    <div className='nav'>
-        <div className="nav-logo">NBA Analysis</div>
-        <ul className="nav-menu">
-            <li>Home</li>
-            <li>Explore</li>
-            <li>About</li>
-            <li className='nav-contact'>Contact</li>
-        </ul>
 
-    </div>
+    <nav className='container'>
+     { <img src={logo} alt="" className='logo'/> }
+      <ul>
+        <li>Home</li>
+        <li>Explore</li>
+        <li>About</li>
+        <li><button className='btn'>Contact Us</button></li>
+      </ul>
+    </nav>
+
+
   )
 }
 
