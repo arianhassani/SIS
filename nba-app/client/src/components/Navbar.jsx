@@ -1,10 +1,23 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
+  const location = useLocation();
+
+  useEffect(() => {
+    // Set active link based on the current path
+    const path = location.pathname;
+    if (path === "/") {
+      setActiveLink("home");
+    } else if (path === "/team-selection") {
+      setActiveLink("team");
+    } else if (path === "/injury") {
+      setActiveLink("injury");
+    }
+  }, [location]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
