@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 *{
   margin: 0;
@@ -32,4 +32,8 @@ a{
   cursor: pointer;
   border: 0;
   outline: 0;
-}
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
