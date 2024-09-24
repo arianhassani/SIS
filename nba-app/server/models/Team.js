@@ -5,7 +5,15 @@ const TeamSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  abbreviation: {
+    type: String,
+    required: true,
+  },
   city: {
+    type: String,
+    required: true,
+  },
+  division: {
     type: String,
     required: true,
   },
@@ -15,6 +23,6 @@ const TeamSchema = new mongoose.Schema({
   }],
 });
 
-const Team = mongoose.model('Team', teamSchema);
+const Team = mongoose.model('Team', TeamSchema);
 
-export default model('Team');
+export default Team;

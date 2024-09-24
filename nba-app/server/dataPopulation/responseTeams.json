@@ -1,0 +1,94 @@
+{
+    "data": [
+        {
+            "id": 2,
+            "conference": "East",
+            "division": "Atlantic",
+            "city": "Boston",
+            "name": "Celtics",
+            "full_name": "Boston Celtics",
+            "abbreviation": "BOS"
+        },
+        {
+            "id": 3,
+            "conference": "East",
+            "division": "Atlantic",
+            "city": "Brooklyn",
+            "name": "Nets",
+            "full_name": "Brooklyn Nets",
+            "abbreviation": "BKN"
+        },
+        {
+            "id": 20,
+            "conference": "East",
+            "division": "Atlantic",
+            "city": "New York",
+            "name": "Knicks",
+            "full_name": "New York Knicks",
+            "abbreviation": "NYK"
+        },
+        {
+            "id": 23,
+            "conference": "East",
+            "division": "Atlantic",
+            "city": "Philadelphia",
+            "name": "76ers",
+            "full_name": "Philadelphia 76ers",
+            "abbreviation": "PHI"
+        },
+        {
+            "id": 28,
+            "conference": "East",
+            "division": "Atlantic",
+            "city": "Toronto",
+            "name": "Raptors",
+            "full_name": "Toronto Raptors",
+            "abbreviation": "TOR"
+        },
+        {
+            "id": 10,
+            "conference": "West",
+            "division": "Pacific",
+            "city": "Golden State",
+            "name": "Warriors",
+            "full_name": "Golden State Warriors",
+            "abbreviation": "GSW"
+        },
+        {
+            "id": 13,
+            "conference": "West",
+            "division": "Pacific",
+            "city": "LA",
+            "name": "Clippers",
+            "full_name": "LA Clippers",
+            "abbreviation": "LAC"
+        },
+        {
+            "id": 14,
+            "conference": "West",
+            "division": "Pacific",
+            "city": "Los Angeles",
+            "name": "Lakers",
+            "full_name": "Los Angeles Lakers",
+            "abbreviation": "LAL"
+        },
+        {
+            "id": 24,
+            "conference": "West",
+            "division": "Pacific",
+            "city": "Phoenix",
+            "name": "Suns",
+            "full_name": "Phoenix Suns",
+            "abbreviation": "PHX"
+        },
+        {
+            "id": 26,
+            "conference": "West",
+            "division": "Pacific",
+            "city": "Sacramento",
+            "name": "Kings",
+            "full_name": "Sacramento Kings",
+            "abbreviation": "SAC"
+        }
+    ]
+}
