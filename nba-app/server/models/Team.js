@@ -1,6 +1,6 @@
+import mongoose from 'mongoose';
 
-
-const TeamSchema = new Schema({
+const TeamSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -10,9 +10,11 @@ const TeamSchema = new Schema({
     required: true,
   },
   players: [{
-    // type: mongoose.Schema.Types.ObjectId,  // References to Player model
+    type: mongoose.Schema.Types.ObjectId,  // References to Player model
     ref: 'Player',
   }],
 });
 
-module.exports = model('Team');
+const Team = mongoose.model('Team', teamSchema);
+
+export default model('Team');
