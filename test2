@@ -1,0 +1,99 @@
+from nba_api.stats.static import players
+from nba_api.stats.endpoints import teamgamelog, leaguedashteamstats
+import matplotlib.pyplot as plt
+import pandas as pd
+
+import seaborn as sns
+import torch
+
+
+
+
+
+
+
+
+
+players = pd.DataFrame(pd.read_csv("players.csv"))
+
+def find_player_id(player_full_name):
+    for i in range(len(players)):
+        player = players.iloc[i]
+        if player["full_name"] == player_full_name:
+            return player['id']
+    return None  
+
+def get_players_for_season(season_start):
+    file_location = f"../player_season/player_season_data/season_year_start_player_data_{season_start}"
+    season = pd.read_csv(file_location)
+    players_id = season['PLAYER_ID'].drop_duplicates()
+    return players_id
+
+
+def get_player_bpm_for_season(player_id, season_start):
+    file_location = f"../player_season/player_season_data/season_year_start_player_data_{season_start}"
+    season = pd.read_csv(file_location)
+    player_bpm = season[season['PLAYER_ID'] == player_id]['BPM'].mean()  # Assuming 'BPM' column exists
+    return player_bpm
+
+
+def get_team_wins_for_season(team_id, season_start):
+    file_location = f"../team_season/team_season_data/season_year_start_team_data_{season_start}"
+    season = pd.read_csv(file_location)
+    team_wins = season[season['TEAM_ID'] == team_id]['WINS'].sum()
+    return team_wins
+
+
+def get_team_id_for_player(player_id, season_start):
+    file_location = f"../player_season/player_season_data/season_year_start_player_data_{season_start}"
+    season = pd.read_csv(file_location)
+    team_id = season[season['PLAYER_ID'] == player_id]['TEAM_ID'].iloc[0]
+    return team_id
+
+
+def get_all_player_bpm_and_team_wins(season_start):
+    players_id = get_players_for_season(season_start)
+    bpm_list = []
+    team_wins_list = []
+    
+    for player_id in players_id:
+        player_bpm = get_player_bpm_for_season(player_id, season_start)
+        team_id = get_team_id_for_player(player_id, season_start)
+        team_wins = get_team_wins_for_season(team_id, season_start)
+        
+        bpm_list.append(player_bpm)
+        team_wins_list.append(team_wins)
+    
+    return bpm_list, team_wins_list
+
+
+def visualize_correlation_bpm_wins(season_start):
+    bpm_list, team_wins_list = get_all_player_bpm_and_team_wins(season_start)
+    
+    
+    stats_df = pd.DataFrame({
+        'Box Plus/Minus': bpm_list,
+        'Wins': team_wins_list
+    })
+
+    
+    correlation = stats_df['Box Plus/Minus'].corr(stats_df['Wins'])
+    print(f"Correlation between BPM and Wins: {correlation:.2f}")
+
+    plt.figure(figsize=(10, 6))
+    sns.scatterplot(x='Box Plus/Minus', y='Wins', data=stats_df, color='blue', s=100, alpha=0.7)
+    
+   
+    sns.regplot(x='Box Plus/Minus', y='Wins', data=stats_df, scatter=False, color='red', ci=None)
+
+    
+    plt.title(f'Correlation between Box Plus/Minus and Wins for Season {season_start}\nCorrelation Coefficient: {correlation:.2f}')
+    plt.xlabel('Box Plus/Minus (BPM)')
+    plt.ylabel('Wins')
+
+   
+    plt.grid(True)
+    plt.show()
+
+
+visualize_correlation_bpm_wins(season_start=2023)
