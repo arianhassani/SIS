@@ -1,0 +1,67 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21000218,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,7.000000:30,180.1,156.3,99.5,100.0,80.6,56.3,0.091,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,92.67,99.2,82.67,16,-0.028,9.0
+21000423,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21001113,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000780,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000179,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000971,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,1.000000:07,100.0,66.7,200.0,200.0,-100.0,-133.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.5,0.667,1.0,107.46,128.96,107.46,3,0.083,23.0
+21000540,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000395,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,2.000000:34,142.4,150.0,50.0,37.5,92.4,112.5,0.0,0.0,0.0,0.0,0.167,0.1,0.0,0.0,0.0,0.0,0.0,115.58,131.34,109.45,6,0.125,22.0
+21000800,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000627,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000753,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000035,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,20.000000:26,96.8,97.7,83.1,86.4,13.7,11.4,0.154,1.0,25.0,0.0,0.08,0.043,25.0,0.75,0.75,0.12,0.124,105.82,103.33,86.11,44,0.117,17.0
+21000553,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000433,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000156,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000591,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000208,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000119,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,2.000000:46,58.1,57.1,67.2,71.4,-9.1,-14.3,0.0,0.0,0.0,0.0,0.143,0.1,100.0,0.0,0.0,0.125,0.145,124.22,121.45,101.2,7,0.154,22.0
+21000333,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000440,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,0.000000:18,0.0,0.0,200.0,200.0,-200.0,-200.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,80.9,80.9,67.42,0,0.0,10.0
+21000859,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000044,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,6.000000:10,90.9,83.3,103.8,108.3,-12.9,-25.0,0.0,0.0,0.0,0.167,0.0,0.077,50.0,1.0,1.0,0.154,0.167,91.54,93.41,77.84,12,-0.027,22.0
+21000241,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000902,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000645,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21001017,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000485,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000877,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000693,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,1.000000:32,106.4,66.7,144.9,133.3,-38.5,-66.7,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.5,0.694,72.63,93.91,78.26,3,-1.2,22.0
+21000687,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000526,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000915,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000134,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21001014,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21001001,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,4.000000:12,126.9,125.0,150.0,128.6,-23.1,-3.6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.182,0.184,79.44,85.85,71.54,8,-0.105,18.0
+21000479,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000280,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,1.000000:07,250.0,250.0,100.0,100.0,150.0,150.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,85.97,85.97,71.64,2,-0.1,11.0
+21000931,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000851,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000729,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000073,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,3.000000:01,0.0,0.0,124.1,116.7,-124.1,-116.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,84.65,87.51,72.93,5,1.0,9.0
+21000098,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000305,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000890,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,1.000000:03,200.0,100.0,0.0,0.0,200.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.5,1.0,68.57,91.43,76.19,2,0.667,10.0
+21000066,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,7.000000:22,88.8,93.3,159.7,162.5,-70.9,-69.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.056,0.056,104.38,101.0,84.16,15,0.0,19.0
+21000658,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000507,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,2.000000:34,112.8,100.0,150.4,160.0,-37.6,-60.0,1.0,0.0,50.0,0.0,0.0,0.0,0.0,1.0,1.0,0.167,0.188,99.49,102.86,85.71,6,0.143,23.0
+21000513,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000458,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21001133,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000417,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,5.000000:41,58.9,63.6,95.5,91.7,-36.6,-28.0,0.5,0.0,20.0,0.0,0.2,0.1,0.0,0.25,0.25,0.364,0.337,98.82,97.13,80.94,11,0.059,22.0
+21000370,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000600,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000166,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,9.000000:04,131.6,142.1,108.0,116.7,23.6,25.4,0.0,0.0,0.0,0.0,0.167,0.083,0.0,0.0,0.0,0.048,0.046,105.78,97.94,81.62,19,-0.048,9.0
+21000953,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000576,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21001124,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000979,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000819,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,0.000000:55,0.0,0.0,100.0,100.0,-100.0,-100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,77.98,103.97,86.64,2,0.0,23.0
+21000763,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000011,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,,10.000000:37,98.1,95.5,95.3,95.7,2.8,-0.2,0.167,0.0,50.0,0.0,0.077,0.036,0.0,1.0,1.0,0.038,0.039,100.55,101.73,84.77,22,0.059,10.0
+21000561,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000612,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000943,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000836,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000229,1610612741,CHI,Chicago,2243,Brian Scalabrine,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0

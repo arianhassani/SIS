@@ -1,0 +1,27 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20800217,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20800174,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20800404,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,,2.000000:12,100.0,80.0,150.0,150.0,-50.0,-70.0,1.0,0.0,33.3,0.0,0.0,0.0,0.0,0.5,0.5,0.4,0.5,87.27,98.18,81.82,5,0.148,11.0
+20800200,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20800162,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20800017,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20800012,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20800116,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20800249,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20800049,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20800129,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800272,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20800138,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800065,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20800335,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800242,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,,1.000000:42,66.7,50.0,0.0,0.0,66.7,50.0,0.0,0.0,0.0,0.0,0.333,0.25,0.0,0.0,0.0,0.0,0.0,90.92,98.82,82.35,4,-0.5,22.0
+20800092,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,,2.000000:28,41.0,50.0,133.3,100.0,-92.3,-50.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,76.67,77.84,64.86,4,0.0,10.0
+20800078,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20800632,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,NWT - Plantar Fasciaitis,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20800035,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20800387,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20800146,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20800185,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20800392,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20800623,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DND - Plantar Fasciitis,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20800346,1610612745,HOU,Houston,201595,Joey Dorsey,Joey,,DND - Plantar Fasciitis,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0

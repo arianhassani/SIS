@@ -1,0 +1,47 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20600157,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600977,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20600181,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600580,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600838,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,,13.000000:28,94.1,100.0,66.0,66.7,28.1,33.3,0.111,1.0,33.3,0.053,0.063,0.057,33.3,1.0,1.0,0.061,0.061,97.88,94.46,78.71,26,0.152,8.0
+20600902,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,,10.000000:52,82.8,76.2,117.6,114.3,-34.8,-38.1,0.143,0.5,20.0,0.0,0.111,0.043,40.0,0.0,0.0,0.16,0.172,87.71,92.75,77.29,21,-0.091,8.0
+20600678,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20601016,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600478,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600691,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600657,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600913,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,,19.000000:55,102.5,102.6,124.2,129.7,-21.7,-27.1,0.167,2.0,40.0,0.0,0.083,0.037,20.0,0.5,0.5,0.071,0.073,92.4,90.38,75.31,38,0.029,6.0
+20600523,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600735,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600738,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600671,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600539,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600511,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600504,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20601154,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600699,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600919,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,,13.000000:51,92.0,96.0,112.2,112.0,-20.2,-16.0,0.143,0.0,33.3,0.0,0.214,0.107,0.0,0.5,0.5,0.071,0.071,88.44,86.64,72.2,25,0.078,8.0
+20601144,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20600878,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,,25.000000:09,124.3,123.1,107.6,110.0,16.7,13.1,0.188,3.0,27.3,0.0,0.15,0.071,9.1,0.857,0.857,0.133,0.139,97.91,97.34,81.11,52,0.134,18.0
+20601027,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600714,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600847,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,,9.000000:35,112.6,100.0,102.0,94.7,10.5,5.3,0.0,0.0,0.0,0.0,0.071,0.053,0.0,0.0,0.0,0.0,0.0,86.51,95.23,79.36,19,0.0,5.0
+20600890,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,,3.000000:37,50.8,50.0,71.4,71.4,-20.7,-21.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,98.93,99.72,83.1,8,0.0,8.0
+20600489,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,,4.000000:55,80.0,72.7,131.6,130.0,-51.6,-57.3,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.091,0.1,97.04,102.51,85.42,11,-0.04,23.0
+20600564,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600969,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600941,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,,17.000000:18,68.5,67.6,93.5,97.1,-25.1,-29.4,0.286,0.0,66.7,0.0,0.222,0.103,0.0,0.0,0.0,0.026,0.027,95.55,94.33,78.61,34,0.09,21.0
+20600809,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20601081,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600994,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600598,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600759,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20601057,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20601133,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600576,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600774,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600614,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20601044,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600825,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,,12.000000:22,114.2,108.3,83.9,83.3,30.3,25.0,0.375,1.5,42.9,0.0,0.214,0.136,28.6,1.0,1.0,0.16,0.168,90.44,93.15,77.63,24,0.208,20.0
+20600789,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20601118,1610612747,LAL,Los Angeles,243,Aaron McKie,Aaron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0

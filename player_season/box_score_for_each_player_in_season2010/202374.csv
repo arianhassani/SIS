@@ -1,0 +1,44 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21000620,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21000344,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000422,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,,4.000000:02,154.0,162.5,42.9,37.5,111.2,125.0,0.0,0.0,0.0,0.0,0.286,0.222,0.0,0.0,0.0,0.125,0.118,91.87,95.21,79.34,8,0.049,21.0
+21000838,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000384,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21000578,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000790,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000630,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,,9.000000:35,65.4,65.0,142.6,140.0,-77.2,-75.0,0.2,1.0,14.3,0.167,0.0,0.091,14.3,0.25,0.205,0.261,0.262,98.97,100.17,83.48,20,-0.145,10.0
+21001207,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,,6.000000:21,77.5,84.6,77.6,76.9,-0.2,7.7,0.0,0.0,0.0,0.125,0.286,0.2,0.0,0.5,0.5,0.133,0.132,102.24,98.16,81.8,13,0.212,7.0
+21000643,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,8.0
+21000864,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,,2.000000:54,80.6,100.0,102.5,83.3,-21.8,16.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,101.96,99.31,82.76,6,0.0,23.0
+21000695,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,,6.000000:34,115.2,121.4,53.3,53.3,61.8,68.1,0.0,0.0,0.0,0.0,0.125,0.053,20.0,0.0,0.0,0.25,0.241,108.77,105.99,88.32,14,-0.105,11.0
+21000656,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,20.0
+21000736,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21001166,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000708,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21000683,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000494,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21000480,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21000331,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21000133,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,,0.000000:18,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,158.24,237.36,197.8,2,0.0,9.0
+21000719,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000123,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21000447,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21001144,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21001178,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21000110,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21000851,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000884,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,,2.000000:34,140.0,140.0,82.0,66.7,58.0,73.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.5,0.333,0.333,92.38,102.86,85.71,5,0.105,21.0
+21000512,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,,2.000000:32,51.5,50.0,133.3,100.0,-81.8,-50.0,1.0,0.0,100.0,0.4,0.0,0.4,0.0,0.0,0.0,0.0,0.0,65.18,75.79,63.16,4,0.333,9.0
+21000670,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21001221,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,,13.000000:04,79.0,73.9,145.8,143.5,-66.8,-69.6,0.0,0.0,0.0,0.077,0.1,0.087,33.3,0.0,0.0,0.125,0.133,81.11,84.49,70.41,23,-0.011,18.0
+21000507,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,,2.000000:35,150.4,160.0,112.8,100.0,37.6,60.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,98.85,102.19,85.16,5,-0.143,10.0
+21001155,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21001196,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,20.0
+21000897,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000459,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,8.0
+21000402,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,,5.000000:43,52.6,58.3,119.0,116.7,-66.5,-58.3,0.0,0.0,0.0,0.0,0.25,0.083,0.0,0.0,0.0,0.0,0.0,105.29,100.76,83.97,12,0.0,21.0
+21000370,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21000589,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,8.0
+21000603,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,8.0
+21000770,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,,2.000000:48,154.6,150.0,173.6,100.0,-19.0,50.0,0.0,0.0,0.0,0.25,0.0,0.125,0.0,0.0,0.0,0.0,0.0,57.94,77.14,64.29,4,0.063,10.0
+21000360,1610612761,TOR,Toronto,202374,Solomon Alabi,Solomon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0

@@ -1,0 +1,77 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21400010,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,3.000000:31,33.3,28.6,153.1,150.0,-119.7,-121.4,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.286,0.333,81.08,88.72,73.93,7,-0.267,10.0
+21401118,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21400831,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,1.000000:04,0.0,0.0,200.0,200.0,-200.0,-200.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,67.5,112.5,93.75,3,0.0,23.0
+21400602,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21400171,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,5.000000:30,91.9,90.9,126.0,118.2,-34.1,-27.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,92.51,96.0,80.0,11,0.0,9.0
+21400818,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21401131,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21400358,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,8.0
+21400204,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21400953,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21400770,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21400758,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,6.000000:36,134.4,142.9,108.7,107.7,25.7,35.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.063,0.067,100.95,98.18,81.82,14,-0.061,10.0
+21400566,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21400349,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,0.000000:35,300.0,300.0,227.3,100.0,72.7,200.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,77.79,124.14,103.45,1,0.0,10.0
+21400410,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21400389,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21400982,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21400941,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400073,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21401033,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400931,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21400528,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,3.000000:22,150.3,157.1,100.0,87.5,50.3,69.6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.143,0.137,102.08,106.93,89.11,7,0.158,23.0
+21400460,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21400845,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21400893,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21401025,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,0.000000:56,0.0,0.0,227.3,200.0,-227.3,-200.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,48.17,76.87,64.06,2,0.0,24.0
+21400263,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21401009,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,0.000000:30,0.0,0.0,200.0,200.0,-200.0,-200.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,47.52,95.05,79.21,1,0.0,23.0
+21400289,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400909,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21400062,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21400704,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21400512,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21400328,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21400467,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21401173,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21400053,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400735,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21400912,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21400086,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21400496,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21400482,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21400657,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21401206,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,1.000000:43,66.7,50.0,41.0,50.0,25.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,110.17,111.84,93.2,4,0.0,10.0
+21400695,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400242,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21401148,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21400646,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21401217,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400135,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400257,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21400447,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400862,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400679,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21400877,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21400320,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,9.000000:07,108.7,110.5,110.6,105.3,-1.9,5.3,0.0,0.0,0.0,0.133,0.0,0.083,0.0,0.0,0.0,0.115,0.118,98.46,100.04,83.36,19,-0.058,20.0
+21401065,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21400637,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,2.000000:13,145.3,100.0,128.9,125.0,16.5,-25.0,0.0,0.0,0.0,0.333,0.5,0.4,0.0,0.5,0.615,0.333,0.45,79.25,97.44,81.2,5,0.278,23.0
+21400554,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21400967,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21400620,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,2.000000:35,180.4,175.0,133.0,100.0,47.4,75.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.532,0.5,0.515,70.98,83.61,69.68,4,0.1,9.0
+21400379,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21400543,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,0.000000:25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,58.78,117.55,97.96,1,0.0,10.0
+21400209,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,C,,18.000000:46,112.2,114.3,149.7,147.2,-37.5,-32.9,0.067,0.5,14.3,0.118,0.0,0.067,28.6,0.25,0.25,0.158,0.159,90.86,90.81,75.67,35,-0.051,2.0
+21401088,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,2.000000:43,40.0,33.3,104.2,100.0,-64.2,-66.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,95.06,106.01,88.34,6,0.0,23.0
+21400591,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,8.0
+21400022,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400785,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,1.000000:06,123.0,100.0,0.0,0.0,123.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25,0.291,96.87,109.09,90.91,3,-2.0,23.0
+21400430,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,0.000000:50,0.0,0.0,66.7,66.7,-66.7,-66.7,0.0,0.0,0.0,0.0,0.5,0.25,0.0,0.0,0.0,0.0,0.0,172.11,172.11,143.43,3,0.667,23.0
+21400183,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,,2.000000:00,63.0,75.0,79.8,60.0,-16.8,15.0,0.0,0.0,0.0,0.333,0.0,0.2,0.0,0.0,0.568,0.167,0.174,102.24,108.0,90.0,4,1.0,10.0
+21400154,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21400800,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21400419,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21400579,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400223,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21400035,1610612741,CHI,Chicago,203946,Cameron Bairstow,Cameron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0

@@ -1,0 +1,43 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21500011,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,,16.000000:41,70.5,69.2,125.4,122.5,-54.9,-53.3,0.0,0.0,0.0,0.048,0.063,0.054,22.2,0.4,0.592,0.205,0.213,111.29,113.65,94.71,39,0.07,19.0
+21500211,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Sore right knee,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21500765,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500607,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500338,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500058,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,,27.000000:41,92.2,94.7,90.9,91.2,1.2,3.5,0.176,3.0,25.0,0.034,0.147,0.095,8.3,0.8,0.619,0.136,0.137,100.4,98.84,82.37,57,0.169,9.0
+21500299,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Soreness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21500266,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,NWT - Right Knee Soreness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21500851,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,,21.000000:58,129.1,126.7,141.6,133.3,-12.6,-6.7,0.067,0.5,7.1,0.222,0.077,0.136,14.3,0.7,0.638,0.26,0.264,94.53,98.33,81.94,45,0.103,20.0
+21500105,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21500868,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,F,,18.000000:21,122.0,122.2,91.5,86.5,30.4,35.7,0.0,0.0,0.0,0.143,0.158,0.152,0.0,1.0,1.031,0.103,0.105,92.91,95.48,79.56,36,0.141,1.0
+21500316,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Soreness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500074,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,,17.000000:39,121.8,131.0,139.1,140.0,-17.3,-9.0,0.0,0.0,0.0,0.071,0.158,0.121,0.0,0.5,0.564,0.147,0.151,83.49,80.23,66.86,29,0.078,9.0
+21500670,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500658,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21500091,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,,6.000000:05,88.9,88.9,147.1,160.0,-58.2,-71.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.111,0.111,78.43,74.96,62.47,9,-0.043,5.0
+21500133,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Soreness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21500251,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Soreness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21500051,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,,19.000000:49,75.5,75.6,112.7,104.9,-37.2,-29.3,0.1,0.0,12.5,0.0,0.273,0.125,0.0,0.5,0.509,0.159,0.159,95.94,99.28,82.73,41,0.129,9.0
+21500642,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21500695,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500322,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - RIGHT KNEE SORENESS,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21500875,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,F,,14.000000:36,98.6,93.3,102.1,100.0,-3.5,-6.7,0.0,0.0,0.0,0.0,0.286,0.148,25.0,1.0,1.0,0.125,0.132,93.37,96.99,80.82,30,0.205,1.0
+21500120,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Sore Right Knee,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21500280,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21500724,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21500233,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Sore Right Knee,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500810,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,,16.000000:54,103.4,102.9,126.6,130.3,-23.2,-27.4,0.0,0.0,0.0,0.056,0.077,0.065,0.0,0.75,0.75,0.108,0.112,96.31,95.18,79.31,34,0.092,18.0
+21500756,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21500018,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,,15.000000:25,133.2,125.8,131.7,134.4,1.5,-8.6,0.0,0.0,0.0,0.0,0.091,0.05,0.0,1.0,0.922,0.147,0.155,96.45,98.13,81.77,31,0.124,8.0
+21500781,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500146,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Soreness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21500427,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,NWT - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21500180,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Soreness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21500618,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500195,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,NWT - Right knee soreness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21500220,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,NWT - Sore Right Knee,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21500036,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,,16.000000:21,80.0,81.3,94.8,85.7,-14.9,-4.5,0.0,0.0,0.0,0.12,0.118,0.119,16.7,0.6,0.6,0.154,0.156,94.18,98.35,81.96,32,0.167,22.0
+21500793,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21500829,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,,20.000000:38,90.4,90.0,91.0,95.2,-0.6,-5.2,0.091,0.33,16.7,0.043,0.05,0.047,50.0,0.5,0.5,0.106,0.107,97.47,95.38,79.48,40,-0.018,6.0
+21500155,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,DND - Sore Right Knee,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21500419,1610612763,MEM,Memphis,201148,Brandan Wright,Brandan,,NWT - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0

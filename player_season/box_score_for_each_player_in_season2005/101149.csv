@@ -1,0 +1,25 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20500674,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,,2.000000:59,59.2,66.7,66.7,57.1,-7.5,9.5,0.0,0.0,0.0,0.2,0.0,0.111,0.0,0.0,0.0,0.125,0.129,102.65,104.58,87.15,6,0.2,11.0
+20500476,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20500272,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500663,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20500707,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,20.0
+20500301,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500758,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,,1.000000:38,133.3,133.3,250.0,125.0,-116.7,8.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,73.47,102.86,85.71,3,0.0,22.0
+20500822,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,,2.000000:04,174.1,183.3,40.0,33.3,134.1,150.0,0.0,0.0,0.0,0.0,1.0,0.667,0.0,0.0,0.0,0.0,0.0,131.46,139.35,116.13,6,0.261,10.0
+20500767,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500780,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20500805,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500036,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500829,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,20.0
+20500791,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,,0.000000:47,200.0,100.0,0.0,0.0,200.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,92.9,92.9,77.42,2,0.0,10.0
+20500287,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500319,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20500457,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,,0.000000:32,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,45.71,91.43,76.19,1,0.0,22.0
+20500737,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20500450,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500256,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500492,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500719,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,8.0
+20500725,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,,1.000000:23,50.0,50.0,34.7,20.0,15.3,30.0,0.0,0.0,0.0,0.0,0.5,0.333,0.0,0.0,0.0,0.0,0.0,119.36,156.14,130.12,4,0.0,9.0
+20500687,1610612739,CLE,Cleveland,101149,Martynas Andriuskevicius,Martynas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0

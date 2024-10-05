@@ -1,0 +1,19 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+22200491,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,,4.000000:13,60.7,60.0,124.5,130.0,-63.8,-70.0,0.0,0.0,0.0,0.0,0.2,0.091,0.0,0.0,0.0,0.0,0.0,115.66,113.83,94.86,10,0.0,21.0
+22200537,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,29.0
+22201211,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22200522,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22200870,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,14.0
+22200547,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,14.0
+22200409,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,,2.000000:22,82.0,66.7,150.6,142.9,-68.6,-76.2,1.0,0.0,100.0,0.5,0.0,0.25,0.0,0.0,0.0,0.0,0.0,116.49,131.46,109.55,6,-0.2,5.0
+22200595,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22201043,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,14.0
+22200429,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,14.0
+22200417,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,14.0
+22200563,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,14.0
+22201037,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,14.0
+22200475,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,,10.000000:39,95.0,96.2,118.0,119.2,-23.0,-23.1,0.0,0.0,0.0,0.077,0.222,0.136,0.0,1.0,0.85,0.207,0.22,118.54,117.18,97.65,26,0.176,21.0
+22200307,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22201227,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,,4.000000:11,101.4,100.0,88.9,100.0,12.5,0.0,0.0,0.0,0.0,0.2,0.333,0.25,0.0,0.0,0.0,0.091,0.101,102.58,97.53,81.27,9,0.067,14.0
+22200460,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,,7.000000:16,59.7,55.6,120.9,122.2,-61.2,-66.7,0.0,0.0,0.0,0.182,0.222,0.2,25.0,0.333,0.333,0.19,0.213,115.46,118.9,99.08,18,0.116,20.0
+22200514,1610612758,SAC,Sacramento,1629674,Neemias Queta,Neemias,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
