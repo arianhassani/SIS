@@ -1,0 +1,33 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21100191,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21100153,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21100225,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21100140,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21100342,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,,5.000000:47,97.2,91.7,134.5,141.7,-37.3,-50.0,0.0,0.0,0.0,0.333,0.125,0.214,0.0,1.0,0.872,0.188,0.196,99.43,99.6,83.0,12,0.441,11.0
+21100418,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21100180,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21100441,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,,2.000000:12,40.0,33.3,40.0,40.0,0.0,-6.7,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.167,0.2,109.09,120.0,100.0,6,-0.167,24.0
+21100695,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21100642,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21100118,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21100093,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,,4.000000:52,55.8,60.0,81.0,72.7,-25.2,-12.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.725,0.273,0.279,101.79,103.56,86.3,10,0.462,24.0
+21100654,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21100456,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21100330,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,,5.000000:40,100.0,100.0,102.2,91.7,-2.2,8.3,0.2,0.0,33.3,0.143,0.0,0.1,0.0,0.0,0.0,0.167,0.167,92.16,97.41,81.18,11,-0.077,24.0
+21100480,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21100325,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21100444,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21100676,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,,2.000000:15,100.0,100.0,100.0,60.0,0.0,40.0,0.5,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,74.67,96.0,80.0,4,0.118,10.0
+21100689,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,,4.000000:17,78.5,75.0,101.7,87.5,-23.2,-12.5,0.0,0.0,0.0,0.25,0.0,0.125,0.0,0.0,0.362,0.3,0.311,81.36,89.65,74.71,8,-0.143,11.0
+21100065,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21100498,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21100049,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21100359,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21100238,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,,2.000000:45,51.0,42.9,117.8,128.6,-66.8,-85.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,117.99,122.18,101.82,7,-0.182,24.0
+21100212,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21100400,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,,3.000000:34,134.4,125.0,171.9,157.1,-37.5,-32.1,0.25,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,93.13,100.93,84.11,8,0.059,12.0
+21100005,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21100029,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,,3.000000:53,64.4,55.6,50.0,50.0,14.4,5.6,0.0,0.0,0.0,0.0,0.4,0.2,0.0,0.0,0.0,0.111,0.129,97.4,105.06,87.55,9,0.25,10.0
+21100377,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21100389,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21100201,1610612746,LAC,Los Angeles,202727,Travis Leslie,Travis,,,10.000000:02,84.4,84.2,150.2,138.9,-65.9,-54.7,0.5,2.0,22.2,0.118,0.0,0.095,11.1,0.167,0.167,0.269,0.28,85.16,88.5,73.75,19,-0.05,9.0

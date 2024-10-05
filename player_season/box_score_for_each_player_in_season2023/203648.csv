@@ -1,0 +1,83 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+22300849,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22301148,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,0.000000:28,0.0,0.0,200.0,200.0,-200.0,-200.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,52.17,104.35,86.96,1,0.0,22.0
+22300915,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22300097,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,7.000000:33,132.8,135.3,52.0,52.9,80.8,82.4,0.333,0.67,33.3,0.0,0.0,0.0,50.0,1.0,1.0,0.235,0.231,110.11,108.08,90.07,17,0.0,25.0
+22300056,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22301162,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,3.000000:28,43.6,37.5,147.9,142.9,-104.3,-105.4,1.0,1.0,50.0,0.0,0.0,0.0,50.0,0.0,0.0,0.125,0.145,94.43,103.85,86.54,8,-0.087,25.0
+22300334,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,5.000000:16,110.0,100.0,121.8,125.0,-11.8,-25.0,0.0,0.0,0.0,0.0,0.167,0.125,0.0,0.0,0.0,0.0,0.0,101.81,104.91,87.42,11,0.038,22.0
+22301201,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,2.000000:29,140.0,116.7,60.0,60.0,80.0,56.7,0.0,0.0,0.0,0.333,0.0,0.25,0.0,1.0,1.0,0.125,0.143,96.64,106.31,88.59,6,0.333,27.0
+22301229,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22300269,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22300725,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22300286,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+22300245,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,4.000000:13,91.3,88.9,92.9,100.0,-1.6,-11.1,0.0,0.0,0.0,0.0,0.286,0.182,0.0,0.0,0.0,0.0,0.0,110.97,108.01,90.01,9,0.2,23.0
+22301007,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+22300899,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,2.000000:57,0.0,0.0,71.4,62.5,-71.4,-62.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,138.31,130.17,108.47,8,0.5,12.0
+22300683,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22300454,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22300864,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,1.000000:42,66.7,50.0,0.0,0.0,66.7,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,84.71,98.82,82.35,4,0.0,10.0
+22300496,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22300552,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22301076,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22300195,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,15.000000:01,91.7,87.5,132.9,132.3,-41.2,-44.8,0.0,0.0,0.0,0.105,0.0,0.056,0.0,0.2,0.2,0.135,0.145,98.07,100.69,83.91,32,-0.07,8.0
+22300817,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,3.000000:36,116.7,116.7,157.1,157.1,-40.5,-40.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.167,0.167,86.67,86.67,72.22,6,0.103,11.0
+22300624,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,0.000000:43,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,33.72,67.45,56.21,1,0.0,22.0
+22300433,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22300745,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,10.000000:42,86.7,90.0,109.6,100.0,-22.9,-10.0,0.25,0.0,25.0,0.083,0.0,0.048,0.0,0.667,0.667,0.136,0.138,89.54,91.96,76.64,20,0.102,22.0
+22300976,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22300790,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22300592,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22300545,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+22301061,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22300346,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,0.000000:18,0.0,0.0,300.0,300.0,-300.0,-300.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,80.9,161.8,134.83,1,0.0,26.0
+22301139,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,1.000000:10,0.0,0.0,150.0,150.0,-150.0,-150.0,0.0,0.0,0.0,0.5,0.0,0.5,0.0,0.0,0.0,0.0,0.0,61.71,82.29,68.57,2,0.333,25.0
+22300958,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+22300027,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,2.000000:40,216.7,185.7,34.0,33.3,182.7,152.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.143,0.167,106.92,117.0,97.5,7,0.129,9.0
+22300219,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,1.000000:19,0.0,0.0,150.6,166.7,-150.6,-166.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,96.97,109.37,91.14,3,0.0,11.0
+22301107,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+22300190,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+22300378,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+22300998,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22300361,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,1.000000:26,75.0,75.0,166.7,166.7,-91.7,-91.7,1.0,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,117.21,117.21,97.67,4,0.111,24.0
+22300639,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+22301095,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22301122,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+22300228,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22300572,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,5.000000:31,76.9,83.3,159.1,161.5,-82.2,-78.2,0.2,1.0,50.0,0.0,0.0,0.0,50.0,0.0,0.0,0.077,0.077,113.98,108.76,90.63,12,-0.015,11.0
+22300002,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22300606,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22300149,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22300808,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22300388,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22300773,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,7.000000:40,77.6,76.5,63.5,58.8,14.1,17.6,0.333,0.0,50.0,0.0,0.0,0.0,0.0,1.0,1.0,0.056,0.056,101.8,106.43,88.7,17,0.105,23.0
+22300767,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,4.000000:54,133.3,120.0,122.2,130.0,11.2,-10.0,0.25,1.0,33.3,0.0,0.0,0.0,33.3,0.0,0.0,0.182,0.2,96.2,97.96,81.63,10,-0.085,26.0
+22301045,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+22300401,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22300171,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22300165,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+22300945,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,6.000000:38,93.5,91.7,146.1,138.5,-52.6,-46.8,0.0,0.0,0.0,0.0,0.167,0.071,33.3,0.5,0.5,0.2,0.203,87.12,90.45,75.38,12,0.0,11.0
+22300173,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,9.000000:41,127.9,126.3,98.3,94.7,29.7,31.6,0.222,2.0,66.7,0.0,0.0,0.0,33.3,0.0,0.0,0.05,0.051,91.9,94.18,78.49,19,-0.014,11.0
+22300417,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,1.000000:23,266.7,200.0,69.4,66.7,197.2,133.3,0.667,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,102.01,121.45,101.2,4,0.167,13.0
+22300205,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22300510,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,0.000000:48,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,60.25,90.38,75.31,2,0.0,23.0
+22300667,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22300840,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,12.000000:00,111.6,112.5,135.1,144.0,-23.6,-31.5,0.1,1.0,20.0,0.111,0.0,0.056,20.0,0.0,0.0,0.16,0.159,101.68,98.0,81.67,24,-0.073,22.0
+22300049,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22300075,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22300711,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22300315,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,1.000000:20,0.0,0.0,232.0,300.0,-232.0,-300.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.333,0.5,105.84,108.0,90.0,3,-0.1,23.0
+22300880,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+22300116,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,3.000000:49,218.0,187.5,141.8,137.5,76.3,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.125,0.145,92.06,100.61,83.84,8,-0.038,13.0
+22300466,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,1.000000:56,160.0,160.0,79.8,60.0,80.2,100.0,0.0,0.0,0.0,0.0,0.333,0.2,0.0,0.0,0.0,0.0,0.0,108.74,124.14,103.45,5,-0.095,11.0
+22300300,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+22300738,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,5.000000:24,100.0,100.0,121.5,109.1,-21.5,-9.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.5,0.182,0.182,92.8,97.78,81.48,11,0.0,22.0
+22301191,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,7.000000:09,107.1,100.0,108.1,107.1,-0.9,-7.1,0.167,0.0,33.3,0.0,0.0,0.0,0.0,0.5,0.5,0.133,0.143,93.58,97.34,81.12,15,0.087,9.0
+22300648,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,3.000000:10,83.3,71.4,138.9,166.7,-55.6,-95.2,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.143,0.167,100.04,98.53,82.11,7,-0.125,27.0
+22300107,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22300477,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22300924,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22301179,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,6.000000:56,133.3,125.0,121.0,120.0,12.4,5.0,0.143,1.0,25.0,0.0,0.0,0.0,25.0,1.0,1.0,0.176,0.188,103.43,107.31,89.42,16,0.116,12.0
+22301030,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,3.000000:13,100.0,100.0,104.2,75.0,-4.2,25.0,0.333,0.0,100.0,0.0,0.5,0.2,0.0,0.0,0.0,0.0,0.0,95.2,111.92,93.26,7,0.1,28.0
+22300528,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,,8.000000:54,97.7,105.6,105.2,110.5,-7.5,-5.0,0.2,0.5,12.5,0.143,0.0,0.059,25.0,0.6,0.6,0.35,0.342,106.25,99.78,83.15,18,0.0,24.0
+22300702,1610612749,MIL,Milwaukee,203648,Thanasis Antetokounmpo,Thanasis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0

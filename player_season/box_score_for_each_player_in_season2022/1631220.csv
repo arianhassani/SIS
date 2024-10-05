@@ -1,0 +1,27 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+22200040,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22201162,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22200053,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22200318,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22200520,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22200864,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22200079,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,,1.000000:58,173.6,166.7,133.3,100.0,40.3,66.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,71.76,85.42,71.19,3,0.0,10.0
+22200586,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22200632,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22200593,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22200755,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22200621,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,,2.000000:43,136.1,133.3,0.0,0.0,136.1,133.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.167,0.17,96.12,106.01,88.34,6,0.286,10.0
+22200017,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22200605,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,,2.000000:32,140.0,116.7,102.0,120.0,38.0,-3.3,0.0,0.0,0.0,0.333,0.0,0.143,0.0,0.333,0.333,0.375,0.429,103.07,104.21,86.84,6,-0.042,11.0
+22200572,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22201135,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22200006,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22201127,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22200882,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,,3.000000:51,92.2,100.0,87.5,87.5,4.7,12.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.071,0.078,110.71,105.97,88.31,9,-0.074,9.0
+22200088,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,,0.000000:32,0.0,0.0,200.0,200.0,-200.0,-200.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,45.0,90.0,75.0,1,0.0,10.0
+22201194,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22200117,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22201185,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,28.0
+22200304,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22201225,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22201147,1610612740,NOP,New Orleans,1631220,Dereon Seabron,Dereon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0

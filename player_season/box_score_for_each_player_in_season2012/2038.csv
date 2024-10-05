@@ -1,0 +1,45 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21200277,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,,6.000000:09,83.3,76.9,131.1,133.3,-47.8,-56.4,0.0,0.0,0.0,0.0,0.4,0.143,0.0,0.0,0.0,0.0,0.0,94.44,97.56,81.3,13,0.091,23.0
+21200316,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21200329,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21201157,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21201190,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200264,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21201226,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200676,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21201024,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200111,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,,6.000000:46,62.5,62.5,129.8,126.7,-67.3,-64.2,0.0,0.0,0.0,0.091,0.375,0.211,0.0,0.0,0.0,0.0,0.0,108.67,109.95,91.63,16,0.145,24.0
+21201179,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200374,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,,2.000000:30,138.9,150.0,125.0,100.0,13.9,50.0,0.0,0.0,0.0,0.0,0.25,0.2,0.0,0.0,0.0,0.0,0.0,79.87,86.4,72.0,4,0.125,11.0
+21200361,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,NWT - NBA Suspension,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21200163,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200188,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,C,,17.000000:07,106.4,105.7,118.8,120.6,-12.3,-14.9,0.188,3.0,60.0,0.0,0.105,0.057,20.0,0.0,0.0,0.054,0.054,97.14,96.75,80.62,35,0.013,14.0
+21200017,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200215,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21200767,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,,4.000000:50,46.0,45.5,118.2,118.2,-72.2,-72.7,0.0,0.0,0.0,0.1,0.5,0.214,50.0,0.0,0.0,0.143,0.144,108.65,109.24,91.03,11,-0.029,22.0
+21200148,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200941,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21200616,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21200749,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21200199,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200238,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21200382,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200791,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200395,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21200343,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,,7.000000:18,101.6,107.1,130.5,142.9,-28.9,-35.7,0.0,0.0,0.0,0.0,0.25,0.091,0.0,0.0,0.0,0.0,0.0,98.89,92.05,76.71,14,0.027,21.0
+21200230,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,,0.000000:02,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.136,633.6,1440.01,1200.01,1,1.5,10.0
+21200033,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,,5.000000:40,109.4,108.3,139.3,141.7,-29.9,-33.3,0.0,0.0,0.0,0.0,0.4,0.286,0.0,0.0,0.0,0.0,0.0,101.99,101.65,84.71,12,0.033,23.0
+21200782,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21200732,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,,2.000000:58,68.0,80.0,126.6,114.3,-58.6,-34.3,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.143,0.145,98.7,97.08,80.9,5,-0.571,9.0
+21200068,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200848,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200096,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200057,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,,6.000000:12,117.6,125.0,118.2,108.3,-0.6,16.7,0.0,0.0,0.0,0.1,0.4,0.2,0.0,0.5,0.5,0.118,0.119,91.97,92.9,77.42,12,0.13,23.0
+21200719,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21200136,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21200293,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,,6.000000:01,68.6,63.6,111.5,120.0,-42.9,-56.4,0.5,0.0,100.0,0.2,0.143,0.167,0.0,0.0,0.0,0.0,0.0,83.61,83.77,69.81,11,0.235,8.0
+21201166,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200247,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,,2.000000:32,77.3,75.0,233.3,175.0,-156.0,-100.0,0.0,0.0,0.0,0.333,0.0,0.25,100.0,0.0,0.0,0.2,0.205,65.18,75.79,63.16,4,-0.05,11.0
+21200086,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21201005,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21201011,1610612749,MIL,Milwaukee,2038,Joel Przybilla,Joel,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0

@@ -1,0 +1,59 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20600424,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20600154,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,2.000000:44,125.0,100.0,123.0,120.0,2.0,-20.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.25,77.97,87.8,73.17,5,-0.1,23.0
+20600020,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20601114,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,8.000000:01,104.7,100.0,100.0,87.5,4.7,12.5,0.0,0.0,0.0,0.0,0.25,0.125,0.0,0.0,0.0,0.056,0.058,84.78,92.81,77.34,15,0.0,21.0
+20601128,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,6.000000:37,110.8,106.7,109.0,107.1,1.8,-0.5,0.0,0.0,0.0,0.0,0.167,0.091,25.0,0.333,0.333,0.267,0.277,102.29,105.19,87.66,15,-0.033,20.0
+20600587,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600191,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,6.000000:04,101.7,107.7,40.6,38.5,61.2,69.2,0.0,0.0,0.0,0.0,0.2,0.133,0.0,0.333,0.515,0.286,0.291,103.17,102.86,85.71,13,0.533,11.0
+20600621,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600435,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20600347,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20601138,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,4.000000:47,137.0,133.3,200.0,155.6,-63.0,-22.2,0.0,0.0,0.0,0.25,0.0,0.25,0.0,1.0,1.0,0.091,0.102,79.13,90.38,75.31,9,0.106,8.0
+20600178,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600385,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20601064,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20600043,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600080,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20601162,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,20.0
+20600056,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600493,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20600294,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,2.000000:29,115.7,100.0,175.0,140.0,-59.3,-40.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.167,0.188,80.41,96.64,80.54,5,0.148,9.0
+20600135,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,F,,16.000000:03,118.1,119.4,125.8,118.8,-7.7,0.6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.114,0.113,92.04,94.25,78.55,31,-0.085,1.0
+20601001,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20601039,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20600327,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,12.000000:00,62.8,68.2,82.3,78.3,-19.5,-10.1,0.0,0.0,0.0,0.0,0.333,0.148,33.3,0.5,0.5,0.111,0.112,91.52,90.0,75.0,22,0.158,20.0
+20600285,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,4.000000:55,61.5,60.0,88.9,80.0,-27.4,-20.0,0.0,0.0,0.0,0.0,0.25,0.143,50.0,1.0,0.798,0.4,0.41,91.57,97.63,81.36,10,-0.182,9.0
+20601210,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,2.000000:45,0.0,0.0,133.3,133.3,-133.3,-133.3,0.0,0.0,0.0,0.0,0.333,0.2,0.0,0.0,0.0,0.0,0.0,96.0,104.73,87.27,6,0.25,10.0
+20600536,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,20.0
+20600090,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600102,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,F,,10.000000:40,112.1,109.5,118.6,119.0,-6.5,-9.5,0.167,0.0,16.7,0.182,0.143,0.167,0.0,0.25,0.205,0.217,0.222,93.6,94.5,78.75,21,-0.104,13.0
+20601180,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20600505,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,20.0
+20600448,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,2.000000:53,87.2,85.7,34.0,28.6,53.2,57.1,0.5,0.0,50.0,0.0,0.2,0.111,0.0,0.0,0.0,0.143,0.145,106.21,116.53,97.11,7,0.143,8.0
+20600071,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600663,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20600305,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,20.0
+20601027,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20600113,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,F,,28.000000:17,103.9,107.8,124.2,128.0,-20.4,-20.2,0.053,1.0,7.1,0.091,0.211,0.135,7.1,0.4,0.51,0.2,0.203,88.66,85.7,71.42,51,0.101,1.0
+20600649,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20600517,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,4.000000:00,37.5,33.3,112.6,111.1,-75.1,-77.8,0.0,0.0,0.0,0.5,0.0,0.25,100.0,0.0,0.0,0.3,0.333,101.28,108.0,90.0,9,-0.333,9.0
+20601191,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,6.000000:05,80.0,72.7,145.5,160.0,-65.5,-87.3,0.0,0.0,0.0,0.0,0.333,0.154,0.0,0.0,0.0,0.0,0.0,82.85,82.85,69.04,11,0.109,7.0
+20600270,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,8.0
+20601230,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20600462,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,20.0
+20600476,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,9.000000:07,66.7,63.2,95.1,94.4,-28.4,-31.3,0.0,0.0,0.0,0.0,0.286,0.105,20.0,0.0,0.0,0.217,0.227,94.46,97.4,81.17,19,-0.182,18.0
+20601055,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,5.000000:18,169.6,190.0,42.9,40.0,126.7,150.0,0.0,0.0,0.0,0.4,0.111,0.214,0.0,1.0,0.868,0.214,0.197,92.92,90.57,75.47,10,0.385,22.0
+20600565,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,20.0
+20600228,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,1.000000:25,0.0,0.0,100.0,100.0,-100.0,-100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,67.76,84.71,70.59,3,0.0,20.0
+20600598,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600771,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600639,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20600413,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,8.0
+20600615,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600006,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600166,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600358,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20600366,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,9.000000:02,116.3,120.0,66.2,61.9,50.1,58.1,0.0,0.0,0.0,0.0,0.455,0.278,0.0,0.0,1.136,0.043,0.044,107.02,108.93,90.77,20,0.292,8.0
+20600206,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,2.000000:01,233.3,175.0,128.9,125.0,104.5,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.5,0.667,81.88,95.21,79.34,4,0.333,23.0
+20600398,1610612740,NOK,New Orleans/Oklahoma City,101138,Brandon Bass,Brandon,,,16.000000:18,74.8,76.7,115.3,110.3,-40.5,-33.7,0.0,0.0,0.0,0.174,0.333,0.219,16.7,0.0,0.205,0.154,0.159,86.16,86.87,72.39,30,0.064,21.0

@@ -1,0 +1,30 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21400428,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21401052,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21400836,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400229,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,,8.000000:39,113.4,111.8,145.3,133.3,-31.9,-21.6,0.2,1.0,14.3,0.0,0.2,0.077,14.3,0.3,0.3,0.316,0.32,92.34,97.11,80.92,17,-0.051,23.0
+21400438,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,,7.000000:56,57.6,53.3,77.3,80.0,-19.7,-26.7,0.0,0.0,0.0,0.1,0.1,0.1,0.0,0.0,0.0,0.313,0.336,88.94,90.76,75.63,15,-0.455,24.0
+21401219,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,,12.000000:38,99.3,100.0,115.8,107.4,-16.5,-7.4,0.111,0.0,14.3,0.0,0.375,0.13,0.0,0.5,0.543,0.194,0.205,101.14,104.49,87.07,28,0.141,11.0
+21400489,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,,0.000000:06,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,244.07,488.14,406.78,1,0.0,24.0
+21400258,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21401185,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21401191,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21400933,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21400851,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21400688,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400672,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,,1.000000:17,0.0,0.0,170.5,100.0,-170.5,-100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.333,0.333,89.02,112.21,93.51,3,1.333,24.0
+21400738,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21400894,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21401210,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,,10.000000:48,110.7,108.0,104.9,100.0,5.8,8.0,0.1,1.0,20.0,0.071,0.091,0.08,20.0,0.333,0.333,0.138,0.141,107.2,111.11,92.59,25,0.037,22.0
+21400898,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21400866,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,,2.000000:43,100.0,80.0,104.2,120.0,-4.2,-40.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,86.22,88.34,73.62,5,0.0,11.0
+21400480,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400723,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400455,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400518,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,,6.000000:49,88.2,93.3,155.3,131.3,-67.2,-37.9,0.0,0.0,0.0,0.0,0.2,0.059,14.3,0.333,0.333,0.35,0.352,103.51,109.14,90.95,15,-0.047,10.0
+21400914,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21400876,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400408,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21401070,1610612762,UTA,Utah,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400392,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21400424,1610612760,OKC,Oklahoma City,203511,Grant Jerrett,Grant,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
