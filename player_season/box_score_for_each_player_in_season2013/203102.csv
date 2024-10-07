@@ -1,0 +1,41 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21300505,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left Ankle Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300471,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left ankle injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21300841,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,C,,28.000000:17,94.4,98.3,117.4,118.3,-23.0,-20.1,0.0,0.0,0.0,0.118,0.154,0.133,0.0,0.333,0.436,0.099,0.101,102.56,100.11,83.43,58,0.061,15.0
+21300712,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Right Ankle Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21301147,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,NWT - League Suspension,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21301225,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300648,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left Ankle Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300853,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,,15.000000:56,117.2,112.5,113.4,116.1,3.8,-3.6,0.0,0.0,0.0,0.0,0.0,0.0,33.3,0.0,0.0,0.086,0.089,94.11,94.9,79.08,32,-0.054,22.0
+21300700,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - RIGHT ANKLE INJURY,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300886,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300662,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left Ankle Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300567,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left Ankle Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300763,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,,15.000000:54,77.5,76.3,126.7,131.4,-49.1,-55.1,0.0,0.0,0.0,0.042,0.071,0.053,25.0,0.0,0.0,0.091,0.094,111.28,110.19,91.82,38,0.014,9.0
+21301133,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - League Suspension,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21300946,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,,13.000000:47,127.6,121.4,117.2,120.0,10.4,1.4,0.0,0.0,0.0,0.154,0.133,0.143,0.0,0.8,0.8,0.147,0.153,99.88,100.99,84.16,28,0.157,10.0
+21301103,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,NWT - NBA Suspension,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21301117,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,NWT - League Suspension,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300817,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,C,,30.000000:58,99.5,107.2,118.6,115.9,-19.0,-8.7,0.077,0.0,28.6,0.057,0.158,0.093,0.0,0.6,0.551,0.063,0.062,109.93,106.95,89.13,69,0.05,15.0
+21300793,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,,16.000000:16,112.3,108.8,104.3,102.9,8.0,6.0,0.0,0.0,0.0,0.05,0.143,0.088,0.0,0.5,0.694,0.073,0.075,99.56,101.8,84.84,34,0.083,20.0
+21300787,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,,8.000000:43,51.0,45.0,108.4,100.0,-57.4,-55.0,0.0,0.0,0.0,0.0,0.375,0.2,25.0,0.333,0.333,0.2,0.227,96.81,107.38,89.48,20,0.0,8.0
+21300546,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left Ankle Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300626,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Injured Left Ankle,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21300959,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,,7.000000:04,100.8,93.8,126.8,128.6,-26.0,-34.8,0.0,0.0,0.0,0.143,0.143,0.143,20.0,0.5,0.5,0.278,0.296,98.76,101.89,84.91,16,0.016,21.0
+21300583,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left Ankle Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300634,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left Ankle Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21300609,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left Ankle Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21300769,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,,17.000000:32,90.9,89.5,117.8,121.1,-26.9,-31.6,0.0,0.0,0.0,0.0,0.16,0.093,0.0,0.333,0.333,0.073,0.076,104.63,104.03,86.69,38,0.043,8.0
+21300929,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,,7.000000:19,101.4,94.7,107.9,100.0,-6.5,-5.3,0.0,0.0,0.0,0.0,0.167,0.1,66.7,1.0,1.0,0.15,0.16,109.88,118.01,98.34,19,-0.032,23.0
+21300901,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,,7.000000:33,70.2,81.3,100.8,93.8,-30.6,-12.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.105,0.108,106.17,101.72,84.77,16,-0.105,11.0
+21300875,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,,17.000000:44,97.9,95.0,84.6,84.2,13.4,10.8,0.0,0.0,0.0,0.0,0.12,0.068,33.3,0.5,0.5,0.065,0.07,103.72,105.56,87.97,40,0.023,21.0
+21300445,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left Ankle,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21300690,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left Ankle Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21300452,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left ankle injury.,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21300678,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left Ankle Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300532,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left Ankle Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21301204,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21300481,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - left ankle injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300509,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - Left Ankle Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21300496,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,DND - left ankle,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21301164,1610612755,PHI,Philadelphia,203102,Arnett Moultrie,Arnett,,NWT - League Suspension,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0

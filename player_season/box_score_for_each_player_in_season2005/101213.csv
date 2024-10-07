@@ -1,0 +1,22 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20500113,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500070,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500299,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500267,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500277,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20500316,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500088,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20500329,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500358,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500214,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,,2.000000:07,100.0,80.0,84.0,80.0,16.0,0.0,0.0,0.0,0.0,0.0,0.333,0.2,0.0,1.0,1.0,0.167,0.2,99.33,113.39,94.49,5,0.545,23.0
+20500161,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500225,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20500180,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500383,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500154,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500126,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500290,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500337,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - sprained right ankle,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500137,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500255,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,,5.000000:00,133.3,133.3,101.1,110.0,32.2,23.3,0.0,0.0,0.0,0.0,0.143,0.125,50.0,0.0,0.0,0.2,0.2,95.42,91.2,76.0,9,-0.214,21.0
+20500240,1610612756,PHX,Phoenix,101213,Sharrod Ford,Sharrod,,,5.000000:55,69.9,64.3,149.6,161.5,-79.7,-97.3,0.0,0.0,0.0,0.167,0.0,0.077,50.0,1.0,1.0,0.118,0.126,109.2,109.52,91.27,14,-1.2,22.0

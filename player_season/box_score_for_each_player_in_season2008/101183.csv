@@ -1,0 +1,44 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20800997,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20800820,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800611,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800567,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,,3.000000:55,87.2,100.0,123.0,100.0,-35.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,33.3,1.0,1.0,0.333,0.338,72.06,73.53,61.28,6,0.267,11.0
+20800985,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,,2.000000:56,107.8,83.3,83.3,83.3,24.4,0.0,0.0,0.0,0.0,0.5,0.75,0.667,50.0,1.0,1.0,0.286,0.355,87.05,98.18,81.82,6,1.125,11.0
+20800577,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800833,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,,8.000000:26,88.9,83.3,89.5,88.9,-0.6,-5.6,0.0,0.0,0.0,0.357,0.25,0.318,10.0,0.563,0.507,0.4,0.419,98.92,102.45,85.38,18,0.2,22.0
+20800039,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800710,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800857,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20800739,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800934,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20801021,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20800465,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800869,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,,5.000000:21,114.2,100.0,132.2,137.5,-18.0,-37.5,0.0,0.0,0.0,0.333,0.5,0.4,100.0,0.0,0.0,0.1,0.113,72.67,76.26,63.55,9,0.029,10.0
+20800060,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800500,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800677,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,,0.000000:58,0.0,0.0,100.0,100.0,-100.0,-100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,74.1,98.8,82.33,2,0.0,22.0
+20800065,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800701,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,,3.000000:00,102.0,85.7,174.4,200.0,-72.4,-114.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.143,0.17,102.08,104.0,86.67,7,0.05,23.0
+20800729,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800847,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,,4.000000:12,64.3,70.0,126.0,130.0,-61.6,-60.0,0.0,0.0,0.0,0.143,0.5,0.273,50.0,0.0,0.568,0.167,0.168,121.14,114.29,95.24,10,0.053,8.0
+20800916,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800094,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800889,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,,2.000000:37,63.0,50.0,140.0,140.0,-77.0,-90.0,0.0,0.0,0.0,0.4,0.0,0.4,0.0,0.0,0.0,0.125,0.148,89.52,100.89,84.08,6,0.0,22.0
+20800645,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800334,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800524,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20800486,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20801039,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20800913,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20800084,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800948,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,,2.000000:58,71.4,62.5,187.5,187.5,-116.1,-125.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,121.35,129.44,107.87,8,0.0,22.0
+20800976,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20800624,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800591,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800787,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800754,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800783,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800025,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800964,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20801111,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,,2.000000:39,77.6,71.4,159.6,150.0,-81.9,-78.6,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.143,0.155,109.4,117.74,98.11,7,-0.2,22.0
+20800805,1610612757,POR,Portland,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0

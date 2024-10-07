@@ -1,0 +1,19 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20701074,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,,1.000000:22,133.3,133.3,0.0,0.0,133.3,133.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,105.37,122.93,102.44,3,0.111,23.0
+20701106,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20700184,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20701138,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20700971,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20701177,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,,2.000000:17,102.5,100.0,50.0,50.0,52.5,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,93.34,94.6,78.83,5,0.0,22.0
+20701217,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,,6.000000:42,93.2,92.3,204.5,183.3,-111.3,-91.0,0.0,0.0,0.0,0.125,0.0,0.077,0.0,0.25,0.25,0.25,0.252,84.6,89.46,74.55,13,-0.069,9.0
+20700939,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,,2.000000:19,134.6,140.0,40.0,33.3,94.6,106.7,0.0,0.0,0.0,0.5,0.0,0.25,0.0,0.0,0.0,0.143,0.139,105.67,113.96,94.96,5,0.0,23.0
+20701204,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20700867,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,,1.000000:59,66.7,66.7,250.0,250.0,-183.3,-183.3,1.0,1.0,25.0,0.4,0.0,0.4,25.0,0.0,0.0,0.5,0.429,60.5,60.5,50.42,3,-0.143,8.0
+20700873,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20700289,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,,3.000000:37,142.4,112.5,25.4,25.0,117.0,87.5,0.0,0.0,0.0,0.0,0.167,0.125,0.0,0.0,0.0,0.25,0.316,94.14,106.08,88.4,8,-0.333,10.0
+20700276,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,,0.000000:17,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,170.41,142.01,1,0.0,21.0
+20700935,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,,3.000000:33,166.7,166.7,139.6,157.1,27.1,9.5,0.2,1.0,50.0,0.0,0.333,0.333,50.0,0.0,0.0,0.167,0.167,93.84,87.89,73.24,6,0.02,10.0
+20701019,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,,5.000000:23,165.4,150.0,82.7,75.0,82.7,75.0,0.2,0.0,16.7,0.571,0.0,0.444,0.0,0.6,0.6,0.313,0.336,97.01,107.0,89.16,12,0.318,11.0
+20700610,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20700957,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20701044,1610612755,PHI,Philadelphia,101183,Shavlik Randolph,Shavlik,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0

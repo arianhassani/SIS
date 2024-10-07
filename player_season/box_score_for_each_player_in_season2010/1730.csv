@@ -1,0 +1,11 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21000420,1610612749,MIL,Milwaukee,1730,Brian Skinner,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000431,1610612749,MIL,Milwaukee,1730,Brian Skinner,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000319,1610612749,MIL,Milwaukee,1730,Brian Skinner,Brian,,,1.000000:25,50.0,50.0,133.3,133.3,-83.3,-83.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,118.59,118.59,98.82,4,0.0,22.0
+21000292,1610612749,MIL,Milwaukee,1730,Brian Skinner,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000336,1610612749,MIL,Milwaukee,1730,Brian Skinner,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000448,1610612749,MIL,Milwaukee,1730,Brian Skinner,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000489,1610612749,MIL,Milwaukee,1730,Brian Skinner,Brian,,,4.000000:28,60.0,60.0,158.9,150.0,-98.9,-90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,104.45,107.46,89.55,10,0.0,21.0
+21000505,1610612749,MIL,Milwaukee,1730,Brian Skinner,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000458,1610612749,MIL,Milwaukee,1730,Brian Skinner,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000412,1610612749,MIL,Milwaukee,1730,Brian Skinner,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0

@@ -1,0 +1,59 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21300317,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21300459,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,3.000000:34,100.0,87.5,162.5,162.5,-62.5,-75.0,0.0,0.0,0.0,0.0,0.0,0.0,66.7,1.0,1.0,0.375,0.429,100.93,107.66,89.72,8,0.0,11.0
+21300706,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,2.000000:59,40.0,33.3,156.2,150.0,-116.2,-116.7,0.0,0.0,0.0,0.333,0.5,0.375,0.0,0.5,0.5,0.222,0.25,86.56,96.54,80.45,6,0.375,25.0
+21300513,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300271,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,0.000000:16,227.3,100.0,0.0,0.0,227.3,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,169.2,270.0,225.0,2,0.0,7.0
+21300265,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,2.000000:51,80.0,66.7,140.0,116.7,-60.0,-50.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,84.21,101.05,84.21,6,0.0,10.0
+21300729,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,1.000000:02,0.0,0.0,100.0,100.0,-100.0,-100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,69.68,92.9,77.42,2,0.0,10.0
+21300851,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DND - Sprained Right Ankle,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300662,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300176,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300605,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300822,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,2.000000:36,80.0,66.7,85.0,83.3,-5.0,-16.7,0.0,0.0,0.0,0.0,1.0,0.25,0.0,0.0,0.0,0.167,0.2,100.43,110.77,92.31,6,0.0,24.0
+21300015,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21300160,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300799,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300574,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300400,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,1.000000:11,69.4,50.0,45.0,66.7,24.4,-16.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,148.46,141.97,118.31,4,2.0,24.0
+21300171,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300239,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21300205,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,1.000000:10,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,102.86,123.43,102.86,3,0.0,10.0
+21300629,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,2.000000:26,156.2,128.6,116.7,116.7,39.6,11.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.5,0.25,0.296,115.99,128.22,106.85,7,0.061,25.0
+21300416,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,2.000000:27,57.1,57.1,17.0,16.7,40.1,40.5,0.0,0.0,0.0,0.2,1.0,0.429,0.0,0.5,0.5,0.2,0.222,126.17,127.35,106.12,7,-1.75,24.0
+21300199,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300774,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300355,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21300340,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,4.000000:10,50.8,44.4,184.1,211.1,-133.3,-166.7,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.111,0.127,104.83,103.68,86.4,9,-0.089,19.0
+21300591,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300545,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300838,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300390,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300435,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,9.000000:30,101.9,100.0,114.2,105.3,-12.2,-5.3,0.2,0.0,20.0,0.222,0.111,0.167,0.0,0.667,0.644,0.19,0.194,91.35,96.0,80.0,19,0.265,11.0
+21300030,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300226,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,3.000000:10,104.2,85.7,197.7,200.0,-93.6,-114.3,0.0,0.0,0.0,0.5,0.0,0.5,0.0,1.0,0.798,0.25,0.296,97.31,106.11,88.42,7,0.12,23.0
+21300754,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21300807,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21300378,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21300557,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,0.000000:06,113.6,100.0,0.0,0.0,113.6,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.568,1.0,1.136,422.4,480.0,400.0,1,0.0,9.0
+21300524,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300083,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300068,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300120,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21300478,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300445,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21300860,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DND - Sprained right ankle,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300055,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,4.000000:49,60.7,54.5,87.2,90.0,-26.5,-35.5,0.0,0.0,0.0,0.2,0.25,0.222,66.7,1.0,1.0,0.25,0.276,100.65,104.64,87.2,11,0.04,7.0
+21300096,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,1.000000:43,103.1,100.0,100.0,100.0,3.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,96.19,97.86,81.55,4,0.0,22.0
+21300686,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300679,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300287,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,2.000000:55,180.4,175.0,102.0,100.0,78.4,75.0,0.0,0.0,0.0,0.25,0.0,0.143,0.0,0.0,0.0,0.143,0.145,80.31,82.29,68.57,4,-0.214,21.0
+21300873,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DND - Sprained Right Ankle,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300132,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,4.000000:48,94.5,110.0,130.4,120.0,-35.9,-10.0,0.0,0.0,0.0,0.0,0.143,0.077,100.0,0.0,0.0,0.083,0.079,104.2,100.0,83.33,10,-0.16,20.0
+21300495,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,3.000000:11,66.7,66.7,133.3,114.3,-66.7,-47.6,0.0,0.0,0.0,0.0,0.5,0.143,0.0,0.0,0.0,0.0,0.0,90.47,98.01,81.68,6,0.087,23.0
+21300723,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21300657,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300643,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300044,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,,4.000000:34,90.1,88.9,135.1,120.0,-45.0,-31.1,0.0,0.0,0.0,0.2,0.0,0.111,0.0,0.0,0.266,0.2,0.202,93.34,99.85,83.21,9,-0.026,8.0
+21300534,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300246,1610612756,PHX,Phoenix,203139,Viacheslav Kravtsov,Viacheslav,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0

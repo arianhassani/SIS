@@ -1,0 +1,40 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+22000358,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22000371,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22000831,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22001078,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,12.000000:00,137.4,138.5,131.4,136.0,6.0,2.5,0.2,0.0,25.0,0.091,0.0,0.043,0.0,0.917,0.917,0.2,0.199,104.16,102.0,85.0,26,0.156,24.0
+22000428,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,3.000000:07,0.0,0.0,204.1,171.4,-204.1,-171.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,91.48,107.81,89.84,7,0.0,10.0
+22000767,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,8.000000:30,98.9,100.0,101.4,100.0,-2.5,0.0,0.0,0.0,0.0,0.0,0.143,0.067,0.0,0.0,0.532,0.1,0.104,101.53,101.65,84.71,18,0.073,23.0
+22001018,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,5.000000:06,115.9,116.7,101.0,92.3,14.9,24.4,0.25,0.0,25.0,0.0,0.0,0.0,0.0,0.0,0.543,0.214,0.213,112.75,117.65,98.04,12,0.091,12.0
+22000728,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,1.000000:21,0.0,0.0,100.0,66.7,-100.0,-66.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,88.89,106.67,88.89,3,0.0,28.0
+22000714,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,2.000000:22,80.0,66.7,120.0,120.0,-40.0,-53.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.333,0.4,101.41,111.55,92.96,6,-0.154,25.0
+22000264,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22000304,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,3.000000:00,59.2,57.1,119.0,116.7,-59.9,-59.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.532,0.222,0.258,101.12,104.0,86.67,7,0.0,24.0
+22000853,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,28.0
+22000675,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,5.000000:39,61.8,63.6,136.1,133.3,-74.2,-69.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.091,0.088,98.04,97.7,81.42,11,-0.118,23.0
+22000473,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,14.0
+22000895,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,2.000000:06,51.5,40.0,91.9,100.0,-40.4,-60.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,106.51,114.29,95.24,5,0.0,22.0
+22000458,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22000680,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22000643,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,0.000000:54,300.0,300.0,0.0,0.0,300.0,300.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,53.04,79.56,66.3,1,0.0,9.0
+22001011,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22000735,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22000655,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22000697,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,1.000000:46,50.0,50.0,53.2,40.0,-3.2,10.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.25,0.25,105.42,122.26,101.89,4,0.571,26.0
+22000334,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22000320,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,6.000000:13,97.6,92.9,158.5,169.2,-60.9,-76.4,0.6,1.0,50.0,0.0,0.333,0.125,50.0,0.0,0.0,0.2,0.209,105.01,104.24,86.86,14,0.048,22.0
+22000296,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,0.000000:34,0.0,0.0,200.0,200.0,-200.0,-200.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.5,1.0,84.46,126.69,105.57,2,-1.0,26.0
+22000860,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,3.000000:51,40.0,44.4,61.9,55.6,-21.9,-11.1,0.0,0.0,0.0,0.0,0.0,0.0,50.0,1.0,1.0,0.2,0.2,112.71,112.21,93.51,9,0.0,11.0
+22000782,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,5.000000:25,110.5,108.3,50.5,46.2,60.0,62.2,0.0,0.0,0.0,0.286,0.0,0.154,0.0,0.75,0.717,0.333,0.339,104.74,110.77,92.31,12,0.48,11.0
+22000621,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22000378,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,4.000000:08,56.3,55.6,100.0,100.0,-43.7,-44.4,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.182,0.202,98.01,98.71,82.26,9,-0.16,23.0
+22000595,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,10.000000:41,112.8,114.3,92.1,100.0,20.7,14.3,0.125,1.0,25.0,0.0,0.071,0.042,25.0,0.5,0.5,0.136,0.135,101.45,96.6,80.5,21,0.153,13.0
+22000797,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22000973,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22000583,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22000810,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22000435,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22001065,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,28.000000:04,107.0,110.2,115.6,116.4,-8.6,-6.2,0.0,0.0,0.0,0.0,0.143,0.071,7.1,0.417,0.472,0.215,0.213,104.43,102.61,85.51,59,0.038,18.0
+22000397,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,10.000000:06,60.4,59.1,156.0,157.1,-95.5,-98.1,0.0,0.0,0.0,0.0,0.111,0.045,25.0,0.333,0.333,0.167,0.17,101.42,102.18,85.15,22,-0.203,10.0
+22000816,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,,6.000000:12,143.9,146.2,175.7,183.3,-31.8,-37.2,0.143,0.0,50.0,0.0,0.0,0.0,0.0,0.0,1.136,0.071,0.076,99.56,96.77,80.65,13,0.079,12.0
+22000751,1610612759,SAS,San Antonio,1629683,Quinndary Weatherspoon,Quinndary,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
