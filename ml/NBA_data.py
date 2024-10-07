@@ -31,7 +31,7 @@ def download_games() -> None:
     logger.info(f'{games_path} already exists. Download skipped.')
     return
   logger.info('Downloading games...')
-  seasons_df = pd.concat(_get_all_games(1947, 1950))
+  seasons_df = pd.concat(_get_all_games(2000, 2023))
   seasons_df.to_csv(games_path, index=False)
 
 def download_players():

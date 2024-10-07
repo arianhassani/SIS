@@ -1,2 +1,2 @@
-logging_level: DEBUG
+logging_level: INFO
 data_dir: data
