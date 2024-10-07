@@ -4,6 +4,8 @@ import TeamSelectionPage from "./pages/TeamSelectionPage";
 import InjuryPage from "./pages/InjuryPage";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer";
+import MatchUpSelectionPage from "./pages/MatchUpPage";
+import PredictionPage from "./pages/PredictionPage";
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/team-selection" element={<TeamSelectionPage />} />
           <Route path="/injury" element={<InjuryPage />} />
+          <Route path="/match-up" element={<MatchUpSelectionPage />} />
+          <Route path="/prediction" element={<PredictionPage />} />
         </Routes>
         <Footer />
       </Router>
