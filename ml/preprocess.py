@@ -2,20 +2,22 @@ import pandas as pd
 import yaml
 import os
 
-with open("../config.yaml","r") as file_object:
+with open(os.path.join(__package__, "config.yaml"),"r") as file_object:
     config=yaml.load(file_object, Loader=yaml.SafeLoader)
 assert config
 
 def _read_games() -> pd.DataFrame:
     
-    data_dir = os.path.join(os.path.pardir, config['data_dir'])
+    data_dir = os.path.join(__package__, config['data_dir'])
     games_csv = os.path.join(data_dir, 'games.csv')
     games_df = pd.read_csv(games_csv)
 
     return games_df
 
 def preprocess() -> pd.DataFrame:
-    preprocessed_path = os.path.join(config['data_dir'], 'preprocessed.csv')
+    # preprocessed_path = os.path.join(config['data_dir'], 'preprocessed.csv')
+    # games_df.to_csv(preprocessed_path, index=False)
+    # games_df = pd.read_csv(preprocessed_path)
 
     games_df: pd.DataFrame = _read_games()
     
@@ -33,8 +35,9 @@ def preprocess() -> pd.DataFrame:
                             'MATCHUP', 'VIDEO_AVAILABLE'], errors='ignore')
     games_df = games_df.dropna()
     games_df.info()
+    
+    return games_df
 
-    games_df.to_csv(preprocessed_path, index=False)
 
 if __name__ == '__main__':
     preprocess()
