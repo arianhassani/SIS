@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo.svg";
+import logo from "../assets/file.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,16 +29,15 @@ const Navbar = () => {
   };
 
   return (
-    <header className="p-4 dark:bg-gray-100 dark:text-gray-800">
+    <header className="p-4 bg-gray-700 text-white">
       <div className="container flex justify-between h-16 mx-auto">
-        <a
-          rel="noopener noreferrer"
-          href="#"
+        <Link
+          to="/"
           aria-label="Back to homepage"
           className="flex items-center p-2"
         >
-          <img src={logo} alt="Logo" className="w-8 h-8 dark:text-violet-600" />
-        </a>
+          <img src={logo} alt="Logo" className="w-27 h-24" />
+        </Link>
         <ul
           className={`items-stretch hidden space-x-3 md:flex ${
             isOpen ? "active" : ""
@@ -47,10 +46,10 @@ const Navbar = () => {
           <li className="flex">
             <Link
               to="/"
-              className={`flex items-center px-4 -mb-1 border-b-2 dark:border- ${
+              className={`flex items-center px-4 -mb-1 border-b-2 ${
                 activeLink === "home"
-                  ? "dark:text-violet-600 dark:border-violet-600"
-                  : ""
+                  ? "text-white border-white"
+                  : "border-transparent"
               }`}
               onClick={() => handleLinkClick("home")}
             >
@@ -60,10 +59,10 @@ const Navbar = () => {
           <li className="flex">
             <Link
               to="/team-selection"
-              className={`flex items-center px-4 -mb-1 border-b-2 dark:border- ${
+              className={`flex items-center px-4 -mb-1 border-b-2 ${
                 activeLink === "team"
-                  ? "dark:text-violet-600 dark:border-violet-600"
-                  : ""
+                  ? "text-white border-white"
+                  : "border-transparent"
               }`}
               onClick={() => handleLinkClick("team")}
             >
@@ -73,10 +72,10 @@ const Navbar = () => {
           <li className="flex">
             <Link
               to="/injury"
-              className={`flex items-center px-4 -mb-1 border-b-2 dark:border- ${
+              className={`flex items-center px-4 -mb-1 border-b-2 ${
                 activeLink === "injury"
-                  ? "dark:text-violet-600 dark:border-violet-600"
-                  : ""
+                  ? "text-white border-white"
+                  : "border-transparent"
               }`}
               onClick={() => handleLinkClick("injury")}
             >
@@ -90,7 +89,7 @@ const Navbar = () => {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-6 h-6 text-white"
           >
             <path
               strokeLinecap="round"
