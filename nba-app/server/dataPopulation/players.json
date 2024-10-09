@@ -1,0 +1,1032 @@
+[
+    {
+        "player_name": "Jaylen Brown",
+        "player_position": "G-F",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "JD Davison",
+        "player_position": "G",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Tristan Enaruna",
+        "player_position": "F",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Ron Harper Jr.",
+        "player_position": "G-F",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Sam Hauser",
+        "player_position": "F",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Jrue Holiday",
+        "player_position": "G",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Al Horford",
+        "player_position": "C-F",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Luke Kornet",
+        "player_position": "C-F",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Drew Peterson",
+        "player_position": "F",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Kristaps Porzi\u0146\u0123is",
+        "player_position": "F-C",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Payton Pritchard",
+        "player_position": "G",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Neemias Queta",
+        "player_position": "C",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Baylor Scheierman",
+        "player_position": "G",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Dmytro Skapintsev",
+        "player_position": "C",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Jaden Springer",
+        "player_position": "G",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Jayson Tatum",
+        "player_position": "F-G",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Xavier Tillman",
+        "player_position": "F",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Lonnie Walker IV",
+        "player_position": "G-F",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Jordan Walsh",
+        "player_position": "G",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Anton Watson",
+        "player_position": "F",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Derrick White",
+        "player_position": "G",
+        "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Amari Bailey",
+        "player_position": "G",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Bojan Bogdanovi\u0107",
+        "player_position": "F",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Nic Claxton",
+        "player_position": "C",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Noah Clowney",
+        "player_position": "F",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Yongxi Cui",
+        "player_position": "G",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Dorian Finney-Smith",
+        "player_position": "F",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Killian Hayes",
+        "player_position": "G",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Keon Johnson",
+        "player_position": "G",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Cameron Johnson",
+        "player_position": "F",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Tyrese Martin",
+        "player_position": "G",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Jaylen Martin",
+        "player_position": "G",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Shake Milton",
+        "player_position": "G-F",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Dennis Schr\u00f6der",
+        "player_position": "G",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Day'Ron Sharpe",
+        "player_position": "C",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Ben Simmons",
+        "player_position": "G-F",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Cam Thomas",
+        "player_position": "G",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Trendon Watford",
+        "player_position": "F",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Dariq Whitehead",
+        "player_position": "F",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Ziaire Williams",
+        "player_position": "F",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Jalen Wilson",
+        "player_position": "F",
+        "player_team": "Brooklyn Nets"
+    },
+    {
+        "player_name": "Precious Achiuwa",
+        "player_position": "F",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "OG Anunoby",
+        "player_position": "F-G",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Damion Baugh",
+        "player_position": "G",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Mikal Bridges",
+        "player_position": "G-F",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Jalen Brunson",
+        "player_position": "G",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Pac\u00f4me Dadiet",
+        "player_position": "F",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Josh Hart",
+        "player_position": "G",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Ariel Hukporti",
+        "player_position": "C",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Tyler Kolek",
+        "player_position": "G",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Miles McBride",
+        "player_position": "G",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Kevin McCullar Jr.",
+        "player_position": "G",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Alex O'Connell",
+        "player_position": "G",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Chuma Okeke",
+        "player_position": "F",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Cameron Payne",
+        "player_position": "G",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Mitchell Robinson",
+        "player_position": "C-F",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Landry Shamet",
+        "player_position": "G",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Jericho Sims",
+        "player_position": "C",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Jacob Toppin",
+        "player_position": "F",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Karl Anthony Towns",
+        "player_position": "C-F",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "T.J. Warren",
+        "player_position": "F",
+        "player_team": "New York Knicks"
+    },
+    {
+        "player_name": "Adem Bona",
+        "player_position": "F",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Ricky Council IV",
+        "player_position": "G",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Jeff Dowtin Jr.",
+        "player_position": "G",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Andre Drummond",
+        "player_position": "C",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Justin Edwards",
+        "player_position": "F",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Joel Embiid",
+        "player_position": "C-F",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Max Fiedler",
+        "player_position": "",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Paul George",
+        "player_position": "F",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Eric Gordon",
+        "player_position": "G",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Reggie Jackson",
+        "player_position": "G",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Kyle Lowry",
+        "player_position": "G",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "KJ Martin",
+        "player_position": "F",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Caleb Martin",
+        "player_position": "F",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Tyrese Maxey",
+        "player_position": "G",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Jared McCain",
+        "player_position": "G",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Judah Mintz",
+        "player_position": "G",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Isaiah Mobley",
+        "player_position": "F",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Kelly Oubre Jr.",
+        "player_position": "F-G",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Lester Quinones",
+        "player_position": "G",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Jordan Tucker",
+        "player_position": "F",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Guerschon Yabusele",
+        "player_position": "F",
+        "player_team": "Philadelphia 76ers"
+    },
+    {
+        "player_name": "Ochai Agbaji",
+        "player_position": "G",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Scottie Barnes",
+        "player_position": "F-G",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "RJ Barrett",
+        "player_position": "F-G",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Jamison Battle",
+        "player_position": "F",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Chris Boucher",
+        "player_position": "F",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Bruce Brown",
+        "player_position": "G-F",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Branden Carlson",
+        "player_position": "C",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "D.J. Carton",
+        "player_position": "G",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Ulrich Chomche",
+        "player_position": "C",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Gradey Dick",
+        "player_position": "G-F",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Bruno Fernando",
+        "player_position": "F-C",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Davion Mitchell",
+        "player_position": "G",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Jonathan Mogbo",
+        "player_position": "F",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Kelly Olynyk",
+        "player_position": "F-C",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Jakob P\u00f6ltl",
+        "player_position": "C",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Immanuel Quickley",
+        "player_position": "G",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Jahmi'us Ramsey",
+        "player_position": "G",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Jared Rhoden",
+        "player_position": "G",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Jamal Shead",
+        "player_position": "G",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Garrett Temple",
+        "player_position": "G-F",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Ja'Kobe Walter",
+        "player_position": "G",
+        "player_team": "Toronto Raptors"
+    },
+    {
+        "player_name": "Kyle Anderson",
+        "player_position": "F-G",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Reece Beekman",
+        "player_position": "G",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Stephen Curry",
+        "player_position": "G",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Draymond Green",
+        "player_position": "F",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Buddy Hield",
+        "player_position": "G",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Blake Hinson",
+        "player_position": "F",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Trayce Jackson-Davis",
+        "player_position": "F",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Kevin Knox II",
+        "player_position": "F",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Jonathan Kuminga",
+        "player_position": "F",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Kevon Looney",
+        "player_position": "F",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "De'Anthony Melton",
+        "player_position": "G",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Moses Moody",
+        "player_position": "G",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Gary Payton II",
+        "player_position": "G",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Brandin Podziemski",
+        "player_position": "G",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Quinten Post",
+        "player_position": "C",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Jackson Rowe",
+        "player_position": "F",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Gui Santos",
+        "player_position": "F",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Pat Spencer",
+        "player_position": "G",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Lindy Waters III",
+        "player_position": "F",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Andrew Wiggins",
+        "player_position": "F",
+        "player_team": "Golden State Warriors"
+    },
+    {
+        "player_name": "Mo Bamba",
+        "player_position": "C",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Nicolas Batum",
+        "player_position": "G-F",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Kobe Brown",
+        "player_position": "F",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Cam Christie",
+        "player_position": "G",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Amir Coffey",
+        "player_position": "G-F",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Nate Darling",
+        "player_position": "G",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "RayJ Dennis",
+        "player_position": "",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Kris Dunn",
+        "player_position": "G",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Trentyn Flowers",
+        "player_position": "F",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "James Harden",
+        "player_position": "G",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Bones Hyland",
+        "player_position": "G",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Kai Jones",
+        "player_position": "C-F",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Derrick Jones Jr.",
+        "player_position": "F",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Kawhi Leonard",
+        "player_position": "F",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Terance Mann",
+        "player_position": "G-F",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Jordan Miller",
+        "player_position": "G",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Kevin Porter Jr.",
+        "player_position": "G-F",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Norman Powell",
+        "player_position": "G",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "P.J. Tucker",
+        "player_position": "F",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Alondes Williams",
+        "player_position": "G",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Ivica Zubac",
+        "player_position": "C",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Colin Castleton",
+        "player_position": "C",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Max Christie",
+        "player_position": "G",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Anthony Davis",
+        "player_position": "F-C",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Jordan Goodwin",
+        "player_position": "G",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Rui Hachimura",
+        "player_position": "F",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Jaxson Hayes",
+        "player_position": "C-F",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Jalen Hood-Schifino",
+        "player_position": "G",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "LeBron James",
+        "player_position": "F",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Bronny James",
+        "player_position": "G",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Kylor Kelley",
+        "player_position": "C",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Dalton Knecht",
+        "player_position": "F",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Christian Koloko",
+        "player_position": "C",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Maxwell Lewis",
+        "player_position": "F",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Quincy Olivari",
+        "player_position": "",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Austin Reaves",
+        "player_position": "G",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Cam Reddish",
+        "player_position": "F-G",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "D 'Angelo Russell",
+        "player_position": "G",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Armel Traor\u00e9",
+        "player_position": "F",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Jarred Vanderbilt",
+        "player_position": "F",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Gabe Vincent",
+        "player_position": "G",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Christian Wood",
+        "player_position": "F",
+        "player_team": "Los Angeles Lakers"
+    },
+    {
+        "player_name": "Grayson Allen",
+        "player_position": "G",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Bradley Beal",
+        "player_position": "G",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Bol Bol",
+        "player_position": "C-F",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Devin Booker",
+        "player_position": "G",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Jalen Bridges",
+        "player_position": "F",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Mamadi Diakite",
+        "player_position": "F",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Ryan Dunn",
+        "player_position": "F",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Kevin Durant",
+        "player_position": "F",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Collin Gillespie",
+        "player_position": "G",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Oso Ighodaro",
+        "player_position": "F",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Tyus Jones",
+        "player_position": "G",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Frank Kaminsky",
+        "player_position": "F-C",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Damion Lee",
+        "player_position": "G-F",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Mont\u00e9 Morris",
+        "player_position": "G",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Jusuf Nurki\u0107",
+        "player_position": "C",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Royce O'Neale",
+        "player_position": "F",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Josh Okogie",
+        "player_position": "G",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Mason Plumlee",
+        "player_position": "F-C",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "TyTy Washington Jr.",
+        "player_position": "G",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Moses Wood",
+        "player_position": "",
+        "player_team": "Phoenix Suns"
+    },
+    {
+        "player_name": "Devin Carter",
+        "player_position": "G",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Isaiah Crawford",
+        "player_position": "F",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "DeMar DeRozan",
+        "player_position": "G-F",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Boogie Ellis",
+        "player_position": "G",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Keon Ellis",
+        "player_position": "G",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "De'Aaron Fox",
+        "player_position": "G",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Kevin Huerter",
+        "player_position": "G-F",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Mason Jones",
+        "player_position": "G",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Isaac Jones",
+        "player_position": "F",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Colby Jones",
+        "player_position": "G",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Skal Labissiere",
+        "player_position": "F-C",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Alex Len",
+        "player_position": "C",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Trey Lyles",
+        "player_position": "F",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Jalen McDaniels",
+        "player_position": "F",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Jordan McLaughlin",
+        "player_position": "G",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Malik Monk",
+        "player_position": "G",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Keegan Murray",
+        "player_position": "F",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Orlando Robinson",
+        "player_position": "C",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Domantas Sabonis",
+        "player_position": "F-C",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Terry Taylor",
+        "player_position": "F",
+        "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Brodric Thomas",
+        "player_position": "G",
+        "player_team": "Sacramento Kings"
+    }
+]

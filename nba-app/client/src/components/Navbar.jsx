@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
@@ -16,6 +16,10 @@ const Navbar = () => {
       setActiveLink("team");
     } else if (path === "/injury") {
       setActiveLink("injury");
+    } else if (path === "/match-up") {
+      setActiveLink("match-up");
+    } else if (path === "/prediction") {
+      setActiveLink("prediction");
     }
   }, [location]);
 
@@ -81,6 +85,32 @@ const Navbar = () => {
               onClick={() => handleLinkClick("injury")}
             >
               Injury
+            </Link>
+          </li>
+          <li className="flex">
+            <Link
+              to="/match-up"
+              className={`flex items-center px-4 -mb-1 border-b-2 dark:border- ${
+                activeLink === "match-up"
+                  ? "dark:text-violet-600 dark:border-violet-600"
+                  : ""
+              }`}
+              onClick={() => handleLinkClick("match-up")}
+            >
+              Match-Up
+            </Link>
+          </li>
+          <li className="flex">
+            <Link
+              to="/prediction"
+              className={`flex items-center px-4 -mb-1 border-b-2 dark:border- ${
+                activeLink === "prediction"
+                  ? "dark:text-violet-600 dark:border-violet-600"
+                  : ""
+              }`}
+              onClick={() => handleLinkClick("prediction")}
+            >
+              Prediction
             </Link>
           </li>
         </ul>
