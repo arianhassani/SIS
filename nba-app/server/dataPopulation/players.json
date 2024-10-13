@@ -10,11 +10,6 @@
         "player_team": "Boston Celtics"
     },
     {
-        "player_name": "Tristan Enaruna",
-        "player_position": "F",
-        "player_team": "Boston Celtics"
-    },
-    {
         "player_name": "Ron Harper Jr.",
         "player_position": "G-F",
         "player_team": "Boston Celtics"
@@ -65,6 +60,11 @@
         "player_team": "Boston Celtics"
     },
     {
+        "player_name": "Jay Scrubb",
+        "player_position": "G",
+        "player_team": "Boston Celtics"
+    },
+    {
         "player_name": "Dmytro Skapintsev",
         "player_position": "C",
         "player_team": "Boston Celtics"
@@ -103,6 +103,11 @@
         "player_name": "Derrick White",
         "player_position": "G",
         "player_team": "Boston Celtics"
+    },
+    {
+        "player_name": "Mark Armstrong",
+        "player_position": "G",
+        "player_team": "Brooklyn Nets"
     },
     {
         "player_name": "Amari Bailey",
@@ -150,12 +155,12 @@
         "player_team": "Brooklyn Nets"
     },
     {
-        "player_name": "Tyrese Martin",
+        "player_name": "Jaylen Martin",
         "player_position": "G",
         "player_team": "Brooklyn Nets"
     },
     {
-        "player_name": "Jaylen Martin",
+        "player_name": "Tyrese Martin",
         "player_position": "G",
         "player_team": "Brooklyn Nets"
     },
@@ -215,11 +220,6 @@
         "player_team": "New York Knicks"
     },
     {
-        "player_name": "Damion Baugh",
-        "player_position": "G",
-        "player_team": "New York Knicks"
-    },
-    {
         "player_name": "Mikal Bridges",
         "player_position": "G-F",
         "player_team": "New York Knicks"
@@ -256,11 +256,6 @@
     },
     {
         "player_name": "Kevin McCullar Jr.",
-        "player_position": "G",
-        "player_team": "New York Knicks"
-    },
-    {
-        "player_name": "Alex O'Connell",
         "player_position": "G",
         "player_team": "New York Knicks"
     },
@@ -640,16 +635,6 @@
         "player_team": "LA Clippers"
     },
     {
-        "player_name": "Nate Darling",
-        "player_position": "G",
-        "player_team": "LA Clippers"
-    },
-    {
-        "player_name": "RayJ Dennis",
-        "player_position": "",
-        "player_team": "LA Clippers"
-    },
-    {
         "player_name": "Kris Dunn",
         "player_position": "G",
         "player_team": "LA Clippers"
@@ -665,6 +650,11 @@
         "player_team": "LA Clippers"
     },
     {
+        "player_name": "Elijah Harkless",
+        "player_position": "G",
+        "player_team": "LA Clippers"
+    },
+    {
         "player_name": "Bones Hyland",
         "player_position": "G",
         "player_team": "LA Clippers"
@@ -676,6 +666,11 @@
     },
     {
         "player_name": "Derrick Jones Jr.",
+        "player_position": "F",
+        "player_team": "LA Clippers"
+    },
+    {
+        "player_name": "Braxton Key",
         "player_position": "F",
         "player_team": "LA Clippers"
     },
@@ -1028,5 +1023,2040 @@
         "player_name": "Brodric Thomas",
         "player_position": "G",
         "player_team": "Sacramento Kings"
+    },
+    {
+        "player_name": "Dominick Barlow",
+        "player_position": "F",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Bogdan Bogdanovi\u0107",
+        "player_position": "G",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Kobe Bufkin",
+        "player_position": "G",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Clint Capela",
+        "player_position": "C",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Dyson Daniels",
+        "player_position": "G",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Mouhamed Gueye",
+        "player_position": "F",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Kevon Harris",
+        "player_position": "G",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "De'Andre Hunter",
+        "player_position": "F-G",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Jalen Johnson",
+        "player_position": "F",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "V\u00edt Krej\u010d\u00ed",
+        "player_position": "G",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Seth Lundy",
+        "player_position": "G-F",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Garrison Mathews",
+        "player_position": "G",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Larry Nance Jr.",
+        "player_position": "F-C",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Onyeka Okongwu",
+        "player_position": "F-C",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Daeqwon Plowden",
+        "player_position": "G-F",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Zaccharie Risacher",
+        "player_position": "F",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "David Roddy",
+        "player_position": "F",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Keaton Wallace",
+        "player_position": "G",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Trae Young",
+        "player_position": "G",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "Cody Zeller",
+        "player_position": "F-C",
+        "player_team": "Atlanta Hawks"
+    },
+    {
+        "player_name": "LaMelo Ball",
+        "player_position": "G",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Miles Bridges",
+        "player_position": "F",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Charlie Brown Jr.",
+        "player_position": "G",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Seth Curry",
+        "player_position": "G",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Moussa Diabat\u00e9",
+        "player_position": "F",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Taj Gibson",
+        "player_position": "F",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Harry Giles III",
+        "player_position": "F-C",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Josh Green",
+        "player_position": "G",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "DaQuan Jeffries",
+        "player_position": "G-F",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Keyontae Johnson",
+        "player_position": "F",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Tre Mann",
+        "player_position": "G",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Cody Martin",
+        "player_position": "F",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Vasilije Mici\u0107",
+        "player_position": "G",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Brandon Miller",
+        "player_position": "F",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Nick Richards",
+        "player_position": "C",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Tidjane Sala\u00fcn",
+        "player_position": "F",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "K.J. Simpson",
+        "player_position": "G",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Nick Smith Jr.",
+        "player_position": "G",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Grant Williams",
+        "player_position": "F",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Mark Williams",
+        "player_position": "C",
+        "player_team": "Charlotte Hornets"
+    },
+    {
+        "player_name": "Bam Adebayo",
+        "player_position": "C-F",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Thomas Bryant",
+        "player_position": "C-F",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Alec Burks",
+        "player_position": "G",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Jimmy Butler",
+        "player_position": "F",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Josh Christopher",
+        "player_position": "G",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Tyler Herro",
+        "player_position": "G",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Haywood Highsmith",
+        "player_position": "F",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Jaime Jaquez Jr.",
+        "player_position": "G",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Keshad Johnson",
+        "player_position": "F",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Nikola Jovi\u0107",
+        "player_position": "F",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Pelle Larsson",
+        "player_position": "G",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Nassir Little",
+        "player_position": "F-G",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Kevin Love",
+        "player_position": "F-C",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Zyon Pullin",
+        "player_position": "G",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Josh Richardson",
+        "player_position": "G",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Duncan Robinson",
+        "player_position": "F",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Terry Rozier",
+        "player_position": "G",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Dru Smith",
+        "player_position": "G",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Isaiah Stevens",
+        "player_position": "G",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Kel'el Ware",
+        "player_position": "C",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Warren Washington",
+        "player_position": "",
+        "player_team": "Miami Heat"
+    },
+    {
+        "player_name": "Cole Anthony",
+        "player_position": "G",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Robert Baker",
+        "player_position": "F",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Paolo Banchero",
+        "player_position": "F",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Goga Bitadze",
+        "player_position": "C-F",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Anthony Black",
+        "player_position": "G",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Kentavious Caldwell-Pope",
+        "player_position": "G",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Wendell Carter Jr.",
+        "player_position": "C-F",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Jarrett Culver",
+        "player_position": "G-F",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Tristan da Silva",
+        "player_position": "F",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Gary Harris",
+        "player_position": "G",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Caleb Houstan",
+        "player_position": "G",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Jett Howard",
+        "player_position": "G",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Jonathan Isaac",
+        "player_position": "F",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Cory Joseph",
+        "player_position": "G",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Mac McClung",
+        "player_position": "G",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Trevelin Queen",
+        "player_position": "G",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Jalen Slawson",
+        "player_position": "F",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Jalen Suggs",
+        "player_position": "G",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Ethan Thompson",
+        "player_position": "G",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Moritz Wagner",
+        "player_position": "F-C",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Franz Wagner",
+        "player_position": "F",
+        "player_team": "Orlando Magic"
+    },
+    {
+        "player_name": "Marvin Bagley III",
+        "player_position": "F",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Patrick Baldwin Jr.",
+        "player_position": "F",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Saddiq Bey",
+        "player_position": "G-F",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Malcolm Brogdon",
+        "player_position": "G",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Jared Butler",
+        "player_position": "G",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Carlton Carrington",
+        "player_position": "G",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Justin Champagnie",
+        "player_position": "G-F",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Bilal Coulibaly",
+        "player_position": "G",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Johnny Davis",
+        "player_position": "G",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Kyshawn George",
+        "player_position": "F",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Anthony Gill",
+        "player_position": "F",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Richaun Holmes",
+        "player_position": "F",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Corey Kispert",
+        "player_position": "F",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Kyle Kuzma",
+        "player_position": "F",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Jordan Poole",
+        "player_position": "G",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Alexandre Sarr",
+        "player_position": "C",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Erik Stevenson",
+        "player_position": "G",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Jonas Valan\u010di\u016bnas",
+        "player_position": "C",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Tristan Vukcevic",
+        "player_position": "F",
+        "player_team": "Washington Wizards"
+    },
+    {
+        "player_name": "Lonzo Ball",
+        "player_position": "G",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Onuralp Bitim",
+        "player_position": "F",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Matas Buzelis",
+        "player_position": "F",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Jevon Carter",
+        "player_position": "G",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Torrey Craig",
+        "player_position": "F",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Ayo Dosunmu",
+        "player_position": "G",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Chris Duarte",
+        "player_position": "G",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Josh Giddey",
+        "player_position": "G",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Talen Horton-Tucker",
+        "player_position": "G",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Zach LaVine",
+        "player_position": "G",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "E.J. Liddell",
+        "player_position": "F",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Kenneth Lofton Jr.",
+        "player_position": "F",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Julian Phillips",
+        "player_position": "F",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Adama Sanogo",
+        "player_position": "F",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Jalen Smith",
+        "player_position": "F-C",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "DJ Steward",
+        "player_position": "G",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Dalen Terry",
+        "player_position": "F",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Nikola Vu\u010devi\u0107",
+        "player_position": "C",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Coby White",
+        "player_position": "G",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Patrick Williams",
+        "player_position": "F",
+        "player_team": "Chicago Bulls"
+    },
+    {
+        "player_name": "Jarrett Allen",
+        "player_position": "C",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Emoni Bates",
+        "player_position": "F",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Jules Bernard",
+        "player_position": "G",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Darius Garland",
+        "player_position": "G",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Jacob Gilyard",
+        "player_position": "G",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Ty Jerome",
+        "player_position": "G-F",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Caris LeVert",
+        "player_position": "G",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Sam Merrill",
+        "player_position": "G",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Donovan Mitchell",
+        "player_position": "G",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Evan Mobley",
+        "player_position": "C",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Pete Nance",
+        "player_position": "F",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Georges Niang",
+        "player_position": "F",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Isaac Okoro",
+        "player_position": "F-G",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Craig Porter Jr.",
+        "player_position": "G",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Zhaire Smith",
+        "player_position": "G",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Max Strus",
+        "player_position": "G-F",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Tristan Thompson",
+        "player_position": "C-F",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "JT Thor",
+        "player_position": "F",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Luke Travers",
+        "player_position": "F",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Jaylon Tyson",
+        "player_position": "G-F",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Dean Wade",
+        "player_position": "F-C",
+        "player_team": "Cleveland Cavaliers"
+    },
+    {
+        "player_name": "Malik Beasley",
+        "player_position": "G",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Cade Cunningham",
+        "player_position": "G",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Jalen Duren",
+        "player_position": "C",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Aaron Estrada",
+        "player_position": "G",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Tosan Evbuomwan",
+        "player_position": "F",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Simone Fontecchio",
+        "player_position": "F",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Tim Hardaway Jr.",
+        "player_position": "G-F",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Tobias Harris",
+        "player_position": "F",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Ronald Holland II",
+        "player_position": "F",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Jaden Ivey",
+        "player_position": "G",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Daniss Jenkins",
+        "player_position": "G",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Bobi Klintman",
+        "player_position": "F",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Javante McCoy",
+        "player_position": "G",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Wendell Moore Jr.",
+        "player_position": "G",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Paul Reed",
+        "player_position": "F",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Marcus Sasser",
+        "player_position": "G",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Dereon Seabron",
+        "player_position": "G",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Tolu Smith",
+        "player_position": "F",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Lamar Stevens",
+        "player_position": "F",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Isaiah Stewart",
+        "player_position": "F-C",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Ausar Thompson",
+        "player_position": "G-F",
+        "player_team": "Detroit Pistons"
+    },
+    {
+        "player_name": "Kendall Brown",
+        "player_position": "G",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Enrique Freeman",
+        "player_position": "F",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Johnny Furphy",
+        "player_position": "G",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Tyrese Haliburton",
+        "player_position": "G",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Isaiah Jackson",
+        "player_position": "F",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Quenton Jackson",
+        "player_position": "G",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "James Johnson",
+        "player_position": "F",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Bennedict Mathurin",
+        "player_position": "G-F",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "T.J. McConnell",
+        "player_position": "G",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Andrew Nembhard",
+        "player_position": "G-F",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Aaron Nesmith",
+        "player_position": "G-F",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Tristen Newton",
+        "player_position": "G",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Ben Sheppard",
+        "player_position": "G",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Pascal Siakam",
+        "player_position": "F",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Cole Swider",
+        "player_position": "F",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Obi Toppin",
+        "player_position": "F",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Myles Turner",
+        "player_position": "C-F",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "Jarace Walker",
+        "player_position": "F",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "James Wiseman",
+        "player_position": "C",
+        "player_team": "Indiana Pacers"
+    },
+    {
+        "player_name": "James Akinjo",
+        "player_position": "G",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Giannis Antetokounmpo",
+        "player_position": "F",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "MarJon Beauchamp",
+        "player_position": "F",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Pat Connaughton",
+        "player_position": "G",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Terence Davis",
+        "player_position": "G",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "AJ Green",
+        "player_position": "G",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Andre Jackson Jr.",
+        "player_position": "G",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "AJ Johnson",
+        "player_position": "G",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Damian Lillard",
+        "player_position": "G",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Chris Livingston",
+        "player_position": "F",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Brook Lopez",
+        "player_position": "C",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Khris Middleton",
+        "player_position": "F",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "An\u017eejs Pase\u010d\u0146iks",
+        "player_position": "C-F",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Bobby Portis",
+        "player_position": "F",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Taurean Prince",
+        "player_position": "F",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Liam Robbins",
+        "player_position": "C",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Ryan Rollins",
+        "player_position": "G",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Tyler Smith",
+        "player_position": "F",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Gary Trent Jr.",
+        "player_position": "G",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Stanley Umude",
+        "player_position": "G",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Delon Wright",
+        "player_position": "G",
+        "player_team": "Milwaukee Bucks"
+    },
+    {
+        "player_name": "Spencer Dinwiddie",
+        "player_position": "G",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Luka Don\u010di\u0107",
+        "player_position": "F-G",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Kessler Edwards",
+        "player_position": "F",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Dant\u00e9 Exum",
+        "player_position": "G",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Daniel Gafford",
+        "player_position": "F-C",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Jazian Gortman",
+        "player_position": "G",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Quentin Grimes",
+        "player_position": "G",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Jaden Hardy",
+        "player_position": "G",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Kyrie Irving",
+        "player_position": "G",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Maxi Kleber",
+        "player_position": "F",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "A.J. Lawson",
+        "player_position": "G",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Dereck Lively II",
+        "player_position": "C",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Naji Marshall",
+        "player_position": "F",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Emanuel Miller",
+        "player_position": "F",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Markieff Morris",
+        "player_position": "F",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Dwight Powell",
+        "player_position": "F-C",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Olivier-Maxence Prosper",
+        "player_position": "F",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Jamarion Sharp",
+        "player_position": "C",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Klay Thompson",
+        "player_position": "G",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "P.J. Washington",
+        "player_position": "F",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Brandon Williams",
+        "player_position": "G",
+        "player_team": "Dallas Mavericks"
+    },
+    {
+        "player_name": "Steven Adams",
+        "player_position": "C",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Dillon Brooks",
+        "player_position": "G-F",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "N'Faly Dante",
+        "player_position": "C",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Tari Eason",
+        "player_position": "F",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Jeff Green",
+        "player_position": "F",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Jalen Green",
+        "player_position": "G",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Nate Hinton",
+        "player_position": "G-F",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Aaron Holiday",
+        "player_position": "G",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Jock Landale",
+        "player_position": "C",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Thon Maker",
+        "player_position": "F-C",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Jack McVeigh",
+        "player_position": "G-F",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Markquis Nowell",
+        "player_position": "G",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Jermaine Samuels Jr.",
+        "player_position": "F",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Alperen Sengun",
+        "player_position": "C",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Reed Sheppard",
+        "player_position": "G",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Jabari Smith Jr.",
+        "player_position": "F",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Jae'Sean Tate",
+        "player_position": "F",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Amen Thompson",
+        "player_position": "G-F",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Fred VanVleet",
+        "player_position": "G",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Cam Whitmore",
+        "player_position": "F",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Nate Williams",
+        "player_position": "G",
+        "player_team": "Houston Rockets"
+    },
+    {
+        "player_name": "Santi Aldama",
+        "player_position": "F-C",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Armando Bacot",
+        "player_position": "C",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Desmond Bane",
+        "player_position": "G",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Brandon Clarke",
+        "player_position": "F",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Zach Edey",
+        "player_position": "C",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Jay Huff",
+        "player_position": "C",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "GG Jackson",
+        "player_position": "F",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Jaren Jackson Jr.",
+        "player_position": "F-C",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Yuki Kawamura",
+        "player_position": "G",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Luke Kennard",
+        "player_position": "G",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "John Konchar",
+        "player_position": "G",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Jake LaRavia",
+        "player_position": "F",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Ja Morant",
+        "player_position": "G",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Miye Oni",
+        "player_position": "G-F",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "M\u00e3ozinha Pereira",
+        "player_position": "F",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Scotty Pippen Jr.",
+        "player_position": "G",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Marcus Smart",
+        "player_position": "G",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Cam Spencer",
+        "player_position": "G",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Jaylen Wells",
+        "player_position": "F",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Vince Williams Jr.",
+        "player_position": "G",
+        "player_team": "Memphis Grizzlies"
+    },
+    {
+        "player_name": "Jose Alvarado",
+        "player_position": "G",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Keion Brooks Jr.",
+        "player_position": "F",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Jamal Cain",
+        "player_position": "F",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Jalen Crutcher",
+        "player_position": "G",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Javonte Green",
+        "player_position": "G",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Jordan Hawkins",
+        "player_position": "G",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Malcolm Hill",
+        "player_position": "F",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Brandon Ingram",
+        "player_position": "F",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Trey Jemison",
+        "player_position": "C",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Herbert Jones",
+        "player_position": "F",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Karlo Matkovi\u0107",
+        "player_position": "F-C",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "CJ McCollum",
+        "player_position": "G",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Yves Missi",
+        "player_position": "C",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Trey Murphy III",
+        "player_position": "F",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Dejounte Murray",
+        "player_position": "G",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Josh Oduro",
+        "player_position": "",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Elfrid Payton",
+        "player_position": "G",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Antonio Reeves",
+        "player_position": "G",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Jeremiah Robinson-Earl",
+        "player_position": "F",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Daniel Theis",
+        "player_position": "F-C",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Zion Williamson",
+        "player_position": "F",
+        "player_team": "New Orleans Pelicans"
+    },
+    {
+        "player_name": "Harrison Barnes",
+        "player_position": "F",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Charles Bassey",
+        "player_position": "C-F",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Brandon Boston Jr.",
+        "player_position": "G",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Malaki Branham",
+        "player_position": "F",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Stephon Castle",
+        "player_position": "G",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Julian Champagnie",
+        "player_position": "F",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Sidy Cissoko",
+        "player_position": "G",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Zach Collins",
+        "player_position": "F-C",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "David Duke Jr.",
+        "player_position": "G",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Malachi Flynn",
+        "player_position": "G",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Harrison Ingram",
+        "player_position": "F",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Keldon Johnson",
+        "player_position": "F-G",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Tre Jones",
+        "player_position": "G",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Sandro Mamukelashvili",
+        "player_position": "F-C",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Nathan Mensah",
+        "player_position": "C",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Riley Minix",
+        "player_position": "F",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Chris Paul",
+        "player_position": "G",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Jeremy Sochan",
+        "player_position": "F",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Devin Vassell",
+        "player_position": "G-F",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Victor Wembanyama",
+        "player_position": "F-C",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Blake Wesley",
+        "player_position": "G",
+        "player_team": "San Antonio Spurs"
+    },
+    {
+        "player_name": "Trey Alexander",
+        "player_position": "G",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Charles Bediako",
+        "player_position": "C",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Christian Braun",
+        "player_position": "G",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Vlatko \u010can\u010dar",
+        "player_position": "F",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Andrew Funk",
+        "player_position": "G",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Aaron Gordon",
+        "player_position": "F",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "PJ Hall",
+        "player_position": "C",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "DaRon Holmes II",
+        "player_position": "F",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Nikola Joki\u0107",
+        "player_position": "C",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Spencer Jones",
+        "player_position": "F",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "DeAndre Jordan",
+        "player_position": "C",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Jamal Murray",
+        "player_position": "G",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Zeke Nnaji",
+        "player_position": "F-C",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Jalen Pickett",
+        "player_position": "G",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Michael Porter Jr.",
+        "player_position": "F",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Will Richardson",
+        "player_position": "G",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Dario \u0160ari\u0107",
+        "player_position": "F-C",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Julian Strawther",
+        "player_position": "G",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Hunter Tyson",
+        "player_position": "F",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Peyton Watson",
+        "player_position": "G",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Russell Westbrook",
+        "player_position": "G",
+        "player_team": "Denver Nuggets"
+    },
+    {
+        "player_name": "Nickeil Alexander-Walker",
+        "player_position": "G",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Keita Bates-Diop",
+        "player_position": "F",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Jaylen Clark",
+        "player_position": "G",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Mike Conley",
+        "player_position": "G",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Rob Dillingham",
+        "player_position": "G",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Donte DiVincenzo",
+        "player_position": "G",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "PJ Dozier",
+        "player_position": "G-F",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Jesse Edwards",
+        "player_position": "C",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Anthony Edwards",
+        "player_position": "G",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Luka Garza",
+        "player_position": "C",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Rudy Gobert",
+        "player_position": "C",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Joe Ingles",
+        "player_position": "F-G",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Skylar Mays",
+        "player_position": "G",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Jaden McDaniels",
+        "player_position": "F",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Leonard Miller",
+        "player_position": "F",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Josh Minott",
+        "player_position": "F",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Daishen Nix",
+        "player_position": "G",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Eugene Omoruyi",
+        "player_position": "F",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Julius Randle",
+        "player_position": "F-C",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Naz Reid",
+        "player_position": "C-F",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Terrence Shannon Jr.",
+        "player_position": "G-F",
+        "player_team": "Minnesota Timberwolves"
+    },
+    {
+        "player_name": "Alex Caruso",
+        "player_position": "G",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Ousmane Dieng",
+        "player_position": "F",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Luguentz Dort",
+        "player_position": "G",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Alex Ducas",
+        "player_position": "G",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Adam Flagler",
+        "player_position": "G",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Shai Gilgeous-Alexander",
+        "player_position": "G",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Isaiah Hartenstein",
+        "player_position": "C-F",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Chet Holmgren",
+        "player_position": "C-F",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Chase Jeter",
+        "player_position": "C",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Isaiah Joe",
+        "player_position": "G",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Dillon Jones",
+        "player_position": "F",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Malevy Leons",
+        "player_position": "F",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Ajay Mitchell",
+        "player_position": "G",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Alex Reese",
+        "player_position": "F-C",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Cormac Ryan",
+        "player_position": "",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Nikola Topi\u0107",
+        "player_position": "G",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Cason Wallace",
+        "player_position": "G",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Aaron Wiggins",
+        "player_position": "G",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Jaylin Williams",
+        "player_position": "F",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Jalen Williams",
+        "player_position": "G-F",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Kenrich Williams",
+        "player_position": "G-F",
+        "player_team": "Oklahoma City Thunder"
+    },
+    {
+        "player_name": "Deni Avdija",
+        "player_position": "F",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Deandre Ayton",
+        "player_position": "C",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Dalano Banton",
+        "player_position": "F",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Toumani Camara",
+        "player_position": "F",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Donovan Clingan",
+        "player_position": "C",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Devonte' Graham",
+        "player_position": "G",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Jerami Grant",
+        "player_position": "F",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Scoot Henderson",
+        "player_position": "G",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Bryce McGowens",
+        "player_position": "G",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Justin Minaya",
+        "player_position": "F",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Taz\u00e9 Moore",
+        "player_position": "G",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Kris Murray",
+        "player_position": "F",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Duop Reath",
+        "player_position": "C",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Rayan Rupert",
+        "player_position": "G-F",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Shaedon Sharpe",
+        "player_position": "G",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Anfernee Simons",
+        "player_position": "G",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Matisse Thybulle",
+        "player_position": "G-F",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Jabari Walker",
+        "player_position": "F",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Robert Williams III",
+        "player_position": "C-F",
+        "player_team": "Portland Trail Blazers"
+    },
+    {
+        "player_name": "Jordan Clarkson",
+        "player_position": "G",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Isaiah Collier",
+        "player_position": "G",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "John Collins",
+        "player_position": "F-C",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Drew Eubanks",
+        "player_position": "F-C",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Kyle Filipowski",
+        "player_position": "C",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Keyonte George",
+        "player_position": "G",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Taylor Hendricks",
+        "player_position": "F",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Johnny Juzang",
+        "player_position": "G",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Walker Kessler",
+        "player_position": "C",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Lauri Markkanen",
+        "player_position": "F-C",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Patty Mills",
+        "player_position": "G",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Svi Mykhailiuk",
+        "player_position": "G-F",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Micah Potter",
+        "player_position": "C",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Jason Preston",
+        "player_position": "G",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Brice Sensabaugh",
+        "player_position": "F",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Collin Sexton",
+        "player_position": "G",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Oscar Tshiebwe",
+        "player_position": "F-C",
+        "player_team": "Utah Jazz"
+    },
+    {
+        "player_name": "Cody Williams",
+        "player_position": "F",
+        "player_team": "Utah Jazz"
     }
 ]

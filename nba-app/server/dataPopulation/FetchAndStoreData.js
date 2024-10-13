@@ -1,9 +1,12 @@
-import mongoose from 'mongoose';
 import fs from 'fs';
 import path from 'path';
 import Team from '../models/Team.js';  // Assuming these models are in your models folder
 //import Player from '../models/Player.js';
 import connectDB from '../config/db.js';
+import mongoose from 'mongoose';
+import "dotenv/config.js";
+
+console.log(process.env.MONGO_URI);
 
 // Connect to MongoDB 
 connectDB();
