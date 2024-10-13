@@ -47,7 +47,7 @@ const populatePlayers = async () => {
 
 
     for (const player of playerData) {
-      // Find the team by ID
+      // Find the team by name
       const team = await Team.findOne({ name: player.player_team }); // Assuming player.teamName contains the team's name
       if (team) {
         // Create the player
