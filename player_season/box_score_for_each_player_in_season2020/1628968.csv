@@ -1,0 +1,28 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+22000617,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+22000776,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22000202,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,,5.000000:06,45.5,50.0,109.4,100.0,-64.0,-50.0,0.0,0.0,0.0,0.0,0.143,0.067,0.0,0.5,0.615,0.154,0.152,118.02,117.65,98.04,12,0.24,10.0
+22000606,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,,1.000000:29,103.1,133.3,100.0,66.7,3.1,66.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,95.14,97.08,80.9,3,0.0,12.0
+22000217,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22000823,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,,0.000000:47,200.0,200.0,0.0,0.0,200.0,200.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,61.41,61.41,51.17,1,0.0,25.0
+22000461,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22000844,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22000258,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22000249,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+22000473,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,,3.000000:08,144.2,200.0,82.0,66.7,62.3,133.3,0.0,0.0,0.0,0.0,0.5,0.111,0.0,0.0,0.0,0.091,0.088,101.11,91.91,76.6,6,0.0,27.0
+22000659,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22000882,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+22000667,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22000707,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22000722,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22000645,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22000690,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,,1.000000:38,100.0,66.7,174.4,200.0,-74.4,-133.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,79.93,88.16,73.47,3,-0.182,12.0
+22000861,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22000769,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,,2.000000:44,66.7,57.1,33.3,33.3,33.3,23.8,0.0,0.0,0.0,0.0,0.2,0.1,0.0,0.0,0.0,0.125,0.143,105.37,114.15,95.12,7,0.0,25.0
+22000231,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+22000740,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22000811,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22000790,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22000632,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22000585,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22000751,1610612754,IND,Indiana,1628968,Brian Bowen II,Brian,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0

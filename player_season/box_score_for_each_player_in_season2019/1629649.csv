@@ -1,0 +1,29 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21900103,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,,3.000000:43,101.7,100.0,48.4,42.9,53.4,57.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.286,0.291,84.46,90.4,75.34,7,-0.6,10.0
+21900461,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,,1.000000:00,0.0,0.0,227.3,100.0,-227.3,-100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,69.12,96.0,80.0,2,0.0,11.0
+21900271,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900258,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,,9.000000:35,128.1,131.6,142.7,145.0,-14.6,-13.4,0.0,0.0,0.0,0.125,0.0,0.067,25.0,0.333,0.333,0.182,0.178,99.77,97.67,81.39,19,-0.029,11.0
+21900072,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,8.0
+21900149,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,,2.000000:04,66.7,66.7,75.0,75.0,-8.3,-8.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.2,81.29,81.29,67.74,3,-1.0,10.0
+21900162,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21900764,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900229,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21900177,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21900366,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900010,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21900561,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,,4.000000:59,134.1,140.0,166.7,166.7,-32.6,-26.7,0.4,0.0,50.0,0.0,0.0,0.0,0.0,0.5,0.615,0.182,0.192,93.62,91.51,76.25,10,0.123,10.0
+21900236,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900355,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,,5.000000:25,119.0,127.3,148.7,133.3,-29.7,-6.1,0.2,0.0,50.0,0.0,0.333,0.125,0.0,0.0,0.0,0.083,0.078,99.78,101.91,84.92,11,0.0,12.0
+21900630,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900378,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900392,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21900447,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900297,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,,18.000000:01,98.5,97.1,107.8,116.7,-9.3,-19.5,0.0,0.0,0.0,0.05,0.133,0.086,0.0,0.278,0.304,0.25,0.253,97.88,94.58,78.82,35,0.008,10.0
+21900042,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900056,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900136,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,,4.000000:17,142.9,142.9,77.3,75.0,65.5,67.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.5,0.2,0.2,82.7,84.05,70.04,7,0.094,22.0
+21900122,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21900643,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900285,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900087,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,,4.000000:11,79.9,77.8,114.2,100.0,-34.3,-22.2,1.0,1.0,20.0,0.0,0.0,0.0,20.0,0.5,0.694,0.4,0.41,95.46,103.27,86.06,9,0.375,22.0
+21900331,1610612752,NYK,New York,1629649,Ignas Brazdeikis,Ignas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0

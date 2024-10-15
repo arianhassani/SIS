@@ -1,0 +1,29 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+22201216,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,,18.000000:54,116.0,117.9,114.9,112.8,1.1,5.1,0.0,0.0,0.0,0.091,0.111,0.1,0.0,0.25,0.41,0.111,0.112,98.95,99.05,82.54,39,0.069,21.0
+22200679,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22200495,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,28.0
+22201206,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,,3.000000:32,128.6,112.5,188.2,200.0,-59.6,-87.5,0.0,0.0,0.0,0.0,0.333,0.2,0.0,0.0,0.0,0.125,0.143,98.08,101.89,84.91,8,0.0,26.0
+22200482,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22200022,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22201116,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22200030,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22200408,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22200152,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22200413,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22200163,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22201097,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22200808,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22200001,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22200824,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22200869,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22200855,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22200707,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,,5.000000:42,100.0,90.9,101.2,90.9,-1.2,0.0,0.0,0.0,0.0,0.0,0.333,0.167,100.0,0.0,0.0,0.091,0.1,83.71,92.63,77.19,11,-0.2,9.0
+22200275,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,28.0
+22200301,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,,8.000000:18,81.3,92.9,107.1,100.0,-25.9,-7.1,0.0,0.0,0.0,0.273,0.111,0.2,0.0,0.5,0.5,0.1,0.1,86.75,83.86,69.88,14,0.116,21.0
+22200328,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22200314,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22201181,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22200714,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22201152,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22200264,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22201192,1610612738,BOS,Boston,1629662,Mfiondu Kabengele,Mfiondu,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0

@@ -1,0 +1,37 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21700527,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21701177,1610612757,POR,Portland,1627834,Georgios Papagiannis,Georgios,,,3.000000:44,177.7,166.7,0.0,0.0,177.7,166.7,0.0,0.0,0.0,0.5,0.0,0.167,0.0,1.0,1.0,0.1,0.106,105.05,109.43,91.19,9,0.409,10.0
+21700687,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,12.000000:50,98.7,96.2,121.3,122.2,-22.6,-26.1,0.0,0.0,0.0,0.133,0.235,0.188,0.0,0.429,0.429,0.25,0.256,98.22,99.12,82.6,26,0.073,8.0
+21700492,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21700451,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21700737,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21700643,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,1.000000:23,61.5,60.0,175.0,140.0,-113.5,-80.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,154.06,173.49,144.58,5,0.0,9.0
+21701164,1610612757,POR,Portland,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21700132,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21700696,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,3.000000:04,66.7,57.1,189.0,185.7,-122.3,-128.6,0.0,0.0,0.0,0.333,0.333,0.333,33.3,0.0,0.0,0.375,0.429,100.8,109.57,91.3,7,-0.056,5.0
+21700457,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21700585,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21700552,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,6.000000:43,100.3,107.1,114.3,106.7,-14.0,0.5,0.0,0.0,0.0,0.0,0.143,0.059,0.0,0.333,0.333,0.158,0.158,103.48,103.62,86.35,14,0.041,22.0
+21700783,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700437,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,11.000000:53,95.7,95.7,123.0,121.7,-27.4,-26.1,0.0,0.0,0.0,0.1,0.273,0.19,20.0,0.5,0.5,0.192,0.2,92.42,92.9,77.42,23,0.082,6.0
+21700543,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,9.000000:12,130.1,135.0,90.6,89.5,39.4,45.5,0.0,0.0,0.0,0.25,0.3,0.278,25.0,0.0,0.0,0.174,0.176,103.1,101.74,84.78,20,-0.024,25.0
+21700596,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21700353,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21700192,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,3.000000:08,100.0,100.0,60.0,50.0,40.0,50.0,0.0,0.0,0.0,0.0,0.333,0.167,0.0,1.0,1.0,0.167,0.167,84.26,91.91,76.6,6,0.316,10.0
+21700385,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21700795,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21700749,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,10.000000:35,90.5,88.0,130.1,127.3,-39.7,-39.3,0.5,4.0,57.1,0.0,0.25,0.118,14.3,0.5,0.5,0.111,0.123,103.95,106.58,88.82,25,0.118,8.0
+21700013,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21700204,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,10.000000:31,90.5,85.7,150.0,142.9,-59.5,-57.1,0.0,0.0,0.0,0.077,0.2,0.111,0.0,0.5,0.5,0.174,0.183,91.01,95.85,79.87,21,0.084,10.0
+21700774,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,1.000000:26,66.7,66.7,100.0,66.7,-33.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,83.72,100.47,83.72,3,0.0,23.0
+21700373,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,9.000000:22,129.3,150.0,134.2,133.3,-4.9,16.7,0.125,0.0,25.0,0.125,0.333,0.214,0.0,1.0,1.0,0.13,0.131,99.31,92.24,76.87,18,0.165,10.0
+21701119,1610612757,POR,Portland,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21700710,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21700089,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,6.000000:44,135.5,133.3,95.3,92.9,40.2,40.5,0.0,0.0,0.0,0.0,0.111,0.067,100.0,0.0,0.0,0.059,0.063,101.23,103.37,86.14,15,-0.041,24.0
+21700670,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,16.000000:11,97.0,97.2,123.5,113.9,-26.5,-16.7,0.25,1.0,33.3,0.048,0.154,0.088,33.3,0.0,0.0,0.143,0.146,102.74,106.78,88.98,36,-0.013,9.0
+21700513,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21700505,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,7.000000:55,107.1,107.1,115.3,114.3,-8.1,-7.1,0.0,0.0,0.0,0.273,0.167,0.235,0.0,0.2,0.2,0.294,0.294,84.52,84.88,70.74,14,0.027,10.0
+21701196,1610612757,POR,Portland,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21700101,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,4.000000:55,165.6,200.0,131.6,130.0,34.0,70.0,0.167,0.0,33.3,0.0,0.167,0.111,0.0,1.0,1.0,0.167,0.153,107.19,97.63,81.36,10,0.21,11.0
+21701154,1610612757,POR,Portland,1627834,Georgios Papagiannis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21700661,1610612758,SAC,Sacramento,1627834,Georgios Papagiannis,Georgios,,,2.000000:01,160.0,160.0,128.9,100.0,31.1,60.0,0.0,0.0,0.0,0.0,1.0,0.333,0.0,0.5,0.5,0.4,0.4,105.68,119.01,99.17,5,0.154,21.0

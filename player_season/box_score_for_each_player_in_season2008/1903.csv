@@ -1,0 +1,36 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20800029,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,,7.000000:14,119.5,100.0,141.7,130.8,-22.2,-30.8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,75.92,86.27,71.89,13,0.029,9.0
+20800203,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800565,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,,2.000000:31,153.1,150.0,180.0,150.0,-26.9,0.0,0.0,0.0,0.0,0.333,0.5,0.4,0.0,0.0,0.0,0.143,0.145,103.76,114.44,95.36,6,0.021,22.0
+20800770,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800615,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,,4.000000:03,64.3,63.6,126.1,120.0,-61.7,-56.4,0.0,0.0,0.0,0.0,0.333,0.1,0.0,0.0,0.0,0.0,0.0,120.89,124.44,103.7,11,-0.061,9.0
+20800164,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20800824,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800575,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800711,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800705,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800075,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800511,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800115,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800104,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800649,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800502,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,,24.000000:00,114.5,115.2,100.2,97.9,14.3,17.3,0.0,0.0,0.0,0.048,0.28,0.174,0.0,1.0,1.0,0.02,0.02,92.2,93.0,77.5,46,0.14,9.0
+20800490,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20800479,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800643,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800130,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20800044,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800091,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800537,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,,8.000000:12,143.2,133.3,145.3,141.2,-2.1,-7.8,0.143,0.0,25.0,0.167,0.2,0.182,0.0,0.667,0.667,0.158,0.169,97.35,102.38,85.31,18,0.09,22.0
+20800587,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20800197,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800155,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800551,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800009,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,,6.000000:47,64.3,64.3,93.3,93.3,-29.0,-29.0,0.0,0.0,0.0,0.111,0.0,0.063,0.0,0.0,0.0,0.063,0.063,102.6,102.6,85.5,14,-0.02,9.0
+20800221,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DND -  left calf strain,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20800181,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800813,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,,5.000000:12,101.1,100.0,94.0,92.3,7.1,7.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.091,0.092,109.11,110.77,92.31,11,-0.098,7.0
+20800806,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+20800757,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800145,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+20800781,1610612758,SAC,Sacramento,1903,Kenny Thomas,Kenny,,,3.000000:47,50.6,62.5,35.5,37.5,15.1,25.0,0.0,0.0,0.0,0.0,0.25,0.111,50.0,0.0,0.0,0.2,0.202,116.21,101.5,84.58,8,0.0,8.0

@@ -1,0 +1,30 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21400004,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21400198,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,,1.000000:36,66.7,66.7,300.0,225.0,-233.3,-158.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.5,0.667,0.667,90.0,105.0,87.5,3,0.077,22.0
+21400172,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400210,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400160,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21400028,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400107,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21400071,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21400263,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,,0.000000:10,0.0,0.0,200.0,200.0,-200.0,-200.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,285.15,285.15,237.62,1,0.0,21.0
+21400316,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400276,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400130,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400097,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,,2.000000:41,126.1,120.0,123.0,100.0,3.1,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.136,0.2,0.21,86.22,98.39,81.99,5,0.0,11.0
+21400054,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400041,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21400057,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400334,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21400384,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400409,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,,8.000000:06,126.9,125.0,129.9,117.6,-3.0,7.4,0.167,1.0,20.0,0.0,0.0,0.0,20.0,1.0,1.0,0.25,0.254,92.33,97.78,81.48,16,0.123,22.0
+21400224,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21400146,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,,18.000000:01,86.9,85.7,109.9,109.1,-23.0,-23.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.55,0.55,0.25,0.267,89.62,90.58,75.49,35,0.052,21.0
+21400423,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400355,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21400341,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,,7.000000:27,90.7,100.0,76.1,80.0,14.6,20.0,0.2,0.0,33.3,0.0,0.0,0.0,0.0,0.75,0.75,0.111,0.113,107.6,99.87,83.22,16,0.082,24.0
+21400369,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21400195,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21400395,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,,3.000000:23,100.0,71.4,133.3,133.3,-33.3,-61.9,1.0,0.0,66.7,0.0,0.4,0.25,0.0,0.0,0.0,0.125,0.167,78.03,92.22,76.85,7,0.214,25.0
+21400140,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,,14.000000:51,82.9,85.7,87.8,85.7,-5.0,0.0,0.0,0.0,0.0,0.0,0.071,0.029,0.0,0.438,0.438,0.235,0.25,90.96,90.51,75.42,28,0.109,10.0
+21400237,1610612766,CHA,Charlotte,2457,Jannero Pargo,Jannero,,,16.000000:56,104.0,106.1,66.8,69.7,37.3,36.4,0.444,2.0,26.7,0.0,0.0,0.0,13.3,0.556,0.556,0.282,0.285,96.49,93.54,77.95,33,0.12,9.0

@@ -1,0 +1,72 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21900102,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21900880,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21900658,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900936,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900301,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21900673,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900868,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900510,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900114,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Injury/Illness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21900470,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900919,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900273,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21900475,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900449,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21900729,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21900701,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900259,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900066,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21900310,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900161,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21901295,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900821,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900148,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,,4.000000:60,91.3,80.0,119.6,122.2,-28.2,-42.2,0.0,0.0,0.0,0.0,0.4,0.222,0.0,1.0,1.0,0.091,0.114,86.27,91.26,76.05,10,0.267,22.0
+21900606,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900410,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,8.0
+21900374,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21901283,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21901269,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21900775,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21901250,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900951,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21900206,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,,5.000000:49,128.9,125.0,138.1,135.7,-9.2,-10.7,0.0,0.0,0.0,0.0,0.25,0.125,0.0,0.0,0.852,0.167,0.172,104.8,107.28,89.4,12,0.077,21.0
+21900763,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900039,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900424,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21901316,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,F,,23.000000:31,84.7,85.1,97.7,95.7,-12.9,-10.6,0.0,0.0,0.0,0.037,0.292,0.157,16.7,0.7,0.7,0.118,0.12,95.2,95.93,79.94,47,0.133,1.0
+21900747,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900800,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21900816,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21900792,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21900584,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21901260,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900397,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21900354,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21900026,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Injury/Illness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900556,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900230,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21900219,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900384,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,8.0
+21900623,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21900637,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900838,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,,9.000000:48,60.0,60.0,94.1,95.0,-34.1,-35.0,0.2,0.0,16.7,0.0,0.5,0.208,0.0,0.0,0.0,0.238,0.238,98.45,97.96,81.63,20,0.032,20.0
+21900970,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900568,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21900178,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900889,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900644,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900849,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900518,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900492,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900337,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21900694,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21900086,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900535,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900284,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21900324,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,20.0
+21900126,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900052,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900245,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,NWT - Injury/Illness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900906,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21901239,1610612748,MIA,Miami,2617,Udonis Haslem,Udonis,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0

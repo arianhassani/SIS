@@ -1,0 +1,40 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20500067,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,,1.000000:55,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.2,0.0,0.0,0.0,0.333,0.347,61.11,75.13,62.61,3,0.4,11.0
+20500660,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500844,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500710,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500506,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500164,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500789,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,,2.000000:35,112.6,125.0,51.5,40.0,61.1,85.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.184,77.3,83.61,69.68,4,-0.1,23.0
+20500762,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500549,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,,2.000000:04,75.0,60.0,138.9,150.0,-63.9,-90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,96.62,104.52,87.1,5,-0.25,21.0
+20500749,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,,3.000000:06,75.0,85.7,46.6,42.9,28.4,42.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,111.79,108.39,90.32,7,0.091,21.0
+20500577,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500563,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500370,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20500770,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500598,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DND - Stomach Virus,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500836,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,,3.000000:54,128.6,112.5,128.9,125.0,-0.3,-12.5,1.0,0.0,75.0,0.0,0.25,0.2,0.0,1.0,1.0,0.125,0.143,90.83,98.46,82.05,8,0.324,22.0
+20500607,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500148,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500404,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,,1.000000:44,25.8,20.0,159.6,150.0,-133.8,-130.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,105.78,124.62,103.85,5,-0.4,9.0
+20500179,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20500144,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500967,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500621,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500802,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,,3.000000:29,100.0,100.0,104.2,85.7,-4.2,14.3,0.5,0.0,50.0,0.333,0.5,0.429,0.0,1.0,1.0,0.143,0.143,81.03,89.57,74.64,6,0.4,8.0
+20500424,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500587,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,,2.000000:31,80.0,80.0,103.1,66.7,-23.1,13.3,0.0,0.0,0.0,0.25,0.5,0.333,0.0,1.0,1.0,0.167,0.167,84.68,104.9,87.42,5,0.455,10.0
+20500394,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500495,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,,2.000000:08,128.9,125.0,100.0,75.0,28.9,50.0,0.5,0.0,100.0,0.0,1.0,0.25,0.0,0.0,0.0,0.0,0.0,77.4,90.0,75.0,4,0.235,8.0
+20500697,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500641,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500682,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500469,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+20500534,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500518,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,,2.000000:27,104.2,100.0,100.0,83.3,4.2,16.7,0.0,0.0,0.0,0.4,0.0,0.333,0.0,1.0,1.0,0.111,0.114,105.4,117.55,97.96,6,0.667,9.0
+20500055,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500733,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500484,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,,10.000000:38,86.1,82.6,59.5,63.6,26.5,19.0,0.0,0.0,0.0,0.111,0.417,0.286,0.0,0.5,0.5,0.08,0.083,102.92,101.57,84.64,23,0.407,20.0
+20500447,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,,2.000000:00,128.9,100.0,82.0,80.0,46.9,20.0,0.0,0.0,0.0,0.0,1.0,0.667,0.0,0.0,0.0,0.0,0.0,105.12,120.0,100.0,5,0.308,22.0
+20500724,1610612758,SAC,Sacramento,2441,Jamal Sampson,Jamal,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0

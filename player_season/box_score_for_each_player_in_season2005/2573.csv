@@ -1,0 +1,36 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20501033,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20501153,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20501146,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20501191,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500299,1610612740,NOK,New Orleans/Oklahoma City,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,8.0
+20501223,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20501209,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500315,1610612740,NOK,New Orleans/Oklahoma City,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20500366,1610612740,NOK,New Orleans/Oklahoma City,2573,Maciej Lampe,Maciej,,,6.000000:02,92.6,91.7,84.6,75.0,8.0,16.7,0.0,0.0,0.0,0.0,0.222,0.143,50.0,0.0,0.0,0.167,0.168,89.58,95.47,79.56,12,-0.1,11.0
+20500428,1610612740,NOK,New Orleans/Oklahoma City,2573,Maciej Lampe,Maciej,,Did Not Dress- Back Spasms,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20500978,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500415,1610612740,NOK,New Orleans/Oklahoma City,2573,Maciej Lampe,Maciej,,,9.000000:28,83.9,88.2,137.5,129.4,-53.6,-41.2,0.333,0.0,40.0,0.125,0.2,0.154,0.0,0.0,0.0,0.15,0.151,85.89,86.2,71.83,17,-0.013,10.0
+20500832,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,,3.000000:35,119.0,116.7,100.0,83.3,19.0,33.3,0.0,0.0,0.0,0.4,0.0,0.333,0.0,0.5,0.5,0.222,0.225,72.87,80.37,66.98,6,0.16,22.0
+20501132,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500990,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500823,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500957,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500997,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500409,1610612740,NOK,New Orleans/Oklahoma City,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500811,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500797,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20501106,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,,2.000000:44,59.2,57.1,85.0,71.4,-25.9,-14.3,0.0,0.0,0.0,0.0,0.2,0.125,50.0,0.0,0.0,0.286,0.296,110.99,122.93,102.44,7,-0.444,10.0
+20501117,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20501089,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,,1.000000:14,106.4,66.7,100.0,100.0,6.4,-33.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,75.5,97.3,81.08,3,0.0,9.0
+20501074,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500753,1610612740,NOK,New Orleans/Oklahoma City,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20501061,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,,4.000000:36,92.2,90.0,91.3,80.0,0.9,10.0,0.0,0.0,0.0,0.167,0.5,0.25,16.7,0.2,0.2,0.462,0.47,96.63,104.35,86.96,10,-0.25,22.0
+20500380,1610612740,NOK,New Orleans/Oklahoma City,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500293,1610612740,NOK,New Orleans/Oklahoma City,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20501013,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20501170,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500939,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+20500861,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500928,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500848,1610612745,HOU,Houston,2573,Maciej Lampe,Maciej,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0

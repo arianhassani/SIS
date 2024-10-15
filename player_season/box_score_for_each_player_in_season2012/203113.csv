@@ -1,0 +1,27 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21200260,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21200248,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21200271,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21201185,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21201144,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,,3.000000:28,40.5,40.0,123.9,122.2,-83.4,-82.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.333,0.333,0.231,0.253,129.88,131.54,109.62,10,0.0,24.0
+21200306,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21201227,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,,3.000000:50,125.0,111.1,137.5,137.5,-12.5,-26.4,0.0,0.0,0.0,0.167,0.0,0.1,0.0,0.667,0.667,0.25,0.273,100.17,106.43,88.7,9,0.156,24.0
+21200059,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21200016,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21200348,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,,4.000000:30,133.2,118.2,131.6,127.3,1.6,-9.1,0.2,0.0,33.3,0.0,0.0,0.0,0.0,0.0,0.266,0.143,0.157,108.8,117.33,97.78,11,0.0,12.0
+21200363,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21201083,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,,2.000000:46,109.3,114.3,75.3,62.5,34.0,51.8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.5,0.25,0.24,121.1,130.12,108.43,7,0.0,25.0
+21201124,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21201118,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,,1.000000:01,0.0,0.0,106.4,100.0,-106.4,-100.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.25,0.333,159.58,188.85,157.38,4,-1.0,11.0
+21200005,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21200396,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,,6.000000:16,102.2,100.0,88.0,100.0,14.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.214,0.218,93.45,88.09,73.4,11,-0.421,25.0
+21200419,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21200409,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,,3.000000:50,150.0,133.3,76.1,66.7,73.9,66.7,0.333,0.0,100.0,0.0,0.167,0.125,0.0,0.0,0.0,0.0,0.0,99.42,112.7,93.91,9,0.167,12.0
+21200030,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21200379,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21200295,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21200335,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21201172,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21200319,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21201198,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21201207,1610612743,DEN,Denver,203113,Quincy Miller,Quincy,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0

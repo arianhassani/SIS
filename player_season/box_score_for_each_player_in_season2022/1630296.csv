@@ -1,0 +1,14 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+22200242,1610612765,DET,Detroit,1630296,Braxton Key,Braxton,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22200295,1610612765,DET,Detroit,1630296,Braxton Key,Braxton,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+22200283,1610612765,DET,Detroit,1630296,Braxton Key,Braxton,,,2.000000:12,34.0,33.3,63.5,83.3,-29.4,-50.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,150.11,130.91,109.09,6,0.0,9.0
+22200091,1610612765,DET,Detroit,1630296,Braxton Key,Braxton,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22200234,1610612765,DET,Detroit,1630296,Braxton Key,Braxton,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22200023,1610612765,DET,Detroit,1630296,Braxton Key,Braxton,,,4.000000:39,124.5,120.0,151.8,136.4,-27.3,-16.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.064,0.182,0.188,100.75,108.39,90.32,10,0.154,10.0
+22200223,1610612765,DET,Detroit,1630296,Braxton Key,Braxton,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22200003,1610612765,DET,Detroit,1630296,Braxton Key,Braxton,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22200029,1610612765,DET,Detroit,1630296,Braxton Key,Braxton,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22200100,1610612765,DET,Detroit,1630296,Braxton Key,Braxton,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22200258,1610612765,DET,Detroit,1630296,Braxton Key,Braxton,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22200270,1610612765,DET,Detroit,1630296,Braxton Key,Braxton,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22200113,1610612765,DET,Detroit,1630296,Braxton Key,Braxton,,,2.000000:15,150.0,150.0,77.3,60.0,72.7,90.0,0.0,0.0,0.0,0.0,0.333,0.2,0.0,0.0,0.0,0.0,0.0,84.05,96.0,80.0,4,0.25,11.0

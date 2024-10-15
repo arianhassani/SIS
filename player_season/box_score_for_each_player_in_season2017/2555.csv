@@ -1,0 +1,83 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21701163,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21700447,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21701003,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700283,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,7.000000:39,121.0,120.0,53.3,53.3,67.6,66.7,0.0,0.0,0.0,0.111,0.4,0.214,0.0,1.0,1.0,0.118,0.118,93.74,94.12,78.43,15,0.26,10.0
+21700526,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21700903,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700724,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21700861,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21700337,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21700079,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,4.000000:48,110.0,110.0,40.5,40.0,69.5,70.0,0.2,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,99.4,100.0,83.33,10,0.053,11.0
+21700496,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700643,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700871,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21701206,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,0.000000:42,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,69.23,103.85,86.54,1,0.0,11.0
+21700736,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700324,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,2.000000:06,82.0,80.0,102.5,100.0,-20.5,-20.0,1.0,1.0,33.3,0.0,0.5,0.2,33.3,0.0,1.136,0.333,0.34,111.54,114.29,95.24,5,0.667,23.0
+21700697,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21701007,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,2.000000:46,57.1,57.1,162.7,157.1,-105.6,-100.0,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.25,0.25,119.36,121.45,101.2,7,-0.231,10.0
+21700975,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,4.000000:11,142.9,125.0,123.9,137.5,19.0,-12.5,0.0,0.0,0.0,0.0,0.167,0.125,0.0,1.0,1.0,0.25,0.286,91.1,91.79,76.49,8,0.233,24.0
+21701100,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700168,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21700394,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,1.000000:48,100.0,100.0,166.7,140.0,-66.7,-40.0,0.0,0.0,0.0,0.0,0.5,0.25,0.0,0.0,0.0,0.0,0.0,109.54,120.22,100.19,4,-0.111,23.0
+21700431,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,9.000000:20,116.9,110.5,136.5,131.6,-19.5,-21.1,0.0,0.0,0.0,0.0,0.167,0.063,0.0,1.0,0.798,0.087,0.095,93.29,97.71,81.43,19,0.029,5.0
+21700223,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21700960,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700382,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700816,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,7.000000:53,53.3,50.0,94.4,100.0,-41.1,-50.0,0.0,0.0,0.0,0.0,0.222,0.105,40.0,1.0,0.694,0.25,0.28,106.19,106.55,88.79,18,0.089,10.0
+21700803,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21700036,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21700744,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700191,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21700351,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21700541,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700421,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21701059,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21700839,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21700144,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21700015,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21700565,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,5.000000:02,154.5,141.7,54.5,54.5,100.0,87.1,0.0,0.0,0.0,0.0,0.125,0.091,0.0,0.0,0.0,0.0,0.0,104.9,109.67,91.39,12,0.038,11.0
+21700404,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700941,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21700772,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21700611,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21700567,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21700765,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21701133,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700588,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21700365,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,7.000000:40,106.3,118.8,95.9,93.8,10.4,25.0,0.167,1.0,25.0,0.182,0.125,0.158,25.0,0.5,0.5,0.15,0.151,104.93,100.17,83.48,16,0.128,9.0
+21701084,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700629,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700600,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700172,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21701046,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21701126,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700990,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,6.000000:25,95.3,108.3,112.6,115.4,-17.3,-7.1,0.0,0.0,0.0,0.125,0.167,0.143,14.3,0.6,0.595,0.467,0.478,100.84,93.51,77.92,12,0.167,23.0
+21700212,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21700158,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21700788,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21700039,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700512,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21700248,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21700103,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21701194,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21700711,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21700263,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21700129,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700074,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21700060,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21700919,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21701150,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21700460,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,5.000000:57,100.0,100.0,101.1,100.0,-1.1,0.0,0.0,0.0,0.0,0.0,0.2,0.125,0.0,1.0,1.0,0.091,0.091,88.26,88.74,73.95,11,0.171,24.0
+21700850,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21701227,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,2.000000:21,64.5,57.1,159.6,150.0,-95.1,-92.9,0.0,0.0,0.0,0.25,0.0,0.167,0.0,0.0,0.227,0.25,0.278,120.92,132.77,110.64,7,-0.333,22.0
+21700887,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,,6.000000:11,63.6,63.6,118.2,118.2,-54.5,-54.5,0.5,1.0,20.0,0.222,0.2,0.214,20.0,0.333,0.333,0.308,0.308,85.39,85.39,71.16,11,0.111,9.0
+21700273,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700477,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21700488,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700674,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21700660,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21700304,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21701032,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21700933,1610612760,OKC,Oklahoma City,2555,Nick Collison,Nick,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0

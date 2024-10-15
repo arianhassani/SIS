@@ -1,0 +1,14 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21900129,1610612745,HOU,Houston,201583,Ryan Anderson,Ryan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21900061,1610612745,HOU,Houston,201583,Ryan Anderson,Ryan,,,4.000000:08,140.0,127.3,169.2,163.6,-29.2,-36.4,0.0,0.0,0.0,0.0,0.25,0.167,0.0,0.75,0.75,0.182,0.2,119.85,127.74,106.45,11,0.069,8.0
+21900107,1610612745,HOU,Houston,201583,Ryan Anderson,Ryan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21900015,1610612745,HOU,Houston,201583,Ryan Anderson,Ryan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900169,1610612745,HOU,Houston,201583,Ryan Anderson,Ryan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21900157,1610612745,HOU,Houston,201583,Ryan Anderson,Ryan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+21900142,1610612745,HOU,Houston,201583,Ryan Anderson,Ryan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21900032,1610612745,HOU,Houston,201583,Ryan Anderson,Ryan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900179,1610612745,HOU,Houston,201583,Ryan Anderson,Ryan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21900069,1610612745,HOU,Houston,201583,Ryan Anderson,Ryan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21900045,1610612745,HOU,Houston,201583,Ryan Anderson,Ryan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21900086,1610612745,HOU,Houston,201583,Ryan Anderson,Ryan,,,9.000000:50,124.1,122.7,73.1,72.7,51.0,50.0,0.25,2.0,25.0,0.0,0.545,0.316,12.5,0.2,0.2,0.273,0.276,106.51,107.39,89.49,22,0.148,11.0
+21900093,1610612745,HOU,Houston,201583,Ryan Anderson,Ryan,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0

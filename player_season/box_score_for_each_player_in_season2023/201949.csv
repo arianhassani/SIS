@@ -1,0 +1,55 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+22300928,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22300652,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+22300691,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22300685,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22300493,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,28.0
+22301174,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22300903,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22300877,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22300863,1610612754,IND,Indiana,201949,James Johnson,James,,,7.000000:18,121.0,112.5,104.9,113.3,16.0,-0.8,0.143,0.0,33.3,0.0,0.0,0.0,0.0,0.0,0.532,0.118,0.126,102.18,101.92,84.93,16,-0.016,11.0
+22300533,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,14.0
+22301188,1610612754,IND,Indiana,201949,James Johnson,James,,,6.000000:48,107.1,100.0,60.5,64.3,46.7,35.7,0.167,1.0,33.3,0.0,0.0,0.0,33.3,0.0,0.0,0.133,0.143,101.93,102.35,85.29,15,-0.13,24.0
+22300719,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22300480,1610612754,IND,Indiana,201949,James Johnson,James,,,8.000000:14,110.7,115.8,128.8,120.0,-18.1,-4.2,0.143,1.0,20.0,0.0,0.25,0.077,20.0,0.333,0.333,0.182,0.183,112.29,113.68,94.74,19,0.041,27.0
+22300520,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22300454,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22300441,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22300793,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22301116,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22301089,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22301063,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22300948,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22300627,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22300829,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22300550,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22300391,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22300636,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22300409,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22300755,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22300350,1610612754,IND,Indiana,201949,James Johnson,James,,,6.000000:20,138.1,126.7,121.4,113.3,16.7,13.3,0.286,2.0,50.0,0.167,0.0,0.077,25.0,0.0,0.0,0.118,0.127,105.2,113.68,94.74,15,0.015,21.0
+22300422,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22301106,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22301043,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22300604,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22300941,1610612754,IND,Indiana,201949,James Johnson,James,,DND - Injury/Illness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22300564,1610612754,IND,Indiana,201949,James Johnson,James,,,0.000000:34,200.0,100.0,227.3,200.0,-27.3,-100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,80.33,128.19,106.83,2,0.0,11.0
+22301054,1610612754,IND,Indiana,201949,James Johnson,James,,,5.000000:27,110.3,109.1,131.1,136.4,-20.8,-27.3,0.25,1.0,20.0,0.0,0.0,0.0,20.0,0.333,0.333,0.308,0.311,98.29,96.88,80.73,11,0.0,12.0
+22300377,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22300997,1610612754,IND,Indiana,201949,James Johnson,James,,,3.000000:21,43.6,42.9,136.6,125.0,-93.0,-82.1,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.125,0.127,101.73,107.46,89.55,7,0.0,12.0
+22300983,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22300968,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22300819,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22300614,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22300365,1610612754,IND,Indiana,201949,James Johnson,James,,,5.000000:58,141.3,133.3,101.1,100.0,40.2,33.3,0.333,0.0,66.7,0.0,0.0,0.0,0.0,1.0,1.0,0.071,0.075,89.3,92.51,77.09,12,0.182,24.0
+22301133,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22300707,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,14.0
+22300507,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22300670,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22300843,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22300328,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22300466,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22301146,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,14.0
+22301032,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22300338,1610612754,IND,Indiana,201949,James Johnson,James,,,3.000000:12,153.1,150.0,85.7,85.7,67.3,64.3,0.0,0.0,0.0,0.0,0.5,0.25,0.0,0.0,0.0,0.0,0.0,96.6,97.5,81.25,6,0.083,12.0
+22300892,1610612754,IND,Indiana,201949,James Johnson,James,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
