@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python Debugger: Module",
+            "name": "dataset",
             "type": "debugpy",
             "request": "launch",
             "module": "ml.dataset"

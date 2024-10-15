@@ -27,7 +27,7 @@ def build_train_dataset(games_df: pd.DataFrame, training_cutoff: int, max_predic
         add_encoder_length=True,
     )
 def build_dataset(games_df: pd.DataFrame):
-
+    games_df.info()
     training_cutoff = 60
     max_prediction_length = 1
     max_encoder_length = 30
