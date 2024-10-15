@@ -1,6 +1,9 @@
 import express from 'express';
 import Team from '../models/Team.js'; // Adjust the import based on your file structure
 import Player from '../models/Player.js'
+import path from 'path';
+
+const scriptPath = path.resolve('../dataPopulation/nbainjuries.py');
 
 const router = express.Router();
 
@@ -23,5 +26,11 @@ router.get('/:teamName/players', async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
+
+router.get('/:teamName/injuredPlayers', (req, res) => {
+    const { teamName } = req.params;
+  
+    
+  });
 
 export default router;

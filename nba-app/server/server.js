@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import connectDB from "./config/db.js";
 import teamRoutes from './routes/teams.js'; // Import the teams route
-import playerRoutes from './routes/players.js'; // Import the teams route
+import playerRoutes from './routes/players.js'; // Import the players route
 
 const port = process.env.PORT || 3000;
 const app = express();
