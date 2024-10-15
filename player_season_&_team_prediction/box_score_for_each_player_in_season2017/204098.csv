@@ -1,0 +1,20 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21700876,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700678,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,,1.000000:48,0.0,0.0,133.3,100.0,-133.3,-100.0,0.0,0.0,0.0,0.333,0.0,0.2,0.0,0.0,0.0,0.5,0.5,80.0,93.33,77.78,3,-0.75,10.0
+21700848,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700910,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21700865,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,,0.000000:36,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,39.78,79.56,66.3,1,0.0,22.0
+21700913,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,,7.000000:39,109.0,107.1,116.5,107.1,-7.4,0.0,0.5,0.0,60.0,0.0,0.0,0.0,0.0,0.0,0.0,0.133,0.136,83.58,87.84,73.2,14,0.0,11.0
+21700801,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,,1.000000:49,100.0,75.0,157.7,175.0,-57.7,-100.0,1.0,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,98.29,105.69,88.07,4,0.0,11.0
+21700968,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21700821,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21701136,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21700981,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,,1.000000:41,41.0,50.0,128.9,100.0,-87.9,-50.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,124.9,128.32,106.93,4,-0.5,23.0
+21700771,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700827,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700947,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700951,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700763,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,,7.000000:12,99.6,112.5,121.5,118.8,-21.9,-6.3,0.0,0.0,0.0,0.0,0.0,0.0,40.0,0.5,0.521,0.25,0.249,112.4,106.67,88.89,16,-0.039,9.0
+21700893,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21701192,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700932,1610612749,MIL,Milwaukee,204098,Xavier Munford,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0

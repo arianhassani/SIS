@@ -1,0 +1,31 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21400038,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,,9.000000:25,63.6,60.0,125.3,131.6,-61.7,-71.6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,98.99,99.4,82.83,20,0.0,9.0
+21400013,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21400402,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400003,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,,18.000000:28,82.5,81.1,100.9,94.7,-18.4,-13.7,0.0,0.0,0.0,0.048,0.0,0.027,0.0,0.0,0.26,0.15,0.156,93.63,97.47,81.23,37,-0.048,21.0
+21400439,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,NWT - Ruptured Left Achilles Tendon,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400339,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,NWT - ruptured left achilles,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400264,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,NWT - Ruptured Left Achilles Tendon,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400104,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,,6.000000:20,92.3,85.7,116.5,115.4,-24.2,-29.7,0.0,0.0,0.0,0.0,0.0,0.0,33.3,0.5,0.5,0.188,0.2,98.07,102.32,85.26,14,-0.043,7.0
+21400114,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,,10.000000:18,137.3,133.3,76.4,66.7,60.8,66.7,0.1,0.0,25.0,0.0,0.0,0.0,0.0,0.5,0.347,0.115,0.118,90.22,97.86,81.55,21,0.0,7.0
+21400248,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,DND - Ruptured left Achilles tendon,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400300,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,NWT - Ruptured left Achilles tendon.,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400315,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,DND - Ruptured left Achilles tendon,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400279,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,NWT - Ruptured Left Achilles Tendon,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400131,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,,4.000000:23,162.0,175.0,43.6,37.5,118.4,137.5,0.0,0.0,0.0,0.0,0.333,0.125,0.0,0.0,0.0,0.1,0.094,84.98,87.6,73.0,8,0.0,22.0
+21400097,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,,7.000000:22,121.2,114.3,94.9,100.0,26.4,14.3,0.0,0.0,0.0,0.0,0.0,0.0,33.3,0.0,0.0,0.2,0.211,91.09,91.22,76.02,14,-0.077,21.0
+21400255,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,NWT - RUPTURED LEFT ACHILLES TENDON,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400056,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400145,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,,12.000000:00,155.4,150.0,88.1,84.0,67.4,66.0,0.182,2.0,25.0,0.091,0.1,0.095,12.5,1.0,0.885,0.2,0.206,94.0,98.0,81.67,24,0.141,23.0
+21400026,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,,5.000000:18,133.1,127.3,113.6,108.3,19.4,18.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.568,0.182,0.19,99.44,104.15,86.79,11,0.0,22.0
+21400351,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,NWT - Ruptured Left Achilles Tendon,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400392,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,DND - Ruptured left Achilles tendon,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400180,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,,12.000000:00,108.1,109.5,143.7,136.4,-35.6,-26.8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.412,0.167,0.172,84.32,86.0,71.67,21,-0.021,11.0
+21400426,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,DND - Ruptured left achilles tendon.,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400234,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,NWT - Ruptured left Achilles tendon,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21400222,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,NWT - Ruptured left achilles tendon,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400356,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,NWT - Ruptured Lf Achilles Tendon,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400430,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,NWT - Ruptured Left Achilles Tendon,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400197,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21400169,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21400155,1610612747,LAL,Los Angeles,202333,Xavier Henry,Xavier,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0

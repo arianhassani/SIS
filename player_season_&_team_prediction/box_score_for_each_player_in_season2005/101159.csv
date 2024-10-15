@@ -1,0 +1,56 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20500885,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Right Knee Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500851,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Right Knee Loose Bodies,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500925,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Right Knee Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500299,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,,0.000000:12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,124.14,248.28,206.9,1,0.0,20.0
+20500267,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500511,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500277,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500909,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Right Knee Injury,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500935,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,NWT-right knee loose bodies,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500316,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500470,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,,2.000000:20,123.0,120.0,128.7,116.7,-5.7,3.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,106.15,113.14,94.29,5,0.0,20.0
+20500704,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500665,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500329,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500498,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,NWT - Illness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500549,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,,8.000000:34,107.3,111.1,94.8,88.9,12.5,22.2,0.0,0.0,0.0,0.083,0.091,0.087,0.0,0.4,0.46,0.227,0.221,99.51,100.86,84.05,18,0.17,9.0
+20500561,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500617,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500832,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500589,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500774,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500358,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,,3.000000:42,75.0,75.0,12.7,12.5,62.3,62.5,0.5,0.0,33.3,0.0,0.222,0.167,0.0,0.5,0.5,0.25,0.25,103.01,103.78,86.49,8,1.667,21.0
+20500406,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500599,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500214,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,,2.000000:07,100.0,80.0,84.0,80.0,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.167,0.2,99.33,113.39,94.49,5,-0.364,22.0
+20500573,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500003,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500798,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500821,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Right Knee,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500438,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500421,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500958,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,NWT - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500019,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500391,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500225,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500972,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,NWT - Right Knee Surgery,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20500427,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500619,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500778,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500383,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500949,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,NWT,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500456,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,,5.000000:02,80.0,72.7,119.5,118.2,-39.5,-45.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.5,0.455,0.5,99.56,104.9,87.42,11,0.189,20.0
+20500721,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500655,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,,3.000000:01,200.0,171.4,159.9,157.1,40.1,14.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.125,0.143,102.47,111.38,92.82,7,0.087,9.0
+20500864,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Right Knee Loose Bodies,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500290,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500642,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500530,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20500733,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500337,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20500479,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500255,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,,7.000000:38,106.7,106.7,83.5,87.5,23.1,19.2,0.0,0.0,0.0,0.5,0.2,0.286,14.3,0.833,0.833,0.412,0.412,99.86,97.47,81.22,15,0.378,20.0
+20500240,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,,7.000000:09,78.3,75.0,158.5,168.8,-80.1,-93.8,0.0,0.0,0.0,0.0,0.0,0.0,25.0,0.0,0.145,0.211,0.218,108.62,107.41,89.51,16,-0.385,21.0
+20500693,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,,2.000000:47,74.0,62.5,114.3,114.3,-40.3,-51.8,0.0,0.0,0.0,0.125,0.667,0.273,0.0,0.75,0.75,0.2,0.228,118.65,129.34,107.78,8,0.321,22.0
+20500877,1610612756,PHX,Phoenix,101159,Dijon Thompson,Dijon,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0

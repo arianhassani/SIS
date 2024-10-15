@@ -1,0 +1,28 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21500189,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21501135,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500067,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,,3.000000:20,100.0,88.9,112.5,112.5,-12.5,-23.6,0.0,0.0,0.0,0.333,0.0,0.2,0.0,0.0,0.0,0.0,0.0,115.2,122.4,102.0,9,0.026,12.0
+21501224,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,,4.000000:27,50.0,55.6,146.4,144.4,-96.4,-88.9,0.5,0.0,50.0,0.25,0.167,0.214,0.0,0.0,0.0,0.077,0.083,101.82,97.08,80.9,9,0.057,7.0
+21500058,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,,4.000000:15,109.1,122.2,68.5,60.0,40.6,62.2,0.0,0.0,0.0,0.0,0.333,0.125,0.0,0.0,0.0,0.2,0.198,106.39,107.29,89.41,9,-0.235,23.0
+21501193,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21501141,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21500303,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21500103,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21500293,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21500318,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21501211,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21500245,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,,8.000000:52,144.3,147.1,108.2,100.0,36.2,47.1,0.0,0.0,0.0,0.0,0.071,0.053,0.0,1.0,1.0,0.059,0.058,91.92,94.74,78.95,17,0.1,10.0
+21500084,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500092,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21500332,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21501010,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500282,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,,4.000000:18,115.2,118.2,76.5,90.0,38.7,28.2,0.0,0.0,0.0,0.0,0.286,0.167,0.0,0.0,0.0,0.0,0.0,128.6,117.21,97.67,11,0.0,25.0
+21500137,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21500122,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21501176,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,,12.000000:25,109.6,108.0,105.5,100.0,4.1,8.0,0.0,0.0,0.0,0.0,0.077,0.048,40.0,0.5,0.694,0.185,0.188,95.25,98.58,82.15,25,0.045,18.0
+21501162,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,,6.000000:14,91.4,100.0,88.0,92.3,3.4,7.7,0.0,0.0,0.0,0.0,0.111,0.059,100.0,0.0,0.0,0.067,0.065,111.5,103.96,86.63,14,-0.048,21.0
+21500031,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,,3.000000:44,90.0,90.0,123.0,120.0,-33.0,-30.0,0.0,0.0,0.0,0.0,0.2,0.125,0.0,1.0,1.0,0.1,0.1,127.03,128.57,107.14,10,0.189,24.0
+21500150,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500221,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21500369,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21500237,1610612758,SAC,Sacramento,203961,Eric Moreland,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0

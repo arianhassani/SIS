@@ -1,0 +1,14 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20500930,1610612760,SEA,Seattle,2033,Marcus Fizer,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20500918,1610612760,SEA,Seattle,2033,Marcus Fizer,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20501084,1610612740,NOK,New Orleans/Oklahoma City,2033,Marcus Fizer,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+20501073,1610612740,NOK,New Orleans/Oklahoma City,2033,Marcus Fizer,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,20.0
+20500962,1610612760,SEA,Seattle,2033,Marcus Fizer,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20500949,1610612760,SEA,Seattle,2033,Marcus Fizer,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20501114,1610612740,NOK,New Orleans/Oklahoma City,2033,Marcus Fizer,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20501101,1610612740,NOK,New Orleans/Oklahoma City,2033,Marcus Fizer,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20501210,1610612740,NOK,New Orleans/Oklahoma City,2033,Marcus Fizer,Marcus,,,17.000000:40,85.9,82.9,122.8,117.1,-36.9,-34.3,0.0,0.0,0.0,0.05,0.091,0.065,10.0,0.5,0.507,0.25,0.258,91.24,95.09,79.25,35,0.052,11.0
+20500906,1610612760,SEA,Seattle,2033,Marcus Fizer,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20501202,1610612740,NOK,New Orleans/Oklahoma City,2033,Marcus Fizer,Marcus,,,9.000000:19,65.3,64.7,123.9,129.4,-58.6,-64.7,0.0,0.0,0.0,0.0,0.222,0.143,25.0,0.333,0.333,0.222,0.224,89.13,87.58,72.99,17,-0.061,10.0
+20501001,1610612760,SEA,Seattle,2033,Marcus Fizer,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20501229,1610612740,NOK,New Orleans/Oklahoma City,2033,Marcus Fizer,Marcus,,,12.000000:00,137.2,145.5,101.2,100.0,36.1,45.5,0.111,0.0,14.3,0.0,0.25,0.136,0.0,0.75,0.75,0.231,0.237,88.16,86.0,71.67,22,0.186,9.0

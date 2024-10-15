@@ -1,0 +1,31 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20600424,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,,7.000000:27,132.7,126.7,138.1,135.7,-5.4,-9.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.5,0.125,0.131,90.46,93.42,77.85,15,0.0,7.0
+20601128,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,,17.000000:49,99.1,97.2,109.4,111.4,-10.3,-14.2,0.077,0.0,33.3,0.0,0.167,0.086,0.0,0.75,0.75,0.053,0.054,95.59,95.64,79.7,36,0.076,19.0
+20600191,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,,9.000000:05,86.7,90.0,60.5,57.1,26.2,32.9,0.0,0.0,0.0,0.0,0.077,0.048,100.0,0.0,0.0,0.045,0.046,107.27,108.33,90.28,20,-0.3,10.0
+20600435,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,,6.000000:14,109.7,107.7,125.4,123.1,-15.7,-15.4,0.0,0.0,0.0,0.143,0.0,0.071,33.3,1.0,1.064,0.2,0.203,98.26,100.11,83.42,13,0.098,19.0
+20600347,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20601138,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,,6.000000:06,123.0,136.4,190.0,190.0,-67.0,-53.6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.75,0.694,0.231,0.227,87.34,82.62,68.85,11,0.033,9.0
+20600385,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20601162,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600493,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600294,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,,3.000000:39,103.6,116.7,140.0,116.7,-36.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,50.0,1.0,0.694,0.286,0.258,77.33,78.9,65.75,6,0.0,8.0
+20600327,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,,7.000000:09,60.0,69.2,116.7,107.7,-56.7,-38.5,0.25,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,90.63,87.27,72.73,13,0.056,21.0
+20600285,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,,10.000000:08,40.5,38.1,116.5,110.0,-76.0,-71.9,0.667,2.0,40.0,0.0,0.0,0.0,20.0,0.0,0.0,0.136,0.145,91.52,97.11,80.92,21,-0.057,7.0
+20601210,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,,17.000000:45,126.3,125.0,143.1,141.7,-16.8,-16.7,0.059,0.5,20.0,0.091,0.2,0.154,40.0,1.0,1.064,0.103,0.104,96.38,97.35,81.13,36,0.059,8.0
+20600102,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20601180,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,,5.000000:13,92.2,90.0,125.6,122.2,-33.4,-32.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.091,0.093,85.2,87.41,72.84,10,0.0,20.0
+20600505,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600448,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600305,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600113,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20601191,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600270,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20601230,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,,6.000000:27,100.0,90.9,141.7,140.0,-41.7,-49.1,0.0,0.0,0.0,0.0,0.667,0.222,0.0,0.0,0.0,0.154,0.167,73.97,78.14,65.12,11,0.022,7.0
+20600462,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600476,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600228,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,,0.000000:02,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1200.0,1000.0,1,0.0,21.0
+20600413,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600358,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600366,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600206,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,,6.000000:17,119.5,118.2,102.2,100.0,17.3,18.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.5,1.5,0.077,0.084,82.66,84.03,70.03,11,0.111,21.0
+20600398,1610612740,NOK,New Orleans/Oklahoma City,200790,Marcus Vinicius,Marcus,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0

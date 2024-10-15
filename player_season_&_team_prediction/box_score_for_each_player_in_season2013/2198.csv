@@ -1,0 +1,13 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21300100,1610612755,PHI,Philadelphia,2198,Kwame Brown,Kwame,,DND - Right Hamstring Strain,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21300048,1610612755,PHI,Philadelphia,2198,Kwame Brown,Kwame,,DND - Right Hamstring Strain,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300076,1610612755,PHI,Philadelphia,2198,Kwame Brown,Kwame,,DND - Right Hamstring Strain,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21300063,1610612755,PHI,Philadelphia,2198,Kwame Brown,Kwame,,DND - Right Hamstring Strain,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21300088,1610612755,PHI,Philadelphia,2198,Kwame Brown,Kwame,,NWT - Right Hamstring Strain,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21300112,1610612755,PHI,Philadelphia,2198,Kwame Brown,Kwame,,DND - Right Hamstring Strain,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21300005,1610612755,PHI,Philadelphia,2198,Kwame Brown,Kwame,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21300143,1610612755,PHI,Philadelphia,2198,Kwame Brown,Kwame,,NWT - Right hamstring strain,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21300022,1610612755,PHI,Philadelphia,2198,Kwame Brown,Kwame,,NWT - Right hamstring strain,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21300034,1610612755,PHI,Philadelphia,2198,Kwame Brown,Kwame,,DND - Right Hamstring Strain,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300153,1610612755,PHI,Philadelphia,2198,Kwame Brown,Kwame,,NWT - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21300127,1610612755,PHI,Philadelphia,2198,Kwame Brown,Kwame,,NWT - Right Hamstring Strain,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0

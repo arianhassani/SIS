@@ -1,0 +1,46 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20600197,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600785,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20601128,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600747,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600182,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600976,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,,4.000000:50,60.0,60.0,101.4,90.0,-41.4,-30.0,0.0,0.0,0.0,0.0,0.2,0.1,66.7,0.0,0.0,0.3,0.3,93.75,99.31,82.76,10,-0.143,21.0
+20601103,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20601071,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600965,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600150,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20601215,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600724,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600877,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,,21.000000:21,136.4,134.2,106.4,102.6,29.9,31.6,0.154,2.0,16.7,0.0,0.0,0.0,8.3,0.611,0.611,0.244,0.26,83.23,85.43,71.19,38,0.046,19.0
+20600915,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,,7.000000:41,81.3,72.2,100.0,94.1,-18.8,-21.9,0.25,1.0,20.0,0.0,0.111,0.053,20.0,0.5,0.5,0.222,0.25,99.96,109.33,91.11,18,0.066,20.0
+20601005,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20601207,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20601171,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600126,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600088,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,,4.000000:25,33.3,33.3,194.1,170.0,-160.7,-136.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3,0.3,96.51,103.25,86.04,9,-0.19,23.0
+20600706,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600855,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600070,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600925,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,,7.000000:14,96.7,92.9,132.0,141.7,-35.3,-48.8,0.333,0.0,25.0,0.0,0.2,0.063,0.0,1.0,1.0,0.176,0.182,87.33,86.27,71.89,14,0.212,20.0
+20601144,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20601192,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,,3.000000:27,101.7,100.0,104.2,85.7,-2.4,14.3,0.0,0.0,0.0,0.2,0.25,0.222,0.0,0.0,0.532,0.25,0.254,87.93,97.39,81.16,7,0.12,10.0
+20600139,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20601019,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20601185,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600890,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,,6.000000:16,101.0,100.0,76.5,75.0,24.5,25.0,0.0,0.0,0.0,0.0,0.167,0.091,100.0,0.0,0.0,0.083,0.084,90.54,91.91,76.6,12,0.0,19.0
+20601041,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600808,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20601120,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20600799,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,,2.000000:39,140.0,116.7,34.7,33.3,105.3,83.3,0.0,0.0,0.0,0.0,0.2,0.143,0.0,1.5,1.5,0.167,0.2,97.45,108.68,90.57,6,0.471,10.0
+20600014,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600028,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600002,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20600822,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20601080,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600946,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,,6.000000:17,150.0,150.0,120.0,100.0,30.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.154,0.154,84.03,91.67,76.39,12,-0.059,20.0
+20600833,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20601052,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20600762,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20600986,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,,7.000000:16,75.6,75.0,142.0,142.9,-66.5,-67.9,0.0,0.0,0.0,0.1,0.111,0.105,0.0,0.5,0.5,0.111,0.112,98.95,99.08,82.57,16,0.1,8.0
+20600039,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20601092,1610612756,PHX,Phoenix,15,Eric Piatkowski,Eric,,,1.000000:22,300.0,300.0,200.0,133.3,100.0,166.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,70.24,87.8,73.17,2,0.0,20.0
