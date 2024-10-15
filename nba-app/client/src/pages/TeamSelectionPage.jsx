@@ -1,82 +1,300 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation } from 'react-router-dom';
+import React, { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+
+// Import team logos (adjusted paths)
+import bostonCelticsLogo from "../assets/celtics.png";
+import dallasMavericksLogo from "../assets/dallas-mavericks-logo-1.png";
+import sixersLogo from "../assets/76ers.png";
+// ... import logos for all NBA teams
+
+// Team logos mapping
+const teamLogos = {
+  "Boston Celtics": bostonCelticsLogo,
+  "Dallas Mavericks": dallasMavericksLogo,
+  "Philadelphia 76ers": sixersLogo,
+  // ... add mappings for all NBA teams
+};
+
+// NBA Teams Data Organized by Conference and Division
+const nbaTeams = [
+  {
+    conference: "Eastern Conference",
+    divisions: [
+      {
+        division: "Atlantic Division",
+        teams: [
+          "Boston Celtics",
+          "Brooklyn Nets",
+          "New York Knicks",
+          "Philadelphia 76ers",
+          "Toronto Raptors",
+        ],
+      },
+      {
+        division: "Central Division",
+        teams: [
+          "Chicago Bulls",
+          "Cleveland Cavaliers",
+          "Detroit Pistons",
+          "Indiana Pacers",
+          "Milwaukee Bucks",
+        ],
+      },
+      {
+        division: "Southeast Division",
+        teams: [
+          "Atlanta Hawks",
+          "Charlotte Hornets",
+          "Miami Heat",
+          "Orlando Magic",
+          "Washington Wizards",
+        ],
+      },
+    ],
+  },
+  {
+    conference: "Western Conference",
+    divisions: [
+      {
+        division: "Northwest Division",
+        teams: [
+          "Denver Nuggets",
+          "Minnesota Timberwolves",
+          "Oklahoma City Thunder",
+          "Portland Trail Blazers",
+          "Utah Jazz",
+        ],
+      },
+      {
+        division: "Pacific Division",
+        teams: [
+          "Golden State Warriors",
+          "Los Angeles Clippers",
+          "Los Angeles Lakers",
+          "Phoenix Suns",
+          "Sacramento Kings",
+        ],
+      },
+      {
+        division: "Southwest Division",
+        teams: [
+          "Dallas Mavericks",
+          "Houston Rockets",
+          "Memphis Grizzlies",
+          "New Orleans Pelicans",
+          "San Antonio Spurs",
+        ],
+      },
+    ],
+  },
+];
 
 const TeamSelectionPage = () => {
-  const location = useLocation();
-  const [leftValue, setLeftValue] = useState(location.state?.leftValue || '');
-  const [rightValue, setRightValue] = useState(location.state?.rightValue || '');
-  const navigate = useNavigate();
+  // State to store selected values
+  const [selectedSeason, setSelectedSeason] = useState("SELECT SEASON");
+  const [selectedHomeTeam, setSelectedHomeTeam] = useState("SELECT TEAM");
+  const [selectedAwayTeam, setSelectedAwayTeam] = useState("SELECT TEAM");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = { leftValue, rightValue };
-    navigate('/injury', { state: data });
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  // Refs for the dropdowns
+  const homeTeamDetailsRef = useRef(null);
+  const awayTeamDetailsRef = useRef(null);
+  const seasonDetailsRef = useRef(null);
+
+  const handleNextClick = () => {
+    // Navigate to InjuryPage and pass both selectedHomeTeam and selectedAwayTeam as state
+    navigate("/injury", { state: { homeTeam: selectedHomeTeam, awayTeam: selectedAwayTeam } });
+  };
+
+  const handleHomeTeamSelect = (team) => {
+    setSelectedHomeTeam(team);
+    // Close the dropdown
+    if (homeTeamDetailsRef.current) {
+      homeTeamDetailsRef.current.open = false;
+    }
+  };
+
+  const handleAwayTeamSelect = (team) => {
+    setSelectedAwayTeam(team);
+    // Close the dropdown
+    if (awayTeamDetailsRef.current) {
+      awayTeamDetailsRef.current.open = false;
+    }
+  };
+
+  const handleSeasonSelect = (season) => {
+    setSelectedSeason(season);
+    // Close the dropdown
+    if (seasonDetailsRef.current) {
+      seasonDetailsRef.current.open = false;
+    }
   };
 
   return (
-    <div className="min-h-screen bg-base-200">
-      <div className="text-center my-8">
-        <h1 className="text-5xl font-bold">Team Selection</h1>
-      </div>
-      <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4">
-        <div className="flex justify-between w-full max-w-md">
-          <label className="form-control w-full max-w-xs mr-4">
-            <div className="label">
-              <span className="label-text">Home Team</span>
-            </div>
-            <select
-              className="select select-bordered"
-              value={leftValue}
-              onChange={(e) => setLeftValue(e.target.value)}
-              defaultValue=""
+    <div className="relative min-h-screen flex flex-col w-full">
+      {/* Main content */}
+      <div className="relative flex-grow" style={{ paddingBottom: "200px" }}>
+        {/* Dropdown 1: SELECT SEASON */}
+        <details
+          ref={seasonDetailsRef}
+          className="dropdown absolute top-[calc(50%-40px)] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30"
+          style={{ width: "17rem" }}
+        >
+          <summary className="btn m-1 text-center relative" style={{ width: "17rem" }}>
+            {selectedSeason}
+            <svg
+              className="w-4 h-4 absolute right-2 top-1/2 transform -translate-y-1/2"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              style={{ pointerEvents: "none" }}
             >
-              <option value="" disabled>Pick one</option>
-              {/* {teams
-                .filter(team => team.name !== rightValue)
-                .map(team => (
-                  <option key={team._id} value={team.name}>{team.name}</option>
-                ))} */}
-              <optgroup label="Category 1">
-                <option value="Option1-1">Option 1-1</option>
-                <option value="Option1-2">Option 1-2</option>
-              </optgroup>
-              <optgroup label="Category 2">
-                <option value="Option2-1">Option 2-1</option>
-                <option value="Option2-2">Option 2-2</option>
-              </optgroup>
-            </select>
-          </label>
-          <label className="form-control w-full max-w-xs ml-4">
-            <div className="label">
-              <span className="label-text">Away Team</span>
-            </div>
-            <select
-              className="select select-bordered"
-              value={rightValue}
-              onChange={(e) => setRightValue(e.target.value)}
-              defaultValue=""
-            >
-              <option value="" disabled>Pick one</option>
-              {/* {teams
-                .filter(team => team.name !== leftValue)
-                .map(team => (
-                  <option key={team._id} value={team.name}>{team.name}</option>
-                ))} */}
-              <optgroup label="Category A">
-                <option value="OptionA-1">Option A-1</option>
-                <option value="OptionA-2">Option A-2</option>
-              </optgroup>
-              <optgroup label="Category B">
-                <option value="OptionB-1">Option B-1</option>
-                <option value="OptionB-2">Option B-2</option>
-              </optgroup>
-            </select>
-          </label>
-        </div>
-        <button type="submit" className="btn btn-primary">
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <ul
+            className="dropdown-content menu menu-vertical bg-base-100 rounded-box z-40 p-2 shadow text-center"
+            style={{ width: "17rem", maxHeight: "400px", overflowY: "auto" }}
+          >
+            <li>
+              <a onClick={() => handleSeasonSelect("2023-2024")}>2023-2024</a>
+            </li>
+            <li>
+              <a onClick={() => handleSeasonSelect("2024-2025")}>2024-2025</a>
+            </li>
+          </ul>
+        </details>
+
+        <label className="absolute top-[calc(45%-260px)] left-1/2 transform -translate-x-1/2 text-center">
+          Choose Your Teams
+        </label>
+
+        {/* "Next" Button */}
+        <button className="btn absolute top-[calc(50%+15px)] left-1/2 transform -translate-x-1/2" onClick={handleNextClick}>
           Next
         </button>
-      </form>
+
+        {/* Home Team Selection */}
+        <label className="absolute top-[calc(45%-200px)] left-[calc(50%-382px)] transform -translate-x-1/2 text-center">
+          HOME TEAM
+        </label>
+
+        <details ref={homeTeamDetailsRef} className="dropdown absolute top-[calc(45%-122px)] transform -translate-x-1/2 -translate-y-1/2 z-30" style={{ left: "calc(50% - 382px)", width: "17rem" }}>
+          <summary className="btn m-1 text-center relative" style={{ width: "17rem" }}>
+            {selectedHomeTeam}
+            <svg
+              className="w-4 h-4 absolute right-2 top-1/2 transform -translate-y-1/2"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              style={{ pointerEvents: "none" }}
+            >
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <ul className="dropdown-content menu menu-vertical bg-base-100 rounded-box z-40 p-2 shadow text-center" style={{ width: "17rem", maxHeight: "400px", overflowY: "auto" }}>
+            {nbaTeams.map((conference) => (
+              <React.Fragment key={conference.conference}>
+                <li className="menu-title">
+                  <span>{conference.conference}</span>
+                </li>
+                {conference.divisions.map((division) => (
+                  <React.Fragment key={division.division}>
+                    <li className="menu-title">
+                      <span>{division.division}</span>
+                    </li>
+                    {division.teams.map((team) => (
+                      <li key={team}>
+                        <a onClick={() => handleHomeTeamSelect(team)}>{team}</a>
+                      </li>
+                    ))}
+                  </React.Fragment>
+                ))}
+              </React.Fragment>
+            ))}
+          </ul>
+        </details>
+
+        {/* Display Home Team Logo */}
+        {selectedHomeTeam !== "SELECT TEAM" && (
+          <img
+            src={teamLogos[selectedHomeTeam]}
+            alt={selectedHomeTeam}
+            className="absolute top-[calc(45%-56px)] z-10"
+            style={{
+              left: "calc(50% - 382px)",
+              transform: "translateX(-50%)",
+              width: "350px",
+              height: "350px",
+            }}
+          />
+        )}
+
+        {/* Away Team Selection */}
+        <label className="absolute top-[calc(45%-200px)] left-[calc(50%+382px)] transform -translate-x-1/2 text-center">
+          AWAY TEAM
+        </label>
+
+        <details ref={awayTeamDetailsRef} className="dropdown absolute top-[calc(45%-122px)] transform -translate-x-1/2 -translate-y-1/2 z-30" style={{ left: "calc(50% + 382px)", width: "17rem" }}>
+          <summary className="btn m-1 text-center relative" style={{ width: "17rem" }}>
+            {selectedAwayTeam}
+            <svg
+              className="w-4 h-4 absolute right-2 top-1/2 transform -translate-y-1/2"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              style={{ pointerEvents: "none" }}
+            >
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <ul className="dropdown-content menu menu-vertical bg-base-100 rounded-box z-40 p-2 shadow text-center" style={{ width: "17rem", maxHeight: "400px", overflowY: "auto" }}>
+            {nbaTeams.map((conference) => (
+              <React.Fragment key={conference.conference}>
+                <li className="menu-title">
+                  <span>{conference.conference}</span>
+                </li>
+                {conference.divisions.map((division) => (
+                  <React.Fragment key={division.division}>
+                    <li className="menu-title">
+                      <span>{division.division}</span>
+                    </li>
+                    {division.teams.map((team) => (
+                      <li key={team}>
+                        <a onClick={() => handleAwayTeamSelect(team)}>{team}</a>
+                      </li>
+                    ))}
+                  </React.Fragment>
+                ))}
+              </React.Fragment>
+            ))}
+          </ul>
+        </details>
+
+        {/* Display Away Team Logo */}
+        {selectedAwayTeam !== "SELECT TEAM" && (
+          <img
+            src={teamLogos[selectedAwayTeam]}
+            alt={selectedAwayTeam}
+            className="absolute top-[calc(45%-56px)] z-10"
+            style={{
+              left: "calc(50% + 382px)",
+              transform: "translateX(-50%)",
+              width: "350px",
+              height: "350px",
+            }}
+          />
+        )}
+      </div>
+
+      {/* Footer */}
+      <footer className="w-full bg-gray-800 text-white text-center py-14">
+        <p>&copy; {new Date().getFullYear()} NBA Analytics. All rights reserved.</p>
+      </footer>
     </div>
   );
 };
