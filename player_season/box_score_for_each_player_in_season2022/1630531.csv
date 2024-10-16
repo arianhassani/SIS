@@ -1,0 +1,48 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+22201217,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,G,,2.000000:07,80.0,80.0,60.0,60.0,20.0,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,113.39,113.39,94.49,5,0.0,3.0
+22200108,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,NWT - Not With Team,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22200646,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22200875,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22200493,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22200097,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22201016,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,3.000000:00,66.7,57.1,86.8,83.3,-20.1,-26.2,0.5,0.0,50.0,0.333,0.0,0.2,0.0,0.0,0.0,0.125,0.143,94.08,104.0,86.67,7,0.833,27.0
+22200889,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22200453,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22200084,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22200721,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DND - Injury/Illness,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22200480,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22200682,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22201205,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,G,,34.000000:08,118.6,123.1,112.2,115.4,6.5,7.7,0.103,1.5,15.8,0.024,0.033,0.028,10.5,0.692,0.684,0.172,0.174,113.29,109.67,91.39,78,0.063,3.0
+22200655,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22200668,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,2.000000:05,40.0,33.3,170.1,166.7,-130.1,-133.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.167,0.2,125.34,138.24,115.2,6,-0.087,12.0
+22200044,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,2.000000:00,34.7,25.0,128.9,166.7,-94.1,-141.7,0.0,0.0,0.0,0.25,0.333,0.286,0.0,0.0,0.266,0.4,0.515,81.12,84.0,70.0,4,0.286,27.0
+22200195,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22200382,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+22201103,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,0.000000:16,0.0,0.0,170.5,100.0,-170.5,-100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,254.77,369.23,307.69,1,0.0,9.0
+22200545,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,3.000000:56,75.0,66.7,125.6,122.2,-50.6,-55.6,0.0,0.0,0.0,0.2,0.25,0.222,0.0,0.5,0.5,0.2,0.222,102.26,109.83,91.53,9,0.032,10.0
+22200356,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22200756,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22201110,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,4.000000:06,103.1,100.0,125.0,142.9,-21.9,-42.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.222,0.228,92.25,87.8,73.17,8,-0.053,10.0
+22200554,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22200409,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,5.000000:33,66.7,60.0,109.1,120.0,-42.4,-60.0,0.0,0.0,0.0,0.0,0.143,0.071,0.0,0.0,0.0,0.182,0.2,86.49,86.49,72.07,10,-0.033,25.0
+22201139,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,29.0
+22200741,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22201072,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22200567,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22201057,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,3.000000:21,100.0,85.7,87.2,100.0,12.8,-14.3,0.333,0.0,50.0,0.0,0.2,0.111,0.0,0.0,0.0,0.125,0.143,92.27,93.13,77.61,7,0.1,10.0
+22200188,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22200837,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22200770,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,NWT - Not With Team,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22200028,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,28.0
+22200612,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,8.000000:43,166.7,161.1,125.8,127.8,40.8,33.3,0.2,0.0,16.7,0.5,0.0,0.182,0.0,1.0,1.025,0.25,0.258,98.24,99.12,82.6,18,0.256,25.0
+22200148,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22200001,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22200015,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,27.0
+22201087,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,3.000000:15,57.1,66.7,121.5,100.0,-64.4,-33.3,0.0,0.0,0.0,0.0,1.0,0.2,0.0,0.5,0.5,0.25,0.25,94.23,96.0,80.0,6,0.308,12.0
+22200399,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,1.000000:41,100.0,75.0,69.4,50.0,30.6,25.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.25,0.333,83.83,114.06,95.05,4,-0.667,22.0
+22201126,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,5.000000:47,173.6,166.7,75.8,75.0,97.9,91.7,0.167,0.0,33.3,0.0,0.286,0.182,0.0,0.0,0.532,0.143,0.148,97.11,99.6,83.0,12,0.163,11.0
+22201047,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,7.000000:03,112.7,114.3,88.4,100.0,24.2,14.3,0.2,0.0,33.3,0.0,0.0,0.0,0.0,0.5,0.5,0.143,0.141,106.08,98.72,82.27,14,0.043,11.0
+22200698,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22200073,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,,2.000000:15,150.0,120.0,77.3,75.0,72.7,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.4,0.5,84.05,96.0,80.0,5,0.316,11.0
+22200059,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22201150,1610612755,PHI,Philadelphia,1630531,Jaden Springer,Jaden,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0

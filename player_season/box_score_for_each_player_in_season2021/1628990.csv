@@ -1,0 +1,29 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+22100012,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22100549,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,13.0
+22100206,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22100412,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,,2.000000:38,191.0,157.1,133.3,133.3,57.6,23.8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.136,0.143,0.174,107.18,118.48,98.73,7,0.103,9.0
+22100529,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22100267,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22100106,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22100088,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22100260,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22100062,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22100316,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+22100505,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+22100483,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+22100251,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,,2.000000:17,154.6,150.0,75.0,75.0,79.6,75.0,0.5,0.0,100.0,0.0,0.2,0.167,0.0,0.0,0.0,0.0,0.0,82.83,84.09,70.07,4,0.364,25.0
+22100331,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22100522,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,,8.000000:07,121.7,125.0,81.3,76.5,40.4,48.5,0.125,1.0,50.0,0.0,0.0,0.0,50.0,0.0,0.0,0.043,0.043,95.92,97.58,81.31,16,0.0,22.0
+22100137,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22100490,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,20.0
+22100282,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22100294,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22100033,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,,6.000000:25,97.9,100.0,67.2,62.5,30.7,37.5,0.0,0.0,0.0,0.0,0.182,0.111,66.7,1.0,1.0,0.188,0.184,112.96,115.95,96.62,15,0.049,12.0
+22100153,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22100178,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+22100390,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,,2.000000:08,75.0,60.0,138.9,150.0,-63.9,-90.0,0.0,0.0,0.0,0.0,0.25,0.143,0.0,0.0,0.0,0.167,0.2,93.6,101.25,84.38,5,0.0,22.0
+22100025,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22100237,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,,0.000000:48,53.2,40.0,51.5,50.0,1.6,-10.0,0.0,0.0,0.0,0.0,1.0,0.5,100.0,0.0,0.0,0.167,0.21,231.13,272.27,226.89,5,0.0,23.0
+22100168,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+22100195,1610612756,PHX,Phoenix,1628990,Chandler Hutchison,Chandler,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0

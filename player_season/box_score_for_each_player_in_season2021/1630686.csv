@@ -1,0 +1,27 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+22100175,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+22100161,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+22100001,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,,1.000000:16,66.7,100.0,0.0,0.0,66.7,100.0,0.0,0.0,0.0,0.667,0.0,0.4,0.0,0.0,0.0,0.4,0.4,94.74,75.79,63.16,2,0.4,26.0
+22100015,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,,17.000000:46,101.6,100.0,134.2,132.4,-32.5,-32.4,0.0,0.0,0.0,0.059,0.111,0.086,30.0,0.7,0.592,0.256,0.26,98.5,99.96,83.3,37,0.007,9.0
+22100273,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,,2.000000:18,41.0,40.0,44.4,60.0,-3.4,-20.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,121.46,104.35,86.96,5,0.0,23.0
+22100258,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,,13.000000:24,81.5,80.8,144.7,139.3,-63.1,-58.5,0.0,0.0,0.0,0.063,0.125,0.094,33.3,1.5,1.33,0.1,0.101,94.42,96.72,80.6,26,0.102,24.0
+22101185,1610612760,OKC,Oklahoma City,1630686,Georgios Kalaitzakis,Georgios,G,,42.000000:54,107.3,105.7,101.1,101.1,6.2,4.5,0.065,0.29,7.7,0.0,0.024,0.012,26.9,0.538,0.515,0.242,0.248,97.75,98.46,82.05,88,0.022,15.0
+22101194,1610612760,OKC,Oklahoma City,1630686,Georgios Kalaitzakis,Georgios,F,,29.000000:32,109.0,112.1,144.5,142.4,-35.5,-30.3,0.048,0.5,7.7,0.029,0.045,0.036,15.4,0.5,0.511,0.179,0.18,95.7,95.08,79.23,58,0.024,0.0
+22100301,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,,0.000000:35,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,41.62,83.24,69.36,1,0.0,11.0
+22100329,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22100103,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,,7.000000:54,62.1,63.2,105.8,110.5,-43.7,-47.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.143,0.148,118.97,115.44,96.2,19,-0.243,10.0
+22100060,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22100128,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,26.0
+22101222,1610612760,OKC,Oklahoma City,1630686,Georgios Kalaitzakis,Georgios,F,,48.000000:00,88.0,88.9,137.8,139.4,-49.7,-50.5,0.097,1.0,13.0,0.016,0.114,0.056,13.0,0.5,0.507,0.175,0.179,100.06,99.0,82.5,99,0.043,0.0
+22100288,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,,3.000000:14,107.5,114.3,215.7,212.5,-108.2,-98.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.042,0.143,0.134,113.72,111.34,92.78,7,0.0,10.0
+22101211,1610612760,OKC,Oklahoma City,1630686,Georgios Kalaitzakis,Georgios,F,,45.000000:15,97.6,97.9,117.2,118.8,-19.6,-20.8,0.222,1.5,19.4,0.0,0.091,0.043,12.9,0.579,0.59,0.231,0.237,102.7,101.83,84.86,96,0.112,0.0
+22100324,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,21.0
+22100244,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22100085,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,,0.000000:48,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,60.25,90.38,75.31,2,0.0,22.0
+22100091,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22100042,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,,0.000000:33,0.0,0.0,200.0,100.0,-200.0,-100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,86.49,129.73,108.11,1,0.0,10.0
+22100219,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+22100032,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22100193,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22100155,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+22100142,1610612749,MIL,Milwaukee,1630686,Georgios Kalaitzakis,Georgios,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0

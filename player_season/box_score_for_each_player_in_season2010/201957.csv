@@ -1,0 +1,39 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21000436,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000227,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,,5.000000:03,119.5,118.2,40.0,40.0,79.5,78.2,0.0,0.0,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.077,0.078,99.23,99.8,83.17,11,-0.333,9.0
+21000541,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000186,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000352,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,,7.000000:26,88.1,81.3,84.0,81.3,4.1,0.0,0.0,0.0,0.0,0.0,0.625,0.333,28.6,0.5,0.512,0.412,0.444,97.64,103.32,86.1,16,0.412,22.0
+21000622,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000568,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000197,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000425,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,,5.000000:27,101.0,109.1,60.7,54.5,40.3,54.5,0.0,0.0,0.0,0.0,0.167,0.067,0.0,0.5,0.5,0.118,0.118,95.82,96.88,80.73,11,0.2,10.0
+21000247,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000468,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,,5.000000:29,112.8,100.0,131.6,127.3,-18.8,-27.3,0.0,0.0,0.0,0.167,0.4,0.273,0.0,0.0,0.174,0.231,0.258,93.14,100.67,83.89,12,0.048,23.0
+21000508,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000867,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000481,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000523,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000320,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000917,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000297,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000450,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000688,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000701,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21001225,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,,29.000000:11,90.1,90.0,130.8,128.8,-40.7,-38.8,0.0,0.0,0.0,0.032,0.174,0.093,15.4,0.444,0.465,0.186,0.191,97.12,97.88,81.57,60,0.041,20.0
+21000305,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,,0.000000:55,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,130.67,104.54,87.11,2,0.0,9.0
+21000488,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,,7.000000:45,81.3,80.0,122.0,112.5,-40.7,-32.5,0.0,0.0,0.0,0.077,0.0,0.048,0.0,0.25,0.307,0.263,0.267,91.42,96.0,80.0,15,-0.061,11.0
+21000937,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21000128,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000276,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,,2.000000:55,112.6,125.0,116.3,100.0,-3.7,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.1,0.101,129.68,131.66,109.71,8,0.125,11.0
+21000262,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,,2.000000:40,102.0,100.0,82.0,66.7,20.1,33.3,0.0,0.0,0.0,0.0,0.333,0.2,0.0,0.0,0.568,0.143,0.145,96.84,108.0,90.0,6,0.0,9.0
+21000574,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000164,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,,2.000000:47,120.0,120.0,100.0,80.0,20.0,40.0,0.0,0.0,0.0,0.0,0.333,0.25,0.0,0.0,0.0,0.0,0.0,77.6,86.23,71.86,5,0.095,21.0
+21000415,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,,8.000000:19,93.6,77.8,104.4,100.0,-10.8,-22.2,0.0,0.0,0.0,0.111,0.222,0.167,50.0,0.0,0.0,0.2,0.236,90.15,101.0,84.17,18,-0.368,7.0
+21000171,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000944,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000405,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+21000388,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,,1.000000:48,77.3,75.0,133.3,100.0,-56.0,-25.0,0.0,0.0,0.0,0.0,0.0,0.0,33.3,0.0,0.266,0.75,0.773,91.73,106.67,88.89,4,-0.4,21.0
+21000955,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21000610,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21000374,1610612760,OKC,Oklahoma City,201957,Byron Mullens,Byron,,,5.000000:21,82.9,63.6,120.0,120.0,-37.1,-56.4,0.0,0.0,0.0,0.333,0.333,0.333,0.0,0.0,0.0,0.231,0.287,82.77,94.26,78.55,11,0.0,22.0

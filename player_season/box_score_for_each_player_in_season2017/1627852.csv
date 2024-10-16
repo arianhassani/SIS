@@ -1,0 +1,14 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21700123,1610612737,ATL,Atlanta,1627852,Nicolas Brussino,Nicolas,,,6.000000:24,135.7,146.2,50.5,50.0,85.2,96.2,0.0,0.0,0.0,0.0,0.143,0.083,0.0,0.0,0.0,0.063,0.067,97.05,93.75,78.13,13,0.0,22.0
+21700136,1610612737,ATL,Atlanta,1627852,Nicolas Brussino,Nicolas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,9.0
+21700042,1610612737,ATL,Atlanta,1627852,Nicolas Brussino,Nicolas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700085,1610612737,ATL,Atlanta,1627852,Nicolas Brussino,Nicolas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21700342,1610612737,ATL,Atlanta,1627852,Nicolas Brussino,Nicolas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21700169,1610612737,ATL,Atlanta,1627852,Nicolas Brussino,Nicolas,,,0.000000:04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,351.22,292.68,0,0.0,10.0
+21700355,1610612737,ATL,Atlanta,1627852,Nicolas Brussino,Nicolas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700195,1610612737,ATL,Atlanta,1627852,Nicolas Brussino,Nicolas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700146,1610612737,ATL,Atlanta,1627852,Nicolas Brussino,Nicolas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21700177,1610612737,ATL,Atlanta,1627852,Nicolas Brussino,Nicolas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21700017,1610612737,ATL,Atlanta,1627852,Nicolas Brussino,Nicolas,,,2.000000:36,68.0,80.0,33.3,33.3,34.7,46.7,0.0,0.0,0.0,0.0,0.167,0.1,0.0,0.0,0.0,0.167,0.17,109.66,101.54,84.62,5,0.0,12.0
+21700065,1610612737,ATL,Atlanta,1627852,Nicolas Brussino,Nicolas,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+21700107,1610612737,ATL,Atlanta,1627852,Nicolas Brussino,Nicolas,,,0.000000:51,100.0,100.0,0.0,0.0,100.0,100.0,0.0,0.0,0.0,0.0,0.5,0.333,0.0,0.0,0.0,0.0,0.0,110.64,142.57,118.81,2,0.0,11.0

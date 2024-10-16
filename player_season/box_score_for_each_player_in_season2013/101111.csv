@@ -1,0 +1,78 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+21300713,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300909,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21301181,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300512,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,10.000000:20,108.9,125.0,77.0,72.2,31.9,52.8,0.143,0.0,12.5,0.125,0.167,0.136,0.0,0.333,0.363,0.233,0.234,92.5,88.23,73.52,20,0.222,9.0
+21300937,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21301220,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300300,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,14.000000:05,108.9,111.5,147.3,145.8,-38.4,-34.3,0.286,0.0,20.0,0.0,0.25,0.074,0.0,0.625,0.625,0.229,0.238,85.89,85.21,71.01,26,0.204,20.0
+21300315,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,8.000000:02,91.9,88.2,152.3,150.0,-60.4,-61.8,0.0,0.0,0.0,0.0,0.143,0.059,0.0,0.75,0.75,0.118,0.123,95.84,98.59,82.16,17,0.086,22.0
+21300498,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300659,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300842,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300922,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,8.000000:06,124.7,127.8,85.6,83.3,39.1,44.4,0.0,0.0,0.0,0.0,0.2,0.087,0.0,0.5,0.5,0.08,0.079,106.55,106.67,88.89,18,0.031,10.0
+21300700,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,6.000000:13,50.0,46.2,121.2,123.1,-71.2,-76.9,0.0,0.0,0.0,0.0,0.25,0.071,0.0,0.333,0.333,0.188,0.2,97.29,100.38,83.65,13,0.057,23.0
+21300264,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21301146,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+21300272,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300892,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300105,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,5.000000:25,91.9,76.9,148.7,145.5,-56.8,-68.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.333,0.333,0.188,0.216,95.85,106.31,88.59,13,0.0,8.0
+21300677,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300639,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300607,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300149,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300439,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,13.000000:15,89.0,91.7,80.4,76.9,8.6,14.7,0.0,0.0,0.0,0.0,0.222,0.133,36.4,0.0,0.222,0.407,0.397,89.84,90.57,75.47,24,-0.045,12.0
+21301055,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300766,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21301134,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300951,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300819,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21301087,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300428,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300373,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21301079,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DND - SORE BACK,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300007,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300166,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DND - Sore Back,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300628,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300984,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,12.000000:14,89.3,87.5,109.8,113.6,-20.6,-26.1,0.0,0.0,0.0,0.067,0.188,0.129,0.0,0.8,0.765,0.231,0.235,90.79,90.25,75.2,24,0.274,21.0
+21300204,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,12.000000:55,93.6,92.3,112.5,103.7,-18.9,-11.4,0.0,0.0,0.0,0.0,0.2,0.095,0.0,0.667,0.667,0.333,0.338,93.87,98.48,82.06,26,0.22,22.0
+21300751,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300180,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DND - SORE BACK,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300157,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300396,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,5.000000:01,91.1,91.7,163.6,163.6,-72.6,-72.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.4,0.475,0.5,0.497,110.42,110.03,91.69,12,0.048,21.0
+21300744,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300220,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,4.000000:12,154.0,162.5,91.1,100.0,62.9,62.5,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.182,0.175,104.69,97.14,80.95,8,-0.129,20.0
+21300587,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,9.000000:57,111.1,111.1,127.3,131.6,-16.2,-20.5,0.143,1.0,14.3,0.125,0.1,0.111,14.3,0.5,0.5,0.3,0.3,90.79,89.25,74.37,18,0.089,21.0
+21301114,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,5.000000:40,67.0,70.0,127.5,130.0,-60.4,-60.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2,0.192,87.42,84.71,70.59,10,-0.235,6.0
+21300197,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,12.000000:16,117.0,112.5,114.2,112.5,2.8,0.0,0.0,0.0,0.0,0.067,0.167,0.111,0.0,0.667,0.667,0.214,0.222,91.41,93.91,78.26,24,0.151,8.0
+21300801,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300356,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300828,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300960,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300545,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,7.000000:59,86.0,93.8,114.2,118.8,-28.2,-25.0,0.2,0.0,16.7,0.0,0.222,0.1,0.0,0.5,0.5,0.25,0.245,102.45,96.2,80.17,16,0.163,21.0
+21300233,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,3.000000:36,77.6,83.3,87.5,100.0,-9.9,-16.7,0.0,0.0,0.0,0.0,0.25,0.125,0.0,0.333,0.333,0.429,0.403,96.27,86.67,72.22,6,0.105,21.0
+21300352,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300408,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21301064,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21301104,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,7.000000:32,66.7,66.7,120.4,140.0,-53.7,-73.3,0.0,0.0,0.0,0.0,0.111,0.05,0.0,0.0,0.0,0.125,0.125,103.35,95.58,79.65,15,-0.045,22.0
+21300595,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300386,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300782,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21301015,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,16.000000:42,96.6,97.1,139.4,134.3,-42.8,-37.1,0.125,0.0,7.1,0.043,0.2,0.105,0.0,0.5,0.5,0.302,0.316,99.01,100.56,83.8,35,0.064,8.0
+21300323,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21301029,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300109,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300135,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300733,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300876,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,4.000000:44,54.3,63.6,70.9,63.6,-16.5,0.0,0.0,0.0,0.0,0.0,0.25,0.077,0.0,0.333,0.387,0.286,0.288,115.44,111.59,92.99,11,0.2,9.0
+21300453,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21300334,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21301162,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+21300532,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300250,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300669,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,25.0
+21301198,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,24.0
+21300292,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300521,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,,11.000000:26,76.1,79.2,127.6,125.0,-51.4,-45.8,0.0,0.0,0.0,0.0,0.077,0.037,20.0,0.25,0.225,0.192,0.193,101.77,100.76,83.97,24,-0.09,8.0
+21301039,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0
+21300859,1610612765,DET,Detroit,101111,Charlie Villanueva,Charlie,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,12.0

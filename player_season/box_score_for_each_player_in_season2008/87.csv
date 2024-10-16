@@ -1,0 +1,49 @@
+GAME_ID,TEAM_ID,TEAM_ABBREVIATION,TEAM_CITY,PLAYER_ID,PLAYER_NAME,NICKNAME,START_POSITION,COMMENT,MIN,E_OFF_RATING,OFF_RATING,E_DEF_RATING,DEF_RATING,E_NET_RATING,NET_RATING,AST_PCT,AST_TOV,AST_RATIO,OREB_PCT,DREB_PCT,REB_PCT,TM_TOV_PCT,EFG_PCT,TS_PCT,USG_PCT,E_USG_PCT,E_PACE,PACE,PACE_PER40,POSS,PIE,Unnamed: 0
+20800940,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800968,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20801134,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800982,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20801042,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20800605,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20800562,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,,4.000000:21,112.5,112.5,131.6,144.4,-19.1,-31.9,0.0,0.0,0.0,0.333,0.0,0.2,0.0,1.0,1.0,0.222,0.222,98.65,93.79,78.16,8,0.2,21.0
+20800947,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800748,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,,5.000000:03,66.7,60.0,90.0,90.0,-23.3,-30.0,0.0,0.0,0.0,0.0,0.333,0.182,0.0,0.0,0.0,0.0,0.0,90.3,95.05,79.21,10,0.25,19.0
+20801087,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800830,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,,4.000000:12,107.8,110.0,75.2,80.0,32.7,30.0,0.0,0.0,0.0,0.0,0.25,0.125,100.0,0.0,0.0,0.182,0.179,119.09,114.29,95.24,10,-0.2,20.0
+20801119,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,,5.000000:19,101.2,90.9,114.2,83.3,-12.9,7.6,0.0,0.0,0.0,0.0,0.125,0.083,0.0,0.0,0.568,0.091,0.101,84.14,103.82,86.52,11,0.029,7.0
+20800763,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800923,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20801220,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20801208,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20801187,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,C,,34.000000:32,127.0,128.1,117.0,118.5,10.0,9.7,0.0,0.0,0.0,0.185,0.278,0.238,18.2,0.429,0.543,0.141,0.142,90.6,89.65,74.71,64,0.105,2.0
+20801030,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800879,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800517,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800488,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800675,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800847,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20801146,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20800725,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,,6.000000:24,65.4,69.2,76.5,75.0,-11.1,-5.8,0.0,0.0,0.0,0.231,0.0,0.158,0.0,0.0,0.0,0.167,0.169,95.7,93.75,78.13,13,-0.308,9.0
+20800902,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20800533,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20801017,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,,4.000000:21,100.0,85.7,106.6,128.6,-6.6,-42.9,0.0,0.0,0.0,0.0,0.111,0.083,0.0,0.0,0.0,0.0,0.0,79.67,77.24,64.37,7,0.063,18.0
+20800650,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20800888,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800718,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20801174,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800861,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20801159,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,,7.000000:28,106.0,92.3,141.1,138.5,-35.1,-46.2,0.0,0.0,0.0,0.111,0.333,0.2,0.0,0.0,0.0,0.0,0.0,77.4,83.57,69.64,13,0.019,17.0
+20800657,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20800508,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,10.0
+20800697,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800912,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800632,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800962,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800817,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20800998,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,C,,24.000000:38,100.1,102.2,86.8,86.4,13.2,15.9,0.0,0.0,0.0,0.091,0.19,0.14,50.0,0.0,0.266,0.078,0.08,87.42,86.72,72.26,45,0.033,2.0
+20800595,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20800543,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20800794,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,22.0
+20800623,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
+20801058,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,11.0
+20800781,1610612745,HOU,Houston,87,Dikembe Mutombo,Dikembe,,DNP - Coach's Decision,,,0.0,,0.0,,0.0,,,,0.0,0.0,0.0,,,,0.0,0.0,,,,0,,23.0
