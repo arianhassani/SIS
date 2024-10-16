@@ -1,5 +1,0 @@
-embeddings {
-  tensor_name: "TEAM_ID:00500"
-  metadata_path: "00500/TEAM_ID/metadata.tsv"
-  tensor_path: "00500/TEAM_ID/tensors.tsv"
-}
