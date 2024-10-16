@@ -6,10 +6,13 @@ from pytorch_forecasting.data import GroupNormalizer
 from pytorch_forecasting.metrics import MAE, SMAPE, PoissonLoss, QuantileLoss
 from .dataset import build_dataset
 from .preprocess import preprocess
+from .setup_data import setup_data
 import torch
 import logging
 import yaml
 import os
+
+
 
 with open(os.path.join(__package__, "config.yaml"),"r") as file_object:
     config=yaml.load(file_object, Loader=yaml.SafeLoader)
@@ -28,7 +31,8 @@ def generate_baseline(val_loader):
     return mae, accuracy
 
 
-def train():
+def train(log_dir, data_dir, base_dir, lightning_log_dir, **args):
+    
     games_df = preprocess()
     training, validation, train_loader, val_loader = build_dataset(games_df)
 
@@ -38,17 +42,17 @@ def train():
     # configure network and trainer
     early_stop_callback = EarlyStopping(monitor="val_loss", min_delta=1e-4, patience=10, verbose=False, mode="min")
     lr_logger = LearningRateMonitor()  # log the learning rate
-    logger = TensorBoardLogger("lightning_logs")  # logging results to a tensorboard
+    tb_logger = TensorBoardLogger(base_dir)  # logging results to a tensorboard
 
     trainer = pl.Trainer(
-        max_epochs=50,
+        max_epochs=10,
         accelerator="cpu",
         enable_model_summary=True,
         gradient_clip_val=0.1,
         limit_train_batches=50,  # coment in for training, running valiation every 30 batches
         # fast_dev_run=True,  # comment in to check that networkor dataset has no serious bugs
         callbacks=[lr_logger, early_stop_callback],
-        logger=logger,
+        logger=tb_logger,
     )
 
     tft = TemporalFusionTransformer.from_dataset(
@@ -66,5 +70,25 @@ def train():
     
     print(f"Number of parameters in network: {tft.size()/1e3:.1f}k")
 
+    trainer.fit(
+        tft,
+        train_dataloaders=train_loader,
+        val_dataloaders=val_loader,
+    )
+    best_model_path = trainer.checkpoint_callback.best_model_path
+    # best_tft = TemporalFusionTransformer.load_from_checkpoint(best_model_path)
+    config_path = os.path.join(base_dir, "config.yaml")
+
+    with open(config_path,"r") as file_object:
+      config=yaml.load(file_object, Loader=yaml.SafeLoader)
+
+    config['best_tft'] = best_model_path
+
+    with open(config_path, "w") as file_object:
+      yaml.dump(config, file_object)
+    
+
 if __name__ == '__main__':
-    train()
+    logger = logging.getLogger(__name__)
+    config = setup_data()
+    train(**config)

@@ -28,20 +28,20 @@ class NBA_data:
       time.sleep(1)
     return results
 
-  def get_data_dir():
-    return os.path.join(__package__, config['data_dir'])
+  def get_data_dir(self):
+    return self.config['data_dir']
 
-  def download_games() -> None:
-    games_path = os.path.join(get_data_dir(), 'games.csv')
+  def download_games(self) -> None:
+    games_path = os.path.join(self.config['data_dir'], 'games.csv')
     if os.path.exists(games_path):
       logger.info(f'{games_path} already exists. Download skipped.')
       return
     logger.info('Downloading games...')
-    seasons_df = pd.concat(_get_all_games(2000, 2023))
+    seasons_df = pd.concat(self._get_all_games(2013, 2023))
     seasons_df.to_csv(games_path, index=False)
 
-  def download_players():
-    players_path = os.path.join(get_data_dir(), 'players.csv')
+  def download_players(self):
+    players_path = os.path.join(self.config['data_dir'], 'players.csv')
     if os.path.exists(players_path):
       logger.info(f'{players_path} already exists. Download Skipped.')
       return
@@ -54,8 +54,8 @@ class NBA_data:
       writer.writeheader()
       writer.writerows(player_list)
 
-  def download_teams():
-    teams_path = os.path.join(get_data_dir(), 'teams.csv')
+  def download_teams(self):
+    teams_path = os.path.join(self.config['data_dir'], 'teams.csv')
     if os.path.exists(teams_path):
       logger.info(f'{teams_path} already exists. Download Skipped.')
       return
@@ -69,7 +69,7 @@ class NBA_data:
       writer.writerows(teams_list)
 
 
-  def download_player_games():
+  def download_player_games(self):
     pass
 
 

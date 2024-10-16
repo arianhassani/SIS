@@ -39,8 +39,8 @@ def build_dataset(games_df: pd.DataFrame):
     validation = TimeSeriesDataSet.from_dataset(training, games_df, predict=True, stop_randomization=True)
 
     batch_size = 128  # set this between 32 to 128
-    train_dataloader = training.to_dataloader(train=True, batch_size=batch_size, num_workers=0)
-    val_dataloader = validation.to_dataloader(train=False, batch_size=batch_size * 10, num_workers=0)
+    train_dataloader = training.to_dataloader(train=True, batch_size=batch_size, num_workers=2)
+    val_dataloader = validation.to_dataloader(train=False, batch_size=batch_size * 10, num_workers=2)
 
     return training, validation, train_dataloader, val_dataloader
 
