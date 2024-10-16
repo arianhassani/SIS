@@ -1,2 +1,3 @@
-logging_level: INFO
+best_tft: ml/lightning_logs/version_2/checkpoints/epoch=9-step=500.ckpt
 data_dir: data
+logging_level: INFO
