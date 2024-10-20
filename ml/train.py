@@ -1,12 +1,13 @@
 from lightning.pytorch.callbacks import EarlyStopping, LearningRateMonitor
 from lightning.pytorch.loggers import TensorBoardLogger
 import lightning.pytorch as pl
-from pytorch_forecasting import Baseline, TemporalFusionTransformer, TimeSeriesDataSet
+from pytorch_forecasting import TemporalFusionTransformer, TimeSeriesDataSet
 from pytorch_forecasting.data import GroupNormalizer
 from pytorch_forecasting.metrics import MAE, SMAPE, PoissonLoss, QuantileLoss
 from .dataset import build_dataset
 from .preprocess import preprocess
 from .setup_data import setup_data
+from .evaluate import evaluate
 import torch
 import logging
 import yaml
@@ -22,31 +23,20 @@ logging.basicConfig(level=config['logging_level'], format='%(asctime)s [%(leveln
                                                             logging.FileHandler(os.path.join(__package__, 'logs/tft_train.log'), mode='w')])
 
 
-def generate_baseline(val_loader):
-    # calculate baseline mean absolute error, i.e. predict next value as the last available value from the history
-    baseline_predictions = Baseline().predict(val_loader, return_y=True)
-    # Mean Absolute Error
-    mae: torch.Tensor = MAE()(baseline_predictions.output, baseline_predictions.y)
-    accuracy = 1 - mae.item()
-    return mae, accuracy
-
-
 def train(log_dir, data_dir, base_dir, lightning_log_dir, **args):
     
     games_df = preprocess()
     training, validation, train_loader, val_loader = build_dataset(games_df)
-
-    mae, acc = generate_baseline(val_loader)
-    logger.info(f'Baseline - Accuracy: {acc}')
 
     # configure network and trainer
     early_stop_callback = EarlyStopping(monitor="val_loss", min_delta=1e-4, patience=10, verbose=False, mode="min")
     lr_logger = LearningRateMonitor()  # log the learning rate
     tb_logger = TensorBoardLogger(base_dir)  # logging results to a tensorboard
 
+    torch.set_float32_matmul_precision('medium')
     trainer = pl.Trainer(
-        max_epochs=10,
-        accelerator="cpu",
+        max_epochs=50,
+        accelerator="gpu",
         enable_model_summary=True,
         gradient_clip_val=0.1,
         limit_train_batches=50,  # coment in for training, running valiation every 30 batches
@@ -75,7 +65,14 @@ def train(log_dir, data_dir, base_dir, lightning_log_dir, **args):
         train_dataloaders=train_loader,
         val_dataloaders=val_loader,
     )
+
     best_model_path = trainer.checkpoint_callback.best_model_path
+    print(best_model_path)
+    best_tft = TemporalFusionTransformer.load_from_checkpoint(best_model_path)
+
+    evaluate(best_tft, val_loader)
+
+
     # best_tft = TemporalFusionTransformer.load_from_checkpoint(best_model_path)
     config_path = os.path.join(base_dir, "config.yaml")
 

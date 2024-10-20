@@ -5,12 +5,17 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "eval",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "ml.evaluate"
+    },
+    {
       "name": "setup data",
       "type": "debugpy",
       "request": "launch",
       "module": "ml.setup_data"
     },
-
     {
       "name": "dataset",
       "type": "debugpy",
