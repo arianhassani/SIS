@@ -13,11 +13,13 @@ def build_train_dataset(games_df: pd.DataFrame, training_cutoff: int, max_predic
         max_encoder_length=max_encoder_length,
         min_prediction_length=1,
         max_prediction_length=max_prediction_length,
-        static_categoricals=['TEAM_ID'],
-        time_varying_known_categoricals=['TEAM_ID'],
+        static_categoricals=['TEAM_ID', 'SEASON_ID', 'OPPONENT_ID'],
+        time_varying_known_categoricals=['is_home', 'day_of_week'],
         time_varying_known_reals=['time_idx'],
+        time_varying_unknown_categoricals=['WL'],
         time_varying_unknown_reals=[
             "PTS"
+            # ,'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A', 'FG3_PCT', 'FTM', 'FTA', 'FT_PCT', 'OREB', 'DREB', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'PF' ,'PLUS_MINUS'
         ],
         # target_normalizer=GroupNormalizer(
         #     groups=["SEASON_ID", "TEAM_ID"], transformation="softplus"
@@ -30,7 +32,7 @@ def build_dataset(games_df: pd.DataFrame):
     games_df.info()
     training_cutoff = 60
     max_prediction_length = 1
-    max_encoder_length = 30
+    max_encoder_length = 10
 
     # alternative is to group by season and encode team_id
 
