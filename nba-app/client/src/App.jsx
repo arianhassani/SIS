@@ -1,5 +1,6 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import TeamSelectionPage from "./pages/TeamSelectionPage";
 import InjuryPage from "./pages/InjuryPage";
 import HomePage from "./pages/HomePage";
@@ -9,8 +10,7 @@ import PredictionPage from "./pages/PredictionPage";
 
 const App = () => {
   return (
-    <div>
-      <Router>
+    <Router>
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -21,7 +21,6 @@ const App = () => {
         </Routes>
         <Footer />
       </Router>
-    </div>
   );
 };
 
