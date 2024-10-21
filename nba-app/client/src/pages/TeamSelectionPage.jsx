@@ -103,13 +103,23 @@ const TeamSelectionPage = () => {
   const seasonDetailsRef = useRef(null);
 
   const handleNextClick = () => {
-    // Navigate to InjuryPage and pass both selectedHomeTeam and selectedAwayTeam as state
-    navigate("/injury", { state: { homeTeam: selectedHomeTeam, awayTeam: selectedAwayTeam } });
+    // Ensure a valid season, home team, and away team are selected
+    if (selectedSeason === "SELECT SEASON" || selectedHomeTeam === "SELECT TEAM" || selectedAwayTeam === "SELECT TEAM") {
+      alert("Please select a season, home team, and away team before proceeding.");
+    } else {
+      // Navigate to InjuryPage and pass selectedSeason, selectedHomeTeam, and selectedAwayTeam as state
+      navigate("/injury", {
+        state: {
+          season: selectedSeason,
+          homeTeam: selectedHomeTeam,
+          awayTeam: selectedAwayTeam,
+        },
+      });
+    }
   };
 
   const handleHomeTeamSelect = (team) => {
     setSelectedHomeTeam(team);
-    // Close the dropdown
     if (homeTeamDetailsRef.current) {
       homeTeamDetailsRef.current.open = false;
     }
@@ -117,7 +127,6 @@ const TeamSelectionPage = () => {
 
   const handleAwayTeamSelect = (team) => {
     setSelectedAwayTeam(team);
-    // Close the dropdown
     if (awayTeamDetailsRef.current) {
       awayTeamDetailsRef.current.open = false;
     }
@@ -125,7 +134,6 @@ const TeamSelectionPage = () => {
 
   const handleSeasonSelect = (season) => {
     setSelectedSeason(season);
-    // Close the dropdown
     if (seasonDetailsRef.current) {
       seasonDetailsRef.current.open = false;
     }
@@ -290,11 +298,6 @@ const TeamSelectionPage = () => {
           />
         )}
       </div>
-
-      {/* Footer */}
-      <footer className="w-full bg-gray-800 text-white text-center py-14">
-        <p>&copy; {new Date().getFullYear()} NBA Analytics. All rights reserved.</p>
-      </footer>
     </div>
   );
 };

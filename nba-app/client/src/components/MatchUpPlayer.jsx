@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Player = ({ player, onDelete }) => {
   return (
     <li className="flex justify-between items-center mb-2">
