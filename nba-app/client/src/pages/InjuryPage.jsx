@@ -7,7 +7,7 @@ const InjuryPage = () => {
   const navigate = useNavigate();
 
   // Extract the team names from location state or use fallback values
-  const { homeTeam = "No home team selected", awayTeam = "No away team selected" } = location.state || {};
+  const { homeTeam = "No home team selected", awayTeam = "No away team selected", season } = location.state || {};
 
   // State to track injuries
   const [injuries, setInjuries] = useState([]);
@@ -34,6 +34,16 @@ const InjuryPage = () => {
   // Navigate back to the previous page
   const handleBack = () => {
     navigate('/', { state: { homeTeam, awayTeam } });
+  };
+
+  const handleNextClick = () => {
+    navigate("/match-up", {
+      state: {
+        season,
+        homeTeam,
+        awayTeam,
+      },
+    });
   };
 
   return (
@@ -81,10 +91,11 @@ const InjuryPage = () => {
         </button>
       </div>
 
-      {/* Footer */}
-      <footer className="w-full bg-gray-800 text-white text-center py-14"> {/* Match footer */}
-        <p>&copy; {new Date().getFullYear()} NBA Analytics. All rights reserved.</p>
-      </footer>
+      <div className="text-center">
+        <button className="btn btn-secondary mt-8" onClick={handleNextClick}>
+          Next
+        </button>
+      </div>
     </div>
   );
 };

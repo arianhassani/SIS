@@ -10,6 +10,7 @@ const MatchUpSelectionPage = () => {
   const { leftValue, rightValue } = location.state || {};
   const [leftTeamPlayers, setLeftTeamPlayers] = useState(positions.map(() => []));
   const [rightTeamPlayers, setRightTeamPlayers] = useState(positions.map(() => []));
+  const { homeTeam = "No home team selected", awayTeam = "No away team selected", season } = location.state || {};
 
   const handleAddPlayer = (team, positionIndex, player) => {
     if (team === 'left') {
@@ -37,6 +38,16 @@ const MatchUpSelectionPage = () => {
 
   const handleBack = () => {
     navigate('/', { state: { leftValue, rightValue } });
+  };
+
+  const handleNextClick = () => {
+    navigate("/prediction", {
+      state: {
+        season,
+        homeTeam,
+        awayTeam,
+      },
+    });
   };
 
   return (
@@ -85,6 +96,11 @@ const MatchUpSelectionPage = () => {
       <button className="btn btn-secondary mt-8" onClick={handleBack}>
         Back
       </button>
+      <div className="text-center">
+        <button className="btn btn-secondary mt-8" onClick={handleNextClick}>
+          Next
+        </button>
+      </div>
     </div>
   );
 };
