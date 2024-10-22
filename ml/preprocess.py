@@ -29,6 +29,8 @@ def preprocess(start: int = None, end: int = None) -> pd.DataFrame:
 
         games_df = games_df[condition]
 
+    games_df = games_df.dropna()
+
     games_df['GAME_DATE'] = pd.to_datetime(games_df['GAME_DATE'])
     games_df['WL'] = games_df['WL'].replace({'W': '1', 'L': '0'}).astype('category')
     games_df['TEAM_ID'] = games_df['TEAM_ID'].astype(str).astype('category')
@@ -53,14 +55,14 @@ def preprocess(start: int = None, end: int = None) -> pd.DataFrame:
     games_df = games_df.drop(columns=['TEAM_ABBREVIATION', 'TEAM_NAME',\
                             'MATCHUP', 'VIDEO_AVAILABLE'], errors='ignore')
     games_df['PTS'] = games_df['PTS'].astype(float)
-    games_df = games_df.dropna()
     # columns_to_convert = [
     #         "PTS",'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A', 'FG3_PCT', 'FTM', 'FTA', 'FT_PCT', 'OREB', 'DREB', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'PF','PLUS_MINUS'
     #     ]
     # games_df[columns_to_convert] = games_df[columns_to_convert].astype(float)
     # games_df['PLUS_MINUS'].sample(10)
-    # games_df.info()
-    
+    games_df.info()
+    # print(games_df.groupby(['TEAM_ID', 'SEASON_ID']).count())
+    # print(games_df.groupby(['TEAM_ID', 'SEASON_ID']).size().min())
     return games_df
 
 

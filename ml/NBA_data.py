@@ -31,13 +31,13 @@ class NBA_data:
   def get_data_dir(self):
     return self.config['data_dir']
 
-  def download_games(self) -> None:
+  def download_games(self, start_year=1946, end_year=2023) -> None:
     games_path = os.path.join(self.config['data_dir'], 'games.csv')
     if os.path.exists(games_path):
       logger.info(f'{games_path} already exists. Download skipped.')
       return
     logger.info('Downloading games...')
-    seasons_df = pd.concat(self._get_all_games(2013, 2023))
+    seasons_df = pd.concat(self._get_all_games(start_year, end_year))
     seasons_df.to_csv(games_path, index=False)
 
   def download_players(self):
