@@ -20,7 +20,7 @@ optuna-integration
 scipy
 pandas >=1.3
 scikit-learn >1.2
-matplotlib
+matplotlib==3.4.3
 statsmodels
 ipython
 nbconvert >=6.3.0

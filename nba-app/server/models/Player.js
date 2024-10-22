@@ -22,8 +22,14 @@ const PlayerSchema = new mongoose.Schema({
     type: String,  // Optional field for injury reports
     default: '',
   },
+  stats: {
+    pointsPerGame: { type: Number, default: 0 },
+    reboundsPerGame: { type: Number, default: 0 },
+    assistsPerGame: { type: Number, default: 0 },
+    totalAvg: { type: Number, default: 0 }
+  }
 });
 
-const Player = mongoose.model('Player', playerSchema);
+const Player = mongoose.model('Player', PlayerSchema);
 
 export default Player;
