@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Injury from './Injury';
 
 const InjuryReport = ({ team, injuries, onAddInjury, onEditInjury, onResolveInjury }) => {
