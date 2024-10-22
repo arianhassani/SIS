@@ -7,13 +7,14 @@ import mongoose from 'mongoose';
 import "dotenv/config.js";
 import { exec } from 'child_process';
 
-console.log(process.env.MONGO_URI);
+//console.log(process.env.MONGO_URI);
 
 // Connect to MongoDB 
 connectDB();
 
 const teamData = JSON.parse(fs.readFileSync(path.resolve('./responseTeams.json'), 'utf-8'));
 const playerData = JSON.parse(fs.readFileSync(path.resolve('./players.json'), 'utf-8')); 
+const statsData = JSON.parse(fs.readFileSync(path.resolve('./playerStats.json'), 'utf-8')); 
 
 const transformedTeamData = teamData.data.map(team => ({
   name: team.full_name,
@@ -71,6 +72,46 @@ const populatePlayers = async () => {
     console.error('Error inserting players data:', error);
   }
 };
+
+// Helper function to calculate totalAvg
+const calculateTotalAvg = (pointsPerGame, reboundsPerGame, assistsPerGame) => {
+  return pointsPerGame + reboundsPerGame + assistsPerGame;
+};
+
+// Update each player in the database
+const updatePlayerStats = async () => {
+  for (const playerStat of statsData) {
+      const { Player: playerName, TRB: rebounds, AST: assists, PTS: points } = playerStat;
+
+      // Convert string stats to numbers
+      const pointsPerGame = parseFloat(points);
+      const reboundsPerGame = parseFloat(rebounds);
+      const assistsPerGame = parseFloat(assists);
+      const totalAvg = calculateTotalAvg(pointsPerGame, reboundsPerGame, assistsPerGame);
+
+      // Update the player record in MongoDB
+      const updatedPlayer = await Player.findOneAndUpdate(
+          { name: playerName }, // Find player by name
+          { 
+            'stats.pointsPerGame': pointsPerGame,
+            'stats.reboundsPerGame': reboundsPerGame,
+            'stats.assistsPerGame': assistsPerGame,
+            'stats.totalAvg': totalAvg
+          },
+          { new: true } // Return the updated document
+      );
+
+      if (updatedPlayer) {
+          console.log(`Updated stats for ${playerName}`);
+      } else {
+          console.log(`Player ${playerName} not found in database.`);
+      }
+  }
+  
+}
+
+// Execute the function
+//updatePlayerStats().catch(err => console.log(err));
 
 
 
