@@ -43,7 +43,6 @@ def preprocess(start: int = None, end: int = None) -> pd.DataFrame:
 
     games_df = games_df.groupby('GAME_ID').apply(assign_opponent).reset_index(drop=True)
 
-    print((games_df['is_home'].astype(int) == games_df['WL'].astype(int)).sum() / len(games_df))
 
     # games_df = games_df.sort_values(['TEAM_ID', 'SEASON_ID', 'GAME_DATE'])
 
@@ -53,8 +52,14 @@ def preprocess(start: int = None, end: int = None) -> pd.DataFrame:
 
     games_df = games_df.drop(columns=['TEAM_ABBREVIATION', 'TEAM_NAME',\
                             'MATCHUP', 'VIDEO_AVAILABLE'], errors='ignore')
+    games_df['PTS'] = games_df['PTS'].astype(float)
     games_df = games_df.dropna()
-
+    # columns_to_convert = [
+    #         "PTS",'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A', 'FG3_PCT', 'FTM', 'FTA', 'FT_PCT', 'OREB', 'DREB', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'PF','PLUS_MINUS'
+    #     ]
+    # games_df[columns_to_convert] = games_df[columns_to_convert].astype(float)
+    # games_df['PLUS_MINUS'].sample(10)
+    # games_df.info()
     
     return games_df
 
