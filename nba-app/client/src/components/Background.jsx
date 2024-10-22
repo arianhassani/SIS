@@ -1,9 +1,11 @@
-import React from 'react'
+// import React from 'react';
 
-export const Background = () => {
-  return (
-    <div class="bg-cover bg-center h-screen" 
-         style="background-image: url('hero.png');">
-    </div>
-  )
-}
+// export const Background = () => {
+//   return (
+//     <div
+//       className="bg-cover bg-center h-screen"
+//       style={{ backgroundImage: "url('../assets/huji13.jpg')" }}  // Use proper JSX style object
+//     >
+//     </div>
+//   );
+// };

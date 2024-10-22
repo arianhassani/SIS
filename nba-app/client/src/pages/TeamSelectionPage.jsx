@@ -1,113 +1,113 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-// Import team logos (adjusted paths)
-import bostonCelticsLogo from "../assets/celtics.png";
-import dallasMavericksLogo from "../assets/dallas-mavericks-logo-1.png";
-import sixersLogo from "../assets/76ers.png";
-// ... import logos for all NBA teams
+// Importing team logos
+import bostonCelticsLogo from "../assets/BostonCeltics.png";
+import brooklynNetsLogo from "../assets/BrooklynNets.png";
+import newYorkKnicksLogo from "../assets/NewYorkKnicks.png";
+import philadelphia76ersLogo from "../assets/Philadelphia76ers.png";
+import torontoRaptorsLogo from "../assets/TorontoRaptors.png";
+import chicagoBullsLogo from "../assets/ChicagoBulls.png";
+import clevelandCavaliersLogo from "../assets/ClevelandCavaliers.png";
+import detroitPistonsLogo from "../assets/DetroitPistons.png";
+import indianaPacersLogo from "../assets/IndianaPacers.png";
+import milwaukeeBucksLogo from "../assets/MilwaukeeBucks.png";
+import atlantaHawksLogo from "../assets/AtlantaHawks.png";
+import charlotteHornetsLogo from "../assets/CharlotteHornets.png";
+import miamiHeatLogo from "../assets/MiamiHeat.png";
+import orlandoMagicLogo from "../assets/OrlandoMagic.png";
+import washingtonWizardsLogo from "../assets/WashingtonWizards.png";
+import denverNuggetsLogo from "../assets/DenverNuggets.png";
+import minnesotaTimberwolvesLogo from "../assets/MinnesotaTimberwolves.png";
+import oklahomaCityThunderLogo from "../assets/OklahomaCityThunder.png";
+import portlandTrailBlazersLogo from "../assets/PortlandTrailBlazers.png";
+import utahJazzLogo from "../assets/UtahJazz.png";
+import goldenStateWarriorsLogo from "../assets/GoldenStateWarriors.png";
+import losAngelesClippersLogo from "../assets/LAClippers.png";
+import losAngelesLakersLogo from "../assets/LALakers.png";
+import phoenixSunsLogo from "../assets/PhoenixSuns.png";
+import sacramentoKingsLogo from "../assets/SacramentoKings.png";
+import dallasMavericksLogo from "../assets/DallasMavericks.png";
+import houstonRocketsLogo from "../assets/HoustonRockets.png";
+import memphisGrizzliesLogo from "../assets/MemphisGrizzlies.png";
+import newOrleansPelicansLogo from "../assets/NewOrleansPelicans.png";
+import sanAntonioSpursLogo from "../assets/SanAntonioSpurs.png";
 
 // Team logos mapping
 const teamLogos = {
   "Boston Celtics": bostonCelticsLogo,
+  "Brooklyn Nets": brooklynNetsLogo,
+  "New York Knicks": newYorkKnicksLogo,
+  "Philadelphia 76ers": philadelphia76ersLogo,
+  "Toronto Raptors": torontoRaptorsLogo,
+  "Chicago Bulls": chicagoBullsLogo,
+  "Cleveland Cavaliers": clevelandCavaliersLogo,
+  "Detroit Pistons": detroitPistonsLogo,
+  "Indiana Pacers": indianaPacersLogo,
+  "Milwaukee Bucks": milwaukeeBucksLogo,
+  "Atlanta Hawks": atlantaHawksLogo,
+  "Charlotte Hornets": charlotteHornetsLogo,
+  "Miami Heat": miamiHeatLogo,
+  "Orlando Magic": orlandoMagicLogo,
+  "Washington Wizards": washingtonWizardsLogo,
+  "Denver Nuggets": denverNuggetsLogo,
+  "Minnesota Timberwolves": minnesotaTimberwolvesLogo,
+  "Oklahoma City Thunder": oklahomaCityThunderLogo,
+  "Portland Trail Blazers": portlandTrailBlazersLogo,
+  "Utah Jazz": utahJazzLogo,
+  "Golden State Warriors": goldenStateWarriorsLogo,
+  "Los Angeles Clippers": losAngelesClippersLogo,
+  "Los Angeles Lakers": losAngelesLakersLogo,
+  "Phoenix Suns": phoenixSunsLogo,
+  "Sacramento Kings": sacramentoKingsLogo,
   "Dallas Mavericks": dallasMavericksLogo,
-  "Philadelphia 76ers": sixersLogo,
-  // ... add mappings for all NBA teams
+  "Houston Rockets": houstonRocketsLogo,
+  "Memphis Grizzlies": memphisGrizzliesLogo,
+  "New Orleans Pelicans": newOrleansPelicansLogo,
+  "San Antonio Spurs": sanAntonioSpursLogo,
 };
 
-// NBA Teams Data Organized by Conference and Division
-const nbaTeams = [
-  {
-    conference: "Eastern Conference",
-    divisions: [
-      {
-        division: "Atlantic Division",
-        teams: [
-          "Boston Celtics",
-          "Brooklyn Nets",
-          "New York Knicks",
-          "Philadelphia 76ers",
-          "Toronto Raptors",
-        ],
-      },
-      {
-        division: "Central Division",
-        teams: [
-          "Chicago Bulls",
-          "Cleveland Cavaliers",
-          "Detroit Pistons",
-          "Indiana Pacers",
-          "Milwaukee Bucks",
-        ],
-      },
-      {
-        division: "Southeast Division",
-        teams: [
-          "Atlanta Hawks",
-          "Charlotte Hornets",
-          "Miami Heat",
-          "Orlando Magic",
-          "Washington Wizards",
-        ],
-      },
-    ],
-  },
-  {
-    conference: "Western Conference",
-    divisions: [
-      {
-        division: "Northwest Division",
-        teams: [
-          "Denver Nuggets",
-          "Minnesota Timberwolves",
-          "Oklahoma City Thunder",
-          "Portland Trail Blazers",
-          "Utah Jazz",
-        ],
-      },
-      {
-        division: "Pacific Division",
-        teams: [
-          "Golden State Warriors",
-          "Los Angeles Clippers",
-          "Los Angeles Lakers",
-          "Phoenix Suns",
-          "Sacramento Kings",
-        ],
-      },
-      {
-        division: "Southwest Division",
-        teams: [
-          "Dallas Mavericks",
-          "Houston Rockets",
-          "Memphis Grizzlies",
-          "New Orleans Pelicans",
-          "San Antonio Spurs",
-        ],
-      },
-    ],
-  },
-];
-
 const TeamSelectionPage = () => {
-  // State to store selected values
   const [selectedSeason, setSelectedSeason] = useState("SELECT SEASON");
   const [selectedHomeTeam, setSelectedHomeTeam] = useState("SELECT TEAM");
   const [selectedAwayTeam, setSelectedAwayTeam] = useState("SELECT TEAM");
+  const [teamsByDivision, setTeamsByDivision] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
 
-  const navigate = useNavigate(); // Initialize useNavigate
-
-  // Refs for the dropdowns
+  const navigate = useNavigate();
   const homeTeamDetailsRef = useRef(null);
   const awayTeamDetailsRef = useRef(null);
   const seasonDetailsRef = useRef(null);
 
+  useEffect(() => {
+    const fetchTeams = async () => {
+      try {
+        const response = await fetch('http://localhost:3000/teams');
+        const data = await response.json();
+
+        const teamsByDivision = data.reduce((divisions, team) => {
+          if (!divisions[team.division]) {
+            divisions[team.division] = [];
+          }
+          divisions[team.division].push(team);
+          return divisions;
+        }, {});
+
+        setTeamsByDivision(teamsByDivision);
+        setIsLoading(false);
+      } catch (error) {
+        console.error("Error fetching teams:", error);
+        setIsLoading(false);
+      }
+    };
+
+    fetchTeams();
+  }, []);
+
   const handleNextClick = () => {
-    // Ensure a valid season, home team, and away team are selected
     if (selectedSeason === "SELECT SEASON" || selectedHomeTeam === "SELECT TEAM" || selectedAwayTeam === "SELECT TEAM") {
       alert("Please select a season, home team, and away team before proceeding.");
     } else {
-      // Navigate to InjuryPage and pass selectedSeason, selectedHomeTeam, and selectedAwayTeam as state
       navigate("/injury", {
         state: {
           season: selectedSeason,
@@ -139,8 +139,18 @@ const TeamSelectionPage = () => {
     }
   };
 
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <div className="relative min-h-screen flex flex-col w-full">
+    <div
+      className="relative min-h-screen flex flex-col w-full"
+      style={{
+       
+
+      }}
+    >
       {/* Main content */}
       <div className="relative flex-grow" style={{ paddingBottom: "200px" }}>
         {/* Dropdown 1: SELECT SEASON */}
@@ -204,22 +214,16 @@ const TeamSelectionPage = () => {
             </svg>
           </summary>
           <ul className="dropdown-content menu menu-vertical bg-base-100 rounded-box z-40 p-2 shadow text-center" style={{ width: "17rem", maxHeight: "400px", overflowY: "auto" }}>
-            {nbaTeams.map((conference) => (
-              <React.Fragment key={conference.conference}>
+            {/* Loop through the divisions and teams */}
+            {Object.keys(teamsByDivision).map((division) => (
+              <React.Fragment key={division}>
                 <li className="menu-title">
-                  <span>{conference.conference}</span>
+                  <span>{division} Division</span>
                 </li>
-                {conference.divisions.map((division) => (
-                  <React.Fragment key={division.division}>
-                    <li className="menu-title">
-                      <span>{division.division}</span>
-                    </li>
-                    {division.teams.map((team) => (
-                      <li key={team}>
-                        <a onClick={() => handleHomeTeamSelect(team)}>{team}</a>
-                      </li>
-                    ))}
-                  </React.Fragment>
+                {teamsByDivision[division].map((team) => (
+                  <li key={team._id}>
+                    <a onClick={() => handleHomeTeamSelect(team.name)}>{team.name}</a>
+                  </li>
                 ))}
               </React.Fragment>
             ))}
@@ -231,8 +235,9 @@ const TeamSelectionPage = () => {
           <img
             src={teamLogos[selectedHomeTeam]}
             alt={selectedHomeTeam}
-            className="absolute top-[calc(45%-56px)] z-10"
+            className="absolute z-10"
             style={{
+              top: "calc(45% - 60px)",
               left: "calc(50% - 382px)",
               transform: "translateX(-50%)",
               width: "350px",
@@ -261,22 +266,15 @@ const TeamSelectionPage = () => {
             </svg>
           </summary>
           <ul className="dropdown-content menu menu-vertical bg-base-100 rounded-box z-40 p-2 shadow text-center" style={{ width: "17rem", maxHeight: "400px", overflowY: "auto" }}>
-            {nbaTeams.map((conference) => (
-              <React.Fragment key={conference.conference}>
+            {Object.keys(teamsByDivision).map((division) => (
+              <React.Fragment key={division}>
                 <li className="menu-title">
-                  <span>{conference.conference}</span>
+                  <span>{division} Division</span>
                 </li>
-                {conference.divisions.map((division) => (
-                  <React.Fragment key={division.division}>
-                    <li className="menu-title">
-                      <span>{division.division}</span>
-                    </li>
-                    {division.teams.map((team) => (
-                      <li key={team}>
-                        <a onClick={() => handleAwayTeamSelect(team)}>{team}</a>
-                      </li>
-                    ))}
-                  </React.Fragment>
+                {teamsByDivision[division].map((team) => (
+                  <li key={team._id}>
+                    <a onClick={() => handleAwayTeamSelect(team.name)}>{team.name}</a>
+                  </li>
                 ))}
               </React.Fragment>
             ))}
@@ -288,8 +286,9 @@ const TeamSelectionPage = () => {
           <img
             src={teamLogos[selectedAwayTeam]}
             alt={selectedAwayTeam}
-            className="absolute top-[calc(45%-56px)] z-10"
+            className="absolute z-10"
             style={{
+              top: "calc(45% - 60px)",
               left: "calc(50% + 382px)",
               transform: "translateX(-50%)",
               width: "350px",
