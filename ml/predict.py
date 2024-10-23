@@ -7,6 +7,7 @@ import pandas as pd
 import logging
 import os
 from .setup_data import setup_data
+import torch
 
 logger = logging.getLogger(__name__)
 
@@ -44,7 +45,7 @@ class NBA_Pred_Model:
     decoder_data = pd.DataFrame(decoder_dict)
     prediction_data = pd.concat([encoder_data, decoder_data], ignore_index=True)
     
-    y_pred_t = self.model.predict(prediction_data)
+    y_pred_t: torch.Tensor = self.model.predict(prediction_data)
     y_pred = y_pred_t[-1].item()
     logger.info(f'{self.teams[home]["nickname"]} vs {self.teams[away]["nickname"]} odds: {y_pred}')
     
