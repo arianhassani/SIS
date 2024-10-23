@@ -14,10 +14,29 @@ logger = logging.getLogger(__name__)
 
 # with open(os.path.join(__package__, "config.yaml"),"r") as file_object:
 #   config=yaml.load(file_object, Loader=yaml.SafeLoader)
+def retry(times, exceptions=Exception):
+  def decorator(func):
+    def newfn(*args, **kwargs):
+      attempt = 0
+      while attempt < times:
+        try:
+          return func(*args, **kwargs)
+        except exceptions:
+          print(
+              'Exception thrown when attempting to run %s, attempt '
+              '%d of %d' % (func, attempt, times)
+          )
+          attempt += 1
+      return func(*args, **kwargs)
+    return newfn
+  return decorator
+
+
 class NBA_data:
   def __init__(self, config):
     self.config = config
 
+  @retry(10)
   def _get_all_games(self, start_year=1946, end_year=2023) -> List[pd.DataFrame]:
     results = []
     for year in trange(start_year, end_year):
@@ -67,6 +86,7 @@ class NBA_data:
       writer = DictWriter(teams_file, fieldnames=fieldnames)
       writer.writeheader()
       writer.writerows(teams_list)
+    return { t.id: t for t in teams_list}
 
 
   def download_player_games(self):

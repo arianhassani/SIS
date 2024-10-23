@@ -15,10 +15,13 @@ def build_train_dataset(games_df: pd.DataFrame, training_cutoff: int, max_predic
         max_prediction_length=max_prediction_length,
         static_categoricals=['TEAM_ID', 'SEASON_ID', 'OPPONENT_ID'],
         time_varying_known_categoricals=['is_home', 'day_of_week'],
-        time_varying_known_reals=['time_idx'],
+        time_varying_known_reals=['time_idx', 
+                                  'opponent_WL_rolling_avg', 
+                                  # 'matchup_WL_rolling_avg'
+                                  ],
         time_varying_unknown_categoricals=['WL'],
         time_varying_unknown_reals=[
-            "PTS"
+            # "PTS"
             # ,'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A', 'FG3_PCT', 'FTM', 'FTA', 'FT_PCT', 'OREB', 'DREB', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'PF' ,'PLUS_MINUS'
         ],
         # target_normalizer=GroupNormalizer(

@@ -45,16 +45,33 @@ def preprocess(start: int = None, end: int = None) -> pd.DataFrame:
 
     games_df = games_df.groupby('GAME_ID').apply(assign_opponent).reset_index(drop=True)
 
+    win_len = 5
+    games_df['WL_int'] = games_df['WL'].astype(int)
+    def rolling_fn(group: pd.DataFrame):
+        return group.shift(1).rolling(win_len, min_periods=0).mean()
+    games_df['opponent_WL_rolling_avg'] = games_df.sort_values('GAME_DATE').groupby(['OPPONENT_ID'])['WL_int'].apply(rolling_fn).reset_index(level=[0], drop=True)
 
-    # games_df = games_df.sort_values(['TEAM_ID', 'SEASON_ID', 'GAME_DATE'])
+    # games_df['matchup_WL_rolling_avg'] = games_df.sort_values('GAME_DATE').groupby(['TEAM_ID', 'OPPONENT_ID'])['WL_int'].apply(rolling_fn).reset_index(level=[0, 1], drop=True)
 
-    games_df['time_idx']  = games_df.groupby(['TEAM_ID', 'SEASON_ID']).cumcount()
+    games_df['opponent_WL_rolling_avg'] = games_df['opponent_WL_rolling_avg'].fillna(0.5)
+    # games_df['matchup_WL_rolling_avg'] = games_df['matchup_WL_rolling_avg'].fillna(0.5)
+
+    # games_df['time_idx']  = games_df.groupby(['TEAM_ID', 'SEASON_ID']).cumcount()
+
+    games_df = games_df.groupby('GAME_ID').first()
+
+    games_df['time_idx']  = games_df.groupby(['SEASON_ID', 'TEAM_ID']).cumcount()
 
     games_df['day_of_week'] = games_df['GAME_DATE'].dt.day_of_week.astype(str).astype('category')
 
     games_df = games_df.drop(columns=['TEAM_ABBREVIATION', 'TEAM_NAME',\
-                            'MATCHUP', 'VIDEO_AVAILABLE'], errors='ignore')
+                            'MATCHUP', 'VIDEO_AVAILABLE', 'WL_int'], errors='ignore')
     games_df['PTS'] = games_df['PTS'].astype(float)
+    # create rolling avg of n games
+    # .mean() of last n games
+    
+    # games_df['opponent_WL_rolling_avg'] = games_df.sort_values('GAME_DATE').groupby(['TEAM_ID', 'SEASON_ID'])['WL'].rolling(win_len, min_periods=1).mean()
+    
     # columns_to_convert = [
     #         "PTS",'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A', 'FG3_PCT', 'FTM', 'FTA', 'FT_PCT', 'OREB', 'DREB', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'PF','PLUS_MINUS'
     #     ]
