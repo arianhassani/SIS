@@ -5,6 +5,12 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "predict",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "ml.predict"
+    },
+    {
       "name": "eval",
       "type": "debugpy",
       "request": "launch",
