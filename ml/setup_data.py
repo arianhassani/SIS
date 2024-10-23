@@ -14,7 +14,7 @@ def make_config_dir(config, key, default):
 	if not os.path.exists(config[key]):
 		os.mkdir(config[key])
 	
-def setup_data():
+def setup_data(start_year=1946, end_year=2024, **kwargs):
 		print(base_dir)
 		with open(os.path.join(base_dir, "config.yaml"),"r") as file_object:
 			config=yaml.load(file_object, Loader=yaml.SafeLoader)
@@ -28,8 +28,8 @@ def setup_data():
 																logging.StreamHandler(), 
 																logging.FileHandler(os.path.join(config['log_dir'], 'games_download.log'), mode='w')])
 		logger.info('Starting downloads...')
-		nba_data = NBA_data(config)
-		nba_data.download_games()
+		nba_data = NBA_data(**config)
+		nba_data.download_games(start_year, end_year)
 		nba_data.download_players()
 		nba_data.download_teams()
 		nba_data.download_player_games()

@@ -23,7 +23,7 @@ logging.basicConfig(level=config['logging_level'], format='%(asctime)s [%(leveln
                                                             logging.FileHandler(os.path.join(__package__, 'logs/tft_train.log'), mode='w')])
 
 
-def train(log_dir, data_dir, base_dir, lightning_log_dir, **args):
+def train(log_dir, data_dir, base_dir, lightning_log_dir, device=None, **args):
     
     games_df = preprocess()
     training, validation, train_loader, val_loader = build_dataset(games_df)
@@ -34,9 +34,11 @@ def train(log_dir, data_dir, base_dir, lightning_log_dir, **args):
     tb_logger = TensorBoardLogger(base_dir)  # logging results to a tensorboard
 
     torch.set_float32_matmul_precision('medium')
+    if not device:
+       device = 'cuda' if torch.cuda.is_available() else 'cpu'
     trainer = pl.Trainer(
-        max_epochs=50,
-        accelerator="gpu",
+        max_epochs=100,
+        accelerator=device,
         enable_model_summary=True,
         gradient_clip_val=0.1,
         limit_train_batches=50,  # coment in for training, running valiation every 30 batches

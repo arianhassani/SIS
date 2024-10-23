@@ -1,0 +1,30 @@
+embeddings {
+  tensor_name: "TEAM_ID:01650"
+  metadata_path: "01650/TEAM_ID/metadata.tsv"
+  tensor_path: "01650/TEAM_ID/tensors.tsv"
+}
+embeddings {
+  tensor_name: "SEASON_ID:01650"
+  metadata_path: "01650/SEASON_ID/metadata.tsv"
+  tensor_path: "01650/SEASON_ID/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_ID:01650"
+  metadata_path: "01650/OPPONENT_ID/metadata.tsv"
+  tensor_path: "01650/OPPONENT_ID/tensors.tsv"
+}
+embeddings {
+  tensor_name: "is_home:01650"
+  metadata_path: "01650/is_home/metadata.tsv"
+  tensor_path: "01650/is_home/tensors.tsv"
+}
+embeddings {
+  tensor_name: "day_of_week:01650"
+  metadata_path: "01650/day_of_week/metadata.tsv"
+  tensor_path: "01650/day_of_week/tensors.tsv"
+}
+embeddings {
+  tensor_name: "WL:01650"
+  metadata_path: "01650/WL/metadata.tsv"
+  tensor_path: "01650/WL/tensors.tsv"
+}
