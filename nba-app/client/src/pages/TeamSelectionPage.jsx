@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 // Importing team logos
 import bostonCelticsLogo from "../assets/BostonCeltics.png";
@@ -68,13 +68,17 @@ const teamLogos = {
 };
 
 const TeamSelectionPage = () => {
-  const [selectedSeason, setSelectedSeason] = useState("SELECT SEASON");
-  const [selectedHomeTeam, setSelectedHomeTeam] = useState("SELECT TEAM");
-  const [selectedAwayTeam, setSelectedAwayTeam] = useState("SELECT TEAM");
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Initialize state with values from location.state if they exist
+  const { homeTeam, awayTeam, season } = location.state || {};
+  const [selectedSeason, setSelectedSeason] = useState(season || "SELECT SEASON");
+  const [selectedHomeTeam, setSelectedHomeTeam] = useState(homeTeam || "SELECT TEAM");
+  const [selectedAwayTeam, setSelectedAwayTeam] = useState(awayTeam || "SELECT TEAM");
   const [teamsByDivision, setTeamsByDivision] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
-  const navigate = useNavigate();
   const homeTeamDetailsRef = useRef(null);
   const awayTeamDetailsRef = useRef(null);
   const seasonDetailsRef = useRef(null);

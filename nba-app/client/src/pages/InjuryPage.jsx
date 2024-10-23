@@ -18,7 +18,6 @@ const InjuryPage = () => {
 
   // Form state for adding an injury
   const [player, setPlayer] = useState('');
-  const [result, setResult] = useState('');
   const [description, setDescription] = useState('');
   const [teamType, setTeamType] = useState(''); // Home or Away team
 
@@ -60,7 +59,7 @@ const InjuryPage = () => {
 
   // Function to add a new injury
   const handleAddInjury = async () => {
-    if (player && result && description && teamType) {
+    if (player && description && teamType) {
       const selectedTeam = teamType === 'home' ? homeTeam : awayTeam;
       const selectedPlayers = teamType === 'home' ? homePlayers : awayPlayers;
       const selectedPlayer = selectedPlayers.find(p => p.name === player);
@@ -73,15 +72,13 @@ const InjuryPage = () => {
               'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-              result,
               description,
             }),
           });
 
-          setInjuries([...injuries, { team: selectedTeam, player, result, description, resolved: false }]);
+          setInjuries([...injuries, { team: selectedTeam, player, description, resolved: false }]);
           setShowModal(false); // Close the modal after adding the injury
           setPlayer(''); // Reset the form
-          setResult('');
           setDescription('');
           setTeamType('');
 
@@ -131,7 +128,7 @@ const InjuryPage = () => {
 
   // Navigate back to the previous page
   const handleBack = () => {
-    navigate('/', { state: { homeTeam, awayTeam } });
+    navigate('/', { state: { homeTeam, awayTeam, season } });
   };
 
   const handleNextClick = () => {
@@ -270,23 +267,18 @@ const InjuryPage = () => {
               </select>
               <input
                 type="text"
-                placeholder="Result"
-                value={result}
-                onChange={(e) => setResult(e.target.value)}
-                className="input input-bordered w-full mb-2"
-              />
-              <input
-                type="text"
                 placeholder="Description"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 className="input input-bordered w-full mb-2"
+                disabled={!teamType || !player}
               />
             </div>
             <div className="flex justify-end">
               <button
                 className="btn btn-primary mr-2"
                 onClick={handleAddInjury}
+                disabled={!teamType || !player || !description}
               >
                 Add
               </button>
