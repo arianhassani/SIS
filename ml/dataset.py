@@ -24,9 +24,6 @@ def build_train_dataset(games_df: pd.DataFrame, training_cutoff: int, max_predic
             # "PTS"
             # ,'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A', 'FG3_PCT', 'FTM', 'FTA', 'FT_PCT', 'OREB', 'DREB', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'PF' ,'PLUS_MINUS'
         ],
-        # target_normalizer=GroupNormalizer(
-        #     groups=["SEASON_ID", "TEAM_ID"], transformation="softplus"
-        # ),
         add_relative_time_idx=True,
         add_target_scales=True,
         add_encoder_length=True,

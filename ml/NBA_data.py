@@ -1,7 +1,7 @@
 from typing import List
 from nba_api.stats.endpoints import leaguegamelog
 from nba_api.stats.static import players, teams
-from csv import DictWriter
+from csv import DictWriter, DictReader
 import time
 import os
 import logging
@@ -33,7 +33,7 @@ def retry(times, exceptions=Exception):
 
 
 class NBA_data:
-  def __init__(self, config):
+  def __init__(self, **config):
     self.config = config
 
   @retry(10)
@@ -55,7 +55,7 @@ class NBA_data:
     if os.path.exists(games_path):
       logger.info(f'{games_path} already exists. Download skipped.')
       return
-    logger.info('Downloading games...')
+    logger.info(f'Downloading games from {start_year}-{end_year}...')
     seasons_df = pd.concat(self._get_all_games(start_year, end_year))
     seasons_df.to_csv(games_path, index=False)
 
@@ -73,6 +73,15 @@ class NBA_data:
       writer.writeheader()
       writer.writerows(player_list)
 
+  def get_teams_dict(self):
+    teams_path = os.path.join(self.config['data_dir'], 'teams.csv')
+    teams_list = {}
+    with open(teams_path, 'r') as f:
+      reader = DictReader(f)
+      teams_list = { t['id']: t for t in reader}
+
+    return teams_list
+
   def download_teams(self):
     teams_path = os.path.join(self.config['data_dir'], 'teams.csv')
     if os.path.exists(teams_path):
@@ -86,7 +95,6 @@ class NBA_data:
       writer = DictWriter(teams_file, fieldnames=fieldnames)
       writer.writeheader()
       writer.writerows(teams_list)
-    return { t.id: t for t in teams_list}
 
 
   def download_player_games(self):

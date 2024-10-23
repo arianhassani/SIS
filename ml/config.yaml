@@ -1,3 +1,3 @@
-best_tft: ml/lightning_logs/version_2/checkpoints/epoch=9-step=500.ckpt
+best_tft: ml/best_model/version_35/checkpoints/epoch=32-step=1650.ckpt
 data_dir: data
 logging_level: INFO

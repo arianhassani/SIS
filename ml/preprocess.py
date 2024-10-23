@@ -15,7 +15,7 @@ def _read_games() -> pd.DataFrame:
 
     return games_df
 
-def preprocess(start: int = None, end: int = None) -> pd.DataFrame:
+def preprocess(start: int=None, end: int=None, win_len=5, **kwargs) -> pd.DataFrame:
     # win streak
     
     games_df: pd.DataFrame = _read_games()
@@ -45,7 +45,6 @@ def preprocess(start: int = None, end: int = None) -> pd.DataFrame:
 
     games_df = games_df.groupby('GAME_ID').apply(assign_opponent).reset_index(drop=True)
 
-    win_len = 5
     games_df['WL_int'] = games_df['WL'].astype(int)
     def rolling_fn(group: pd.DataFrame):
         return group.shift(1).rolling(win_len, min_periods=0).mean()
@@ -58,23 +57,25 @@ def preprocess(start: int = None, end: int = None) -> pd.DataFrame:
 
     # games_df['time_idx']  = games_df.groupby(['TEAM_ID', 'SEASON_ID']).cumcount()
 
-    games_df = games_df.groupby('GAME_ID').first()
+    # games_df = games_df.groupby('GAME_ID').first()
 
     games_df['time_idx']  = games_df.groupby(['SEASON_ID', 'TEAM_ID']).cumcount()
+    # games_df['time_idx']  = games_df.groupby([ 'TEAM_ID']).cumcount()
 
     games_df['day_of_week'] = games_df['GAME_DATE'].dt.day_of_week.astype(str).astype('category')
 
     games_df = games_df.drop(columns=['TEAM_ABBREVIATION', 'TEAM_NAME',\
-                            'MATCHUP', 'VIDEO_AVAILABLE', 'WL_int'], errors='ignore')
-    games_df['PTS'] = games_df['PTS'].astype(float)
+                            'MATCHUP', 'VIDEO_AVAILABLE',\
+                                "PTS",'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A',\
+                                'FG3_PCT', 'FTM', 'FTA', 'FT_PCT', 'OREB', 'MIN',\
+                                'DREB', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'PF','PLUS_MINUS'\
+                                    ], errors='ignore')
+    # games_df['PTS'] = games_df['PTS'].astype(float)
     # create rolling avg of n games
     # .mean() of last n games
     
     # games_df['opponent_WL_rolling_avg'] = games_df.sort_values('GAME_DATE').groupby(['TEAM_ID', 'SEASON_ID'])['WL'].rolling(win_len, min_periods=1).mean()
     
-    # columns_to_convert = [
-    #         "PTS",'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A', 'FG3_PCT', 'FTM', 'FTA', 'FT_PCT', 'OREB', 'DREB', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'PF','PLUS_MINUS'
-    #     ]
     # games_df[columns_to_convert] = games_df[columns_to_convert].astype(float)
     # games_df['PLUS_MINUS'].sample(10)
     games_df.info()
