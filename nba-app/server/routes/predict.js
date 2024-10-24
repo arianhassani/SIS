@@ -4,10 +4,13 @@ import { predictMatchOutcome } from '../dataPopulation/predictMatch.js'; // This
 const router = express.Router();
 
 router.post('/predict', async (req, res) => {
-  const { teamA, teamB, lineupA, lineupB } = req.body;
+  const homeTeam = req.body.homeTeam;
+  const awayTeam = req.body.awayTeam;
+
   try {
-    const probabilities = await predictMatchOutcome(teamA, teamB, lineupA, lineupB);
-    res.json(probabilities); // Send the prediction result back to the frontend
+    const probabilities = await predictMatchOutcome(homeTeam, awayTeam);
+    const predictionPercentage = (probabilities.tft * 100).toFixed(0);
+    res.json(predictionPercentage); // Send the prediction result back to the frontend
   } catch (error) {
     res.status(500).json({ error: 'Error processing prediction' });
   }
