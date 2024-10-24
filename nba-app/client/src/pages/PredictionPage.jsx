@@ -6,8 +6,13 @@ const PredictionPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const [selectedModel, setSelectedModel] = useState("SELECT SEASON");
-  const { homeTeam = "No home team selected", awayTeam = "No away team selected", season } = location.state || {};
+  const [selectedModel, setSelectedModel] = useState("SELECT ML MODEL");
+
+   // Retrieve the team names from localStorage or use fallback values
+   const homeTeam = localStorage.getItem('homeTeam') || "No home team selected";
+   const awayTeam = localStorage.getItem('awayTeam') || "No away team selected";
+
+  const { season, homeTopPerformer, awayTopPerformer } = location.state || {};
 
   const { leftValue, rightValue } = location.state || {};
 
@@ -94,6 +99,24 @@ const PredictionPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Display Top Performers */}
+      {homeTopPerformer && (
+        <div className="card bg-base-300 rounded-box p-4 w-full mt-8">
+          <h3 className="text-xl font-semibold mb-4">Home Team Top Performer</h3>
+          <p>Name: {homeTopPerformer.name}</p>
+          <p>Average Score: {homeTopPerformer.stats.totalAvg}</p>
+          <p>PPG: {homeTopPerformer.stats.pointsPerGame}</p>
+        </div>
+      )}
+
+      {awayTopPerformer && (
+        <div className="card bg-base-300 rounded-box p-4 w-full mt-8">
+          <h3 className="text-xl font-semibold mb-4">Away Team Top Performer</h3>
+          <p>Name: {awayTopPerformer.name}</p>
+          <p>Average Score: {awayTopPerformer.stats.totalAvg}</p>
+        </div>
+      )}
 
       {/* Statistics Container: 4 Quadrants */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

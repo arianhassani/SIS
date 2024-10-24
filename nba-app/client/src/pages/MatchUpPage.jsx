@@ -1,26 +1,27 @@
 import { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Player from '../components/MatchUpPlayer';
+import { addPlayerFormPropTypes } from '../components/propTypes';
 
 const positions = ['Point Guard', 'Shooting Guard', 'Small Forward', 'Power Forward', 'Center'];
 
 const MatchUpSelectionPage = () => {
   const navigate = useNavigate();
 
-  const [leftTeamPlayers, setLeftTeamPlayers] = useState(() => {
-    const savedLeftTeamPlayers = localStorage.getItem('leftTeamPlayers');
-    return savedLeftTeamPlayers ? JSON.parse(savedLeftTeamPlayers) : positions.map(() => []);
-  });
-  const [rightTeamPlayers, setRightTeamPlayers] = useState(() => {
-    const savedRightTeamPlayers = localStorage.getItem('rightTeamPlayers');
-    return savedRightTeamPlayers ? JSON.parse(savedRightTeamPlayers) : positions.map(() => []);
-  });
   const [homePlayers, setHomePlayers] = useState([]);
   const [awayPlayers, setAwayPlayers] = useState([]);
 
   // Retrieve the team names from localStorage or use fallback values
   const homeTeam = localStorage.getItem('homeTeam') || "No home team selected";
   const awayTeam = localStorage.getItem('awayTeam') || "No away team selected";
+
+  const getMatchupFromLocalStorage = (team) => {
+    const savedMatchup = localStorage.getItem(`${team}TeamMatchup`);
+    return savedMatchup ? JSON.parse(savedMatchup) : positions.map(() => []);
+  };
+
+  const [homeTeamMatchup, setHomeTeamMatchup] = useState(getMatchupFromLocalStorage('home'));
+  const [awayTeamMatchup, setAwayTeamMatchup] = useState(getMatchupFromLocalStorage('away'));
 
   useEffect(() => {
     const fetchPlayers = async (teamName, setPlayers) => {
@@ -42,35 +43,31 @@ const MatchUpSelectionPage = () => {
     }
   }, [homeTeam, awayTeam]);
 
-  useEffect(() => {
-    localStorage.setItem('leftTeamPlayers', JSON.stringify(leftTeamPlayers));
-  }, [leftTeamPlayers]);
-
-  useEffect(() => {
-    localStorage.setItem('rightTeamPlayers', JSON.stringify(rightTeamPlayers));
-  }, [rightTeamPlayers]);
-
   const handleAddPlayer = (team, positionIndex, player) => {
-    if (team === 'left') {
-      const updatedPlayers = [...leftTeamPlayers];
+    if (team === 'home') {
+      const updatedPlayers = [...homeTeamMatchup];
       updatedPlayers[positionIndex].push(player);
-      setLeftTeamPlayers(updatedPlayers);
+      setHomeTeamMatchup(updatedPlayers);
+      localStorage.setItem('homeTeamMatchup', JSON.stringify(updatedPlayers));
     } else {
-      const updatedPlayers = [...rightTeamPlayers];
+      const updatedPlayers = [...awayTeamMatchup];
       updatedPlayers[positionIndex].push(player);
-      setRightTeamPlayers(updatedPlayers);
+      setAwayTeamMatchup(updatedPlayers);
+      localStorage.setItem('awayTeamMatchup', JSON.stringify(updatedPlayers));
     }
   };
 
   const handleDeletePlayer = (team, positionIndex, playerIndex) => {
-    if (team === 'left') {
-      const updatedPlayers = [...leftTeamPlayers];
+    if (team === 'home') {
+      const updatedPlayers = [...homeTeamMatchup];
       updatedPlayers[positionIndex].splice(playerIndex, 1);
-      setLeftTeamPlayers(updatedPlayers);
+      setHomeTeamMatchup(updatedPlayers);
+      localStorage.setItem('homeTeamMatchup', JSON.stringify(updatedPlayers));
     } else {
-      const updatedPlayers = [...rightTeamPlayers];
+      const updatedPlayers = [...awayTeamMatchup];
       updatedPlayers[positionIndex].splice(playerIndex, 1);
-      setRightTeamPlayers(updatedPlayers);
+      setAwayTeamMatchup(updatedPlayers);
+      localStorage.setItem('awayTeamMatchup', JSON.stringify(updatedPlayers));
     }
   };
 
@@ -78,8 +75,38 @@ const MatchUpSelectionPage = () => {
     navigate('/injury');
   };
 
-  const handleNextClick = () => {
-    navigate("/prediction");
+  const handleNextClick = async () => {
+    const homeTeamPlayerIds = homeTeamMatchup.flat().map(player => player._id);
+    const awayTeamPlayerIds = awayTeamMatchup.flat().map(player => player._id);
+  
+    try {
+      // Fetch top performer for the home team
+      const homeResponse = await fetch('http://localhost:3000/top-performer', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ playerIds: homeTeamPlayerIds }),
+      });
+  
+      const homeTopPerformer = await homeResponse.json();
+  
+      // Fetch top performer for the away team
+      const awayResponse = await fetch('http://localhost:3000/top-performer', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ playerIds: awayTeamPlayerIds }),
+      });
+  
+      const awayTopPerformer = await awayResponse.json();
+  
+      // Navigate to the prediction page with both top performers
+      navigate("/prediction", { state: { homeTopPerformer, awayTopPerformer, homeTeamPlayerIds, awayTeamPlayerIds } });
+    } catch (error) {
+      console.error('Error fetching top performers:', error);
+    }
   };
 
   const getAvailablePlayers = (teamPlayers, allPlayers) => {
@@ -99,18 +126,18 @@ const MatchUpSelectionPage = () => {
             <div key={index} className="mb-4">
               <h3 className="text-xl font-semibold">{position}</h3>
               <ul>
-                {leftTeamPlayers[index].map((player, playerIndex) => (
+                {homeTeamMatchup[index].map((player, playerIndex) => (
                   <Player
                     key={playerIndex}
                     player={player.name}
-                    onDelete={() => handleDeletePlayer('left', index, playerIndex)}
+                    onDelete={() => handleDeletePlayer('home', index, playerIndex)}
                   />
                 ))}
               </ul>
-              {leftTeamPlayers[index].length === 0 && (
+              {homeTeamMatchup[index].length === 0 && (
                 <AddPlayerForm 
-                  onAddPlayer={(player) => handleAddPlayer('left', index, player)}
-                  availablePlayers={getAvailablePlayers(leftTeamPlayers, homePlayers)}
+                  onAddPlayer={(player) => handleAddPlayer('home', index, player)}
+                  availablePlayers={getAvailablePlayers(homeTeamMatchup, homePlayers)}
                 />
               )}
             </div>
@@ -122,18 +149,18 @@ const MatchUpSelectionPage = () => {
             <div key={index} className="mb-4">
               <h3 className="text-xl font-semibold">{position}</h3>
               <ul>
-                {rightTeamPlayers[index].map((player, playerIndex) => (
+                {awayTeamMatchup[index].map((player, playerIndex) => (
                   <Player
                     key={playerIndex}
                     player={player.name}
-                    onDelete={() => handleDeletePlayer('right', index, playerIndex)}
+                    onDelete={() => handleDeletePlayer('away', index, playerIndex)}
                   />
                 ))}
               </ul>
-              {rightTeamPlayers[index].length === 0 && (
+              {awayTeamMatchup[index].length === 0 && (
                 <AddPlayerForm 
-                  onAddPlayer={(player) => handleAddPlayer('right', index, player)}
-                  availablePlayers={getAvailablePlayers(rightTeamPlayers, awayPlayers)}
+                  onAddPlayer={(player) => handleAddPlayer('away', index, player)}
+                  availablePlayers={getAvailablePlayers(awayTeamMatchup, awayPlayers)}
                 />
               )}
             </div>
@@ -191,5 +218,7 @@ const AddPlayerForm = ({ onAddPlayer, availablePlayers }) => {
     </form>
   );
 };
+
+AddPlayerForm.propTypes = addPlayerFormPropTypes;
 
 export default MatchUpSelectionPage;
