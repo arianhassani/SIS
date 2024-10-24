@@ -21,12 +21,6 @@ const InjuryPage = () => {
   const [description, setDescription] = useState('');
   const [teamType, setTeamType] = useState(''); // Home or Away team
 
-  // Log the selected teams when the component mounts
-  useEffect(() => {
-    console.log(`Selected Home Team: ${homeTeam}`);
-    console.log(`Selected Away Team: ${awayTeam}`);
-  }, [homeTeam, awayTeam]);
-
   // Fetch players for home and away teams
   useEffect(() => {
     const fetchPlayers = async () => {
@@ -35,9 +29,6 @@ const InjuryPage = () => {
         const homeData = await homeResponse.json();
         const awayResponse = await fetch(`http://localhost:3000/${awayTeam}/players`);
         const awayData = await awayResponse.json();
-
-        console.log('Home Team Players:', homeData.players);
-        console.log('Away Team Players:', awayData.players);
 
         setHomePlayers(homeData.players || []);
         setAwayPlayers(awayData.players || []);
@@ -57,9 +48,6 @@ const InjuryPage = () => {
         const homeInjuredData = await homeInjuredResponse.json();
         const awayInjuredResponse = await fetch(`http://localhost:3000/${awayTeam}/injuredPlayers`);
         const awayInjuredData = await awayInjuredResponse.json();
-
-        console.log('Home Team Injured Players:', homeInjuredData);
-        console.log('Away Team Injured Players:', awayInjuredData);
 
         setHomePlayers(prevPlayers => prevPlayers.map(player => ({
           ...player,
@@ -156,7 +144,7 @@ const InjuryPage = () => {
     navigate('/');
   };
 
-  const handleNextClick = () => {
+  const handleNext = () => {
     navigate("/match-up");
   };
 
@@ -229,7 +217,7 @@ const InjuryPage = () => {
         )}
       </div>
 
-      {/* Away Team Injuries, spaced 3cm below Home Team Injuries */}
+      {/* Away Team Injuries */}
       <div className="mt-12" style={{ marginTop: '3cm' }}>
         <h2 className="text-2xl font-bold mb-4 text-center">Away Team: {awayTeam}</h2>
         {awayInjuries.length > 0 ? (
@@ -312,17 +300,10 @@ const InjuryPage = () => {
         </div>
       )}
 
-      {/* Back Button */}
-      <div className="text-center">
-        <button className="btn btn-secondary mt-8" onClick={handleBack}>
-          Back
-        </button>
-      </div>
-
-      <div className="text-center">
-        <button className="btn btn-secondary mt-8" onClick={handleNextClick}>
-          Next
-        </button>
+      {/* Buttons */}
+      <div className="flex justify-between mt-8 mx-4">
+        <button className="btn btn-secondary" onClick={handleBack}>Back</button>
+        <button className="btn btn-primary" onClick={handleNext}>Next</button>
       </div>
     </div>
   );

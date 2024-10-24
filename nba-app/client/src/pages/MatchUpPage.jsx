@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Player from '../components/MatchUpPlayer';
+import Player from '../components/Player';
 import { addPlayerFormPropTypes } from '../components/propTypes';
 
 const positions = ['Point Guard', 'Shooting Guard', 'Small Forward', 'Power Forward', 'Center'];
