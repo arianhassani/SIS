@@ -1,10 +1,10 @@
 {
   "home": {
-    "teamId": 2,
+    "teamId": "1",
     "playerIds": [1, 2, 3, 4, 5]
   },
   "away": {
-    "teamId": 2,
+    "teamId": "2",
     "playerIds": [1, 2, 3, 4, 5]
   }
 }

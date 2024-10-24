@@ -21,6 +21,10 @@ const TeamSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,  // References to Player model
     ref: 'Player',
   }],
+  nbaID: {
+    type: String,
+    required: true
+  }
 });
 
 const Team = mongoose.model('Team', TeamSchema);
