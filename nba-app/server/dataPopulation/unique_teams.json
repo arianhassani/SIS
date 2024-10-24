@@ -1,0 +1,122 @@
+[
+    {
+        "TEAM_ID":1610612737,
+        "TEAM_NAME":"Atlanta Hawks"
+    },
+    {
+        "TEAM_ID":1610612738,
+        "TEAM_NAME":"Boston Celtics"
+    },
+    {
+        "TEAM_ID":1610612739,
+        "TEAM_NAME":"Cleveland Cavaliers"
+    },
+    {
+        "TEAM_ID":1610612740,
+        "TEAM_NAME":"New Orleans Pelicans"
+    },
+    {
+        "TEAM_ID":1610612741,
+        "TEAM_NAME":"Chicago Bulls"
+    },
+    {
+        "TEAM_ID":1610612742,
+        "TEAM_NAME":"Dallas Mavericks"
+    },
+    {
+        "TEAM_ID":1610612743,
+        "TEAM_NAME":"Denver Nuggets"
+    },
+    {
+        "TEAM_ID":1610612744,
+        "TEAM_NAME":"Golden State Warriors"
+    },
+    {
+        "TEAM_ID":1610612745,
+        "TEAM_NAME":"Houston Rockets"
+    },
+    {
+        "TEAM_ID":1610612746,
+        "TEAM_NAME":"LA Clippers"
+    },
+    {
+        "TEAM_ID":1610612747,
+        "TEAM_NAME":"Los Angeles Lakers"
+    },
+    {
+        "TEAM_ID":1610612748,
+        "TEAM_NAME":"Miami Heat"
+    },
+    {
+        "TEAM_ID":1610612749,
+        "TEAM_NAME":"Milwaukee Bucks"
+    },
+    {
+        "TEAM_ID":1610612750,
+        "TEAM_NAME":"Minnesota Timberwolves"
+    },
+    {
+        "TEAM_ID":1610612751,
+        "TEAM_NAME":"Brooklyn Nets"
+    },
+    {
+        "TEAM_ID":1610612752,
+        "TEAM_NAME":"New York Knicks"
+    },
+    {
+        "TEAM_ID":1610612753,
+        "TEAM_NAME":"Orlando Magic"
+    },
+    {
+        "TEAM_ID":1610612754,
+        "TEAM_NAME":"Indiana Pacers"
+    },
+    {
+        "TEAM_ID":1610612755,
+        "TEAM_NAME":"Philadelphia 76ers"
+    },
+    {
+        "TEAM_ID":1610612756,
+        "TEAM_NAME":"Phoenix Suns"
+    },
+    {
+        "TEAM_ID":1610612757,
+        "TEAM_NAME":"Portland Trail Blazers"
+    },
+    {
+        "TEAM_ID":1610612758,
+        "TEAM_NAME":"Sacramento Kings"
+    },
+    {
+        "TEAM_ID":1610612759,
+        "TEAM_NAME":"San Antonio Spurs"
+    },
+    {
+        "TEAM_ID":1610612760,
+        "TEAM_NAME":"Oklahoma City Thunder"
+    },
+    {
+        "TEAM_ID":1610612761,
+        "TEAM_NAME":"Toronto Raptors"
+    },
+    {
+        "TEAM_ID":1610612762,
+        "TEAM_NAME":"Utah Jazz"
+    },
+    {
+        "TEAM_ID":1610612763,
+        "TEAM_NAME":"Memphis Grizzlies"
+    },
+    {
+        "TEAM_ID":1610612764,
+        "TEAM_NAME":"Washington Wizards"
+    },
+    {
+        "TEAM_ID":1610612765,
+        "TEAM_NAME":"Detroit Pistons"
+    },
+    {
+        "TEAM_ID":1610612766,
+        "TEAM_NAME":"Charlotte Hornets"
+    }
+]
