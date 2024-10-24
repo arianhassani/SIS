@@ -41,16 +41,41 @@ const InjuryPage = () => {
 
         setHomePlayers(homeData.players || []);
         setAwayPlayers(awayData.players || []);
-
-        // Log the injured players for both teams
-        console.log('Home Team Injured Players:', homeData.players.filter(player => player.isInjured));
-        console.log('Away Team Injured Players:', awayData.players.filter(player => player.isInjured));
       } catch (error) {
         console.error('Error fetching players:', error);
       }
     };
 
     fetchPlayers();
+  }, [homeTeam, awayTeam]);
+
+  // Fetch injured players for home and away teams
+  useEffect(() => {
+    const fetchInjuredPlayers = async () => {
+      try {
+        const homeInjuredResponse = await fetch(`http://localhost:3000/${homeTeam}/injuredPlayers`);
+        const homeInjuredData = await homeInjuredResponse.json();
+        const awayInjuredResponse = await fetch(`http://localhost:3000/${awayTeam}/injuredPlayers`);
+        const awayInjuredData = await awayInjuredResponse.json();
+
+        console.log('Home Team Injured Players:', homeInjuredData);
+        console.log('Away Team Injured Players:', awayInjuredData);
+
+        setHomePlayers(prevPlayers => prevPlayers.map(player => ({
+          ...player,
+          isInjured: homeInjuredData.some(injuredPlayer => injuredPlayer._id === player._id)
+        })));
+
+        setAwayPlayers(prevPlayers => prevPlayers.map(player => ({
+          ...player,
+          isInjured: awayInjuredData.some(injuredPlayer => injuredPlayer._id === player._id)
+        })));
+      } catch (error) {
+        console.error('Error fetching injured players:', error);
+      }
+    };
+
+    fetchInjuredPlayers();
   }, [homeTeam, awayTeam]);
 
   // Filter injuries for home and away teams

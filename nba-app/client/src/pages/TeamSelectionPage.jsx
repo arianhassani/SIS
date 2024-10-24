@@ -124,7 +124,7 @@ const TeamSelectionPage = () => {
 
   const handleHomeTeamSelect = (team) => {
     setSelectedHomeTeam(team);
-    localStorage.removeItem('leftTeamPlayers');
+    localStorage.removeItem('homeTeamMatchup');
     if (homeTeamDetailsRef.current) {
       homeTeamDetailsRef.current.open = false;
     }
@@ -132,7 +132,7 @@ const TeamSelectionPage = () => {
 
   const handleAwayTeamSelect = (team) => {
     setSelectedAwayTeam(team);
-    localStorage.removeItem('rightTeamPlayers');
+    localStorage.removeItem('awayTeamMatchup');
     if (awayTeamDetailsRef.current) {
       awayTeamDetailsRef.current.open = false;
     }

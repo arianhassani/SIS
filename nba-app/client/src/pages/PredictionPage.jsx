@@ -33,12 +33,14 @@ const PredictionPage = () => {
     setSelectedModel(model);
   }
 
+  // Placeholder image URL (this could be replaced with real player images in the future)
+  const placeholderImage = 'https://via.placeholder.com/150'; // Placeholder image URL
+
   return (
     <div className="min-h-screen bg-base-200 p-6">
       {/* Heading */}
       <div className="text-center my-8">
         <h1 className="text-5xl font-bold">Prediction Scores</h1>
-        <p>Season: {season}</p>
       </div>
 
       {/* Prediction Box */}
@@ -87,36 +89,41 @@ const PredictionPage = () => {
       {/* Top Performers */}
       <div className="card bg-base-300 rounded-box p-4 w-full">
         <div className="flex flex-col lg:flex-row w-full space-y-4 lg:space-y-0 lg:space-x-4 justify-between">
+
           {/* Top Performer 1 */}
           <div className="flex-grow grid place-items-center p-4">
             <h3 className="text-xl font-semibold mb-4">{`${homeTeam} Top Performer`}</h3>
-            <TopPerformer/>
+            {/* <TopPerformer/> */}
+            <div className="card bg-base-100 w-96 shadow-xl">
+              <figure className="px-10 pt-10">
+                <img src={placeholderImage} alt={homeTopPerformer.name} className="w-32 h-32 mx-auto mb-4 rounded-full" />
+              </figure>
+              <div className="card-body items-center text-center">
+                <h2 className="card-title">{homeTopPerformer.name}</h2>
+                <p>APG: {homeTopPerformer.stats.assistsPerGame}</p>
+                <p>PPG: {homeTopPerformer.stats.pointsPerGame}</p>
+                <p>RPG: {homeTopPerformer.stats.reboundsPerGame}</p>
+              </div>
+            </div>
           </div>
+
           {/* Top Performer 2 */}
           <div className="flex-grow grid place-items-center p-4">
             <h3 className="text-xl font-semibold mb-4">{`${awayTeam} Top Performer`}</h3>
-            <TopPerformer/>
+            <div className="card bg-base-100 w-96 shadow-xl">
+              <figure className="px-10 pt-10">
+                <img src={placeholderImage} alt={awayTopPerformer.name} className="w-32 h-32 mx-auto mb-4 rounded-full" />
+              </figure>
+              <div className="card-body items-center text-center">
+                <h2 className="card-title">{awayTopPerformer.name}</h2>
+                <p>APG: {awayTopPerformer.stats.assistsPerGame}</p>
+                <p>PPG: {awayTopPerformer.stats.pointsPerGame}</p>
+                <p>RPG: {awayTopPerformer.stats.reboundsPerGame}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Display Top Performers */}
-      {homeTopPerformer && (
-        <div className="card bg-base-300 rounded-box p-4 w-full mt-8">
-          <h3 className="text-xl font-semibold mb-4">Home Team Top Performer</h3>
-          <p>Name: {homeTopPerformer.name}</p>
-          <p>Average Score: {homeTopPerformer.stats.totalAvg}</p>
-          <p>PPG: {homeTopPerformer.stats.pointsPerGame}</p>
-        </div>
-      )}
-
-      {awayTopPerformer && (
-        <div className="card bg-base-300 rounded-box p-4 w-full mt-8">
-          <h3 className="text-xl font-semibold mb-4">Away Team Top Performer</h3>
-          <p>Name: {awayTopPerformer.name}</p>
-          <p>Average Score: {awayTopPerformer.stats.totalAvg}</p>
-        </div>
-      )}
 
       {/* Statistics Container: 4 Quadrants */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
