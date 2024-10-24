@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 // Importing team logos
 import bostonCelticsLogo from "../assets/BostonCeltics.png";
@@ -68,20 +68,19 @@ const teamLogos = {
 };
 
 const TeamSelectionPage = () => {
-  const location = useLocation();
   const navigate = useNavigate();
 
-  // Initialize state with values from location.state if they exist
-  const { homeTeam, awayTeam, season } = location.state || {};
-  const [selectedSeason, setSelectedSeason] = useState(season || "SELECT SEASON");
-  const [selectedHomeTeam, setSelectedHomeTeam] = useState(homeTeam || "SELECT TEAM");
-  const [selectedAwayTeam, setSelectedAwayTeam] = useState(awayTeam || "SELECT TEAM");
+  // Retrieve the team names from localStorage or use fallback values
+  const homeTeam = localStorage.getItem('homeTeam') || "SELECT TEAM";
+  const awayTeam = localStorage.getItem('awayTeam') || "SELECT TEAM";
+
+  const [selectedHomeTeam, setSelectedHomeTeam] = useState(homeTeam);
+  const [selectedAwayTeam, setSelectedAwayTeam] = useState(awayTeam);
   const [teamsByDivision, setTeamsByDivision] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
   const homeTeamDetailsRef = useRef(null);
   const awayTeamDetailsRef = useRef(null);
-  const seasonDetailsRef = useRef(null);
 
   useEffect(() => {
     const fetchTeams = async () => {
@@ -109,12 +108,13 @@ const TeamSelectionPage = () => {
   }, []);
 
   const handleNextClick = () => {
-    if (selectedSeason === "SELECT SEASON" || selectedHomeTeam === "SELECT TEAM" || selectedAwayTeam === "SELECT TEAM") {
-      alert("Please select a season, home team, and away team before proceeding.");
+    if (selectedHomeTeam === "SELECT TEAM" || selectedAwayTeam === "SELECT TEAM") {
+      alert("Please select a home team and away team before proceeding.");
     } else {
+      localStorage.setItem('homeTeam', selectedHomeTeam);
+      localStorage.setItem('awayTeam', selectedAwayTeam);
       navigate("/injury", {
         state: {
-          season: selectedSeason,
           homeTeam: selectedHomeTeam,
           awayTeam: selectedAwayTeam,
         },
@@ -124,6 +124,7 @@ const TeamSelectionPage = () => {
 
   const handleHomeTeamSelect = (team) => {
     setSelectedHomeTeam(team);
+    localStorage.removeItem('leftTeamPlayers');
     if (homeTeamDetailsRef.current) {
       homeTeamDetailsRef.current.open = false;
     }
@@ -131,15 +132,9 @@ const TeamSelectionPage = () => {
 
   const handleAwayTeamSelect = (team) => {
     setSelectedAwayTeam(team);
+    localStorage.removeItem('rightTeamPlayers');
     if (awayTeamDetailsRef.current) {
       awayTeamDetailsRef.current.open = false;
-    }
-  };
-
-  const handleSeasonSelect = (season) => {
-    setSelectedSeason(season);
-    if (seasonDetailsRef.current) {
-      seasonDetailsRef.current.open = false;
     }
   };
 
@@ -148,47 +143,9 @@ const TeamSelectionPage = () => {
   }
 
   return (
-    <div
-      className="relative min-h-screen flex flex-col w-full"
-      style={{
-       
-
-      }}
-    >
+    <div className="relative min-h-screen flex flex-col w-full">
       {/* Main content */}
       <div className="relative flex-grow" style={{ paddingBottom: "200px" }}>
-        {/* Dropdown 1: SELECT SEASON */}
-        <details
-          ref={seasonDetailsRef}
-          className="dropdown absolute top-[calc(50%-40px)] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30"
-          style={{ width: "17rem" }}
-        >
-          <summary className="btn m-1 text-center relative" style={{ width: "17rem" }}>
-            {selectedSeason}
-            <svg
-              className="w-4 h-4 absolute right-2 top-1/2 transform -translate-y-1/2"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              style={{ pointerEvents: "none" }}
-            >
-              <path d="M19 9l-7 7-7-7" />
-            </svg>
-          </summary>
-          <ul
-            className="dropdown-content menu menu-vertical bg-base-100 rounded-box z-40 p-2 shadow text-center"
-            style={{ width: "17rem", maxHeight: "400px", overflowY: "auto" }}
-          >
-            <li>
-              <a onClick={() => handleSeasonSelect("2023-2024")}>2023-2024</a>
-            </li>
-            <li>
-              <a onClick={() => handleSeasonSelect("2024-2025")}>2024-2025</a>
-            </li>
-          </ul>
-        </details>
-
         <label className="absolute top-[calc(45%-260px)] left-1/2 transform -translate-x-1/2 text-center">
           Choose Your Teams
         </label>
@@ -226,7 +183,7 @@ const TeamSelectionPage = () => {
                 </li>
                 {teamsByDivision[division].map((team) => (
                   <li key={team._id}>
-                    <a onClick={() => handleHomeTeamSelect(team.name)}>{team.name}</a>
+                    <button onClick={() => handleHomeTeamSelect(team.name)} disabled={team.name === selectedAwayTeam}>{team.name}</button>
                   </li>
                 ))}
               </React.Fragment>
@@ -277,7 +234,7 @@ const TeamSelectionPage = () => {
                 </li>
                 {teamsByDivision[division].map((team) => (
                   <li key={team._id}>
-                    <a onClick={() => handleAwayTeamSelect(team.name)}>{team.name}</a>
+                    <button onClick={() => handleAwayTeamSelect(team.name)} disabled={team.name === selectedHomeTeam}>{team.name}</button>
                   </li>
                 ))}
               </React.Fragment>

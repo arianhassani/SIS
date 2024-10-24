@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const InjuryPage = () => {
-  const location = useLocation();
   const navigate = useNavigate();
 
-  // Extract the team names from location state or use fallback values
-  const { homeTeam = "No home team selected", awayTeam = "No away team selected", season } = location.state || {};
+  // Retrieve the team names from localStorage or use fallback values
+  const homeTeam = localStorage.getItem('homeTeam') || "No home team selected";
+  const awayTeam = localStorage.getItem('awayTeam') || "No away team selected";
 
   // State to track injuries and modal visibility
   const [injuries, setInjuries] = useState([]);
@@ -128,17 +128,11 @@ const InjuryPage = () => {
 
   // Navigate back to the previous page
   const handleBack = () => {
-    navigate('/', { state: { homeTeam, awayTeam, season } });
+    navigate('/');
   };
 
   const handleNextClick = () => {
-    navigate("/match-up", {
-      state: {
-        season,
-        homeTeam,
-        awayTeam,
-      },
-    });
+    navigate("/match-up");
   };
 
   // Placeholder image URL (this could be replaced with real player images in the future)

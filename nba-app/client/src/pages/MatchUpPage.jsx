@@ -1,16 +1,54 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Player from '../components/MatchUpPlayer';
 
 const positions = ['Point Guard', 'Shooting Guard', 'Small Forward', 'Power Forward', 'Center'];
 
 const MatchUpSelectionPage = () => {
-  const location = useLocation();
   const navigate = useNavigate();
-  const { leftValue, rightValue } = location.state || {};
-  const [leftTeamPlayers, setLeftTeamPlayers] = useState(positions.map(() => []));
-  const [rightTeamPlayers, setRightTeamPlayers] = useState(positions.map(() => []));
-  const { homeTeam = "No home team selected", awayTeam = "No away team selected", season } = location.state || {};
+
+  const [leftTeamPlayers, setLeftTeamPlayers] = useState(() => {
+    const savedLeftTeamPlayers = localStorage.getItem('leftTeamPlayers');
+    return savedLeftTeamPlayers ? JSON.parse(savedLeftTeamPlayers) : positions.map(() => []);
+  });
+  const [rightTeamPlayers, setRightTeamPlayers] = useState(() => {
+    const savedRightTeamPlayers = localStorage.getItem('rightTeamPlayers');
+    return savedRightTeamPlayers ? JSON.parse(savedRightTeamPlayers) : positions.map(() => []);
+  });
+  const [homePlayers, setHomePlayers] = useState([]);
+  const [awayPlayers, setAwayPlayers] = useState([]);
+
+  // Retrieve the team names from localStorage or use fallback values
+  const homeTeam = localStorage.getItem('homeTeam') || "No home team selected";
+  const awayTeam = localStorage.getItem('awayTeam') || "No away team selected";
+
+  useEffect(() => {
+    const fetchPlayers = async (teamName, setPlayers) => {
+      try {
+        const response = await fetch(`http://localhost:3000/${teamName}/players`);
+        const data = await response.json();
+        setPlayers(data.players || []);
+      } catch (error) {
+        console.error('Error fetching players:', error);
+      }
+    };
+
+    if (homeTeam !== "No home team selected") {
+      fetchPlayers(homeTeam, setHomePlayers);
+    }
+
+    if (awayTeam !== "No away team selected") {
+      fetchPlayers(awayTeam, setAwayPlayers);
+    }
+  }, [homeTeam, awayTeam]);
+
+  useEffect(() => {
+    localStorage.setItem('leftTeamPlayers', JSON.stringify(leftTeamPlayers));
+  }, [leftTeamPlayers]);
+
+  useEffect(() => {
+    localStorage.setItem('rightTeamPlayers', JSON.stringify(rightTeamPlayers));
+  }, [rightTeamPlayers]);
 
   const handleAddPlayer = (team, positionIndex, player) => {
     if (team === 'left') {
@@ -37,17 +75,16 @@ const MatchUpSelectionPage = () => {
   };
 
   const handleBack = () => {
-    navigate('/', { state: { leftValue, rightValue } });
+    navigate('/injury');
   };
 
   const handleNextClick = () => {
-    navigate("/prediction", {
-      state: {
-        season,
-        homeTeam,
-        awayTeam,
-      },
-    });
+    navigate("/prediction");
+  };
+
+  const getAvailablePlayers = (teamPlayers, allPlayers) => {
+    const selectedPlayers = teamPlayers.flat();
+    return allPlayers.filter(player => !selectedPlayers.some(selected => selected._id === player._id));
   };
 
   return (
@@ -57,7 +94,7 @@ const MatchUpSelectionPage = () => {
       </div>
       <div className="flex justify-between w-full max-w-4xl mx-auto">
         <div className="w-1/2 p-4">
-          <h2 className="text-2xl font-bold mb-4">Home Team: {leftValue}</h2>
+          <h2 className="text-2xl font-bold mb-4">Home Team: {homeTeam}</h2>
           {positions.map((position, index) => (
             <div key={index} className="mb-4">
               <h3 className="text-xl font-semibold">{position}</h3>
@@ -65,17 +102,22 @@ const MatchUpSelectionPage = () => {
                 {leftTeamPlayers[index].map((player, playerIndex) => (
                   <Player
                     key={playerIndex}
-                    player={player}
+                    player={player.name}
                     onDelete={() => handleDeletePlayer('left', index, playerIndex)}
                   />
                 ))}
               </ul>
-              <AddPlayerForm onAddPlayer={(player) => handleAddPlayer('left', index, player)} />
+              {leftTeamPlayers[index].length === 0 && (
+                <AddPlayerForm 
+                  onAddPlayer={(player) => handleAddPlayer('left', index, player)}
+                  availablePlayers={getAvailablePlayers(leftTeamPlayers, homePlayers)}
+                />
+              )}
             </div>
           ))}
         </div>
         <div className="w-1/2 p-4">
-          <h2 className="text-2xl font-bold mb-4">Away Team: {rightValue}</h2>
+          <h2 className="text-2xl font-bold mb-4">Away Team: {awayTeam}</h2>
           {positions.map((position, index) => (
             <div key={index} className="mb-4">
               <h3 className="text-xl font-semibold">{position}</h3>
@@ -83,19 +125,26 @@ const MatchUpSelectionPage = () => {
                 {rightTeamPlayers[index].map((player, playerIndex) => (
                   <Player
                     key={playerIndex}
-                    player={player}
+                    player={player.name}
                     onDelete={() => handleDeletePlayer('right', index, playerIndex)}
                   />
                 ))}
               </ul>
-              <AddPlayerForm onAddPlayer={(player) => handleAddPlayer('right', index, player)} />
+              {rightTeamPlayers[index].length === 0 && (
+                <AddPlayerForm 
+                  onAddPlayer={(player) => handleAddPlayer('right', index, player)}
+                  availablePlayers={getAvailablePlayers(rightTeamPlayers, awayPlayers)}
+                />
+              )}
             </div>
           ))}
         </div>
       </div>
-      <button className="btn btn-secondary mt-8" onClick={handleBack}>
-        Back
-      </button>
+      <div className="text-center">
+        <button className="btn btn-secondary mt-8" onClick={handleBack}>
+          Back
+        </button>
+      </div>
       <div className="text-center">
         <button className="btn btn-secondary mt-8" onClick={handleNextClick}>
           Next
@@ -105,29 +154,40 @@ const MatchUpSelectionPage = () => {
   );
 };
 
-const AddPlayerForm = ({ onAddPlayer }) => {
-  const [player, setPlayer] = useState('');
+const AddPlayerForm = ({ onAddPlayer, availablePlayers }) => {
+  const [selectedPlayer, setSelectedPlayer] = useState('');
+  const [error, setError] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (player.trim()) {
-      onAddPlayer(player);
-      setPlayer('');
+    if (selectedPlayer) {
+      const player = availablePlayers.find(p => p._id === selectedPlayer);
+      if (player) {
+        onAddPlayer(player);
+        setSelectedPlayer('');
+        setError('');
+      } else {
+        setError('Player is already selected for another position.');
+      }
     }
   };
 
   return (
     <form onSubmit={handleSubmit} className="flex items-center mt-2">
-      <input
-        type="text"
-        placeholder="Add Player"
-        value={player}
-        onChange={(e) => setPlayer(e.target.value)}
-        className="input input-bordered mr-2"
-      />
+      <select
+        value={selectedPlayer}
+        onChange={(e) => setSelectedPlayer(e.target.value)}
+        className="select select-bordered mr-2"
+      >
+        <option value="" disabled>Select Player</option>
+        {availablePlayers.map((player) => (
+          <option key={player._id} value={player._id}>{player.name}</option>
+        ))}
+      </select>
       <button type="submit" className="btn btn-primary">
         Add
       </button>
+      {error && <p className="text-red-500 ml-2">{error}</p>}
     </form>
   );
 };
