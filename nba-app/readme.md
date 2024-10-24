@@ -25,7 +25,11 @@ Software Innovation Studio Group 1 - NBA App
 
     - Create a .env file in the root directory of the project
     - Inside of the .env file add this the port number and mongo_uri
-    - The contents of the ".env" file will be on discord
+    - The contents of the ".env" file will be on discord:
+  
+<img width="835" alt="Screenshot 2024-10-15 at 7 43 46 pm" src="https://github.com/user-attachments/assets/06a2600b-7c88-491a-9ed1-d6a93e7e66f3">
+
+    
     
 2. There are two main folder (directories) client and server. 
     In one terminal window run: cd client && npm install && npm run dev
