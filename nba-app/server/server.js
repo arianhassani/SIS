@@ -8,22 +8,23 @@ import predictRoutes from './routes/predict.js'; // Import the players route
 const port = process.env.PORT || 3000;
 const app = express();
 
+// Connect to the database
+connectDB();
+
+// Middleware setup
 app.use(cors());
 app.use(express.json());
 
-connectDB();
+// Route setup
+app.use('/api/teams', teamRoutes);
+app.use('/api/players', playerRoutes);
+app.use('/api/predict', predictRoutes);
 
+app.get('/', (req, res)=>{
+    res.send('Return to home page')
+})
+
+// Start the server
 app.listen(port, () => {
-  console.log('Server listening on ' + port);
+  console.log(`Server listening on port ${port}`);
 });
-
-// Use the teams route
-app.use('/', teamRoutes);
-
-// Use the players route
-
-app.use('/', playerRoutes);
-
-// Use the players route
-
-app.use('/', predictRoutes);
