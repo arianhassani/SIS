@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import TopPerformer from '../components/TopPerformer';
 
+
 const PredictionPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const PredictionPage = () => {
    const homeTeam = localStorage.getItem('homeTeam') || "No home team selected";
    const awayTeam = localStorage.getItem('awayTeam') || "No away team selected";
 
-  const { season, homeTopPerformer, awayTopPerformer } = location.state || {};
+  const { homeTopPerformer, awayTopPerformer } = location.state || {};
 
   const { leftValue, rightValue } = location.state || {};
 
@@ -127,16 +128,16 @@ const PredictionPage = () => {
 
       {/* Statistics Container: 4 Quadrants */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Top Left: Team 1 Graph */}
+        {/* Top Left: Home Team Graph */}
         <div className="card shadow-lg bg-base-100 p-4">
           <div className="card-body">
-            <h3 className="card-title">{`${homeTeam} Overall Performer`}</h3>
+            <h3 className="card-title">{`${homeTeam} Overall Performance`}</h3>
             {/* Placeholder for Graph */}
             <div className="w-full h-64 bg-gray-200 rounded-lg"></div>
           </div>
         </div>
 
-        {/* Top Right: Team 2 Graph */}
+        {/* Top Right: Away Team Graph */}
         <div className="card shadow-lg bg-base-100 p-4">
           <div className="card-body">
             <h3 className="card-title">{`${awayTeam} Overall Performance`}</h3>

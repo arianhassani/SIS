@@ -5,7 +5,7 @@ const InjuryPage = () => {
   const navigate = useNavigate();
 
   const [homeTeam, setHomeTeam] = useState(localStorage.getItem("homeTeam") || "No home team selected");
-  const [awayTeam, setAwayTeam] = useState(localStorage.getItem("awayTeam") || "No away team selected");
+  const [awayTeam, setAwayTeam] = useState(localStorage.getItem("awayTeam") || "No home team selected");
 
   const [showModal, setShowModal] = useState(false);
   const [homePlayers, setHomePlayers] = useState(JSON.parse(sessionStorage.getItem(`${homeTeam}HomePlayers`)) || []);
@@ -90,7 +90,6 @@ const InjuryPage = () => {
 
   const handleAddInjury = async () => {
     if (player && description && teamType) {
-      const selectedTeam = teamType === 'home' ? homeTeam : awayTeam;
       const selectedPlayers = teamType === 'home' ? homePlayers : awayPlayers;
       const selectedPlayer = selectedPlayers.find(p => p.name === player);
 
@@ -177,10 +176,6 @@ const InjuryPage = () => {
 
   const placeholderImage = "https://via.placeholder.com/150";
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
   const homeInjuredPlayers = homePlayers.filter(player => player.isInjured);
   const awayInjuredPlayers = awayPlayers.filter(player => player.isInjured);
 
@@ -220,10 +215,21 @@ const InjuryPage = () => {
 
       {/* Home Team Injuries */}
       <div className="mt-4" style={{ marginTop: "1cm" }}>
-        <h2 className="text-2xl font-bold mb-4 text-center">
-          Home Team: {homeTeam}
+        <h2 className={`text-2xl font-bold mb-4 text-center`}>
+          {`Home Team: ${homeTeam}`}
         </h2>
-        {homeInjuredPlayers.length > 0 ? (
+        {loading ? (
+          <div className="grid grid-cols-4 gap-4">
+            {[...Array(4)].map((_, index) => (
+              <div key={index} className="p-4 rounded">
+                <div className="skeleton h-32 w-32 mx-auto mb-4 rounded-full"></div>
+                <div className="skeleton h-6 w-24 mx-auto mb-2"></div>
+                <div className="skeleton h-4 w-32 mx-auto"></div>
+                <div className="skeleton h-8 w-24 mx-auto mt-2"></div>
+              </div>
+            ))}
+          </div>
+        ) : homeInjuredPlayers.length > 0 ? (
           <div className="grid grid-cols-4 gap-4">
             {homeInjuredPlayers.map((injury, index) => (
               <div key={index} className="p-4 rounded">
@@ -253,10 +259,21 @@ const InjuryPage = () => {
 
       {/* Away Team Injuries */}
       <div className="mt-12" style={{ marginTop: "3cm" }}>
-        <h2 className="text-2xl font-bold mb-4 text-center">
-          Away Team: {awayTeam}
+        <h2 className={`text-2xl font-bold mb-4 text-center`}>
+          {`Away Team: ${awayTeam}`}
         </h2>
-        {awayInjuredPlayers.length > 0 ? (
+        {loading ? (
+          <div className="grid grid-cols-4 gap-4">
+            {[...Array(4)].map((_, index) => (
+              <div key={index} className="p-4 rounded">
+                <div className="skeleton h-32 w-32 mx-auto mb-4 rounded-full"></div>
+                <div className="skeleton h-6 w-24 mx-auto mb-2"></div>
+                <div className="skeleton h-4 w-32 mx-auto"></div>
+                <div className="skeleton h-8 w-24 mx-auto mt-2"></div>
+              </div>
+            ))}
+          </div>
+        ) : awayInjuredPlayers.length > 0 ? (
           <div className="grid grid-cols-4 gap-4">
             {awayInjuredPlayers.map((injury, index) => (
               <div key={index} className="p-4 rounded">
