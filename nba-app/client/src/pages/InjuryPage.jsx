@@ -4,134 +4,169 @@ import { useNavigate } from "react-router-dom";
 const InjuryPage = () => {
   const navigate = useNavigate();
 
-  // Retrieve the team names from localStorage or use fallback values
-  const homeTeam = localStorage.getItem("homeTeam") || "No home team selected";
-  const awayTeam = localStorage.getItem("awayTeam") || "No away team selected";
+  const [homeTeam, setHomeTeam] = useState(localStorage.getItem("homeTeam") || "No home team selected");
+  const [awayTeam, setAwayTeam] = useState(localStorage.getItem("awayTeam") || "No away team selected");
 
-  // State to track injuries and modal visibility
-  const [injuries, setInjuries] = useState([]);
   const [showModal, setShowModal] = useState(false);
-
-  // State to track players
-  const [homePlayers, setHomePlayers] = useState([]);
-  const [awayPlayers, setAwayPlayers] = useState([]);
-
-  // Loading state
+  const [homePlayers, setHomePlayers] = useState(JSON.parse(sessionStorage.getItem(`${homeTeam}HomePlayers`)) || []);
+  const [awayPlayers, setAwayPlayers] = useState(JSON.parse(sessionStorage.getItem(`${awayTeam}AwayPlayers`)) || []);
   const [loading, setLoading] = useState(true);
-
-  // Form state for adding an injury
   const [player, setPlayer] = useState("");
   const [description, setDescription] = useState("");
-  const [teamType, setTeamType] = useState(""); // Home or Away team
+  const [teamType, setTeamType] = useState("");
+  const [availablePlayers, setAvailablePlayers] = useState([]);
 
-  // Fetch injured players from the external API
-  const fetchInjuredPlayers = useCallback(async () => {
+  const fetchUpdatedHomePlayers = useCallback(async (homeTeam) => {
     try {
-      const homeInjuredResponse = await fetch(
-        `http://localhost:3000/${homeTeam}/injuredPlayers`
-      );
-      const homeInjuredData = await homeInjuredResponse.json();
-      const awayInjuredResponse = await fetch(
-        `http://localhost:3000/${awayTeam}/injuredPlayers`
-      );
-      const awayInjuredData = await awayInjuredResponse.json();
-
-      setHomePlayers(homeInjuredData);
-      setAwayPlayers(awayInjuredData);
-
-      console.log('Fetched injured players:', { homeInjuredData, awayInjuredData });
+      const response = await fetch(`http://localhost:3000/${homeTeam}/updatedPlayers`);
+      const data = await response.json();
+      sessionStorage.setItem(`${homeTeam}HomePlayers`, JSON.stringify(data));
+      return data;
     } catch (error) {
-      console.error("Error fetching injured players:", error);
+      console.error("Error fetching updated home players:", error);
+      return [];
     }
-  }, [homeTeam, awayTeam]);
+  }, []);
 
-  // Fetch players for home and away teams
+  const fetchUpdatedAwayPlayers = useCallback(async (awayTeam) => {
+    try {
+      const response = await fetch(`http://localhost:3000/${awayTeam}/updatedPlayers`);
+      const data = await response.json();
+      sessionStorage.setItem(`${awayTeam}AwayPlayers`, JSON.stringify(data));
+      return data;
+    } catch (error) {
+      console.error("Error fetching updated away players:", error);
+      return [];
+    }
+  }, []);
+
+  const initializePlayers = useCallback(async (homeTeam, awayTeam) => {
+    if (!sessionStorage.getItem(`${homeTeam}HomePlayers`)) {
+      const homePlayers = await fetchUpdatedHomePlayers(homeTeam);
+      setHomePlayers(homePlayers);
+    } else {
+      setHomePlayers(JSON.parse(sessionStorage.getItem(`${homeTeam}HomePlayers`)));
+    }
+
+    if (!sessionStorage.getItem(`${awayTeam}AwayPlayers`)) {
+      const awayPlayers = await fetchUpdatedAwayPlayers(awayTeam);
+      setAwayPlayers(awayPlayers);
+    } else {
+      setAwayPlayers(JSON.parse(sessionStorage.getItem(`${awayTeam}AwayPlayers`)));
+    }
+
+    setLoading(false);
+  }, [fetchUpdatedHomePlayers, fetchUpdatedAwayPlayers]);
+
   useEffect(() => {
-    const fetchPlayers = async () => {
-      try {
-        const homeResponse = await fetch(
-          `http://localhost:3000/${homeTeam}/players`
-        );
-        const homeData = await homeResponse.json();
-        const awayResponse = await fetch(
-          `http://localhost:3000/${awayTeam}/players`
-        );
-        const awayData = await awayResponse.json();
-
-        setHomePlayers(homeData.players || []);
-        setAwayPlayers(awayData.players || []);
-
-        await fetchInjuredPlayers();
-      } catch (error) {
-        console.error('Error fetching players:', error);
-      } finally {
-        setLoading(false);
-      }
+    const fetchData = async () => {
+      await initializePlayers(homeTeam, awayTeam);
     };
-    fetchPlayers();
-  }, [homeTeam, awayTeam, fetchInjuredPlayers]);
 
-  // Function to mark an injury as resolved
+    fetchData();
+  }, [homeTeam, awayTeam, initializePlayers]);
+
+  useEffect(() => {
+    const availablePlayers =
+      teamType === "home"
+        ? homePlayers.filter(player => !player.isInjured)
+        : awayPlayers.filter(player => !player.isInjured);
+
+    setAvailablePlayers(availablePlayers);
+  }, [teamType, homePlayers, awayPlayers]);
+
+  useEffect(() => {
+    const handleStorageChange = () => {
+      setHomeTeam(localStorage.getItem("homeTeam") || "No home team selected");
+      setAwayTeam(localStorage.getItem("awayTeam") || "No away team selected");
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []);
+
+  const handleAddInjury = async () => {
+    if (player && description && teamType) {
+      const selectedTeam = teamType === 'home' ? homeTeam : awayTeam;
+      const selectedPlayers = teamType === 'home' ? homePlayers : awayPlayers;
+      const selectedPlayer = selectedPlayers.find(p => p.name === player);
+
+      if (selectedPlayer) {
+        try {
+          await fetch(`http://localhost:3000/players/${selectedPlayer._id}/injure`, {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              description,
+            }),
+          });
+
+          setShowModal(false);
+          setPlayer('');
+          setDescription('');
+          setTeamType('');
+
+          // Update the local state and session storage after adding injury
+          const updatedPlayers = selectedPlayers.map(p => 
+            p._id === selectedPlayer._id ? { ...p, isInjured: true, injuryDetails: description } : p
+          );
+
+          if (teamType === 'home') {
+            setHomePlayers(updatedPlayers);
+            sessionStorage.setItem(`${homeTeam}HomePlayers`, JSON.stringify(updatedPlayers));
+          } else {
+            setAwayPlayers(updatedPlayers);
+            sessionStorage.setItem(`${awayTeam}AwayPlayers`, JSON.stringify(updatedPlayers));
+          }
+        } catch (error) {
+          console.error('Error updating player injury status:', error);
+        }
+      }
+    }
+  };
+
   const handleResolveInjury = async (playerId) => {
     try {
-      console.log(`Resolving injury for player ID: ${playerId}`);
-      const response = await fetch(`http://localhost:3000/players/${playerId}/resolve`, {
-        method: "PUT",
+      console.log(playerId);
+      await fetch(`http://localhost:3000/players/${playerId}/resolve`, {
+        method: 'PUT',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
       });
-  
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-  
-      console.log('Injury resolved successfully:', await response.json());
-  
-      // Refresh players to update injury status
-      await fetchInjuredPlayers();
+
+      // Update the local state and session storage after resolving injury
+      const homePlayers = JSON.parse(sessionStorage.getItem(`${homeTeam}HomePlayers`)) || [];
+      const awayPlayers = JSON.parse(sessionStorage.getItem(`${awayTeam}AwayPlayers`)) || [];
+
+      const updatePlayerInjuryStatus = (players) => {
+        return players.map(player => {
+          if (player._id === playerId) {
+            return { ...player, isInjured: false, injuryDetails: '' };
+          }
+          return player;
+        });
+      };
+
+      const updatedHomePlayers = updatePlayerInjuryStatus(homePlayers);
+      const updatedAwayPlayers = updatePlayerInjuryStatus(awayPlayers);
+
+      sessionStorage.setItem(`${homeTeam}HomePlayers`, JSON.stringify(updatedHomePlayers));
+      sessionStorage.setItem(`${awayTeam}AwayPlayers`, JSON.stringify(updatedAwayPlayers));
+
+      setHomePlayers(updatedHomePlayers);
+      setAwayPlayers(updatedAwayPlayers);
+      console.log(updatedAwayPlayers);
     } catch (error) {
-      console.error("Error resolving player injury status:", error);
+      console.error('Error resolving player injury status:', error);
     }
   };
 
-  // Function to add a new injury
-  const handleAddInjury = async () => {
-    try {
-      const team = teamType === "home" ? homeTeam : awayTeam;
-      const response = await fetch(`http://localhost:3000/${team}/addInjury`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          player,
-          description,
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      console.log('Injury added successfully:', await response.json());
-
-      // Refresh players to update injury status
-      await fetchInjuredPlayers();
-
-      // Close the modal
-      setShowModal(false);
-
-      // Reset form fields
-      setPlayer("");
-      setDescription("");
-      setTeamType("");
-    } catch (error) {
-      console.error("Error adding injury:", error);
-    }
-  };
-
-  // Navigate back to the previous page
   const handleBack = () => {
     navigate("/");
   };
@@ -140,18 +175,14 @@ const InjuryPage = () => {
     navigate("/match-up");
   };
 
-  // Placeholder image URL (this could be replaced with real player images in the future)
-  const placeholderImage = "https://via.placeholder.com/150"; // Placeholder image URL
-
-  // Filter non-injured players for the modal dropdown
-  const availablePlayers =
-    teamType === "home"
-      ? homePlayers.filter((player) => !player.isInjured)
-      : awayPlayers.filter((player) => !player.isInjured);
+  const placeholderImage = "https://via.placeholder.com/150";
 
   if (loading) {
     return <div>Loading...</div>;
   }
+
+  const homeInjuredPlayers = homePlayers.filter(player => player.isInjured);
+  const awayInjuredPlayers = awayPlayers.filter(player => player.isInjured);
 
   return (
     <div className="min-h-screen bg-base-200 flex flex-col w-full">
@@ -189,14 +220,12 @@ const InjuryPage = () => {
 
       {/* Home Team Injuries */}
       <div className="mt-4" style={{ marginTop: "1cm" }}>
-        {" "}
-        {/* Added marginTop of 1cm */}
         <h2 className="text-2xl font-bold mb-4 text-center">
           Home Team: {homeTeam}
         </h2>
-        {homePlayers.length > 0 ? (
+        {homeInjuredPlayers.length > 0 ? (
           <div className="grid grid-cols-4 gap-4">
-            {homePlayers.map((injury, index) => (
+            {homeInjuredPlayers.map((injury, index) => (
               <div key={index} className="p-4 rounded">
                 {/* Player Photo */}
                 <img
@@ -227,9 +256,9 @@ const InjuryPage = () => {
         <h2 className="text-2xl font-bold mb-4 text-center">
           Away Team: {awayTeam}
         </h2>
-        {awayPlayers.length > 0 ? (
+        {awayInjuredPlayers.length > 0 ? (
           <div className="grid grid-cols-4 gap-4">
-            {awayPlayers.map((injury, index) => (
+            {awayInjuredPlayers.map((injury, index) => (
               <div key={index} className="p-4 rounded">
                 {/* Player Photo */}
                 <img
