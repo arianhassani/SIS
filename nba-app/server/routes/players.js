@@ -26,7 +26,7 @@ router.get('/:teamName/players', async (req, res) => {
   }
 });
 
-router.get('/:teamName/injuredPlayers', async (req, res) => {
+router.get('/:teamName/updatedPlayers', async (req, res) => {
   const { teamName } = req.params;
 
   try {
@@ -43,7 +43,6 @@ router.get('/:teamName/injuredPlayers', async (req, res) => {
     // Find all injured players from the team
     const injuredPlayers = await Player.find({
       _id: { $in: team.players },  // Only search for players in the team
-      isInjured: true              // Only retrieve injured players
     });
 
     // Return the list of injured players
@@ -58,7 +57,7 @@ router.get('/:teamName/injuredPlayers', async (req, res) => {
 router.put('/players/:playerId/injure', async (req, res) => {
   try {
     const { playerId } = req.params;
-    const { result, description } = req.body;
+    const { description } = req.body;
 
     const player = await Player.findById(playerId);
     if (!player) {
