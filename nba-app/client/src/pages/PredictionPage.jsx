@@ -23,6 +23,8 @@ const PredictionPage = () => {
     right: 98, // Replace with actual predicted score
   };
 
+  const placeholder = 'https://placehold.co/400'
+
   const handleBack = () => {
     navigate('/matchup-page');
   };
@@ -39,7 +41,7 @@ const PredictionPage = () => {
     } catch (error) {
       console.error("Error fetching player image:", error);
       setError(true);
-      return 'https://via.placeholder.com/150'; // Placeholder image URL
+      return placeholder // Placeholder image URL
     }
   };
 
@@ -94,7 +96,7 @@ const PredictionPage = () => {
         {/* Left Team */}
         <div className="text-center">
           <img
-            src={teamLogos[homeTeam]}
+            src={teamLogos[homeTeam] || placeholder}
             alt={`${homeTeam} logo`}
             className="w-24 h-24 mx-auto"
           />
@@ -112,7 +114,7 @@ const PredictionPage = () => {
         {/* Right Team */}
         <div className="text-center">
           <img
-            src={teamLogos[awayTeam]}
+            src={teamLogos[awayTeam] || placeholder}
             alt={`${awayTeam} logo`}
             className="w-24 h-24 mx-auto"
           />
@@ -145,7 +147,7 @@ const PredictionPage = () => {
             <h3 className="text-xl font-semibold mb-4">{`${homeTeam} Top Performer`}</h3>
             <div className="card bg-base-100 w-96 shadow-xl">
               <figure className="px-10 pt-10">
-                <img src={homeTopPerformerImage} alt={homeTopPerformer?.name} className="w-32 h-32 mx-auto mb-4 rounded-full" />
+                <img src={homeTopPerformerImage || placeholder} alt={homeTopPerformer?.name} className="w-32 h-32 mx-auto mb-4 rounded-full" />
               </figure>
               <div className="card-body items-center text-center">
                 <h2 className="card-title">{homeTopPerformer?.name}</h2>
@@ -161,7 +163,7 @@ const PredictionPage = () => {
             <h3 className="text-xl font-semibold mb-4">{`${awayTeam} Top Performer`}</h3>
             <div className="card bg-base-100 w-96 shadow-xl">
               <figure className="px-10 pt-10">
-                <img src={awayTopPerformerImage} alt={awayTopPerformer?.name} className="w-32 h-32 mx-auto mb-4 rounded-full" />
+                <img src={awayTopPerformerImage || placeholder} alt={awayTopPerformer?.name} className="w-32 h-32 mx-auto mb-4 rounded-full" />
               </figure>
               <div className="card-body items-center text-center">
                 <h2 className="card-title">{awayTopPerformer?.name}</h2>
@@ -201,7 +203,7 @@ const PredictionPage = () => {
             {/* Placeholder for Scatterplot */}
             <figure className="p-2">
               <img
-                src={homeTopPerformerImage}
+                src={homeTopPerformerImage || placeholder}
                 alt={homeTopPerformer?.name}
                 className="w-full object-contain rounded-b-lg"
               />
@@ -216,7 +218,7 @@ const PredictionPage = () => {
             {/* Placeholder for Scatterplot */}
             <figure className="p-2">
               <img
-                src={awayTopPerformerImage}
+                src={awayTopPerformerImage || placeholder}
                 alt={awayTopPerformer?.name}
                 className="w-full object-contain rounded-b-lg"
               />

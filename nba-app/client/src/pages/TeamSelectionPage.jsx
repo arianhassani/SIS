@@ -18,6 +18,8 @@ const TeamSelectionPage = () => {
   const homeTeamDetailsRef = useRef(null);
   const awayTeamDetailsRef = useRef(null);
 
+  const placeholder = 'https://placehold.co/400'
+
   useEffect(() => {
     const fetchTeams = async () => {
       try {
@@ -75,6 +77,7 @@ const TeamSelectionPage = () => {
     }
   };
 
+
   if (isLoading) {
     return (
       <div className="flex justify-center items-center min-h-screen">
@@ -82,8 +85,6 @@ const TeamSelectionPage = () => {
       </div>
     );
   }
-
-  
 
   if (error) {
     return (
@@ -135,7 +136,7 @@ const TeamSelectionPage = () => {
         {/* Display Home Team Logo */}
         {selectedHomeTeam !== "SELECT TEAM" && (
           <img
-            src={teamLogos[selectedHomeTeam]}
+            src={teamLogos[selectedHomeTeam] || placeholder}
             alt={selectedHomeTeam}
             className="absolute z-10"
             style={{
@@ -176,7 +177,7 @@ const TeamSelectionPage = () => {
         {/* Display Away Team Logo */}
         {selectedAwayTeam !== "SELECT TEAM" && (
           <img
-            src={teamLogos[selectedAwayTeam]}
+            src={teamLogos[selectedAwayTeam] || placeholder}
             alt={selectedAwayTeam}
             className="absolute z-10"
             style={{

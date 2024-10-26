@@ -180,7 +180,7 @@ const InjuryPage = () => {
     navigate("/matchup-page");
   };
 
-  const placeholderImage = "https://via.placeholder.com/150";
+  const placeholderImage = "https://placehold.co/400";
 
   const homeInjuredPlayers = homePlayers.filter(player => player.isInjured);
   const awayInjuredPlayers = awayPlayers.filter(player => player.isInjured);
