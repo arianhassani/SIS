@@ -1,82 +1,195 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation } from 'react-router-dom';
+import React, { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import teamLogos from "../components/teamLogos";
 
 const TeamSelectionPage = () => {
-  const location = useLocation();
-  const [leftValue, setLeftValue] = useState(location.state?.leftValue || '');
-  const [rightValue, setRightValue] = useState(location.state?.rightValue || '');
   const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = { leftValue, rightValue };
-    navigate('/injury', { state: data });
+  // Retrieve the team names from localStorage or use fallback values
+  const homeTeam = localStorage.getItem('homeTeam') || "SELECT TEAM";
+  const awayTeam = localStorage.getItem('awayTeam') || "SELECT TEAM";
+
+  const [selectedHomeTeam, setSelectedHomeTeam] = useState(homeTeam);
+  const [selectedAwayTeam, setSelectedAwayTeam] = useState(awayTeam);
+  const [teamsByDivision, setTeamsByDivision] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(false);
+
+  const homeTeamDetailsRef = useRef(null);
+  const awayTeamDetailsRef = useRef(null);
+
+  const placeholder = 'https://placehold.co/400'
+
+  useEffect(() => {
+    const fetchTeams = async () => {
+      try {
+        const response = await fetch('/api/teams');
+        const data = await response.json();
+
+        const teamsByDivision = data.reduce((divisions, team) => {
+          if (!divisions[team.division]) {
+            divisions[team.division] = [];
+          }
+          divisions[team.division].push(team);
+          return divisions;
+        }, {});
+
+        setTeamsByDivision(teamsByDivision);
+        setIsLoading(false);
+      } catch (error) {
+        console.error("Error fetching teams:", error);
+        setError(true);
+        setIsLoading(false);
+      }
+    };
+
+    fetchTeams();
+  }, []);
+
+  const handleNextClick = () => {
+    if (selectedHomeTeam === "SELECT TEAM" || selectedAwayTeam === "SELECT TEAM") {
+      alert("Please select a home team and away team before proceeding.");
+    } else {
+      localStorage.setItem('homeTeam', selectedHomeTeam);
+      localStorage.setItem('awayTeam', selectedAwayTeam);
+      navigate("/injury-page", {
+        state: {
+          homeTeam: selectedHomeTeam,
+          awayTeam: selectedAwayTeam,
+        },
+      });
+    }
   };
 
-  return (
-    <div className="min-h-screen bg-base-200">
-      <div className="text-center my-8">
-        <h1 className="text-5xl font-bold">Team Selection</h1>
+  const handleHomeTeamSelect = (team) => {
+    setSelectedHomeTeam(team);
+    localStorage.removeItem('homeTeamMatchup');
+    if (homeTeamDetailsRef.current) {
+      homeTeamDetailsRef.current.open = false;
+    }
+  };
+
+  const handleAwayTeamSelect = (team) => {
+    setSelectedAwayTeam(team);
+    localStorage.removeItem('awayTeamMatchup');
+    if (awayTeamDetailsRef.current) {
+      awayTeamDetailsRef.current.open = false;
+    }
+  };
+
+
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="skeleton w-full h-full"></div>
       </div>
-      <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4">
-        <div className="flex justify-between w-full max-w-md">
-          <label className="form-control w-full max-w-xs mr-4">
-            <div className="label">
-              <span className="label-text">Home Team</span>
-            </div>
-            <select
-              className="select select-bordered"
-              value={leftValue}
-              onChange={(e) => setLeftValue(e.target.value)}
-              defaultValue=""
-            >
-              <option value="" disabled>Pick one</option>
-              {/* {teams
-                .filter(team => team.name !== rightValue)
-                .map(team => (
-                  <option key={team._id} value={team.name}>{team.name}</option>
-                ))} */}
-              <optgroup label="Category 1">
-                <option value="Option1-1">Option 1-1</option>
-                <option value="Option1-2">Option 1-2</option>
-              </optgroup>
-              <optgroup label="Category 2">
-                <option value="Option2-1">Option 2-1</option>
-                <option value="Option2-2">Option 2-2</option>
-              </optgroup>
-            </select>
-          </label>
-          <label className="form-control w-full max-w-xs ml-4">
-            <div className="label">
-              <span className="label-text">Away Team</span>
-            </div>
-            <select
-              className="select select-bordered"
-              value={rightValue}
-              onChange={(e) => setRightValue(e.target.value)}
-              defaultValue=""
-            >
-              <option value="" disabled>Pick one</option>
-              {/* {teams
-                .filter(team => team.name !== leftValue)
-                .map(team => (
-                  <option key={team._id} value={team.name}>{team.name}</option>
-                ))} */}
-              <optgroup label="Category A">
-                <option value="OptionA-1">Option A-1</option>
-                <option value="OptionA-2">Option A-2</option>
-              </optgroup>
-              <optgroup label="Category B">
-                <option value="OptionB-1">Option B-1</option>
-                <option value="OptionB-2">Option B-2</option>
-              </optgroup>
-            </select>
-          </label>
-        </div>
-        <button type="submit" className="btn btn-primary">
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <span className="loading loading-spinner loading-lg text-error"></span>
+      </div>
+    );
+  }
+
+  return (
+    <div className="relative min-h-screen flex flex-col w-full">
+      {/* Main content */}
+      <div className="relative flex-grow" style={{ paddingBottom: "200px" }}>
+        <label className="absolute top-[calc(45%-260px)] left-1/2 transform -translate-x-1/2 text-center">
+          Choose Your Teams
+        </label>
+
+        {/* "Next" Button */}
+        <button className="btn absolute top-[calc(50%+15px)] left-1/2 transform -translate-x-1/2" onClick={handleNextClick}>
           Next
         </button>
-      </form>
+
+        {/* Home Team Selection */}
+        <label className="absolute top-[calc(45%-200px)] left-[calc(50%-382px)] transform -translate-x-1/2 text-center">
+          HOME TEAM
+        </label>
+
+        <details ref={homeTeamDetailsRef} className="dropdown absolute top-[calc(45%-122px)] transform -translate-x-1/2 -translate-y-1/2 z-30" style={{ left: "calc(50% - 382px)", width: "17rem" }}>
+          <summary className="btn m-1 text-center relative" style={{ width: "17rem" }}>
+            {selectedHomeTeam}
+          </summary>
+          <ul className="dropdown-content menu menu-vertical bg-base-100 rounded-box z-40 p-2 shadow text-center" style={{ width: "17rem", maxHeight: "400px", overflowY: "auto" }}>
+            {/* Loop through the divisions and teams */}
+            {Object.keys(teamsByDivision).map((division) => (
+              <React.Fragment key={division}>
+                <li className="menu-title">
+                  <span>{division} Division</span>
+                </li>
+                {teamsByDivision[division].map((team) => (
+                  <li key={team._id}>
+                    <button onClick={() => handleHomeTeamSelect(team.name)} disabled={team.name === selectedAwayTeam}>{team.name}</button>
+                  </li>
+                ))}
+              </React.Fragment>
+            ))}
+          </ul>
+        </details>
+
+        {/* Display Home Team Logo */}
+        {selectedHomeTeam !== "SELECT TEAM" && (
+          <img
+            src={teamLogos[selectedHomeTeam] || placeholder}
+            alt={selectedHomeTeam}
+            className="absolute z-10"
+            style={{
+              top: "calc(45% - 60px)",
+              left: "calc(50% - 382px)",
+              transform: "translateX(-50%)",
+              width: "350px",
+              height: "350px",
+            }}
+          />
+        )}
+
+        {/* Away Team Selection */}
+        <label className="absolute top-[calc(45%-200px)] left-[calc(50%+382px)] transform -translate-x-1/2 text-center">
+          AWAY TEAM
+        </label>
+
+        <details ref={awayTeamDetailsRef} className="dropdown absolute top-[calc(45%-122px)] transform -translate-x-1/2 -translate-y-1/2 z-30" style={{ left: "calc(50% + 382px)", width: "17rem" }}>
+          <summary className="btn m-1 text-center relative" style={{ width: "17rem" }}>
+            {selectedAwayTeam}
+          </summary>
+          <ul className="dropdown-content menu menu-vertical bg-base-100 rounded-box z-40 p-2 shadow text-center" style={{ width: "17rem", maxHeight: "400px", overflowY: "auto" }}>
+            {Object.keys(teamsByDivision).map((division) => (
+              <React.Fragment key={division}>
+                <li className="menu-title">
+                  <span>{division} Division</span>
+                </li>
+                {teamsByDivision[division].map((team) => (
+                  <li key={team._id}>
+                    <button onClick={() => handleAwayTeamSelect(team.name)} disabled={team.name === selectedHomeTeam}>{team.name}</button>
+                  </li>
+                ))}
+              </React.Fragment>
+            ))}
+          </ul>
+        </details>
+
+        {/* Display Away Team Logo */}
+        {selectedAwayTeam !== "SELECT TEAM" && (
+          <img
+            src={teamLogos[selectedAwayTeam] || placeholder}
+            alt={selectedAwayTeam}
+            className="absolute z-10"
+            style={{
+              top: "calc(45% - 60px)",
+              left: "calc(50% + 382px)",
+              transform: "translateX(-50%)",
+              width: "350px",
+              height: "350px",
+            }}
+          />
+        )}
+      </div>
     </div>
   );
 };
