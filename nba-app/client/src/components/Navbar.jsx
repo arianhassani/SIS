@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/file.png"; // Adjust the path to your logo as needed
+import logo from "../assets/team_logos/file.png"; // Adjust the path to your logo as needed
 
 const Navbar = () => {
   return (
@@ -21,17 +21,17 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/injury" className="btn btn-ghost">
+              <Link to="/injury-page" className="btn btn-ghost">
                 Injury
               </Link>
             </li>
             <li>
-              <Link to="/match-up" className="btn btn-ghost">
+              <Link to="/matchup-page" className="btn btn-ghost">
                 Match-Up
               </Link>
             </li>
             <li>
-              <Link to="/prediction" className="btn btn-ghost">
+              <Link to="/prediction-page" className="btn btn-ghost">
                 Prediction
               </Link>
             </li>

@@ -11,36 +11,42 @@ const InjuryPage = () => {
   const [homePlayers, setHomePlayers] = useState(JSON.parse(sessionStorage.getItem(`${homeTeam}HomePlayers`)) || []);
   const [awayPlayers, setAwayPlayers] = useState(JSON.parse(sessionStorage.getItem(`${awayTeam}AwayPlayers`)) || []);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
   const [player, setPlayer] = useState("");
   const [description, setDescription] = useState("");
   const [teamType, setTeamType] = useState("");
   const [availablePlayers, setAvailablePlayers] = useState([]);
+  const [playerImages, setPlayerImages] = useState({});
 
   const fetchUpdatedHomePlayers = useCallback(async (homeTeam) => {
     try {
-      const response = await fetch(`http://localhost:3000/${homeTeam}/updatedPlayers`);
+      const response = await fetch(`api/teams/${homeTeam}/updated-players`);
       const data = await response.json();
       sessionStorage.setItem(`${homeTeam}HomePlayers`, JSON.stringify(data));
       return data;
     } catch (error) {
       console.error("Error fetching updated home players:", error);
+      setError(true);
       return [];
     }
   }, []);
 
   const fetchUpdatedAwayPlayers = useCallback(async (awayTeam) => {
     try {
-      const response = await fetch(`http://localhost:3000/${awayTeam}/updatedPlayers`);
+      const response = await fetch(`api/players/${awayTeam}/updated-players`);
       const data = await response.json();
       sessionStorage.setItem(`${awayTeam}AwayPlayers`, JSON.stringify(data));
       return data;
     } catch (error) {
       console.error("Error fetching updated away players:", error);
+      setError(true);
       return [];
     }
   }, []);
 
   const initializePlayers = useCallback(async (homeTeam, awayTeam) => {
+    setLoading(true);
+
     if (!sessionStorage.getItem(`${homeTeam}HomePlayers`)) {
       const homePlayers = await fetchUpdatedHomePlayers(homeTeam);
       setHomePlayers(homePlayers);
@@ -95,7 +101,7 @@ const InjuryPage = () => {
 
       if (selectedPlayer) {
         try {
-          await fetch(`http://localhost:3000/players/${selectedPlayer._id}/injure`, {
+          await fetch(`api/players/${selectedPlayer._id}/injure`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',
@@ -132,7 +138,7 @@ const InjuryPage = () => {
   const handleResolveInjury = async (playerId) => {
     try {
       console.log(playerId);
-      await fetch(`http://localhost:3000/players/${playerId}/resolve`, {
+      await fetch(`api/players/${playerId}/resolve`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -171,13 +177,60 @@ const InjuryPage = () => {
   };
 
   const handleNext = () => {
-    navigate("/match-up");
+    navigate("/matchup-page");
   };
 
   const placeholderImage = "https://via.placeholder.com/150";
 
   const homeInjuredPlayers = homePlayers.filter(player => player.isInjured);
   const awayInjuredPlayers = awayPlayers.filter(player => player.isInjured);
+
+  // Dynamically import player images based on team and player names
+  const getPlayerImage = async (player) => {
+    try {
+      const module = await import(`../assets/player_headshots/${player.name}.png`);
+      return module.default;
+    } catch (error) {
+      console.error("Error fetching player image:", error);
+      setError(true);
+      return placeholderImage;
+    }
+  };
+
+  useEffect(() => {
+    const loadImages = async () => {
+      try {
+        const images = {};
+        for (const player of [...homePlayers, ...awayPlayers]) {
+          const image = await getPlayerImage(player);
+          images[player.name] = image;
+        }
+        setPlayerImages(images);
+      } catch {
+        setError(true);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadImages();
+  }, [homePlayers, awayPlayers]);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="skeleton w-full h-full"></div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <span className="loading loading-spinner loading-lg text-error"></span>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-base-200 flex flex-col w-full">
@@ -235,7 +288,7 @@ const InjuryPage = () => {
               <div key={index} className="p-4 rounded">
                 {/* Player Photo */}
                 <img
-                  src={placeholderImage}
+                  src={playerImages[injury.name] || placeholderImage}
                   alt={injury.name}
                   className="w-32 h-32 mx-auto mb-4 rounded-full"
                 />
@@ -279,7 +332,7 @@ const InjuryPage = () => {
               <div key={index} className="p-4 rounded">
                 {/* Player Photo */}
                 <img
-                  src={placeholderImage}
+                  src={playerImages[injury.name] || placeholderImage}
                   alt={injury.name}
                   className="w-32 h-32 mx-auto mb-4 rounded-full"
                 />

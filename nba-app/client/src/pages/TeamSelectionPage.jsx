@@ -13,6 +13,7 @@ const TeamSelectionPage = () => {
   const [selectedAwayTeam, setSelectedAwayTeam] = useState(awayTeam);
   const [teamsByDivision, setTeamsByDivision] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   const homeTeamDetailsRef = useRef(null);
   const awayTeamDetailsRef = useRef(null);
@@ -20,7 +21,7 @@ const TeamSelectionPage = () => {
   useEffect(() => {
     const fetchTeams = async () => {
       try {
-        const response = await fetch('http://localhost:3000/teams');
+        const response = await fetch('/api/teams');
         const data = await response.json();
 
         const teamsByDivision = data.reduce((divisions, team) => {
@@ -35,6 +36,7 @@ const TeamSelectionPage = () => {
         setIsLoading(false);
       } catch (error) {
         console.error("Error fetching teams:", error);
+        setError(true);
         setIsLoading(false);
       }
     };
@@ -48,7 +50,7 @@ const TeamSelectionPage = () => {
     } else {
       localStorage.setItem('homeTeam', selectedHomeTeam);
       localStorage.setItem('awayTeam', selectedAwayTeam);
-      navigate("/injury", {
+      navigate("/injury-page", {
         state: {
           homeTeam: selectedHomeTeam,
           awayTeam: selectedAwayTeam,
@@ -74,7 +76,21 @@ const TeamSelectionPage = () => {
   };
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="skeleton w-full h-full"></div>
+      </div>
+    );
+  }
+
+  
+
+  if (error) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <span className="loading loading-spinner loading-lg text-error"></span>
+      </div>
+    );
   }
 
   return (

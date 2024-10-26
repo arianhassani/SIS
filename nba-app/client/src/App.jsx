@@ -12,9 +12,9 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<TeamSelectionPage />} />
-          <Route path="/injury" element={<InjuryPage />} />
-          <Route path="/match-up" element={<MatchUpSelectionPage />} />
-          <Route path="/prediction" element={<PredictionPage />} />
+          <Route path="/injury-page" element={<InjuryPage />} />
+          <Route path="/matchup-page" element={<MatchUpSelectionPage />} />
+          <Route path="/prediction-page" element={<PredictionPage />} />
         </Routes>
         <Footer />
       </Router>
