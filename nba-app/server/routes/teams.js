@@ -1,16 +1,19 @@
-import express from 'express';
-import Team from '../models/Team.js';
+import express from "express";
+import {
+  getTeams,
+  getTeamPlayers,
+  getUpdatedTeamPlayers,
+} from "../controllers/teamsController.js";
 
 const router = express.Router();
 
 // Route to get all teams
-router.get('/teams', async (req, res) => {
-    try {
-        const teams = await Team.find(); // Fetch all teams from MongoDB
-        res.status(200).json(teams); // Send the list of teams as JSON
-    } catch (error) {
-        res.status(500).json({ message: 'Error fetching teams', error });
-    }
-});
+router.get("/", getTeams);
+
+// Route to get players for a given team
+router.get("/:teamName/players", getTeamPlayers);
+
+// Route to get updated players for a given team
+router.get("/:teamName/updated-players", getUpdatedTeamPlayers);
 
 export default router;

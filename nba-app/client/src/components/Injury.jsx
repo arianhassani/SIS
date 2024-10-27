@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Injury = ({ injury, onEdit, onResolve }) => {
   const [isEditing, setIsEditing] = useState(false);

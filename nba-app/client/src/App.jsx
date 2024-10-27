@@ -1,27 +1,46 @@
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import TeamSelectionPage from "./pages/TeamSelectionPage";
 import InjuryPage from "./pages/InjuryPage";
-import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer";
 import MatchUpSelectionPage from "./pages/MatchUpPage";
 import PredictionPage from "./pages/PredictionPage";
-
+import ProtectedRoute from "./components/ProtectedRoute";
 const App = () => {
   return (
-    <div>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/team-selection" element={<TeamSelectionPage />} />
-          <Route path="/injury" element={<InjuryPage />} />
-          <Route path="/match-up" element={<MatchUpSelectionPage />} />
-          <Route path="/prediction" element={<PredictionPage />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<TeamSelectionPage />} />
+        <Route
+          path="/injury-page"
+          element={
+            <ProtectedRoute requiredKeys={["homeTeam", "awayTeam"]}>
+              <InjuryPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/matchup-page"
+          element={
+            <ProtectedRoute requiredKeys={["homeTeam", "awayTeam"]}>
+              <MatchUpSelectionPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/prediction-page"
+          element={
+            <ProtectedRoute requiredKeys={["homeTeam", "awayTeam", "homeTeamMatchup", "awayTeamMatchup"]}>
+              <PredictionPage />
+            </ProtectedRoute>
+          }
+        />
+        {/* Catch-All Route */}
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 };
 

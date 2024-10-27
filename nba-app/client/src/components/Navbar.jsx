@@ -1,137 +1,59 @@
-import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo.svg";
+import { useLocation } from "react-router-dom";
+import logo from "../assets/team_logos/file.png"; // Adjust the path to your logo as needed
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("home");
   const location = useLocation();
 
-  useEffect(() => {
-    // Set active link based on the current path
-    const path = location.pathname;
-    if (path === "/") {
-      setActiveLink("home");
-    } else if (path === "/team-selection") {
-      setActiveLink("team");
-    } else if (path === "/injury") {
-      setActiveLink("injury");
-    } else if (path === "/match-up") {
-      setActiveLink("match-up");
-    } else if (path === "/prediction") {
-      setActiveLink("prediction");
-    }
-  }, [location]);
+  const getStepClass = (path) => {
+    const steps = [
+      { path: "/", name: "Team Selection" },
+      { path: "/injury-page", name: "Injury" },
+      { path: "/matchup-page", name: "Match-Up" },
+      { path: "/prediction-page", name: "Prediction" },
+    ];
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+    const currentIndex = steps.findIndex(step => step.path === location.pathname);
+    const stepIndex = steps.findIndex(step => step.path === path);
 
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-    setIsOpen(false); // Close the menu after clicking a link
+    return stepIndex <= currentIndex ? "step step-primary" : "step";
   };
 
   return (
-    <header className="p-4 dark:bg-gray-100 dark:text-gray-800">
-      <div className="container flex justify-between h-16 mx-auto">
-        <a
-          rel="noopener noreferrer"
-          href="#"
-          aria-label="Back to homepage"
-          className="flex items-center p-2"
-        >
-          <img src={logo} alt="Logo" className="w-8 h-8 dark:text-violet-600" />
-        </a>
-        <ul
-          className={`items-stretch hidden space-x-3 md:flex ${
-            isOpen ? "active" : ""
-          }`}
-        >
-          <li className="flex">
-            <Link
-              to="/"
-              className={`flex items-center px-4 -mb-1 border-b-2 dark:border- ${
-                activeLink === "home"
-                  ? "dark:text-violet-600 dark:border-violet-600"
-                  : ""
-              }`}
-              onClick={() => handleLinkClick("home")}
-            >
-              Home
-            </Link>
-          </li>
-          <li className="flex">
-            <Link
-              to="/team-selection"
-              className={`flex items-center px-4 -mb-1 border-b-2 dark:border- ${
-                activeLink === "team"
-                  ? "dark:text-violet-600 dark:border-violet-600"
-                  : ""
-              }`}
-              onClick={() => handleLinkClick("team")}
-            >
-              Team Selection
-            </Link>
-          </li>
-          <li className="flex">
-            <Link
-              to="/injury"
-              className={`flex items-center px-4 -mb-1 border-b-2 dark:border- ${
-                activeLink === "injury"
-                  ? "dark:text-violet-600 dark:border-violet-600"
-                  : ""
-              }`}
-              onClick={() => handleLinkClick("injury")}
-            >
-              Injury
-            </Link>
-          </li>
-          <li className="flex">
-            <Link
-              to="/match-up"
-              className={`flex items-center px-4 -mb-1 border-b-2 dark:border- ${
-                activeLink === "match-up"
-                  ? "dark:text-violet-600 dark:border-violet-600"
-                  : ""
-              }`}
-              onClick={() => handleLinkClick("match-up")}
-            >
-              Match-Up
-            </Link>
-          </li>
-          <li className="flex">
-            <Link
-              to="/prediction"
-              className={`flex items-center px-4 -mb-1 border-b-2 dark:border- ${
-                activeLink === "prediction"
-                  ? "dark:text-violet-600 dark:border-violet-600"
-                  : ""
-              }`}
-              onClick={() => handleLinkClick("prediction")}
-            >
-              Prediction
-            </Link>
-          </li>
-        </ul>
-        <button className="flex justify-end p-4 md:hidden" onClick={toggleMenu}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
+    <div className="bg-gray-200 shadow-lg rounded-lg mt-4 mx-auto" style={{ maxWidth: '90%', padding: '0 1.5rem' }}>
+      <div className="navbar">
+        <div className="flex-1">
+          {/* Link for the logo and app name */}
+          <span className="flex items-center text-xl font-bold">
+            <img src={logo} alt="Logo" className=" h-32 mr-2" />
+          </span>
+        </div>
+        <div className="flex-none">
+          {/* Steps navigation */}
+          <ul className="steps">
+            <li className={getStepClass("/")}>
+              <span className="text-black">
+                Team Selection
+              </span>
+            </li>
+            <li className={getStepClass("/injury-page")}>
+              <span className="text-black">
+                Injury
+              </span>
+            </li>
+            <li className={getStepClass("/matchup-page")}>
+              <span className="text-black">
+                Match-Up
+              </span>
+            </li>
+            <li className={getStepClass("/prediction-page")}>
+              <span className="text-black">
+                Prediction
+              </span>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </div>
   );
 };
 

@@ -15,6 +15,7 @@ connectDB();
 const teamData = JSON.parse(fs.readFileSync(path.resolve('./responseTeams.json'), 'utf-8'));
 const playerData = JSON.parse(fs.readFileSync(path.resolve('./players.json'), 'utf-8')); 
 const statsData = JSON.parse(fs.readFileSync(path.resolve('./playerStats.json'), 'utf-8')); 
+const nbaIDs = JSON.parse(fs.readFileSync(path.resolve('./unique_teams.json'), 'utf-8')); 
 
 const transformedTeamData = teamData.data.map(team => ({
   name: team.full_name,
@@ -110,6 +111,29 @@ const updatePlayerStats = async () => {
   
 }
 
+// Update each team in the database
+const setNBAIDs = async () => {
+  for (const eachID of nbaIDs) {
+    const { TEAM_ID: teamID, TEAM_NAME: teamName } = eachID;
+    const teamIDString = teamID.toString();
+
+      // Update the team record in MongoDB
+      const updatedTeam = await Team.findOneAndUpdate(
+          { name: teamName }, // Find player by name
+          { nbaID: teamIDString }, 
+          { new: true } // Return the updated document
+      );
+      if (updatedTeam) {
+          console.log(`NBA Id added for ${teamName}`);
+      } else {
+          console.log(`Team ${teamName} not found in database.`);
+      }
+  }
+  
+}
+
+
+//setNBAIDs();
 // Execute the function
 //updatePlayerStats().catch(err => console.log(err));
 

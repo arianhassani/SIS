@@ -11,14 +11,30 @@ import util from 'util';
 connectDB();
 const execPromise = util.promisify(exec);
 
-const setInjuredPlayers = async (teamName) => {
+const runPythonScript = async (command) => {
   try {
-    // Run the Python script and await the result
-    const { stdout, stderr } = await execPromise('py ./dataPopulation/nbainjuries.py');
-
+    const { stdout, stderr } = await execPromise(command);
     if (stderr) {
       console.error(`Python script stderr: ${stderr}`);
       throw new Error('Python script error');
+    }
+    return stdout;
+  } catch (error) {
+    console.error(`Error running command "${command}": ${error.message}`);
+    throw error;
+  }
+};
+
+const setInjuredPlayers = async (teamName) => {
+  try {
+    let stdout;
+    try {
+      // Try running the Python script using 'py'
+      stdout = await runPythonScript('py ./dataPopulation/nbainjuries.py');
+    } catch (error) {
+      // If 'py' fails, fall back to 'python3'
+      console.log('Falling back to python');
+      stdout = await runPythonScript('python3 ./dataPopulation/nbainjuries.py');
     }
 
     // Parse the output from the Python script
@@ -67,8 +83,9 @@ const setInjuredPlayers = async (teamName) => {
     console.error(`Error in setInjuredPlayers: ${err.message}`);
     throw new Error('Server error updating player statuses');
   }
-  };
+};
 
-  //console.log("testing");
-  //setInjuredPlayers("Charlotte Hornets");
-  export default setInjuredPlayers;
+// Uncomment the following line to test the function
+// setInjuredPlayers("Charlotte Hornets");
+
+export default setInjuredPlayers;
