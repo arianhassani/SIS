@@ -1,5 +1,5 @@
 import { predictMatchOutcome } from '../dataPopulation/predictMatch.js'; // This will handle communication with the PyTorch model
-import Player from "../models/Player.js";
+import Player from '../models/Player.js';
 
 // Get final score prediction
 const getFinalScore = async (req, res) => {
@@ -10,8 +10,9 @@ const getFinalScore = async (req, res) => {
     const probabilities = await predictMatchOutcome(homeTeam, awayTeam);
     const predictionPercentage = (probabilities.tft * 100).toFixed(0);
     res.json(predictionPercentage); // Send the prediction result back to the frontend
-  } catch (error) {
-    res.status(500).json({ error: 'Error processing prediction' });
+  } catch (err) {
+    console.error('Error processing prediction:', err);
+    res.status(500).json({ message: 'Error processing prediction' });
   }
 };
 
@@ -22,12 +23,14 @@ const getTopPerformer = async (req, res) => {
 
     // Fetch the players based on their IDs
     const players = await Player.find({
-      _id: { $in: playerIds }
+      _id: { $in: playerIds },
     });
 
     // Check if all 5 players were found
     if (players.length !== 5) {
-      return res.status(400).json({ message: 'Invalid player lineup. Make sure all players exist.' });
+      return res.status(400).json({
+        message: 'Invalid player lineup. Make sure all players exist.',
+      });
     }
 
     // Find the top performer based on totalAvg
@@ -37,11 +40,12 @@ const getTopPerformer = async (req, res) => {
 
     // Return the top performer data
     res.json(topPerformer);
-
   } catch (err) {
     console.error('Error finding top performer:', err);
-    res.status(500).json({ message: 'An error occurred while processing the request.' });
+    res
+      .status(500)
+      .json({ message: 'An error occurred while processing the request.' });
   }
-}
+};
 
 export { getFinalScore, getTopPerformer };

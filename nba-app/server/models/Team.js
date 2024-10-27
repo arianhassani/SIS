@@ -17,14 +17,16 @@ const TeamSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  players: [{
-    type: mongoose.Schema.Types.ObjectId,  // References to Player model
-    ref: 'Player',
-  }],
+  players: [
+    {
+      type: mongoose.Schema.Types.ObjectId, // References to Player model
+      ref: 'Player',
+    },
+  ],
   nbaID: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 });
 
 const Team = mongoose.model('Team', TeamSchema);

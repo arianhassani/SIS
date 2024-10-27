@@ -1,4 +1,4 @@
-import Player from '../models/Player.js'
+import Player from '../models/Player.js';
 
 const playerInjured = async (req, res) => {
   try {
@@ -42,5 +42,3 @@ const playerResolved = async (req, res) => {
 };
 
 export { playerInjured, playerResolved };
-
-

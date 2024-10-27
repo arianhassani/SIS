@@ -1,8 +1,8 @@
 import express from 'express';
 import {
   getFinalScore,
-  getTopPerformer
-} from "../controllers/predictController.js";
+  getTopPerformer,
+} from '../controllers/predictController.js';
 
 const router = express.Router();
 
