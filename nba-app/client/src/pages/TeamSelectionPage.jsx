@@ -1,13 +1,13 @@
-import React, { useState, useRef, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import teamLogos from "../components/teamLogos";
+import React, { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import teamLogos from '../components/teamLogos';
 
 const TeamSelectionPage = () => {
   const navigate = useNavigate();
 
   // Retrieve the team names from session storage or use fallback values
-  const homeTeam = sessionStorage.getItem("homeTeam") || "SELECT TEAM";
-  const awayTeam = sessionStorage.getItem("awayTeam") || "SELECT TEAM";
+  const homeTeam = sessionStorage.getItem('homeTeam') || 'SELECT TEAM';
+  const awayTeam = sessionStorage.getItem('awayTeam') || 'SELECT TEAM';
 
   const [selectedHomeTeam, setSelectedHomeTeam] = useState(homeTeam);
   const [selectedAwayTeam, setSelectedAwayTeam] = useState(awayTeam);
@@ -17,7 +17,7 @@ const TeamSelectionPage = () => {
   const homeTeamDetailsRef = useRef(null);
   const awayTeamDetailsRef = useRef(null);
 
-  const placeholder = "https://placehold.co/400";
+  const placeholder = 'https://placehold.co/400';
 
   useEffect(() => {
     const fetchTeams = async () => {
@@ -36,7 +36,7 @@ const TeamSelectionPage = () => {
         setTeamsByDivision(teamsByDivision);
         setIsLoading(false);
       } catch (error) {
-        console.error("Error fetching teams:", error);
+        console.error('Error fetching teams:', error);
         setIsLoading(false);
       }
     };
@@ -46,14 +46,14 @@ const TeamSelectionPage = () => {
 
   const handleNextClick = () => {
     if (
-      selectedHomeTeam === "SELECT TEAM" ||
-      selectedAwayTeam === "SELECT TEAM"
+      selectedHomeTeam === 'SELECT TEAM' ||
+      selectedAwayTeam === 'SELECT TEAM'
     ) {
-      alert("Please select a home team and away team before proceeding.");
+      alert('Please select a home team and away team before proceeding.');
     } else {
-      sessionStorage.setItem("homeTeam", selectedHomeTeam);
-      sessionStorage.setItem("awayTeam", selectedAwayTeam);
-      navigate("/injury-page", {
+      sessionStorage.setItem('homeTeam', selectedHomeTeam);
+      sessionStorage.setItem('awayTeam', selectedAwayTeam);
+      navigate('/injury-page', {
         state: {
           homeTeam: selectedHomeTeam,
           awayTeam: selectedAwayTeam,
@@ -64,7 +64,7 @@ const TeamSelectionPage = () => {
 
   const handleHomeTeamSelect = (team) => {
     setSelectedHomeTeam(team);
-    sessionStorage.removeItem("homeTeamMatchup");
+    sessionStorage.removeItem('homeTeamMatchup');
     if (homeTeamDetailsRef.current) {
       homeTeamDetailsRef.current.open = false;
     }
@@ -72,7 +72,7 @@ const TeamSelectionPage = () => {
 
   const handleAwayTeamSelect = (team) => {
     setSelectedAwayTeam(team);
-    sessionStorage.removeItem("awayTeamMatchup");
+    sessionStorage.removeItem('awayTeamMatchup');
     if (awayTeamDetailsRef.current) {
       awayTeamDetailsRef.current.open = false;
     }
@@ -80,52 +80,52 @@ const TeamSelectionPage = () => {
 
   if (isLoading) {
     return (
-      <div className='flex justify-center items-center min-h-screen'>
-        <div className='skeleton w-full h-full'></div>
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="skeleton w-full h-full"></div>
       </div>
     );
   }
 
   return (
-    <div className='relative min-h-screen flex flex-col w-full'>
+    <div className="relative min-h-screen flex flex-col w-full">
       {/* Main content */}
-      <div className='relative flex-grow' style={{ paddingBottom: "200px" }}>
-        <label className='text-5xl font-bold absolute top-[calc(40%-260px)] left-1/2 transform -translate-x-1/2 text-center'>
+      <div className="relative flex-grow" style={{ paddingBottom: '200px' }}>
+        <label className="text-5xl font-bold absolute top-[calc(40%-260px)] left-1/2 transform -translate-x-1/2 text-center">
           Choose Your Teams
         </label>
 
         {/* "Next" Button */}
         <button
-          className='btn absolute top-[calc(50%+15px)] left-1/2 transform -translate-x-1/2 btn-primary btn-outline'
+          className="btn absolute top-[calc(50%+15px)] left-1/2 transform -translate-x-1/2 btn-primary btn-outline"
           onClick={handleNextClick}
         >
           Next
         </button>
 
         {/* Home Team Selection */}
-        <label className='absolute top-[calc(45%-200px)] left-[calc(50%-382px)] transform -translate-x-1/2 text-center'>
+        <label className="absolute top-[calc(45%-200px)] left-[calc(50%-382px)] transform -translate-x-1/2 text-center">
           HOME TEAM
         </label>
 
         <details
           ref={homeTeamDetailsRef}
-          className='dropdown absolute top-[calc(45%-122px)] transform -translate-x-1/2 -translate-y-1/2 z-30'
-          style={{ left: "calc(50% - 382px)", width: "17rem" }}
+          className="dropdown absolute top-[calc(45%-122px)] transform -translate-x-1/2 -translate-y-1/2 z-30"
+          style={{ left: 'calc(50% - 382px)', width: '17rem' }}
         >
           <summary
-            className='btn m-1 text-center relative'
-            style={{ width: "17rem" }}
+            className="btn m-1 text-center relative"
+            style={{ width: '17rem' }}
           >
             {selectedHomeTeam}
           </summary>
           <ul
-            className='dropdown-content menu menu-vertical bg-base-100 rounded-box z-40 p-2 shadow text-center'
-            style={{ width: "17rem", maxHeight: "400px", overflowY: "auto" }}
+            className="dropdown-content menu menu-vertical bg-base-100 rounded-box z-40 p-2 shadow text-center"
+            style={{ width: '17rem', maxHeight: '400px', overflowY: 'auto' }}
           >
             {/* Loop through the divisions and teams */}
             {Object.keys(teamsByDivision).map((division) => (
               <React.Fragment key={division}>
-                <li className='menu-title'>
+                <li className="menu-title">
                   <span>{division} Division</span>
                 </li>
                 {teamsByDivision[division].map((team) => (
@@ -144,44 +144,44 @@ const TeamSelectionPage = () => {
         </details>
 
         {/* Display Home Team Logo */}
-        {selectedHomeTeam !== "SELECT TEAM" && (
+        {selectedHomeTeam !== 'SELECT TEAM' && (
           <img
             src={teamLogos[selectedHomeTeam] || placeholder}
             alt={selectedHomeTeam}
-            className='absolute z-10'
+            className="absolute z-10"
             style={{
-              top: "calc(45% - 60px)",
-              left: "calc(50% - 382px)",
-              transform: "translateX(-50%)",
-              width: "350px",
-              height: "350px",
+              top: 'calc(45% - 60px)',
+              left: 'calc(50% - 382px)',
+              transform: 'translateX(-50%)',
+              width: '350px',
+              height: '350px',
             }}
           />
         )}
 
         {/* Away Team Selection */}
-        <label className='absolute top-[calc(45%-200px)] left-[calc(50%+382px)] transform -translate-x-1/2 text-center'>
+        <label className="absolute top-[calc(45%-200px)] left-[calc(50%+382px)] transform -translate-x-1/2 text-center">
           AWAY TEAM
         </label>
 
         <details
           ref={awayTeamDetailsRef}
-          className='dropdown absolute top-[calc(45%-122px)] transform -translate-x-1/2 -translate-y-1/2 z-30'
-          style={{ left: "calc(50% + 382px)", width: "17rem" }}
+          className="dropdown absolute top-[calc(45%-122px)] transform -translate-x-1/2 -translate-y-1/2 z-30"
+          style={{ left: 'calc(50% + 382px)', width: '17rem' }}
         >
           <summary
-            className='btn m-1 text-center relative'
-            style={{ width: "17rem" }}
+            className="btn m-1 text-center relative"
+            style={{ width: '17rem' }}
           >
             {selectedAwayTeam}
           </summary>
           <ul
-            className='dropdown-content menu menu-vertical bg-base-100 rounded-box z-40 p-2 shadow text-center'
-            style={{ width: "17rem", maxHeight: "400px", overflowY: "auto" }}
+            className="dropdown-content menu menu-vertical bg-base-100 rounded-box z-40 p-2 shadow text-center"
+            style={{ width: '17rem', maxHeight: '400px', overflowY: 'auto' }}
           >
             {Object.keys(teamsByDivision).map((division) => (
               <React.Fragment key={division}>
-                <li className='menu-title'>
+                <li className="menu-title">
                   <span>{division} Division</span>
                 </li>
                 {teamsByDivision[division].map((team) => (
@@ -200,17 +200,17 @@ const TeamSelectionPage = () => {
         </details>
 
         {/* Display Away Team Logo */}
-        {selectedAwayTeam !== "SELECT TEAM" && (
+        {selectedAwayTeam !== 'SELECT TEAM' && (
           <img
             src={teamLogos[selectedAwayTeam] || placeholder}
             alt={selectedAwayTeam}
-            className='absolute z-10'
+            className="absolute z-10"
             style={{
-              top: "calc(45% - 60px)",
-              left: "calc(50% + 382px)",
-              transform: "translateX(-50%)",
-              width: "350px",
-              height: "350px",
+              top: 'calc(45% - 60px)',
+              left: 'calc(50% + 382px)',
+              transform: 'translateX(-50%)',
+              width: '350px',
+              height: '350px',
             }}
           />
         )}
