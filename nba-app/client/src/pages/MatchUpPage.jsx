@@ -10,8 +10,6 @@ const MatchUpSelectionPage = () => {
 
   const [homePlayers, setHomePlayers] = useState([]);
   const [awayPlayers, setAwayPlayers] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
 
   // Retrieve the team names from localStorage or use fallback values
   const homeTeam = localStorage.getItem('homeTeam') || "No home team selected";
@@ -28,14 +26,11 @@ const MatchUpSelectionPage = () => {
   useEffect(() => {
     const fetchPlayers = async (teamName, setPlayers) => {
       try {
-        const response = await fetch(`api/teams/${teamName}/players`);
+        const response = await fetch(`http://localhost:3000/api/teams/${teamName}/players`);
         const data = await response.json();
         setPlayers(data.players || []);
       } catch (error) {
         console.error('Error fetching players:', error);
-        setError(true);
-      } finally {
-        setLoading(false);
       }
     };
 
@@ -86,7 +81,7 @@ const MatchUpSelectionPage = () => {
   
     try {
       // Fetch top performer for the home team
-      const homeResponse = await fetch('api/predict/top-performer', {
+      const homeResponse = await fetch('http://localhost:3000/api/predict/top-performer', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -97,7 +92,7 @@ const MatchUpSelectionPage = () => {
       const homeTopPerformer = await homeResponse.json();
   
       // Fetch top performer for the away team
-      const awayResponse = await fetch('api/predict/top-performer', {
+      const awayResponse = await fetch('http://localhost:3000/api/predict/top-performer', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -111,7 +106,6 @@ const MatchUpSelectionPage = () => {
       navigate("/prediction-page", { state: { homeTopPerformer, awayTopPerformer, homeTeamPlayerIds, awayTeamPlayerIds } });
     } catch (error) {
       console.error('Error fetching top performers:', error);
-      setError(true);
     }
   };
 
@@ -119,22 +113,6 @@ const MatchUpSelectionPage = () => {
     const selectedPlayers = teamPlayers.flat();
     return allPlayers.filter(player => !selectedPlayers.some(selected => selected._id === player._id));
   };
-
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center min-h-screen">
-        <div className="skeleton w-full h-full"></div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="flex justify-center items-center min-h-screen">
-        <span className="loading loading-spinner loading-lg text-error"></span>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-base-200">

@@ -8,6 +8,7 @@ const PredictionPage = () => {
 
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
+  // eslint-disable-next-line no-unused-vars
   const [selectedModel, setSelectedModel] = useState("SELECT ML MODEL");
   const [homeTopPerformerImage, setHomeTopPerformerImage] = useState('');
   const [awayTopPerformerImage, setAwayTopPerformerImage] = useState('');
@@ -147,7 +148,7 @@ const PredictionPage = () => {
             <h3 className="text-xl font-semibold mb-4">{`${homeTeam} Top Performer`}</h3>
             <div className="card bg-base-100 w-96 shadow-xl">
               <figure className="px-10 pt-10">
-                <img src={homeTopPerformerImage || placeholder} alt={homeTopPerformer?.name} className="w-32 h-32 mx-auto mb-4 rounded-full" />
+                <img src={placeholder} alt={homeTopPerformer?.name} className="w-32 h-32 mx-auto mb-4 rounded-full" />
               </figure>
               <div className="card-body items-center text-center">
                 <h2 className="card-title">{homeTopPerformer?.name}</h2>
@@ -163,7 +164,7 @@ const PredictionPage = () => {
             <h3 className="text-xl font-semibold mb-4">{`${awayTeam} Top Performer`}</h3>
             <div className="card bg-base-100 w-96 shadow-xl">
               <figure className="px-10 pt-10">
-                <img src={awayTopPerformerImage || placeholder} alt={awayTopPerformer?.name} className="w-32 h-32 mx-auto mb-4 rounded-full" />
+                <img src={placeholder} alt={awayTopPerformer?.name} className="w-32 h-32 mx-auto mb-4 rounded-full" />
               </figure>
               <div className="card-body items-center text-center">
                 <h2 className="card-title">{awayTopPerformer?.name}</h2>
