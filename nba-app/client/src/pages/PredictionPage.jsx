@@ -13,9 +13,9 @@ const PredictionPage = () => {
   const [homeTopPerformerImage, setHomeTopPerformerImage] = useState('');
   const [awayTopPerformerImage, setAwayTopPerformerImage] = useState('');
 
-  // Retrieve the team names from localStorage or use fallback values
-  const homeTeam = localStorage.getItem('homeTeam') || "No home team selected";
-  const awayTeam = localStorage.getItem('awayTeam') || "No home team selected";
+  // Retrieve the team names from session storage or use fallback values
+  const homeTeam = sessionStorage.getItem('homeTeam') || "No home team selected";
+  const awayTeam = sessionStorage.getItem('awayTeam') || "No home team selected";
 
   const { homeTopPerformer, awayTopPerformer } = location.state || {};
 
@@ -226,13 +226,12 @@ const PredictionPage = () => {
             </figure>
           </div>
         </div>
+      </div>
 
-        <div className="text-center">
-          <button className="btn btn-secondary mt-8" onClick={handleBack}>
-            Back
-          </button>
-        </div>
-
+      <div className="text-center">
+        <button className="btn btn-secondary mt-8 btn-outline" onClick={handleBack}>
+          Back
+        </button>
       </div>
     </div>
   );

@@ -4,8 +4,12 @@ import { useNavigate } from "react-router-dom";
 const InjuryPage = () => {
   const navigate = useNavigate();
 
-  const [homeTeam, setHomeTeam] = useState(localStorage.getItem("homeTeam") || "No home team selected");
-  const [awayTeam, setAwayTeam] = useState(localStorage.getItem("awayTeam") || "No home team selected");
+  const [homeTeam, setHomeTeam] = useState(
+    sessionStorage.getItem("homeTeam") || "No home team selected"
+  );
+  const [awayTeam, setAwayTeam] = useState(
+    sessionStorage.getItem("awayTeam") || "No home team selected"
+  );
 
   const [showModal, setShowModal] = useState(false);
   const [homePlayers, setHomePlayers] = useState(() => {
@@ -26,7 +30,9 @@ const InjuryPage = () => {
 
   const fetchUpdatedHomePlayers = useCallback(async (homeTeam) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/teams/${homeTeam}/updated-players`);
+      const response = await fetch(
+        `http://localhost:3000/api/teams/${homeTeam}/updated-players`
+      );
       const data = await response.json();
       sessionStorage.setItem(`${homeTeam}HomePlayers`, JSON.stringify(data));
       return data;
@@ -38,7 +44,9 @@ const InjuryPage = () => {
 
   const fetchUpdatedAwayPlayers = useCallback(async (awayTeam) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/teams/${awayTeam}/updated-players`);
+      const response = await fetch(
+        `http://localhost:3000/api/teams/${awayTeam}/updated-players`
+      );
       const data = await response.json();
       sessionStorage.setItem(`${awayTeam}AwayPlayers`, JSON.stringify(data));
       return data;
@@ -48,25 +56,32 @@ const InjuryPage = () => {
     }
   }, []);
 
-  const initializePlayers = useCallback(async (homeTeam, awayTeam) => {
-    setLoading(true);
+  const initializePlayers = useCallback(
+    async (homeTeam, awayTeam) => {
+      setLoading(true);
 
-    if (!sessionStorage.getItem(`${homeTeam}HomePlayers`)) {
-      const homePlayers = await fetchUpdatedHomePlayers(homeTeam);
-      setHomePlayers(homePlayers);
-    } else {
-      setHomePlayers(JSON.parse(sessionStorage.getItem(`${homeTeam}HomePlayers`)));
-    }
+      if (!sessionStorage.getItem(`${homeTeam}HomePlayers`)) {
+        const homePlayers = await fetchUpdatedHomePlayers(homeTeam);
+        setHomePlayers(homePlayers);
+      } else {
+        setHomePlayers(
+          JSON.parse(sessionStorage.getItem(`${homeTeam}HomePlayers`))
+        );
+      }
 
-    if (!sessionStorage.getItem(`${awayTeam}AwayPlayers`)) {
-      const awayPlayers = await fetchUpdatedAwayPlayers(awayTeam);
-      setAwayPlayers(awayPlayers);
-    } else {
-      setAwayPlayers(JSON.parse(sessionStorage.getItem(`${awayTeam}AwayPlayers`)));
-    }
+      if (!sessionStorage.getItem(`${awayTeam}AwayPlayers`)) {
+        const awayPlayers = await fetchUpdatedAwayPlayers(awayTeam);
+        setAwayPlayers(awayPlayers);
+      } else {
+        setAwayPlayers(
+          JSON.parse(sessionStorage.getItem(`${awayTeam}AwayPlayers`))
+        );
+      }
 
-    setLoading(false);
-  }, [fetchUpdatedHomePlayers, fetchUpdatedAwayPlayers]);
+      setLoading(false);
+    },
+    [fetchUpdatedHomePlayers, fetchUpdatedAwayPlayers]
+  );
 
   useEffect(() => {
     const fetchData = async () => {
@@ -79,61 +94,76 @@ const InjuryPage = () => {
   useEffect(() => {
     const availablePlayers =
       teamType === "home"
-        ? homePlayers.filter(player => !player.isInjured)
-        : awayPlayers.filter(player => !player.isInjured);
+        ? homePlayers.filter((player) => !player.isInjured)
+        : awayPlayers.filter((player) => !player.isInjured);
 
     setAvailablePlayers(availablePlayers);
   }, [teamType, homePlayers, awayPlayers]);
 
   useEffect(() => {
     const handleStorageChange = () => {
-      setHomeTeam(localStorage.getItem("homeTeam") || "No home team selected");
-      setAwayTeam(localStorage.getItem("awayTeam") || "No away team selected");
+      setHomeTeam(
+        sessionStorage.getItem("homeTeam") || "No home team selected"
+      );
+      setAwayTeam(
+        sessionStorage.getItem("awayTeam") || "No away team selected"
+      );
     };
 
-    window.addEventListener('storage', handleStorageChange);
+    window.addEventListener("storage", handleStorageChange);
 
     return () => {
-      window.removeEventListener('storage', handleStorageChange);
+      window.removeEventListener("storage", handleStorageChange);
     };
   }, []);
 
   const handleAddInjury = async () => {
     if (player && description && teamType) {
-      const selectedPlayers = teamType === 'home' ? homePlayers : awayPlayers;
-      const selectedPlayer = selectedPlayers.find(p => p.name === player);
+      const selectedPlayers = teamType === "home" ? homePlayers : awayPlayers;
+      const selectedPlayer = selectedPlayers.find((p) => p.name === player);
 
       if (selectedPlayer) {
         try {
-          await fetch(`http://localhost:3000/api/players/${selectedPlayer._id}/injured`, {
-            method: 'PUT',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              description,
-            }),
-          });
-
-          setShowModal(false);
-          setPlayer('');
-          setDescription('');
-          setTeamType('');
-
-          // Update the local state and session storage after adding injury
-          const updatedPlayers = selectedPlayers.map(p => 
-            p._id === selectedPlayer._id ? { ...p, isInjured: true, injuryDetails: description } : p
+          await fetch(
+            `http://localhost:3000/api/players/${selectedPlayer._id}/injured`,
+            {
+              method: "PUT",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                description,
+              }),
+            }
           );
 
-          if (teamType === 'home') {
+          setShowModal(false);
+          setPlayer("");
+          setDescription("");
+          setTeamType("");
+
+          // Update the local state and session storage after adding injury
+          const updatedPlayers = selectedPlayers.map((p) =>
+            p._id === selectedPlayer._id
+              ? { ...p, isInjured: true, injuryDetails: description }
+              : p
+          );
+
+          if (teamType === "home") {
             setHomePlayers(updatedPlayers);
-            sessionStorage.setItem(`${homeTeam}HomePlayers`, JSON.stringify(updatedPlayers));
+            sessionStorage.setItem(
+              `${homeTeam}HomePlayers`,
+              JSON.stringify(updatedPlayers)
+            );
           } else {
             setAwayPlayers(updatedPlayers);
-            sessionStorage.setItem(`${awayTeam}AwayPlayers`, JSON.stringify(updatedPlayers));
+            sessionStorage.setItem(
+              `${awayTeam}AwayPlayers`,
+              JSON.stringify(updatedPlayers)
+            );
           }
         } catch (error) {
-          console.error('Error updating player injury status:', error);
+          console.error("Error updating player injury status:", error);
         }
       }
     }
@@ -143,20 +173,22 @@ const InjuryPage = () => {
     try {
       console.log(playerId);
       await fetch(`http://localhost:3000/api/players/${playerId}/resolve`, {
-        method: 'PUT',
+        method: "PUT",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
       });
 
       // Update the local state and session storage after resolving injury
-      const homePlayers = JSON.parse(sessionStorage.getItem(`${homeTeam}HomePlayers`)) || [];
-      const awayPlayers = JSON.parse(sessionStorage.getItem(`${awayTeam}AwayPlayers`)) || [];
+      const homePlayers =
+        JSON.parse(sessionStorage.getItem(`${homeTeam}HomePlayers`)) || [];
+      const awayPlayers =
+        JSON.parse(sessionStorage.getItem(`${awayTeam}AwayPlayers`)) || [];
 
       const updatePlayerInjuryStatus = (players) => {
-        return players.map(player => {
+        return players.map((player) => {
           if (player._id === playerId) {
-            return { ...player, isInjured: false, injuryDetails: '' };
+            return { ...player, isInjured: false, injuryDetails: "" };
           }
           return player;
         });
@@ -165,14 +197,20 @@ const InjuryPage = () => {
       const updatedHomePlayers = updatePlayerInjuryStatus(homePlayers);
       const updatedAwayPlayers = updatePlayerInjuryStatus(awayPlayers);
 
-      sessionStorage.setItem(`${homeTeam}HomePlayers`, JSON.stringify(updatedHomePlayers));
-      sessionStorage.setItem(`${awayTeam}AwayPlayers`, JSON.stringify(updatedAwayPlayers));
+      sessionStorage.setItem(
+        `${homeTeam}HomePlayers`,
+        JSON.stringify(updatedHomePlayers)
+      );
+      sessionStorage.setItem(
+        `${awayTeam}AwayPlayers`,
+        JSON.stringify(updatedAwayPlayers)
+      );
 
       setHomePlayers(updatedHomePlayers);
       setAwayPlayers(updatedAwayPlayers);
       console.log(updatedAwayPlayers);
     } catch (error) {
-      console.error('Error resolving player injury status:', error);
+      console.error("Error resolving player injury status:", error);
     }
   };
 
@@ -186,8 +224,8 @@ const InjuryPage = () => {
 
   const placeholderImage = "https://placehold.co/400";
 
-  const homeInjuredPlayers = homePlayers.filter(player => player.isInjured);
-  const awayInjuredPlayers = awayPlayers.filter(player => player.isInjured);
+  const homeInjuredPlayers = homePlayers.filter((player) => player.isInjured);
+  const awayInjuredPlayers = awayPlayers.filter((player) => player.isInjured);
 
   // Dynamically import player images based on team and player names
   // const getPlayerImage = async (player) => {
@@ -226,7 +264,7 @@ const InjuryPage = () => {
   // }
 
   return (
-    <div className="min-h-screen bg-base-200 flex flex-col w-full">
+    <div className="relative min-h-screen flex flex-col w-full">
       {/* Roster Selection Heading */}
       <div className="text-center" style={{ marginTop: "2cm" }}>
         <h1 className="text-xl">Roster Selection</h1>
@@ -408,11 +446,11 @@ const InjuryPage = () => {
       )}
 
       {/* Buttons */}
-      <div className="flex justify-between mt-8 mx-4">
-        <button className="btn btn-secondary" onClick={handleBack}>
+      <div className="flex justify-center py-10 mt-8 space-x-5">
+        <button className="btn btn-secondary btn-outline" onClick={handleBack}>
           Back
         </button>
-        <button className="btn btn-primary" onClick={handleNext}>
+        <button className="btn btn-primary btn-outline" onClick={handleNext}>
           Next
         </button>
       </div>
