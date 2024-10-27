@@ -35,9 +35,9 @@ def interpret(model, val_loader):
         figure.show()
 
 def evaluate(model, val_loader):
-    model = NBA_Pred_Model(**config)
-    print(model.predict({ 'home': {'teamId': '1610612738'}, 'away': {'teamId': '1610612761'}}))
-    print(model.predict({ 'home': {'teamId': '1610612761'}, 'away': {'teamId': '1610612738'}}))
+    # model = NBA_Pred_Model(**config)
+    # print(model.predict({ 'home': {'teamId': '1610612738'}, 'away': {'teamId': '1610612761'}}))
+    # print(model.predict({ 'home': {'teamId': '1610612761'}, 'away': {'teamId': '1610612738'}}))
 
     mae, acc = generate_baseline(val_loader)
     logger.info(f'Baseline - Accuracy: {acc}')
@@ -51,7 +51,7 @@ def get_test_data():
     return val_loader
 
 if __name__ == '__main__':
-    config = setup_data()
+    config = setup_data(2023, 2024, is_train=False)
     model = TemporalFusionTransformer.load_from_checkpoint(config['best_tft'])
     val_loader = get_test_data()
     evaluate(model, val_loader)
