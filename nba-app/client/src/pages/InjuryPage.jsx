@@ -8,38 +8,42 @@ const InjuryPage = () => {
   const [awayTeam, setAwayTeam] = useState(localStorage.getItem("awayTeam") || "No home team selected");
 
   const [showModal, setShowModal] = useState(false);
-  const [homePlayers, setHomePlayers] = useState(JSON.parse(sessionStorage.getItem(`${homeTeam}HomePlayers`)) || []);
-  const [awayPlayers, setAwayPlayers] = useState(JSON.parse(sessionStorage.getItem(`${awayTeam}AwayPlayers`)) || []);
+  const [homePlayers, setHomePlayers] = useState(() => {
+    const storedHomePlayers = sessionStorage.getItem(`${homeTeam}HomePlayers`);
+    return storedHomePlayers ? JSON.parse(storedHomePlayers) : [];
+  });
+  const [awayPlayers, setAwayPlayers] = useState(() => {
+    const storedAwayPlayers = sessionStorage.getItem(`${awayTeam}AwayPlayers`);
+    return storedAwayPlayers ? JSON.parse(storedAwayPlayers) : [];
+  });
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
   const [player, setPlayer] = useState("");
   const [description, setDescription] = useState("");
   const [teamType, setTeamType] = useState("");
   const [availablePlayers, setAvailablePlayers] = useState([]);
+  // eslint-disable-next-line no-unused-vars
   const [playerImages, setPlayerImages] = useState({});
 
   const fetchUpdatedHomePlayers = useCallback(async (homeTeam) => {
     try {
-      const response = await fetch(`api/teams/${homeTeam}/updated-players`);
+      const response = await fetch(`http://localhost:3000/api/teams/${homeTeam}/updated-players`);
       const data = await response.json();
       sessionStorage.setItem(`${homeTeam}HomePlayers`, JSON.stringify(data));
       return data;
     } catch (error) {
       console.error("Error fetching updated home players:", error);
-      setError(true);
       return [];
     }
   }, []);
 
   const fetchUpdatedAwayPlayers = useCallback(async (awayTeam) => {
     try {
-      const response = await fetch(`api/players/${awayTeam}/updated-players`);
+      const response = await fetch(`http://localhost:3000/api/teams/${awayTeam}/updated-players`);
       const data = await response.json();
       sessionStorage.setItem(`${awayTeam}AwayPlayers`, JSON.stringify(data));
       return data;
     } catch (error) {
       console.error("Error fetching updated away players:", error);
-      setError(true);
       return [];
     }
   }, []);
@@ -101,7 +105,7 @@ const InjuryPage = () => {
 
       if (selectedPlayer) {
         try {
-          await fetch(`api/players/${selectedPlayer._id}/injure`, {
+          await fetch(`http://localhost:3000/api/players/${selectedPlayer._id}/injured`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',
@@ -138,7 +142,7 @@ const InjuryPage = () => {
   const handleResolveInjury = async (playerId) => {
     try {
       console.log(playerId);
-      await fetch(`api/players/${playerId}/resolve`, {
+      await fetch(`http://localhost:3000/api/players/${playerId}/resolve`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -186,51 +190,40 @@ const InjuryPage = () => {
   const awayInjuredPlayers = awayPlayers.filter(player => player.isInjured);
 
   // Dynamically import player images based on team and player names
-  const getPlayerImage = async (player) => {
-    try {
-      const module = await import(`../assets/player_headshots/${player.name}.png`);
-      return module.default;
-    } catch (error) {
-      console.error("Error fetching player image:", error);
-      setError(true);
-      return placeholderImage;
-    }
-  };
+  // const getPlayerImage = async (player) => {
+  //   try {
+  //     const module = await import(`../assets/player_headshots/${player.name}.png`);
+  //     return module.default;
+  //   } catch (error) {
+  //     console.error("Error fetching player image:", error);
+  //     return placeholderImage;
+  //   }
+  // };
 
-  useEffect(() => {
-    const loadImages = async () => {
-      try {
-        const images = {};
-        for (const player of [...homePlayers, ...awayPlayers]) {
-          const image = await getPlayerImage(player);
-          images[player.name] = image;
-        }
-        setPlayerImages(images);
-      } catch {
-        setError(true);
-      } finally {
-        setLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const loadImages = async () => {
+  //     try {
+  //       const images = {};
+  //       for (const player of [...homePlayers, ...awayPlayers]) {
+  //         const image = await getPlayerImage(player);
+  //         images[player.name] = image;
+  //       }
+  //       setPlayerImages(images);
+  //     } catch {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    loadImages();
-  }, [homePlayers, awayPlayers]);
+  //   loadImages();
+  // }, [homePlayers, awayPlayers]);
 
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center min-h-screen">
-        <div className="skeleton w-full h-full"></div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="flex justify-center items-center min-h-screen">
-        <span className="loading loading-spinner loading-lg text-error"></span>
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div className="flex justify-center items-center min-h-screen">
+  //       <div className="skeleton w-full h-full"></div>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className="min-h-screen bg-base-200 flex flex-col w-full">
