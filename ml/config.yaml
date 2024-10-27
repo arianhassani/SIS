@@ -1,3 +1,4 @@
-best_tft: ml/best_model/version_35/checkpoints/epoch=32-step=1650.ckpt
+best_tft: ml/best_model/version_62/checkpoints/epoch=19-step=1000.ckpt
 data_dir: data
 logging_level: INFO
+test_data_dir: test_data

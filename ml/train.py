@@ -37,7 +37,7 @@ def train(log_dir, data_dir, base_dir, lightning_log_dir, device=None, **args):
     if not device:
        device = 'cuda' if torch.cuda.is_available() else 'cpu'
     trainer = pl.Trainer(
-        max_epochs=100,
+        max_epochs=20,
         accelerator=device,
         enable_model_summary=True,
         gradient_clip_val=0.1,
@@ -73,7 +73,6 @@ def train(log_dir, data_dir, base_dir, lightning_log_dir, device=None, **args):
     best_tft = TemporalFusionTransformer.load_from_checkpoint(best_model_path)
 
     evaluate(best_tft, val_loader)
-
 
     # best_tft = TemporalFusionTransformer.load_from_checkpoint(best_model_path)
     config_path = os.path.join(base_dir, "config.yaml")

@@ -50,8 +50,12 @@ class NBA_data:
   def get_data_dir(self):
     return self.config['data_dir']
 
-  def download_games(self, start_year=1946, end_year=2023) -> None:
-    games_path = os.path.join(self.config['data_dir'], 'games.csv')
+  def download_games(self, start_year=1946, end_year=2023, is_train=True) -> None:
+    if is_train:
+      games_path = os.path.join(self.config['data_dir'], 'games.csv')
+    else:
+      games_path = os.path.join(self.config['test_data_dir'], 'games.csv')
+      
     if os.path.exists(games_path):
       logger.info(f'{games_path} already exists. Download skipped.')
       return
