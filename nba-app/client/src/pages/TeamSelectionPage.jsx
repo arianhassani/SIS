@@ -5,10 +5,10 @@ import teamLogos from "../components/teamLogos";
 const TeamSelectionPage = () => {
   const navigate = useNavigate();
 
-  // Retrieve the team names from localStorage or use fallback values
-  const homeTeam = localStorage.getItem('homeTeam') || "SELECT TEAM";
-  const awayTeam = localStorage.getItem('awayTeam') || "SELECT TEAM";
-
+  // Retrieve the team names from session storage or use fallback values
+  const homeTeam = sessionStorage.getItem('homeTeam') || "SELECT TEAM";
+  const awayTeam = sessionStorage.getItem('awayTeam') || "SELECT TEAM";
+  
   const [selectedHomeTeam, setSelectedHomeTeam] = useState(homeTeam);
   const [selectedAwayTeam, setSelectedAwayTeam] = useState(awayTeam);
   const [teamsByDivision, setTeamsByDivision] = useState({});
@@ -48,8 +48,8 @@ const TeamSelectionPage = () => {
     if (selectedHomeTeam === "SELECT TEAM" || selectedAwayTeam === "SELECT TEAM") {
       alert("Please select a home team and away team before proceeding.");
     } else {
-      localStorage.setItem('homeTeam', selectedHomeTeam);
-      localStorage.setItem('awayTeam', selectedAwayTeam);
+      sessionStorage.setItem('homeTeam', selectedHomeTeam);
+      sessionStorage.setItem('awayTeam', selectedAwayTeam);
       navigate("/injury-page", {
         state: {
           homeTeam: selectedHomeTeam,
@@ -58,23 +58,22 @@ const TeamSelectionPage = () => {
       });
     }
   };
-
+  
   const handleHomeTeamSelect = (team) => {
     setSelectedHomeTeam(team);
-    localStorage.removeItem('homeTeamMatchup');
+    sessionStorage.removeItem('homeTeamMatchup');
     if (homeTeamDetailsRef.current) {
       homeTeamDetailsRef.current.open = false;
     }
   };
-
+  
   const handleAwayTeamSelect = (team) => {
     setSelectedAwayTeam(team);
-    localStorage.removeItem('awayTeamMatchup');
+    sessionStorage.removeItem('awayTeamMatchup');
     if (awayTeamDetailsRef.current) {
       awayTeamDetailsRef.current.open = false;
     }
   };
-
 
   if (isLoading) {
     return (
@@ -93,7 +92,7 @@ const TeamSelectionPage = () => {
         </label>
 
         {/* "Next" Button */}
-        <button className="btn absolute top-[calc(50%+15px)] left-1/2 transform -translate-x-1/2" onClick={handleNextClick}>
+        <button className="btn absolute top-[calc(50%+15px)] left-1/2 transform -translate-x-1/2 btn-primary btn-outline" onClick={handleNextClick}>
           Next
         </button>
 

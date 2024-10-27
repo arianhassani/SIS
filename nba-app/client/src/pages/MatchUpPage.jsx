@@ -11,17 +11,17 @@ const MatchUpSelectionPage = () => {
   const [homePlayers, setHomePlayers] = useState([]);
   const [awayPlayers, setAwayPlayers] = useState([]);
 
-  // Retrieve the team names from localStorage or use fallback values
-  const homeTeam = localStorage.getItem('homeTeam') || "No home team selected";
-  const awayTeam = localStorage.getItem('awayTeam') || "No home team selected";
+  // Retrieve the team names from session storage or use fallback values
+  const homeTeam = sessionStorage.getItem('homeTeam') || "No home team selected";
+  const awayTeam = sessionStorage.getItem('awayTeam') || "No home team selected";
 
-  const getMatchupFromLocalStorage = (team) => {
-    const savedMatchup = localStorage.getItem(`${team}TeamMatchup`);
+  const getMatchupFromSessionStorage = (team) => {
+    const savedMatchup = sessionStorage.getItem(`${team}TeamMatchup`);
     return savedMatchup ? JSON.parse(savedMatchup) : positions.map(() => []);
   };
 
-  const [homeTeamMatchup, setHomeTeamMatchup] = useState(getMatchupFromLocalStorage('home'));
-  const [awayTeamMatchup, setAwayTeamMatchup] = useState(getMatchupFromLocalStorage('away'));
+  const [homeTeamMatchup, setHomeTeamMatchup] = useState(getMatchupFromSessionStorage('home'));
+  const [awayTeamMatchup, setAwayTeamMatchup] = useState(getMatchupFromSessionStorage('away'));
 
   useEffect(() => {
     const fetchPlayers = async (teamName, setPlayers) => {
@@ -48,12 +48,12 @@ const MatchUpSelectionPage = () => {
       const updatedPlayers = [...homeTeamMatchup];
       updatedPlayers[positionIndex].push(player);
       setHomeTeamMatchup(updatedPlayers);
-      localStorage.setItem('homeTeamMatchup', JSON.stringify(updatedPlayers));
+      sessionStorage.setItem('homeTeamMatchup', JSON.stringify(updatedPlayers));
     } else {
       const updatedPlayers = [...awayTeamMatchup];
       updatedPlayers[positionIndex].push(player);
       setAwayTeamMatchup(updatedPlayers);
-      localStorage.setItem('awayTeamMatchup', JSON.stringify(updatedPlayers));
+      sessionStorage.setItem('awayTeamMatchup', JSON.stringify(updatedPlayers));
     }
   };
 
@@ -62,12 +62,12 @@ const MatchUpSelectionPage = () => {
       const updatedPlayers = [...homeTeamMatchup];
       updatedPlayers[positionIndex].splice(playerIndex, 1);
       setHomeTeamMatchup(updatedPlayers);
-      localStorage.setItem('homeTeamMatchup', JSON.stringify(updatedPlayers));
+      sessionStorage.setItem('homeTeamMatchup', JSON.stringify(updatedPlayers));
     } else {
       const updatedPlayers = [...awayTeamMatchup];
       updatedPlayers[positionIndex].splice(playerIndex, 1);
       setAwayTeamMatchup(updatedPlayers);
-      localStorage.setItem('awayTeamMatchup', JSON.stringify(updatedPlayers));
+      sessionStorage.setItem('awayTeamMatchup', JSON.stringify(updatedPlayers));
     }
   };
 
@@ -76,6 +76,15 @@ const MatchUpSelectionPage = () => {
   };
 
   const handleNextClick = async () => {
+    // Check if all positions for both teams are filled
+    const isHomeTeamFilled = homeTeamMatchup.every(position => position.length > 0);
+    const isAwayTeamFilled = awayTeamMatchup.every(position => position.length > 0);
+
+    if (!isHomeTeamFilled || !isAwayTeamFilled) {
+      alert("Please fill out all positions for both home and away teams before proceeding.");
+      return;
+    }
+
     const homeTeamPlayerIds = homeTeamMatchup.flat().map(player => player._id);
     const awayTeamPlayerIds = awayTeamMatchup.flat().map(player => player._id);
   
@@ -115,13 +124,14 @@ const MatchUpSelectionPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-base-200">
-      <div className="text-center my-8">
+    <div className="relative min-h-screen flex flex-col h-full w-full">
+      {/* Roster Selection Heading */}
+      <div className="text-center my-8" style={{ marginTop: "2cm" }}>
         <h1 className="text-5xl font-bold">Match Up Selection</h1>
       </div>
-      <div className="flex justify-between w-full max-w-4xl mx-auto">
+      <div className="flex justify-between w-full max-w-4xl mx-auto flex-grow">
         <div className="w-1/2 p-4">
-          <h2 className="text-2xl font-bold mb-4">Home Team: {homeTeam}</h2>
+          <h2 className="text-2xl font-bold mb-10 text-center">Home Team: {homeTeam}</h2>
           {positions.map((position, index) => (
             <div key={index} className="mb-4">
               <h3 className="text-xl font-semibold">{position}</h3>
@@ -144,7 +154,7 @@ const MatchUpSelectionPage = () => {
           ))}
         </div>
         <div className="w-1/2 p-4">
-          <h2 className="text-2xl font-bold mb-4">Away Team: {awayTeam}</h2>
+          <h2 className="text-2xl font-bold mb-10 text-center">Away Team: {awayTeam}</h2>
           {positions.map((position, index) => (
             <div key={index} className="mb-4">
               <h3 className="text-xl font-semibold">{position}</h3>
@@ -167,13 +177,12 @@ const MatchUpSelectionPage = () => {
           ))}
         </div>
       </div>
-      <div className="text-center">
-        <button className="btn btn-secondary mt-8" onClick={handleBack}>
+      {/* Buttons */}
+      <div className="flex justify-center py-10 mt-8 space-x-5">
+        <button className="btn btn-secondary btn-outline" onClick={handleBack}>
           Back
         </button>
-      </div>
-      <div className="text-center">
-        <button className="btn btn-secondary mt-8" onClick={handleNextClick}>
+        <button className="btn btn-primary btn-outline" onClick={handleNextClick}>
           Next
         </button>
       </div>
@@ -185,10 +194,10 @@ const AddPlayerForm = ({ onAddPlayer, availablePlayers }) => {
   const [selectedPlayer, setSelectedPlayer] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (selectedPlayer) {
-      const player = availablePlayers.find(p => p._id === selectedPlayer);
+  const handleSelectChange = (event) => {
+    const playerId = event.target.value;
+    if (playerId) {
+      const player = availablePlayers.find(p => p._id === playerId);
       if (player) {
         onAddPlayer(player);
         setSelectedPlayer('');
@@ -200,22 +209,19 @@ const AddPlayerForm = ({ onAddPlayer, availablePlayers }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex items-center mt-2">
+    <div className="flex items-center mt-2 w-full">
       <select
         value={selectedPlayer}
-        onChange={(e) => setSelectedPlayer(e.target.value)}
-        className="select select-bordered mr-2"
+        onChange={handleSelectChange}
+        className="select select-bordered mr-2 w-full"
       >
         <option value="" disabled>Select Player</option>
         {availablePlayers.map((player) => (
           <option key={player._id} value={player._id}>{player.name}</option>
         ))}
       </select>
-      <button type="submit" className="btn btn-primary">
-        Add
-      </button>
       {error && <p className="text-red-500 ml-2">{error}</p>}
-    </form>
+    </div>
   );
 };
 

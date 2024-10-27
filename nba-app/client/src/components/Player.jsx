@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 
 const Player = ({ player, onDelete }) => {
   return (
-    <li className="flex justify-between items-center p-2 border-b border-gray-200">
+    <li className="flex justify-between items-center p-2 border-b border-green-300">
       <span>{player}</span>
       <button
-        className="btn btn-sm btn-danger"
+        className="btn btn-sm btn-outline btn-error"
         onClick={onDelete}
       >
-        Delete
+        X
       </button>
     </li>
   );
