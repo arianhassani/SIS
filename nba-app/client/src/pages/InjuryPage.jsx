@@ -264,20 +264,20 @@ const InjuryPage = () => {
   // }
 
   return (
-    <div className="relative min-h-screen flex flex-col w-full">
+    <div className='relative min-h-screen flex flex-col w-full'>
       {/* Roster Selection Heading */}
-      <div className="text-center" style={{ marginTop: "2cm" }}>
-        <h1 className="text-xl">Roster Selection</h1>
+      <div className='text-center' style={{ marginTop: "2cm" }}>
+        <h1 className='text-5xl font-bold'>Roster Selection</h1>
       </div>
 
       {/* Live Roster Updates Heading */}
-      <div className="text-center my-8" style={{ marginTop: "1.5cm" }}>
-        <h1 className="text-xl">Live Roster Updates</h1>
+      <div className='text-center my-8' style={{ marginTop: "1.5cm" }}>
+        <h1 className='text-3xl font-bold'>Live Roster Updates</h1>
       </div>
 
       {/* Rectangle with "Injury Reports" text inside and Add button */}
       <div
-        className="w-full bg-gray-700 flex justify-between items-center"
+        className='w-full bg-gray-700 flex justify-between items-center'
         style={{
           height: "1.7cm",
           marginTop: "0.5cm",
@@ -285,9 +285,9 @@ const InjuryPage = () => {
           paddingRight: "1.3cm",
         }}
       >
-        <span className="text-white text-lg">Injury Reports</span>
+        <span className='text-white text-lg'>Injury Reports</span>
         <button
-          className="bg-gray-800 text-white py-1 px-3 rounded"
+          className='bg-gray-800 text-white py-1 px-3 rounded'
           onClick={() => {
             setTeamType(""); // Reset team type when opening the modal
             setShowModal(true); // Open the modal when clicked
@@ -298,37 +298,37 @@ const InjuryPage = () => {
       </div>
 
       {/* Home Team Injuries */}
-      <div className="mt-4" style={{ marginTop: "1cm" }}>
+      <div className='mt-4' style={{ marginTop: "1cm" }}>
         <h2 className={`text-2xl font-bold mb-4 text-center`}>
           {`Home Team: ${homeTeam}`}
         </h2>
         {loading ? (
-          <div className="grid grid-cols-4 gap-4">
+          <div className='grid grid-cols-4 gap-4'>
             {[...Array(4)].map((_, index) => (
-              <div key={index} className="p-4 rounded">
-                <div className="skeleton h-32 w-32 mx-auto mb-4 rounded-full"></div>
-                <div className="skeleton h-6 w-24 mx-auto mb-2"></div>
-                <div className="skeleton h-4 w-32 mx-auto"></div>
-                <div className="skeleton h-8 w-24 mx-auto mt-2"></div>
+              <div key={index} className='p-4 rounded'>
+                <div className='skeleton h-32 w-32 mx-auto mb-4 rounded-full'></div>
+                <div className='skeleton h-6 w-24 mx-auto mb-2'></div>
+                <div className='skeleton h-4 w-32 mx-auto'></div>
+                <div className='skeleton h-8 w-24 mx-auto mt-2'></div>
               </div>
             ))}
           </div>
         ) : homeInjuredPlayers.length > 0 ? (
-          <div className="grid grid-cols-4 gap-4">
+          <div className='grid grid-cols-4 gap-4'>
             {homeInjuredPlayers.map((injury, index) => (
-              <div key={index} className="p-4 rounded">
+              <div key={index} className='p-4 rounded'>
                 {/* Player Photo */}
                 <img
                   src={playerImages[injury.name] || placeholderImage}
                   alt={injury.name}
-                  className="w-32 h-32 mx-auto mb-4 rounded-full"
+                  className='w-32 h-32 mx-auto mb-4 rounded-full'
                 />
                 {/* Player Name */}
-                <h3 className="font-bold text-center">Player: {injury.name}</h3>
+                <h3 className='font-bold text-center'>Player: {injury.name}</h3>
                 {/* Description */}
-                <p className="text-center mt-2">{injury.injuryDetails}</p>
+                <p className='text-center mt-2'>{injury.injuryDetails}</p>
                 <button
-                  className="btn btn-sm btn-success mt-2 mx-auto block"
+                  className='btn btn-sm btn-success mt-2 mx-auto block'
                   onClick={() => handleResolveInjury(injury._id)}
                 >
                   Mark as Resolved
@@ -337,42 +337,42 @@ const InjuryPage = () => {
             ))}
           </div>
         ) : (
-          <p className="text-center">No injuries reported for the Home Team.</p>
+          <p className='text-center'>No injuries reported for the Home Team.</p>
         )}
       </div>
 
       {/* Away Team Injuries */}
-      <div className="mt-12" style={{ marginTop: "3cm" }}>
+      <div className='mt-12' style={{ marginTop: "3cm" }}>
         <h2 className={`text-2xl font-bold mb-4 text-center`}>
           {`Away Team: ${awayTeam}`}
         </h2>
         {loading ? (
-          <div className="grid grid-cols-4 gap-4">
+          <div className='grid grid-cols-4 gap-4'>
             {[...Array(4)].map((_, index) => (
-              <div key={index} className="p-4 rounded">
-                <div className="skeleton h-32 w-32 mx-auto mb-4 rounded-full"></div>
-                <div className="skeleton h-6 w-24 mx-auto mb-2"></div>
-                <div className="skeleton h-4 w-32 mx-auto"></div>
-                <div className="skeleton h-8 w-24 mx-auto mt-2"></div>
+              <div key={index} className='p-4 rounded'>
+                <div className='skeleton h-32 w-32 mx-auto mb-4 rounded-full'></div>
+                <div className='skeleton h-6 w-24 mx-auto mb-2'></div>
+                <div className='skeleton h-4 w-32 mx-auto'></div>
+                <div className='skeleton h-8 w-24 mx-auto mt-2'></div>
               </div>
             ))}
           </div>
         ) : awayInjuredPlayers.length > 0 ? (
-          <div className="grid grid-cols-4 gap-4">
+          <div className='grid grid-cols-4 gap-4'>
             {awayInjuredPlayers.map((injury, index) => (
-              <div key={index} className="p-4 rounded">
+              <div key={index} className='p-4 rounded'>
                 {/* Player Photo */}
                 <img
                   src={playerImages[injury.name] || placeholderImage}
                   alt={injury.name}
-                  className="w-32 h-32 mx-auto mb-4 rounded-full"
+                  className='w-32 h-32 mx-auto mb-4 rounded-full'
                 />
                 {/* Player Name */}
-                <h3 className="font-bold text-center">Player: {injury.name}</h3>
+                <h3 className='font-bold text-center'>Player: {injury.name}</h3>
                 {/* Description */}
-                <p className="text-center mt-2">{injury.injuryDetails}</p>
+                <p className='text-center mt-2'>{injury.injuryDetails}</p>
                 <button
-                  className="btn btn-sm btn-success mt-2 mx-auto block"
+                  className='btn btn-sm btn-success mt-2 mx-auto block'
                   onClick={() => handleResolveInjury(injury._id)}
                 >
                   Mark as Resolved
@@ -381,34 +381,34 @@ const InjuryPage = () => {
             ))}
           </div>
         ) : (
-          <p className="text-center">No injuries reported for the Away Team.</p>
+          <p className='text-center'>No injuries reported for the Away Team.</p>
         )}
       </div>
 
       {/* Modal for adding an injury */}
       {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-1/2">
-            <h2 className="text-xl mb-4">Add Injury</h2>
-            <div className="mb-4">
+        <div className='fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center'>
+          <div className='bg-white p-6 rounded-lg shadow-lg w-1/2'>
+            <h2 className='text-xl mb-4'>Add Injury</h2>
+            <div className='mb-4'>
               <select
                 value={teamType}
                 onChange={(e) => setTeamType(e.target.value)}
-                className="select select-bordered w-full mb-4"
+                className='select select-bordered w-full mb-4'
               >
-                <option value="" disabled>
+                <option value='' disabled>
                   Select Team
                 </option>
-                <option value="home">Home Team: {homeTeam}</option>
-                <option value="away">Away Team: {awayTeam}</option>
+                <option value='home'>Home Team: {homeTeam}</option>
+                <option value='away'>Away Team: {awayTeam}</option>
               </select>
               <select
                 value={player}
                 onChange={(e) => setPlayer(e.target.value)}
-                className="select select-bordered w-full mb-4"
+                className='select select-bordered w-full mb-4'
                 disabled={!teamType}
               >
-                <option value="" disabled>
+                <option value='' disabled>
                   Select Player
                 </option>
                 {availablePlayers.map((player) => (
@@ -418,24 +418,24 @@ const InjuryPage = () => {
                 ))}
               </select>
               <input
-                type="text"
-                placeholder="Description"
+                type='text'
+                placeholder='Description'
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
-                className="input input-bordered w-full mb-2"
+                className='input input-bordered w-full mb-2'
                 disabled={!teamType || !player}
               />
             </div>
-            <div className="flex justify-end">
+            <div className='flex justify-end'>
               <button
-                className="btn btn-primary mr-2"
+                className='btn btn-primary mr-2'
                 onClick={handleAddInjury}
                 disabled={!teamType || !player || !description}
               >
                 Add
               </button>
               <button
-                className="btn btn-secondary"
+                className='btn btn-secondary'
                 onClick={() => setShowModal(false)} // Close modal without adding
               >
                 Cancel
@@ -446,11 +446,11 @@ const InjuryPage = () => {
       )}
 
       {/* Buttons */}
-      <div className="flex justify-center py-10 mt-8 space-x-5">
-        <button className="btn btn-secondary btn-outline" onClick={handleBack}>
+      <div className='flex justify-center py-10 mt-8 space-x-5'>
+        <button className='btn btn-secondary btn-outline' onClick={handleBack}>
           Back
         </button>
-        <button className="btn btn-primary btn-outline" onClick={handleNext}>
+        <button className='btn btn-primary btn-outline' onClick={handleNext}>
           Next
         </button>
       </div>

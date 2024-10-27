@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import TeamSelectionPage from "./pages/TeamSelectionPage";
 import InjuryPage from "./pages/InjuryPage";
@@ -11,9 +16,9 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<TeamSelectionPage />} />
+        <Route path='/' element={<TeamSelectionPage />} />
         <Route
-          path="/injury-page"
+          path='/injury-page'
           element={
             <ProtectedRoute requiredKeys={["homeTeam", "awayTeam"]}>
               <InjuryPage />
@@ -21,7 +26,7 @@ const App = () => {
           }
         />
         <Route
-          path="/matchup-page"
+          path='/matchup-page'
           element={
             <ProtectedRoute requiredKeys={["homeTeam", "awayTeam"]}>
               <MatchUpSelectionPage />
@@ -29,15 +34,22 @@ const App = () => {
           }
         />
         <Route
-          path="/prediction-page"
+          path='/prediction-page'
           element={
-            <ProtectedRoute requiredKeys={["homeTeam", "awayTeam", "homeTeamMatchup", "awayTeamMatchup"]}>
+            <ProtectedRoute
+              requiredKeys={[
+                "homeTeam",
+                "awayTeam",
+                "homeTeamMatchup",
+                "awayTeamMatchup",
+              ]}
+            >
               <PredictionPage />
             </ProtectedRoute>
           }
         />
         {/* Catch-All Route */}
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path='*' element={<Navigate to='/' />} />
       </Routes>
       <Footer />
     </Router>

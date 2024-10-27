@@ -1,10 +1,10 @@
 import { Navigate } from "react-router-dom";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const ProtectedRoute = ({ children, requiredKeys }) => {
-  const isAuthorized = requiredKeys.every(key => sessionStorage.getItem(key));
+  const isAuthorized = requiredKeys.every((key) => sessionStorage.getItem(key));
 
-  return isAuthorized ? children : <Navigate to="/" />;
+  return isAuthorized ? children : <Navigate to='/' />;
 };
 
 ProtectedRoute.propTypes = {

@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState } from "react";
+import PropTypes from "prop-types";
 
 const Injury = ({ injury, onEdit, onResolve }) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -12,31 +13,34 @@ const Injury = ({ injury, onEdit, onResolve }) => {
   };
 
   return (
-    <li className="mb-2">
+    <li className='mb-2'>
       {isEditing ? (
         <div>
           <input
-            type="text"
+            type='text'
             value={player}
             onChange={(e) => setPlayer(e.target.value)}
-            className="input input-bordered mb-2"
+            className='input input-bordered mb-2'
           />
           <input
-            type="text"
+            type='text'
             value={result}
             onChange={(e) => setResult(e.target.value)}
-            className="input input-bordered mb-2"
+            className='input input-bordered mb-2'
           />
           <input
-            type="text"
+            type='text'
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            className="input input-bordered mb-2"
+            className='input input-bordered mb-2'
           />
-          <button className="btn btn-sm btn-primary mr-2" onClick={handleSave}>
+          <button className='btn btn-sm btn-primary mr-2' onClick={handleSave}>
             Save
           </button>
-          <button className="btn btn-sm btn-secondary" onClick={() => setIsEditing(false)}>
+          <button
+            className='btn btn-sm btn-secondary'
+            onClick={() => setIsEditing(false)}
+          >
             Cancel
           </button>
         </div>
@@ -45,17 +49,30 @@ const Injury = ({ injury, onEdit, onResolve }) => {
           <p>Player: {injury.player}</p>
           <p>Result: {injury.result}</p>
           <p>Description: {injury.description}</p>
-          <p>Status: {injury.resolved ? 'Resolved' : 'Unresolved'}</p>
-          <button className="btn btn-sm btn-primary mr-2" onClick={() => setIsEditing(true)}>
+          <p>Status: {injury.resolved ? "Resolved" : "Unresolved"}</p>
+          <button
+            className='btn btn-sm btn-primary mr-2'
+            onClick={() => setIsEditing(true)}
+          >
             Edit
           </button>
-          <button className="btn btn-sm btn-secondary" onClick={onResolve}>
+          <button className='btn btn-sm btn-secondary' onClick={onResolve}>
             Resolve
           </button>
         </div>
       )}
     </li>
   );
+};
+Injury.propTypes = {
+  injury: PropTypes.shape({
+    player: PropTypes.string.isRequired,
+    result: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    resolved: PropTypes.bool.isRequired,
+  }).isRequired,
+  onEdit: PropTypes.func.isRequired,
+  onResolve: PropTypes.func.isRequired,
 };
 
 export default Injury;
