@@ -3,21 +3,26 @@ from pytorch_forecasting.data import GroupNormalizer
 import pandas as pd
 from .preprocess import preprocess
 
-def build_train_dataset(games_df: pd.DataFrame, training_cutoff: int, max_prediction_length: int, max_encoder_length: int) -> TimeSeriesDataSet:
+def build_train_dataset(games_df: pd.DataFrame, max_prediction_length: int, max_encoder_length: int) -> TimeSeriesDataSet:
     return TimeSeriesDataSet(
-        games_df[lambda x: x.time_idx < training_cutoff],
+        games_df,
+        # games_df[lambda x: x.year < 2023],
         time_idx='time_idx',
         target='WL',
-        group_ids=['SEASON_ID', 'TEAM_ID'],
+        group_ids=['TEAM_ID'],
         min_encoder_length=max_encoder_length // 2,
         max_encoder_length=max_encoder_length,
         min_prediction_length=1,
         max_prediction_length=max_prediction_length,
-        static_categoricals=['TEAM_ID', 'SEASON_ID', 'OPPONENT_ID'],
-        time_varying_known_categoricals=['is_home', 'day_of_week'],
+        static_categoricals=['TEAM_ID', 'OPPONENT_ID'],
+        time_varying_known_categoricals=[
+            # 'is_home', 
+            'day_of_week'],
         time_varying_known_reals=['time_idx', 
                                   'opponent_WL_rolling_avg', 
-                                  # 'matchup_WL_rolling_avg'
+                                  'year',
+                                #   'month'
+                                #   'matchup_WL_rolling_avg'
                                   ],
         time_varying_unknown_categoricals=['WL'],
         time_varying_unknown_reals=[
@@ -26,17 +31,17 @@ def build_train_dataset(games_df: pd.DataFrame, training_cutoff: int, max_predic
         ],
         add_relative_time_idx=True,
         add_target_scales=True,
-        add_encoder_length=True,
+        add_encoder_length=True
+        
     )
 def build_dataset(games_df: pd.DataFrame):
-    games_df.info()
-    training_cutoff = 60
     max_prediction_length = 1
     max_encoder_length = 10
 
-    # alternative is to group by season and encode team_id
+    training_df = games_df.groupby('TEAM_ID').apply(lambda x: x.iloc[:-164]).reset_index(drop=True)
+    # training_df = games_df.groupby('TEAM_ID').apply(lambda x: x.iloc[:-82]).reset_index(drop=True)
 
-    training = build_train_dataset(games_df, training_cutoff, max_prediction_length, max_encoder_length)
+    training = build_train_dataset(training_df, max_prediction_length, max_encoder_length)
 
     validation = TimeSeriesDataSet.from_dataset(training, games_df, predict=True, stop_randomization=True)
 

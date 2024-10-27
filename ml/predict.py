@@ -32,13 +32,14 @@ class NBA_Pred_Model:
     decoder_dict = {
       'TEAM_ID': home,
       'OPPONENT_ID': away,
-      'SEASON_ID': encoder_data.iloc[0]['SEASON_ID'],
+      # 'SEASON_ID': encoder_data.iloc[0]['SEASON_ID'],
       'GAME_DATE': today,
-      'day_of_week': str(today.isoweekday()),
+      'day_of_week': str(today.isoweekday() - 1),
       'is_home': '1',
       'time_idx': encoder_data.iloc[-1]['time_idx'] + 1,
       'opponent_WL_rolling_avg': opponent_games.iloc[-self.win_len:]['WL_int'].mean(),
       'index': [0],
+      'year': encoder_data.iloc[-1]['year'],
       'WL': '0' # needs to be filled but is irrelevant in decoding
     }
     encoder_data = encoder_data.drop(columns=['WL_int', 'GAME_ID'])
@@ -52,9 +53,10 @@ class NBA_Pred_Model:
     return y_pred
 
 if __name__ == '__main__':
-  config = setup_data(start_year=2023, end_year=2024)
+  config = setup_data(start_year=2023, end_year=2024, is_train=False)
   model = NBA_Pred_Model(**config)
   model.predict({ 'home': {'teamId': '1610612738'}, 'away': {'teamId': '1610612761'}})
+  model.predict({ 'home': {'teamId': '1610612761'}, 'away': {'teamId': '1610612738'}})
 
   
   

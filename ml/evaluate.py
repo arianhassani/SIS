@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from .setup_data import setup_data
 from .preprocess import preprocess
 from .dataset import build_dataset
+from .predict import NBA_Pred_Model
 
 logger = logging.getLogger(__name__)
 
@@ -34,6 +35,10 @@ def interpret(model, val_loader):
         figure.show()
 
 def evaluate(model, val_loader):
+    model = NBA_Pred_Model(**config)
+    print(model.predict({ 'home': {'teamId': '1610612738'}, 'away': {'teamId': '1610612761'}}))
+    print(model.predict({ 'home': {'teamId': '1610612761'}, 'away': {'teamId': '1610612738'}}))
+
     mae, acc = generate_baseline(val_loader)
     logger.info(f'Baseline - Accuracy: {acc}')
     mae, acc = model_acc(model, val_loader)

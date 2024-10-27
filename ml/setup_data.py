@@ -14,7 +14,7 @@ def make_config_dir(config, key, default):
 	if not os.path.exists(config[key]):
 		os.mkdir(config[key])
 	
-def setup_data(start_year=1946, end_year=2024, **kwargs):
+def setup_data(start_year=1946, end_year=2024, is_train=True, **kwargs):
 		print(base_dir)
 		with open(os.path.join(base_dir, "config.yaml"),"r") as file_object:
 			config=yaml.load(file_object, Loader=yaml.SafeLoader)
@@ -22,6 +22,7 @@ def setup_data(start_year=1946, end_year=2024, **kwargs):
 		config['base_dir'] = base_dir
 		make_config_dir(config, 'log_dir', 'logs')
 		make_config_dir(config, 'data_dir', 'data')
+		make_config_dir(config, 'test_data_dir', 'test_data')
 		make_config_dir(config, 'lightning_log_dir', 'lightning_logs')
 		
 		logging.basicConfig(level=config['logging_level'], format='%(asctime)s [%(levelname)s] - %(module)s: %(message)s', handlers=[
@@ -29,7 +30,11 @@ def setup_data(start_year=1946, end_year=2024, **kwargs):
 																logging.FileHandler(os.path.join(config['log_dir'], 'games_download.log'), mode='w')])
 		logger.info('Starting downloads...')
 		nba_data = NBA_data(**config)
-		nba_data.download_games(start_year, end_year)
+		
+		if is_train:
+			nba_data.download_games(start_year, end_year)
+		else:
+			nba_data.download_games(start_year, end_year, is_train=False)
 		nba_data.download_players()
 		nba_data.download_teams()
 		nba_data.download_player_games()
