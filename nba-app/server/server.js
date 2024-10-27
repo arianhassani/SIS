@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+
 import connectDB from "./config/db.js";
 import teamRoutes from './routes/teams.js'; // Import the teams route
 import playerRoutes from './routes/players.js'; // Import the players route
@@ -14,15 +15,13 @@ connectDB();
 // Middleware setup
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({extended: false}))
 
 // Route setup
 app.use('/api/teams', teamRoutes);
 app.use('/api/players', playerRoutes);
 app.use('/api/predict', predictRoutes);
 
-app.get('/', (req, res)=>{
-    res.send('Return to home page')
-})
 
 // Start the server
 app.listen(port, () => {

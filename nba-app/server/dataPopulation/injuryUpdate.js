@@ -33,7 +33,7 @@ const setInjuredPlayers = async (teamName) => {
       stdout = await runPythonScript('py ./dataPopulation/nbainjuries.py');
     } catch (error) {
       // If 'py' fails, fall back to 'python3'
-      console.log('Falling back to python3');
+      console.log('Falling back to python');
       stdout = await runPythonScript('python3 ./dataPopulation/nbainjuries.py');
     }
 
