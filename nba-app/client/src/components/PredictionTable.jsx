@@ -1,5 +1,3 @@
-const PredictionTable = () => {
-
-}
+const PredictionTable = () => {};
 
 export default PredictionTable;

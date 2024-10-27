@@ -1,8 +1,8 @@
 import express from 'express';
 import {
   playerInjured,
-  playerResolved
-} from "../controllers/playersController.js";
+  playerResolved,
+} from '../controllers/playersController.js';
 
 const router = express.Router();
 

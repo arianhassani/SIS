@@ -3,7 +3,13 @@ import Player from '../components/MatchUpPlayer';
 import AddPlayerForm from '../components/AddPlayerForm';
 import PropTypes from 'prop-types';
 
-const positions = ['Point Guard', 'Shooting Guard', 'Small Forward', 'Power Forward', 'Center'];
+const positions = [
+  'Point Guard',
+  'Shooting Guard',
+  'Small Forward',
+  'Power Forward',
+  'Center',
+];
 
 const MatchUp = ({ teamName, teamType, setTeamMatchup }) => {
   const [players, setPlayers] = useState([]);
@@ -15,7 +21,9 @@ const MatchUp = ({ teamName, teamType, setTeamMatchup }) => {
   useEffect(() => {
     const fetchPlayers = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/${teamName}/players`);
+        const response = await fetch(
+          `http://localhost:3000/${teamName}/players`,
+        );
         const data = await response.json();
         setPlayers(data.players || []);
       } catch (error) {
@@ -23,7 +31,7 @@ const MatchUp = ({ teamName, teamType, setTeamMatchup }) => {
       }
     };
 
-    if (teamName !== "No team selected") {
+    if (teamName !== 'No team selected') {
       fetchPlayers();
     }
   }, [teamName]);
@@ -32,7 +40,10 @@ const MatchUp = ({ teamName, teamType, setTeamMatchup }) => {
     const updatedPlayers = [...teamMatchup];
     updatedPlayers[positionIndex].push(player);
     setTeamMatchupState(updatedPlayers);
-    localStorage.setItem(`${teamType}TeamMatchup`, JSON.stringify(updatedPlayers));
+    localStorage.setItem(
+      `${teamType}TeamMatchup`,
+      JSON.stringify(updatedPlayers),
+    );
     setTeamMatchup(updatedPlayers);
   };
 
@@ -40,18 +51,26 @@ const MatchUp = ({ teamName, teamType, setTeamMatchup }) => {
     const updatedPlayers = [...teamMatchup];
     updatedPlayers[positionIndex].splice(playerIndex, 1);
     setTeamMatchupState(updatedPlayers);
-    localStorage.setItem(`${teamType}TeamMatchup`, JSON.stringify(updatedPlayers));
+    localStorage.setItem(
+      `${teamType}TeamMatchup`,
+      JSON.stringify(updatedPlayers),
+    );
     setTeamMatchup(updatedPlayers);
   };
 
   const getAvailablePlayers = () => {
     const selectedPlayers = teamMatchup.flat();
-    return players.filter(player => !selectedPlayers.some(selected => selected._id === player._id));
+    return players.filter(
+      (player) =>
+        !selectedPlayers.some((selected) => selected._id === player._id),
+    );
   };
 
   return (
     <div className="w-1/2 p-4">
-      <h2 className="text-2xl font-bold mb-4">{teamType === 'home' ? 'Home Team' : 'Away Team'}: {teamName}</h2>
+      <h2 className="text-2xl font-bold mb-4">
+        {teamType === 'home' ? 'Home Team' : 'Away Team'}: {teamName}
+      </h2>
       {positions.map((position, index) => (
         <div key={index} className="mb-4">
           <h3 className="text-xl font-semibold">{position}</h3>
@@ -65,7 +84,7 @@ const MatchUp = ({ teamName, teamType, setTeamMatchup }) => {
             ))}
           </ul>
           {teamMatchup[index].length === 0 && (
-            <AddPlayerForm 
+            <AddPlayerForm
               onAddPlayer={(player) => handleAddPlayer(index, player)}
               availablePlayers={getAvailablePlayers()}
             />

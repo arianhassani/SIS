@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const Injury = ({ injury, onEdit, onResolve }) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -36,7 +37,10 @@ const Injury = ({ injury, onEdit, onResolve }) => {
           <button className="btn btn-sm btn-primary mr-2" onClick={handleSave}>
             Save
           </button>
-          <button className="btn btn-sm btn-secondary" onClick={() => setIsEditing(false)}>
+          <button
+            className="btn btn-sm btn-secondary"
+            onClick={() => setIsEditing(false)}
+          >
             Cancel
           </button>
         </div>
@@ -46,7 +50,10 @@ const Injury = ({ injury, onEdit, onResolve }) => {
           <p>Result: {injury.result}</p>
           <p>Description: {injury.description}</p>
           <p>Status: {injury.resolved ? 'Resolved' : 'Unresolved'}</p>
-          <button className="btn btn-sm btn-primary mr-2" onClick={() => setIsEditing(true)}>
+          <button
+            className="btn btn-sm btn-primary mr-2"
+            onClick={() => setIsEditing(true)}
+          >
             Edit
           </button>
           <button className="btn btn-sm btn-secondary" onClick={onResolve}>
@@ -56,6 +63,16 @@ const Injury = ({ injury, onEdit, onResolve }) => {
       )}
     </li>
   );
+};
+Injury.propTypes = {
+  injury: PropTypes.shape({
+    player: PropTypes.string.isRequired,
+    result: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    resolved: PropTypes.bool.isRequired,
+  }).isRequired,
+  onEdit: PropTypes.func.isRequired,
+  onResolve: PropTypes.func.isRequired,
 };
 
 export default Injury;

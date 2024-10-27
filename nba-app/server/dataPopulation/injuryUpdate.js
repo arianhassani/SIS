@@ -1,10 +1,7 @@
-import fs from 'fs';
-import path from 'path';
-import Team from '../models/Team.js'; 
+import Team from '../models/Team.js';
 import Player from '../models/Player.js';
 import connectDB from '../config/db.js';
-import mongoose from 'mongoose';
-import "dotenv/config.js";
+import 'dotenv/config.js';
 import { exec } from 'child_process';
 import util from 'util';
 
@@ -31,7 +28,7 @@ const setInjuredPlayers = async (teamName) => {
     try {
       // Try running the Python script using 'py'
       stdout = await runPythonScript('py ./dataPopulation/nbainjuries.py');
-    } catch (error) {
+    } catch {
       // If 'py' fails, fall back to 'python3'
       console.log('Falling back to python');
       stdout = await runPythonScript('python3 ./dataPopulation/nbainjuries.py');
@@ -63,7 +60,9 @@ const setInjuredPlayers = async (teamName) => {
       }
 
       // Check if the player's name is in the injuryData
-      const playerInjury = injuryData.find(injury => injury.player_name === player.name);
+      const playerInjury = injuryData.find(
+        (injury) => injury.player_name === player.name,
+      );
 
       // Update the player's injury status and details if injured
       if (playerInjury) {
@@ -72,10 +71,10 @@ const setInjuredPlayers = async (teamName) => {
       } else {
         // If not injured, reset injury details
         player.isInjured = false;
-        player.injuryDetails = "";
+        player.injuryDetails = '';
       }
 
-      await player.save();  // Save the updated player
+      await player.save(); // Save the updated player
     }
 
     console.log(`Injury status updated for team ${teamName}`);

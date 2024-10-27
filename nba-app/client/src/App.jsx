@@ -1,11 +1,16 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import TeamSelectionPage from "./pages/TeamSelectionPage";
-import InjuryPage from "./pages/InjuryPage";
-import Footer from "./components/Footer";
-import MatchUpSelectionPage from "./pages/MatchUpPage";
-import PredictionPage from "./pages/PredictionPage";
-import ProtectedRoute from "./components/ProtectedRoute";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import TeamSelectionPage from './pages/TeamSelectionPage';
+import InjuryPage from './pages/InjuryPage';
+import Footer from './components/Footer';
+import MatchUpSelectionPage from './pages/MatchUpPage';
+import PredictionPage from './pages/PredictionPage';
+import ProtectedRoute from './components/ProtectedRoute';
 const App = () => {
   return (
     <Router>
@@ -15,7 +20,7 @@ const App = () => {
         <Route
           path="/injury-page"
           element={
-            <ProtectedRoute requiredKeys={["homeTeam", "awayTeam"]}>
+            <ProtectedRoute requiredKeys={['homeTeam', 'awayTeam']}>
               <InjuryPage />
             </ProtectedRoute>
           }
@@ -23,7 +28,7 @@ const App = () => {
         <Route
           path="/matchup-page"
           element={
-            <ProtectedRoute requiredKeys={["homeTeam", "awayTeam"]}>
+            <ProtectedRoute requiredKeys={['homeTeam', 'awayTeam']}>
               <MatchUpSelectionPage />
             </ProtectedRoute>
           }
@@ -31,7 +36,14 @@ const App = () => {
         <Route
           path="/prediction-page"
           element={
-            <ProtectedRoute requiredKeys={["homeTeam", "awayTeam", "homeTeamMatchup", "awayTeamMatchup"]}>
+            <ProtectedRoute
+              requiredKeys={[
+                'homeTeam',
+                'awayTeam',
+                'homeTeamMatchup',
+                'awayTeamMatchup',
+              ]}
+            >
               <PredictionPage />
             </ProtectedRoute>
           }
