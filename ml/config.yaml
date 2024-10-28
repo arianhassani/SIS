@@ -1,4 +1,5 @@
-best_tft: ml/best_model/version_62/checkpoints/epoch=19-step=1000.ckpt
+best_tft: ml/best_model/version_98/checkpoints/epoch=39-step=2000.ckpt
+best_tft_team_only: ml/best_model/version_62/checkpoints/epoch=19-step=1000.ckpt
 data_dir: data
 logging_level: INFO
 test_data_dir: test_data

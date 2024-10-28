@@ -1,0 +1,70 @@
+embeddings {
+  tensor_name: "PLAYER_1:02500"
+  metadata_path: "02500/PLAYER_1/metadata.tsv"
+  tensor_path: "02500/PLAYER_1/tensors.tsv"
+}
+embeddings {
+  tensor_name: "PLAYER_2:02500"
+  metadata_path: "02500/PLAYER_2/metadata.tsv"
+  tensor_path: "02500/PLAYER_2/tensors.tsv"
+}
+embeddings {
+  tensor_name: "PLAYER_3:02500"
+  metadata_path: "02500/PLAYER_3/metadata.tsv"
+  tensor_path: "02500/PLAYER_3/tensors.tsv"
+}
+embeddings {
+  tensor_name: "PLAYER_4:02500"
+  metadata_path: "02500/PLAYER_4/metadata.tsv"
+  tensor_path: "02500/PLAYER_4/tensors.tsv"
+}
+embeddings {
+  tensor_name: "PLAYER_5:02500"
+  metadata_path: "02500/PLAYER_5/metadata.tsv"
+  tensor_path: "02500/PLAYER_5/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_PLAYER_1:02500"
+  metadata_path: "02500/OPPONENT_PLAYER_1/metadata.tsv"
+  tensor_path: "02500/OPPONENT_PLAYER_1/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_PLAYER_2:02500"
+  metadata_path: "02500/OPPONENT_PLAYER_2/metadata.tsv"
+  tensor_path: "02500/OPPONENT_PLAYER_2/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_PLAYER_3:02500"
+  metadata_path: "02500/OPPONENT_PLAYER_3/metadata.tsv"
+  tensor_path: "02500/OPPONENT_PLAYER_3/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_PLAYER_4:02500"
+  metadata_path: "02500/OPPONENT_PLAYER_4/metadata.tsv"
+  tensor_path: "02500/OPPONENT_PLAYER_4/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_PLAYER_5:02500"
+  metadata_path: "02500/OPPONENT_PLAYER_5/metadata.tsv"
+  tensor_path: "02500/OPPONENT_PLAYER_5/tensors.tsv"
+}
+embeddings {
+  tensor_name: "TEAM_ID:02500"
+  metadata_path: "02500/TEAM_ID/metadata.tsv"
+  tensor_path: "02500/TEAM_ID/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_ID:02500"
+  metadata_path: "02500/OPPONENT_ID/metadata.tsv"
+  tensor_path: "02500/OPPONENT_ID/tensors.tsv"
+}
+embeddings {
+  tensor_name: "is_home:02500"
+  metadata_path: "02500/is_home/metadata.tsv"
+  tensor_path: "02500/is_home/tensors.tsv"
+}
+embeddings {
+  tensor_name: "WL:02500"
+  metadata_path: "02500/WL/metadata.tsv"
+  tensor_path: "02500/WL/tensors.tsv"
+}
