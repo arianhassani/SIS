@@ -15,6 +15,8 @@ const PredictionPage = () => {
   const [awayTeamPerformanceGraph, setAwayTeamPerformanceGraph] = useState('');
   const [jsonHomeScore, setJsonHomeScore] = useState('');
   const [jsonAwayScore, setJsonAwayScore] = useState('');
+  const [jsonHomeScorePB, setJsonHomeScorePB] = useState('');
+  const [jsonAwayScorePB, setJsonAwayScorePB] = useState('');
 
   // Retrieve prediction scores
 
@@ -26,13 +28,16 @@ const PredictionPage = () => {
 
   const homeTeamID = sessionStorage.getItem('homeTeamNBAID');
   const awayTeamID = sessionStorage.getItem('awayTeamNBAID');
+  // Parse the JSON string from session storage
+  const homeTeamLineup = JSON.parse(sessionStorage.getItem('homeTeamMatchup'));
+  const homeTeamNBAIds = homeTeamLineup.map(playerArray => playerArray[0].nbaID);
+  console.log(homeTeamNBAIds);
+  const awayTeamLineup = JSON.parse(sessionStorage.getItem('awayTeamMatchup'));
+  const awayTeamNBAIds = homeTeamLineup.map(playerArray => playerArray[0].nbaID);
+  console.log(awayTeamNBAIds);
+
   const { homeTopPerformer, awayTopPerformer } = location.state || {};
 
-  /*
-  const predictedScores = {
-    left: jsonHomeScore || 0, // Use fallback value of 0
-    right: jsonAwayScore || 0, 
-  }; */
 
   const placeholder = 'https://placehold.co/400?text=No+Data+Available';
 
@@ -95,15 +100,19 @@ const PredictionPage = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            homeTeam: homeTeamID ,
-            awayTeam: awayTeamID
+            homeTeam: homeTeamID,
+            homeTeamIDs: [homeTeamNBAIds],
+            awayTeam: awayTeamID,
+            awayTeamIDs: [awayTeamNBAIds]
           }),
         },
       );
 
       const predictScore = await predictResponse.json();
-      setJsonHomeScore(predictScore.homePrediction);
-      setJsonAwayScore(predictScore.awayPrediction);
+      setJsonHomeScorePB(predictScore.homePrediction);
+      setJsonAwayScorePB(predictScore.awayPrediction);
+      setJsonHomeScore(predictScore.TBhomePrediction);
+      setJsonAwayScore(predictScore.TBawayPrediction);
 
         const homeImage = await getTopPerformerPerformance(
           homeTeam,
@@ -148,20 +157,20 @@ const PredictionPage = () => {
           />
           <h2 className="text-2xl font-bold">{homeTeam}</h2>
           <div className="text-4xl font-bold md:hidden">
-            {jsonHomeScore}
+            {jsonHomeScorePB}
           </div>{' '}
           {/* Show score here for small screens */}
         </div>
 
         {/* Scores */}
         <div className="hidden md:block text-4xl font-bold">
-          {jsonHomeScore}
+          {jsonHomeScorePB}
         </div>
         <div className="text-center">
           <h2 className="text-2xl font-bold">VS</h2>
         </div>
         <div className="hidden md:block text-4xl font-bold">
-          {jsonAwayScore}
+          {jsonAwayScorePB}
         </div>
 
         {/* Right Team */}
@@ -173,7 +182,7 @@ const PredictionPage = () => {
           />
           <h2 className="text-2xl font-bold">{awayTeam}</h2>
           <div className="text-4xl font-bold md:hidden">
-            {jsonAwayScore}
+            {jsonAwayScorePB}
           </div>{' '}
           {/* Show score here for small screens */}
         </div>

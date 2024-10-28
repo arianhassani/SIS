@@ -6,7 +6,7 @@ const getFinalScore = async (req, res) => {
   const homeTeam = req.body.homeTeam;
   const homeTeamPlayers = req.body.homeTeamIDs;
   const awayTeam = req.body.awayTeam;
-  const awayTeamPlayers = req.body.awayTeamIDS;
+  const awayTeamPlayers = req.body.awayTeamIDs;
 
   try {
     const probabilities = await predictMatchOutcome(homeTeam, awayTeam, homeTeamPlayers, awayTeamPlayers);
