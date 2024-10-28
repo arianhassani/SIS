@@ -1,12 +1,11 @@
 from pytorch_forecasting import TimeSeriesDataSet
-from pytorch_forecasting.data import GroupNormalizer
+from pytorch_forecasting.data import GroupNormalizer, NaNLabelEncoder
 import pandas as pd
 from .preprocess import preprocess
 
-def build_train_dataset(games_df: pd.DataFrame, max_prediction_length: int, max_encoder_length: int) -> TimeSeriesDataSet:
+def build_train_dataset(training_df: pd.DataFrame, max_prediction_length: int, max_encoder_length: int) -> TimeSeriesDataSet:
     return TimeSeriesDataSet(
-        games_df,
-        # games_df[lambda x: x.year < 2023],
+        training_df,
         time_idx='time_idx',
         target='WL',
         group_ids=['TEAM_ID'],
@@ -17,12 +16,14 @@ def build_train_dataset(games_df: pd.DataFrame, max_prediction_length: int, max_
         static_categoricals=['TEAM_ID', 'OPPONENT_ID'],
         time_varying_known_categoricals=[
             # 'is_home', 
-            'day_of_week'],
+                                         'day_of_week',
+                                         'PLAYER_1', 'PLAYER_2', 'PLAYER_3', 'PLAYER_4', 'PLAYER_5',
+                    'OPPONENT_PLAYER_1', 'OPPONENT_PLAYER_2', 'OPPONENT_PLAYER_3', 'OPPONENT_PLAYER_4', 'OPPONENT_PLAYER_5'
+                    ],
         time_varying_known_reals=['time_idx', 
                                   'opponent_WL_rolling_avg', 
-                                  'year',
-                                #   'month'
-                                #   'matchup_WL_rolling_avg'
+                                  'year'
+                                  # 'matchup_WL_rolling_avg'
                                   ],
         time_varying_unknown_categoricals=['WL'],
         time_varying_unknown_reals=[
@@ -31,15 +32,27 @@ def build_train_dataset(games_df: pd.DataFrame, max_prediction_length: int, max_
         ],
         add_relative_time_idx=True,
         add_target_scales=True,
-        add_encoder_length=True
-        
+        add_encoder_length=True,
+        categorical_encoders={
+            'PLAYER_1': NaNLabelEncoder(add_nan=True), 
+            'PLAYER_2': NaNLabelEncoder(add_nan=True), 
+            'PLAYER_3': NaNLabelEncoder(add_nan=True), 
+            'PLAYER_4': NaNLabelEncoder(add_nan=True), 
+            'PLAYER_5': NaNLabelEncoder(add_nan=True),
+            'OPPONENT_PLAYER_1': NaNLabelEncoder(add_nan=True),
+            'OPPONENT_PLAYER_2': NaNLabelEncoder(add_nan=True), 
+            'OPPONENT_PLAYER_3': NaNLabelEncoder(add_nan=True), 
+            'OPPONENT_PLAYER_4': NaNLabelEncoder(add_nan=True), 
+            'OPPONENT_PLAYER_5': NaNLabelEncoder(add_nan=True)
+        }
     )
 def build_dataset(games_df: pd.DataFrame):
+    games_df.info()
+    training_cutoff = 82
     max_prediction_length = 1
     max_encoder_length = 10
 
-    training_df = games_df.groupby('TEAM_ID').apply(lambda x: x.iloc[:-164]).reset_index(drop=True)
-    # training_df = games_df.groupby('TEAM_ID').apply(lambda x: x.iloc[:-82]).reset_index(drop=True)
+    training_df = games_df.groupby('TEAM_ID').apply(lambda x: x.iloc[:-training_cutoff]).reset_index(drop=True)
 
     training = build_train_dataset(training_df, max_prediction_length, max_encoder_length)
 
