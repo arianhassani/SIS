@@ -1,3 +1,4 @@
+import numpy as np
 import yaml
 from pytorch_forecasting import Baseline, TemporalFusionTransformer, TimeSeriesDataSet
 from .preprocess import preprocess
@@ -19,6 +20,7 @@ class NBA_Pred_Model:
     # nba_data.download_games(start_year, end_year)
     # self.teams = nba_data.download_teams()
     self.teams = nba_data.get_teams_dict()
+    self.players = nba_data.get_players_dict()
 
     self.all_teams_df = preprocess(win_len=win_len, **kwargs)
     self.encoder_data_map = { g[0]: g[1] for g in self.all_teams_df.groupby('TEAM_ID') }
@@ -90,20 +92,30 @@ if __name__ == '__main__':
   config = setup_data(start_year=2023, end_year=2024, is_train=False)
   model = NBA_Pred_Model(**config)
   res = []
-  # team_ids = list(model.teams.keys())
-  # n = len(team_ids)
-  # n = 5
-  # for i in range(n):
-  #   for j in range(i + 1, n):
-  #     res.append(model.predict({ 'home': {'teamId': team_ids[i]}, 'away': {'teamId': team_ids[j]}}))
-  res.append(model.predict({ 'home': {'teamId': '1610612738',
-          'playerIds': [958,2207,1499,1065,72]}, 'away': {'teamId': '1610612761', 'playerIds': [2306,1541,164,1721,376]}}))
-  res.append(model.predict({ 'home': {'teamId': '1610612761', 'playerIds': [2306,1541,164,1721,376]}, 'away': {'teamId': '1610612738',
-          'playerIds': [958,2207,1499,1065,72]}}))
-  res.append(model.predict({ 'home': {'teamId': '1610612738', 'playerIds': [965,965,965,965,965]}, 'away': {'teamId': '1610612761',
-          'playerIds': [72,72,72,72,72]}}))
-  res.append(model.predict({ 'home': {'teamId': '1610612738', 'playerIds': [965,965,965,965,965]}, 'away': {'teamId': '1610612761',
-          'playerIds': [72,72,72,72,72]}}))
+  team_ids = list(model.teams.keys())
+  player_ids = np.array(list(model.players.keys()))
+  n = len(team_ids)
+  n = 5
+  for i in range(n):
+    for j in range(i + 1, n):
+      res.append(model.predict({ 
+        'home': {
+          'teamId': team_ids[i], 
+          'playerIds': list(np.random.choice(player_ids, size=5, replace=False))
+        },
+        'away': {
+          'teamId': team_ids[j],
+          'playerIds': list(np.random.choice(player_ids, size=5, replace=False))
+        }
+      }))
+  # res.append(model.predict({ 'home': {'teamId': '1610612738',
+  #         'playerIds': [958,2207,1499,1065,72]}, 'away': {'teamId': '1610612761', 'playerIds': [2306,1541,164,1721,376]}}))
+  # res.append(model.predict({ 'home': {'teamId': '1610612761', 'playerIds': [2306,1541,164,1721,376]}, 'away': {'teamId': '1610612738',
+  #         'playerIds': [958,2207,1499,1065,72]}}))
+  # res.append(model.predict({ 'home': {'teamId': '1610612738', 'playerIds': [965,965,965,965,965]}, 'away': {'teamId': '1610612761',
+  #         'playerIds': [72,72,72,72,72]}}))
+  # res.append(model.predict({ 'home': {'teamId': '1610612738', 'playerIds': [965,965,965,965,965]}, 'away': {'teamId': '1610612761',
+  #         'playerIds': [72,72,72,72,72]}}))
   # res.append(model.predict({ 'home': {'teamId': '1610612748'}, 'away': {'teamId': '1610612738'}}))
 
   print(res)

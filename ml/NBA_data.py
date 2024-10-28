@@ -85,6 +85,15 @@ class NBA_data:
       teams_list = { t['id']: t for t in reader}
 
     return teams_list
+  
+  def get_players_dict(self):
+    players_path = os.path.join(self.config['data_dir'], 'players.csv')
+    players_list = {}
+    with open(players_path, 'r') as f:
+      reader = DictReader(f)
+      players_list = { t['id']: t for t in reader}
+
+    return players_list
 
   def download_teams(self):
     teams_path = os.path.join(self.config['data_dir'], 'teams.csv')
