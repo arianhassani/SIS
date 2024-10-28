@@ -222,7 +222,7 @@ const InjuryPage = () => {
     navigate('/matchup-page');
   };
 
-  const placeholderImage = 'https://placehold.co/400';
+  const placeholderImage = 'https://placehold.co/400?text=No+Data+Available';
 
   const homeInjuredPlayers = homePlayers.filter((player) => player.isInjured);
   const awayInjuredPlayers = awayPlayers.filter((player) => player.isInjured);
