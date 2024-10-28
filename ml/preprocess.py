@@ -176,15 +176,16 @@ def preprocess(start: int=None, end: int=None, win_len=5, **kwargs) -> pd.DataFr
 
     # games_df['time_idx']  = games_df.groupby(['SEASON_ID', 'TEAM_ID']).cumcount()
     games_df = games_df.dropna()
+    games_df = games_df.sort_values('GAME_DATE')
     games_df['time_idx']  = games_df.groupby(['TEAM_ID']).cumcount()
 
     games_df['day_of_week'] = games_df['GAME_DATE'].dt.day_of_week.astype(str).astype('category')
 
     games_df = games_df.drop(columns=['TEAM_ABBREVIATION', 'TEAM_NAME',\
                             'MATCHUP', 'VIDEO_AVAILABLE',\
-                                "PTS",'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A',\
-                                'FG3_PCT', 'FTM', 'FTA', 'FT_PCT', 'OREB', 'MIN',\
-                                'DREB', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'PF','PLUS_MINUS',\
+                                # "PTS",'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A',\
+                                # 'FG3_PCT', 'FTM', 'FTA', 'FT_PCT', 'OREB', 'MIN',\
+                                # 'DREB', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'PF','PLUS_MINUS',\
                                 'SEASON_ID'
                                     ], errors='ignore')
     # games_df['PTS'] = games_df['PTS'].astype(float)
