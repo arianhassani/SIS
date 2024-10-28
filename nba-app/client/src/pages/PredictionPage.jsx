@@ -1,13 +1,12 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import teamLogos from '../components/teamLogos';
+import TooltipIcon from '../components/TooltipIcon';
 
 const PredictionPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const [error, setError] = useState(false);
-  const [loading, setLoading] = useState(true);
   // eslint-disable-next-line no-unused-vars
   const [selectedModel, setSelectedModel] = useState('SELECT ML MODEL');
   const [homeTopPerformerGraph, setHomeTopPerformerGraph] = useState('');
@@ -35,7 +34,7 @@ const PredictionPage = () => {
     right: jsonAwayScore || 0, 
   }; */
 
-  const placeholder = 'https://placehold.co/400';
+  const placeholder = 'https://placehold.co/400?text=No+Data+Available';
 
   // Function to handle finish button click
   const handleFinish = () => {
@@ -60,8 +59,7 @@ const PredictionPage = () => {
       return module.default;
     } catch (error) {
       console.error('Error fetching player image:', error);
-      setError(true);
-      return placeholder; // Placeholder image URL
+      return null; // Placeholder image URL
     }
   };
 
@@ -71,16 +69,19 @@ const PredictionPage = () => {
       return module.default;
     } catch (error) {
       console.error('Error fetching team performance image:', error);
-      setError(true);
-      return placeholder;
+      return null;
     }
   };
 
   useEffect(() => {
     const loadImages = async () => {
-      if (!homeTopPerformer || !awayTopPerformer) {
-        setError(true);
-        setLoading(false);
+      if (!homeTopPerformer) {
+        setloadingHomeTopPerformer(true);
+        return;
+      }
+
+      if (!awayTopPerformer) {
+        setloadingAwayTopPerformer(true);
         return;
       }
 
@@ -108,45 +109,26 @@ const PredictionPage = () => {
           homeTeam,
           homeTopPerformer,
         );
+        setHomeTopPerformerGraph(homeImage);
+
         const awayImage = await getTopPerformerPerformance(
           awayTeam,
           awayTopPerformer,
         );
+        setAwayTopPerformerGraph(awayImage);
+
         const homeTeamGraph = await getTeamPerformance(homeTeam);
-        const awayTeamGraph = await getTeamPerformance(awayTeam);
         setHomeTeamPerformanceGraph(homeTeamGraph);
+
+        const awayTeamGraph = await getTeamPerformance(awayTeam);
         setAwayTeamPerformanceGraph(awayTeamGraph);
-        setHomeTopPerformerGraph(homeImage || null);
-        setAwayTopPerformerGraph(awayImage || null);
-        
-      } catch {
-        setError(true);
-      } finally {
-        setLoading(false);
+      } catch (error) {
+        console.error('Error loading images:', error);
       }
     };
 
     loadImages();
   }, [homeTeam, awayTeam, homeTopPerformer, awayTopPerformer]);
-
-  
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center min-h-screen">
-        <div className="skeleton w-full h-full"></div>
-      </div>
-    );
-  } 
-
-  /*
-
-  if (error) {
-    return (
-      <div className="flex justify-center items-center min-h-screen">
-        <span className="loading loading-spinner loading-lg text-error"></span>
-      </div>
-    );
-  } */
 
   return (
     <div className="min-h-screen bg-base-200 p-6">
@@ -217,10 +199,21 @@ const PredictionPage = () => {
 
       {/* Top Performers */}
       <div className="card bg-base-300 rounded-box p-4 w-full">
+        <div className="flex items-center justify-center mb-4">
+          <h2 className="text-3xl font-bold text-center my-4">
+            Top Performers
+          </h2>
+          <div
+            className="tooltip ml-2"
+            data-tip="Top performers of each team based on impact: AVG (Average points/game), PPG (Points/game), RPG (Rebounds/game)"
+          >
+            <TooltipIcon />
+          </div>
+        </div>
         <div className="flex flex-col lg:flex-row w-full space-y-4 lg:space-y-0 lg:space-x-4 justify-between">
           {/* Top Performer 1 */}
           <div className="flex-grow grid place-items-center p-4">
-            <h3 className="text-xl font-semibold mb-4">{`${homeTeam} Top Performer`}</h3>
+            <h3 className="text-2xl font-semibold mb-5">{`${homeTeam}`}</h3>
             <div className="card bg-base-100 w-96 shadow-xl">
               <figure className="px-10 pt-10">
                 <img
@@ -240,7 +233,7 @@ const PredictionPage = () => {
 
           {/* Top Performer 2 */}
           <div className="flex-grow grid place-items-center p-4">
-            <h3 className="text-xl font-semibold mb-4">{`${awayTeam} Top Performer`}</h3>
+            <h3 className="text-2xl font-semibold mb-5">{`${awayTeam}`}</h3>
             <div className="card bg-base-100 w-96 shadow-xl">
               <figure className="px-10 pt-10">
                 <img
@@ -268,11 +261,15 @@ const PredictionPage = () => {
             <h3 className="card-title text-center">{`${homeTeam} Overall Performance`}</h3>
             {/* Placeholder for Graph */}
             <figure className="flex justify-center items-center p-2">
-              <img
-                src={homeTeamPerformanceGraph || placeholder}
-                alt={`${homeTeam} Performance`}
-                className="w-3/4 object-contain rounded-b-lg"
-              />
+              {homeTeamPerformanceGraph ? (
+                <img
+                  src={homeTeamPerformanceGraph}
+                  alt={`${homeTeam} Performance`}
+                  className="w-3/4 object-contain rounded-b-lg"
+                />
+              ) : (
+                <p>No available data</p>
+              )}
             </figure>
           </div>
         </div>
@@ -282,11 +279,15 @@ const PredictionPage = () => {
           <div className="card-body flex flex-col items-center">
             <h3 className="card-title text-center">{`${awayTeam} Overall Performance`}</h3>
             <figure className="flex justify-center items-center p-2">
-              <img
-                src={awayTeamPerformanceGraph || placeholder}
-                alt={`${awayTeam} Performance`}
-                className="w-3/4 object-contain rounded-b-lg"
-              />
+              {awayTeamPerformanceGraph ? (
+                <img
+                  src={awayTeamPerformanceGraph}
+                  alt={`${awayTeam} Performance`}
+                  className="w-3/4 object-contain rounded-b-lg"
+                />
+              ) : (
+                <p>No available data</p>
+              )}
             </figure>
           </div>
         </div>
@@ -296,15 +297,15 @@ const PredictionPage = () => {
           <div className="card-body flex flex-col items-center">
             <h3 className="card-title text-center">{`${homeTeam} Top Performer Scatterplot`}</h3>
             <figure className="flex justify-center items-center p-2">
-            {homeTopPerformerGraph ? (
-              <img
-                src={homeTopPerformerGraph || placeholder}
-                alt={homeTopPerformer?.name}
-                className="w-3/4 object-contain rounded-b-lg"
-              />
-            ) : (
-              <p className="text-center text-gray-500">No available data on this player</p>
-            )}
+              {homeTopPerformerGraph ? (
+                <img
+                  src={homeTopPerformerGraph}
+                  alt={homeTopPerformer?.name}
+                  className="w-3/4 object-contain rounded-b-lg"
+                />
+              ) : (
+                <p>No available data</p>
+              )}
             </figure>
           </div>
         </div>
@@ -314,16 +315,15 @@ const PredictionPage = () => {
           <div className="card-body flex flex-col items-center">
             <h3 className="card-title text-center">{`${awayTeam} Top Performer Scatterplot`}</h3>
             <figure className="flex justify-center items-center p-2">
-            {awayTopPerformerGraph ? (
-              <img
-                src={awayTopPerformerGraph || placeholder}
-                alt={awayTopPerformer?.name}
-                className="w-3/4 object-contain rounded-b-lg"
-              />
-            ) : (
-              <p className="text-center text-gray-500">No available data on this player</p>
-            )}
-  
+              {awayTopPerformerGraph ? (
+                <img
+                  src={awayTopPerformerGraph}
+                  alt={awayTopPerformer?.name}
+                  className="w-3/4 object-contain rounded-b-lg"
+                />
+              ) : (
+                <p>No available data</p>
+              )}
             </figure>
           </div>
         </div>

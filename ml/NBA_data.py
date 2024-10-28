@@ -1,5 +1,5 @@
 from typing import List
-from nba_api.stats.endpoints import leaguegamelog
+from nba_api.stats.endpoints import leaguegamelog, PlayerGameLogs
 from nba_api.stats.static import players, teams
 from csv import DictWriter, DictReader
 import time
@@ -85,6 +85,15 @@ class NBA_data:
       teams_list = { t['id']: t for t in reader}
 
     return teams_list
+  
+  def get_players_dict(self):
+    players_path = os.path.join(self.config['data_dir'], 'players.csv')
+    players_list = {}
+    with open(players_path, 'r') as f:
+      reader = DictReader(f)
+      players_list = { t['id']: t for t in reader}
+
+    return players_list
 
   def download_teams(self):
     teams_path = os.path.join(self.config['data_dir'], 'teams.csv')
@@ -100,9 +109,25 @@ class NBA_data:
       writer.writeheader()
       writer.writerows(teams_list)
 
+  def download_player_games(self, start_year=1946, end_year=2023):
+    player_games_path = os.path.join(self.config['data_dir'], 'player_games.csv')
+    if os.path.exists(player_games_path):
+      logger.info(f'{player_games_path} already exists. Download skipped.')
+      return
+    logger.info(f'Downloading games from {start_year}-{end_year}...')
+    seasons_df = pd.concat(self._get_player_games(start_year, end_year))
+    seasons_df.to_csv(player_games_path, index=False)
 
-  def download_player_games(self):
-    pass
+  @retry(10)
+  def _get_player_games(self, start_year, end_year):
+    results = []
+    for year in trange(start_year, end_year):
+      season = '{}-{}'.format(year, str(year + 1)[-2:])
+      res = PlayerGameLogs(season_nullable=season)
+      res_frame = res.get_data_frames()[0]
+      results.append(res_frame)
+      time.sleep(1)
+    return results
 
 
 

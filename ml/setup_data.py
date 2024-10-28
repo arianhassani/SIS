@@ -37,7 +37,7 @@ def setup_data(start_year=1946, end_year=2024, is_train=True, **kwargs):
 			nba_data.download_games(start_year, end_year, is_train=False)
 		nba_data.download_players()
 		nba_data.download_teams()
-		nba_data.download_player_games()
+		nba_data.download_player_games(start_year, end_year)
 		return config
 
 
