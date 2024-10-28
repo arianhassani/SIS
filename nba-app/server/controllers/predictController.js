@@ -9,7 +9,8 @@ const getFinalScore = async (req, res) => {
   try {
     const probabilities = await predictMatchOutcome(homeTeam, awayTeam);
     const predictionPercentage = (probabilities.tft * 100).toFixed(0);
-    res.json(predictionPercentage); // Send the prediction result back to the frontend
+    const predictionAway = (100 - predictionPercentage).toString();
+    res.json({ homePrediction: predictionPercentage, awayPrediction: predictionAway}); // Send the prediction result back to the frontend
   } catch (err) {
     console.error('Error processing prediction:', err);
     res.status(500).json({ message: 'Error processing prediction' });

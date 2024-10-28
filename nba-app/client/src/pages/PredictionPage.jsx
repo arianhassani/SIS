@@ -14,6 +14,10 @@ const PredictionPage = () => {
   const [awayTopPerformerGraph, setAwayTopPerformerGraph] = useState('');
   const [homeTeamPerformanceGraph, setHomeTeamPerformanceGraph] = useState('');
   const [awayTeamPerformanceGraph, setAwayTeamPerformanceGraph] = useState('');
+  const [jsonHomeScore, setJsonHomeScore] = useState('');
+  const [jsonAwayScore, setJsonAwayScore] = useState('');
+
+  // Retrieve prediction scores
 
   // Retrieve the team names from session storage or use fallback values
   const homeTeam =
@@ -21,12 +25,15 @@ const PredictionPage = () => {
   const awayTeam =
     sessionStorage.getItem('awayTeam') || 'No home team selected';
 
+  const homeTeamID = sessionStorage.getItem('homeTeamNBAID');
+  const awayTeamID = sessionStorage.getItem('awayTeamNBAID');
   const { homeTopPerformer, awayTopPerformer } = location.state || {};
 
+  /*
   const predictedScores = {
-    left: 100, // Replace with actual predicted score
-    right: 98, // Replace with actual predicted score
-  };
+    left: jsonHomeScore || 0, // Use fallback value of 0
+    right: jsonAwayScore || 0, 
+  }; */
 
   const placeholder = 'https://placehold.co/400';
 
@@ -78,6 +85,25 @@ const PredictionPage = () => {
       }
 
       try {
+        // Retrieve predict scores
+      const predictResponse = await fetch(
+        'http://localhost:3000/api/predict/final-score',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            homeTeam: homeTeamID ,
+            awayTeam: awayTeamID
+          }),
+        },
+      );
+
+      const predictScore = await predictResponse.json();
+      setJsonHomeScore(predictScore.homePrediction);
+      setJsonAwayScore(predictScore.awayPrediction);
+
         const homeImage = await getTopPerformerPerformance(
           homeTeam,
           homeTopPerformer,
@@ -90,8 +116,9 @@ const PredictionPage = () => {
         const awayTeamGraph = await getTeamPerformance(awayTeam);
         setHomeTeamPerformanceGraph(homeTeamGraph);
         setAwayTeamPerformanceGraph(awayTeamGraph);
-        setHomeTopPerformerGraph(homeImage);
-        setAwayTopPerformerGraph(awayImage);
+        setHomeTopPerformerGraph(homeImage || null);
+        setAwayTopPerformerGraph(awayImage || null);
+        
       } catch {
         setError(true);
       } finally {
@@ -102,13 +129,16 @@ const PredictionPage = () => {
     loadImages();
   }, [homeTeam, awayTeam, homeTopPerformer, awayTopPerformer]);
 
+  
   if (loading) {
     return (
       <div className="flex justify-center items-center min-h-screen">
         <div className="skeleton w-full h-full"></div>
       </div>
     );
-  }
+  } 
+
+  /*
 
   if (error) {
     return (
@@ -116,7 +146,7 @@ const PredictionPage = () => {
         <span className="loading loading-spinner loading-lg text-error"></span>
       </div>
     );
-  }
+  } */
 
   return (
     <div className="min-h-screen bg-base-200 p-6">
@@ -136,20 +166,20 @@ const PredictionPage = () => {
           />
           <h2 className="text-2xl font-bold">{homeTeam}</h2>
           <div className="text-4xl font-bold md:hidden">
-            {predictedScores.left}
+            {jsonHomeScore}
           </div>{' '}
           {/* Show score here for small screens */}
         </div>
 
         {/* Scores */}
         <div className="hidden md:block text-4xl font-bold">
-          {predictedScores.left}
+          {jsonHomeScore}
         </div>
         <div className="text-center">
           <h2 className="text-2xl font-bold">VS</h2>
         </div>
         <div className="hidden md:block text-4xl font-bold">
-          {predictedScores.right}
+          {jsonAwayScore}
         </div>
 
         {/* Right Team */}
@@ -161,7 +191,7 @@ const PredictionPage = () => {
           />
           <h2 className="text-2xl font-bold">{awayTeam}</h2>
           <div className="text-4xl font-bold md:hidden">
-            {predictedScores.right}
+            {jsonAwayScore}
           </div>{' '}
           {/* Show score here for small screens */}
         </div>
@@ -266,11 +296,15 @@ const PredictionPage = () => {
           <div className="card-body flex flex-col items-center">
             <h3 className="card-title text-center">{`${homeTeam} Top Performer Scatterplot`}</h3>
             <figure className="flex justify-center items-center p-2">
+            {homeTopPerformerGraph ? (
               <img
                 src={homeTopPerformerGraph || placeholder}
                 alt={homeTopPerformer?.name}
                 className="w-3/4 object-contain rounded-b-lg"
               />
+            ) : (
+              <p className="text-center text-gray-500">No available data on this player</p>
+            )}
             </figure>
           </div>
         </div>
@@ -280,11 +314,16 @@ const PredictionPage = () => {
           <div className="card-body flex flex-col items-center">
             <h3 className="card-title text-center">{`${awayTeam} Top Performer Scatterplot`}</h3>
             <figure className="flex justify-center items-center p-2">
+            {awayTopPerformerGraph ? (
               <img
                 src={awayTopPerformerGraph || placeholder}
                 alt={awayTopPerformer?.name}
                 className="w-3/4 object-contain rounded-b-lg"
               />
+            ) : (
+              <p className="text-center text-gray-500">No available data on this player</p>
+            )}
+  
             </figure>
           </div>
         </div>
