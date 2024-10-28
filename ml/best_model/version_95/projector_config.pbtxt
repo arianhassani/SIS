@@ -1,0 +1,75 @@
+embeddings {
+  tensor_name: "PLAYER_1:01300"
+  metadata_path: "01300/PLAYER_1/metadata.tsv"
+  tensor_path: "01300/PLAYER_1/tensors.tsv"
+}
+embeddings {
+  tensor_name: "PLAYER_2:01300"
+  metadata_path: "01300/PLAYER_2/metadata.tsv"
+  tensor_path: "01300/PLAYER_2/tensors.tsv"
+}
+embeddings {
+  tensor_name: "PLAYER_3:01300"
+  metadata_path: "01300/PLAYER_3/metadata.tsv"
+  tensor_path: "01300/PLAYER_3/tensors.tsv"
+}
+embeddings {
+  tensor_name: "PLAYER_4:01300"
+  metadata_path: "01300/PLAYER_4/metadata.tsv"
+  tensor_path: "01300/PLAYER_4/tensors.tsv"
+}
+embeddings {
+  tensor_name: "PLAYER_5:01300"
+  metadata_path: "01300/PLAYER_5/metadata.tsv"
+  tensor_path: "01300/PLAYER_5/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_PLAYER_1:01300"
+  metadata_path: "01300/OPPONENT_PLAYER_1/metadata.tsv"
+  tensor_path: "01300/OPPONENT_PLAYER_1/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_PLAYER_2:01300"
+  metadata_path: "01300/OPPONENT_PLAYER_2/metadata.tsv"
+  tensor_path: "01300/OPPONENT_PLAYER_2/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_PLAYER_3:01300"
+  metadata_path: "01300/OPPONENT_PLAYER_3/metadata.tsv"
+  tensor_path: "01300/OPPONENT_PLAYER_3/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_PLAYER_4:01300"
+  metadata_path: "01300/OPPONENT_PLAYER_4/metadata.tsv"
+  tensor_path: "01300/OPPONENT_PLAYER_4/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_PLAYER_5:01300"
+  metadata_path: "01300/OPPONENT_PLAYER_5/metadata.tsv"
+  tensor_path: "01300/OPPONENT_PLAYER_5/tensors.tsv"
+}
+embeddings {
+  tensor_name: "TEAM_ID:01300"
+  metadata_path: "01300/TEAM_ID/metadata.tsv"
+  tensor_path: "01300/TEAM_ID/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_ID:01300"
+  metadata_path: "01300/OPPONENT_ID/metadata.tsv"
+  tensor_path: "01300/OPPONENT_ID/tensors.tsv"
+}
+embeddings {
+  tensor_name: "is_home:01300"
+  metadata_path: "01300/is_home/metadata.tsv"
+  tensor_path: "01300/is_home/tensors.tsv"
+}
+embeddings {
+  tensor_name: "day_of_week:01300"
+  metadata_path: "01300/day_of_week/metadata.tsv"
+  tensor_path: "01300/day_of_week/tensors.tsv"
+}
+embeddings {
+  tensor_name: "WL:01300"
+  metadata_path: "01300/WL/metadata.tsv"
+  tensor_path: "01300/WL/tensors.tsv"
+}

@@ -1,0 +1,25 @@
+embeddings {
+  tensor_name: "TEAM_ID:01000"
+  metadata_path: "01000/TEAM_ID/metadata.tsv"
+  tensor_path: "01000/TEAM_ID/tensors.tsv"
+}
+embeddings {
+  tensor_name: "OPPONENT_ID:01000"
+  metadata_path: "01000/OPPONENT_ID/metadata.tsv"
+  tensor_path: "01000/OPPONENT_ID/tensors.tsv"
+}
+embeddings {
+  tensor_name: "is_home:01000"
+  metadata_path: "01000/is_home/metadata.tsv"
+  tensor_path: "01000/is_home/tensors.tsv"
+}
+embeddings {
+  tensor_name: "day_of_week:01000"
+  metadata_path: "01000/day_of_week/metadata.tsv"
+  tensor_path: "01000/day_of_week/tensors.tsv"
+}
+embeddings {
+  tensor_name: "WL:01000"
+  metadata_path: "01000/WL/metadata.tsv"
+  tensor_path: "01000/WL/tensors.tsv"
+}
