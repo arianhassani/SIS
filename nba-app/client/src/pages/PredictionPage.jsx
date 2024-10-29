@@ -23,7 +23,7 @@ const PredictionPage = () => {
    const modelScores = {
     "Model 1": { homeScore: jsonHomeScore, awayScore: jsonAwayScore },
     "Model 2": { homeScore: jsonHomeScorePB, awayScore: jsonAwayScorePB},
-    "Model 3": { homeScore: 100, awayScore: 0 },
+    "Model 3": { homeScore: jsonHomeScoreRF, awayScore: jsonAwayScoreRF },
   };
 
   // Retrieve prediction scores
@@ -124,6 +124,8 @@ const PredictionPage = () => {
       setJsonAwayScorePB(predictScore.awayPrediction);
       setJsonHomeScore(predictScore.TBhomePrediction);
       setJsonAwayScore(predictScore.TBawayPrediction);
+      setJsonHomeScoreRF(predictScore.homePredScore);
+      setJsonAwayScoreRF(predictScore.awayPredScore);
 
       
 
