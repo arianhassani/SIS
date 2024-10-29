@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect, useCallback } from 'react';
+import { json, useLocation, useNavigate } from 'react-router-dom';
 import teamLogos from '../components/teamLogos';
 import TooltipIcon from '../components/TooltipIcon';
 import placeholderImg from '../assets/placeholder.png';
@@ -14,7 +14,9 @@ const PredictionPage = () => {
   const [homeTeamPerformanceGraph, setHomeTeamPerformanceGraph] = useState('');
   const [awayTeamPerformanceGraph, setAwayTeamPerformanceGraph] = useState('');
   const [loadingScores, setLoadingScores] = useState(true);
-  const [predictedScores, setPredictedScores] = useState({ left: 0, right: 0 });
+  const [loadingHomeTopPerformer, setloadingHomeTopPerformer] = useState(true);
+  const [loadingAwayTopPerformer, setloadingAwayTopPerformer] = useState(true);
+
   const [jsonHomeScore, setJsonHomeScore] = useState('');
   const [jsonAwayScore, setJsonAwayScore] = useState('');
   const [jsonHomeScorePB, setJsonHomeScorePB] = useState('');
@@ -52,7 +54,7 @@ const PredictionPage = () => {
 
   const { homeTopPerformer, awayTopPerformer } = location.state || {};
 
-  const placeholder = 'https://placehold.co/400?text=No+Data+Available';
+  const placeholder = placeholderImg;
 
   // Function to handle finish button click
   const handleFinish = () => {
@@ -91,43 +93,53 @@ const PredictionPage = () => {
     }
   };
 
+  const fetchPredictionScores = useCallback(async () => {
+    try {
+      // Retrieve predict scores
+      const predictResponse = await fetch(
+        'http://localhost:3000/api/predict/final-score',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            homeTeam: homeTeamID,
+            homeTeamIDs: homeTeamNBAIds,
+            awayTeam: awayTeamID,
+            awayTeamIDs: awayTeamNBAIds,
+          }),
+        },
+      );
+
+      const predictScore = await predictResponse.json();
+      setJsonHomeScorePB(predictScore.homePrediction);
+      setJsonAwayScorePB(predictScore.awayPrediction);
+      setJsonHomeScore(predictScore.TBhomePrediction);
+      setJsonAwayScore(predictScore.TBawayPrediction);
+      setJsonHomeScoreRF(predictScore.homePredScore);
+      setJsonAwayScoreRF(predictScore.awayPredScore);
+
+      setLoadingScores(false);
+    } catch (error) {
+      console.error('Error fetching prediction scores:', error);
+      setLoadingScores(true);
+    }
+  }, [homeTeamID, homeTeamNBAIds, awayTeamID, awayTeamNBAIds]);
+
   useEffect(() => {
-    const loadImages = async () => {
+    const loadContent = async () => {
       if (!homeTopPerformer) {
-        setloadingHomeTopPerformer(true);
+        setloadingHomeTopPerformer(false);
         return;
       }
 
       if (!awayTopPerformer) {
-        setloadingAwayTopPerformer(true);
+        setloadingAwayTopPerformer(false);
         return;
       }
-
       try {
-        // Retrieve predict scores
-        const predictResponse = await fetch(
-          'http://localhost:3000/api/predict/final-score',
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              homeTeam: homeTeamID,
-              homeTeamIDs: [homeTeamNBAIds],
-              awayTeam: awayTeamID,
-              awayTeamIDs: [awayTeamNBAIds],
-            }),
-          },
-        );
-
-        const predictScore = await predictResponse.json();
-        setJsonHomeScorePB(predictScore.homePrediction);
-        setJsonAwayScorePB(predictScore.awayPrediction);
-        setJsonHomeScore(predictScore.TBhomePrediction);
-        setJsonAwayScore(predictScore.TBawayPrediction);
-        setJsonHomeScoreRF(predictScore.homePredScore);
-        setJsonAwayScoreRF(predictScore.awayPredScore);
+        await fetchPredictionScores();
 
         const homeImage = await getTopPerformerPerformance(
           homeTeam,
@@ -147,12 +159,18 @@ const PredictionPage = () => {
         const awayTeamGraph = await getTeamPerformance(awayTeam);
         setAwayTeamPerformanceGraph(awayTeamGraph);
       } catch (error) {
-        console.error('Error loading images:', error);
+        console.error('Error loading content:', error);
       }
     };
 
-    loadImages();
-  }, [homeTeam, awayTeam, homeTopPerformer, awayTopPerformer]);
+    loadContent();
+  }, [
+    homeTeam,
+    awayTeam,
+    homeTopPerformer,
+    awayTopPerformer,
+    fetchPredictionScores,
+  ]);
 
   // Get scores based on selected model, default to empty if no model is selected
   const { homeScore, awayScore } = modelScores[selectedModel] || {
@@ -181,9 +199,8 @@ const PredictionPage = () => {
             {loadingScores ? (
               <div className="skeleton w-16 h-8"></div>
             ) : (
-              predictedScores.left
+              homeScore
             )}
-            {homeScore}
           </div>{' '}
           {/* Show score here for small screens */}
         </div>
@@ -193,9 +210,8 @@ const PredictionPage = () => {
           {loadingScores ? (
             <div className="skeleton w-16 h-8"></div>
           ) : (
-            predictedScores.left
+            homeScore
           )}
-          {homeScore}
         </div>
         <div className="text-center">
           <h2 className="text-2xl font-bold">VS</h2>
@@ -204,9 +220,8 @@ const PredictionPage = () => {
           {loadingScores ? (
             <div className="skeleton w-16 h-8"></div>
           ) : (
-            predictedScores.right
+            awayScore
           )}
-          {awayScore}
         </div>
 
         {/* Right Team */}
@@ -221,9 +236,8 @@ const PredictionPage = () => {
             {loadingScores ? (
               <div className="skeleton w-16 h-8"></div>
             ) : (
-              predictedScores.right
+              awayScore
             )}
-            {awayScore}
           </div>{' '}
           {/* Show score here for small screens */}
         </div>
@@ -262,44 +276,56 @@ const PredictionPage = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row w-full space-y-4 lg:space-y-0 lg:space-x-4 justify-between">
-          {/* Top Performer 1 */}
+          {/* Top Performer 1 - Home Team */}
           <div className="flex-grow grid place-items-center p-4">
-            <h3 className="text-2xl font-semibold mb-5">{`${homeTeam}`}</h3>
-            <div className="card bg-base-100 w-96 shadow-xl">
-              <figure className="px-10 pt-10">
-                <img
-                  src={placeholder}
-                  alt={homeTopPerformer?.name}
-                  className="w-32 h-32 mx-auto mb-4 rounded-full"
-                />
-              </figure>
-              <div className="card-body items-center text-center">
-                <h2 className="card-title">{homeTopPerformer?.name}</h2>
-                <p>APG: {homeTopPerformer?.stats.assistsPerGame}</p>
-                <p>PPG: {homeTopPerformer?.stats.pointsPerGame}</p>
-                <p>RPG: {homeTopPerformer?.stats.reboundsPerGame}</p>
-              </div>
-            </div>
+            {loadingHomeTopPerformer ? (
+              <div className="skeleton w-full h-full"></div>
+            ) : (
+              <>
+                <h3 className="text-2xl font-semibold mb-5">{`${homeTeam}`}</h3>
+                <div className="card bg-base-100 w-96 shadow-xl">
+                  <figure className="px-10 pt-10">
+                    <img
+                      src={placeholder}
+                      alt={homeTopPerformer?.name}
+                      className="w-32 h-32 mx-auto mb-4 rounded-full"
+                    />
+                  </figure>
+                  <div className="card-body items-center text-center">
+                    <h2 className="card-title">{homeTopPerformer?.name}</h2>
+                    <p>APG: {homeTopPerformer?.stats.assistsPerGame}</p>
+                    <p>PPG: {homeTopPerformer?.stats.pointsPerGame}</p>
+                    <p>RPG: {homeTopPerformer?.stats.reboundsPerGame}</p>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
 
-          {/* Top Performer 2 */}
+          {/* Top Performer 2 - Away Team*/}
           <div className="flex-grow grid place-items-center p-4">
-            <h3 className="text-2xl font-semibold mb-5">{`${awayTeam}`}</h3>
-            <div className="card bg-base-100 w-96 shadow-xl">
-              <figure className="px-10 pt-10">
-                <img
-                  src={placeholder}
-                  alt={awayTopPerformer?.name}
-                  className="w-32 h-32 mx-auto mb-4 rounded-full"
-                />
-              </figure>
-              <div className="card-body items-center text-center">
-                <h2 className="card-title">{awayTopPerformer?.name}</h2>
-                <p>APG: {awayTopPerformer?.stats.assistsPerGame}</p>
-                <p>PPG: {awayTopPerformer?.stats.pointsPerGame}</p>
-                <p>RPG: {awayTopPerformer?.stats.reboundsPerGame}</p>
-              </div>
-            </div>
+            {loadingAwayTopPerformer ? (
+              <div className="skeleton w-full h-full"></div>
+            ) : (
+              <>
+                <h3 className="text-2xl font-semibold mb-5">{`${awayTeam}`}</h3>
+                <div className="card bg-base-100 w-96 shadow-xl">
+                  <figure className="px-10 pt-10">
+                    <img
+                      src={placeholder}
+                      alt={awayTopPerformer?.name}
+                      className="w-32 h-32 mx-auto mb-4 rounded-full"
+                    />
+                  </figure>
+                  <div className="card-body items-center text-center">
+                    <h2 className="card-title">{awayTopPerformer?.name}</h2>
+                    <p>APG: {awayTopPerformer?.stats.assistsPerGame}</p>
+                    <p>PPG: {awayTopPerformer?.stats.pointsPerGame}</p>
+                    <p>RPG: {awayTopPerformer?.stats.reboundsPerGame}</p>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
