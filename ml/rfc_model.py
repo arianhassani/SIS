@@ -165,14 +165,14 @@ class RandomClassifierPrediction:
 
         # if predict result = 1, then home team wins
         home_team_win_result = False
-        predict_prob = predict_proba[0][0]
+        
 
         # if predict_result[0] == 1:
         #     home_team_win_result = True
         #     predict_prob = predict_proba[0][1]
         
         #probability of home team wins
-        return predict_prob[1]
+        return predict_proba[0][1]
     
 
     #lazy way of doing it haha
