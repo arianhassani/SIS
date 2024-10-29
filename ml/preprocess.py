@@ -51,7 +51,7 @@ def add_opponent_player_ids(games_df: pd.DataFrame):
     
 def add_player_ids(games_df: pd.DataFrame, player_games_df: pd.DataFrame) -> pd.DataFrame:
 
-    player_games_df.info()
+    # player_games_df.info()
 
     player_games_df['TEAM_ID'] = player_games_df['TEAM_ID'].astype(str).astype('category')
     player_games_df['GAME_ID'] = player_games_df['GAME_ID'].astype(str).astype('category')
@@ -86,10 +86,10 @@ def add_player_ids(games_df: pd.DataFrame, player_games_df: pd.DataFrame) -> pd.
     # games_df.groupby('GAME_ID').apply(assign_opponent_players).reset_index(drop=True)
 
     games_df = add_opponent_player_ids(games_df)
-    games_df.info()
-    print(games_df[['GAME_ID', 'TEAM_ID', 'TEAM_NAME', \
-                    'PLAYER_1', 'PLAYER_2', 'PLAYER_3', 'PLAYER_4', 'PLAYER_5',\
-                    'OPPONENT_PLAYER_1', 'OPPONENT_PLAYER_2', 'OPPONENT_PLAYER_3', 'OPPONENT_PLAYER_4', 'OPPONENT_PLAYER_5']].tail(5))
+    # games_df.info()
+    # print(games_df[['GAME_ID', 'TEAM_ID', 'TEAM_NAME', \
+    #                 'PLAYER_1', 'PLAYER_2', 'PLAYER_3', 'PLAYER_4', 'PLAYER_5',\
+    #                 'OPPONENT_PLAYER_1', 'OPPONENT_PLAYER_2', 'OPPONENT_PLAYER_3', 'OPPONENT_PLAYER_4', 'OPPONENT_PLAYER_5']].tail(5))
     return games_df
 
 def preprocess(start: int=None, end: int=None, win_len=5, **kwargs) -> pd.DataFrame:
@@ -196,7 +196,7 @@ def preprocess(start: int=None, end: int=None, win_len=5, **kwargs) -> pd.DataFr
     
     # games_df[columns_to_convert] = games_df[columns_to_convert].astype(float)
     # games_df['PLUS_MINUS'].sample(10)
-    games_df.info()
+    # games_df.info()
     # print(games_df.groupby(['TEAM_ID', 'SEASON_ID']).count())
     # print(games_df.groupby(['TEAM_ID', 'SEASON_ID']).size().min())
     return games_df

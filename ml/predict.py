@@ -88,11 +88,8 @@ class NBA_Pred_Model:
     away = input["away"]
     home_team = home['teamId']
     away_team = away['teamId']
-    # home_players = []
-    # away_players = []
-    # if 'playerIds' in home:
+
     home_players = [str(p) for p in home['playerIds']]
-    # if 'playerIds' in away:
     away_players = [str(p) for p in away['playerIds']]
 
     today = date.today()
@@ -121,6 +118,7 @@ class NBA_Pred_Model:
     # prediction_data.info()
     # quantiles = self.model.predict(prediction_data, mode="quantiles")
     y_pred: torch.Tensor = self.model.predict(prediction_data)
+    
     y_pred = y_pred.squeeze(dim=0)[-1].item()
 
     y_pred = 0.2 + y_pred * 0.6 # smooth odds
