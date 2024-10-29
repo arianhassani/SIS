@@ -14,8 +14,8 @@ const InjuryPage = () => {
   const [showModal, setShowModal] = useState(false);
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [selectedPlayerId, setSelectedPlayerId] = useState(null);
-  const [editMode, setEditMode] = useState(false); // State for edit mode
-  const [dropdownExpanded, setDropdownExpanded] = useState({}); // Track dropdown visibility for each player
+  const [editMode, setEditMode] = useState(false);
+  const [dropdownExpanded, setDropdownExpanded] = useState({});
   const [homePlayers, setHomePlayers] = useState(() => {
     const storedHomePlayers = sessionStorage.getItem(`${homeTeam}HomePlayers`);
     return storedHomePlayers ? JSON.parse(storedHomePlayers) : [];
@@ -31,30 +31,30 @@ const InjuryPage = () => {
   const [availablePlayers, setAvailablePlayers] = useState([]);
   const [playerImages, setPlayerImages] = useState({});
 
-  const fetchUpdatedHomePlayers = useCallback(async (homeTeam) => {
+  const fetchHomePlayers = useCallback(async (teamName) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/teams/${homeTeam}/updated-players`,
+        `http://localhost:3000/api/teams/${teamName}/players`,
       );
       const data = await response.json();
-      sessionStorage.setItem(`${homeTeam}HomePlayers`, JSON.stringify(data));
-      return data;
+      sessionStorage.setItem(`${teamName}HomePlayers`, JSON.stringify(data.players));
+      return data.players;
     } catch (error) {
-      console.error('Error fetching updated home players:', error);
+      console.error('Error fetching home players:', error);
       return [];
     }
   }, []);
 
-  const fetchUpdatedAwayPlayers = useCallback(async (awayTeam) => {
+  const fetchAwayPlayers = useCallback(async (teamName) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/teams/${awayTeam}/updated-players`,
+        `http://localhost:3000/api/teams/${teamName}/players`,
       );
       const data = await response.json();
-      sessionStorage.setItem(`${awayTeam}AwayPlayers`, JSON.stringify(data));
-      return data;
+      sessionStorage.setItem(`${teamName}AwayPlayers`, JSON.stringify(data.players));
+      return data.players;
     } catch (error) {
-      console.error('Error fetching updated away players:', error);
+      console.error('Error fetching away players:', error);
       return [];
     }
   }, []);
@@ -63,27 +63,15 @@ const InjuryPage = () => {
     async (homeTeam, awayTeam) => {
       setLoading(true);
 
-      if (!sessionStorage.getItem(`${homeTeam}HomePlayers`)) {
-        const homePlayers = await fetchUpdatedHomePlayers(homeTeam);
-        setHomePlayers(homePlayers);
-      } else {
-        setHomePlayers(
-          JSON.parse(sessionStorage.getItem(`${homeTeam}HomePlayers`)),
-        );
-      }
+      const homePlayers = await fetchHomePlayers(homeTeam);
+      setHomePlayers(homePlayers);
 
-      if (!sessionStorage.getItem(`${awayTeam}AwayPlayers`)) {
-        const awayPlayers = await fetchUpdatedAwayPlayers(awayTeam);
-        setAwayPlayers(awayPlayers);
-      } else {
-        setAwayPlayers(
-          JSON.parse(sessionStorage.getItem(`${awayTeam}AwayPlayers`)),
-        );
-      }
+      const awayPlayers = await fetchAwayPlayers(awayTeam);
+      setAwayPlayers(awayPlayers);
 
       setLoading(false);
     },
-    [fetchUpdatedHomePlayers, fetchUpdatedAwayPlayers],
+    [fetchHomePlayers, fetchAwayPlayers],
   );
 
   useEffect(() => {
@@ -105,7 +93,6 @@ const InjuryPage = () => {
 
     let filteredPlayers;
     if (editMode && selectedPlayerId) {
-      // Include all players
       filteredPlayers = players;
     } else {
       filteredPlayers = players.filter((player) => !player.isInjured);
@@ -119,50 +106,31 @@ const InjuryPage = () => {
     setShowConfirmation(true);
   };
 
-  const handleResolveInjury = async () => {
+  const handleResolveInjury = () => {
     if (!selectedPlayerId) return;
 
-    try {
-      await fetch(`http://localhost:3000/api/players/${selectedPlayerId}/resolve`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-
-      const homePlayers =
-        JSON.parse(sessionStorage.getItem(`${homeTeam}HomePlayers`)) || [];
-      const awayPlayers =
-        JSON.parse(sessionStorage.getItem(`${awayTeam}AwayPlayers`)) || [];
-
-      const updatePlayerInjuryStatus = (players) => {
-        return players.map((player) => {
-          if (player._id === selectedPlayerId) {
-            return { ...player, isInjured: false, injuryDetails: '' };
-          }
-          return player;
-        });
-      };
-
-      const updatedHomePlayers = updatePlayerInjuryStatus(homePlayers);
-      const updatedAwayPlayers = updatePlayerInjuryStatus(awayPlayers);
-
-      sessionStorage.setItem(
-        `${homeTeam}HomePlayers`,
-        JSON.stringify(updatedHomePlayers),
-      );
-      sessionStorage.setItem(
-        `${awayTeam}AwayPlayers`,
-        JSON.stringify(updatedAwayPlayers),
-      );
-
-      setHomePlayers(updatedHomePlayers);
-      setAwayPlayers(updatedAwayPlayers);
-      setShowConfirmation(false);
-      setSelectedPlayerId(null);
-    } catch (error) {
-      console.error('Error resolving player injury status:', error);
+    let players, setPlayers, teamKey;
+    if (homePlayers.find((p) => p._id === selectedPlayerId)) {
+      players = homePlayers;
+      setPlayers = setHomePlayers;
+      teamKey = `${homeTeam}HomePlayers`;
+    } else {
+      players = awayPlayers;
+      setPlayers = setAwayPlayers;
+      teamKey = `${awayTeam}AwayPlayers`;
     }
+
+    const updatedPlayers = players.map((player) => {
+      if (player._id === selectedPlayerId) {
+        return { ...player, isInjured: false, injuryDetails: '' };
+      }
+      return player;
+    });
+
+    setPlayers(updatedPlayers);
+    sessionStorage.setItem(teamKey, JSON.stringify(updatedPlayers));
+    setShowConfirmation(false);
+    setSelectedPlayerId(null);
   };
 
   const toggleDropdown = (playerId) => {
@@ -192,96 +160,66 @@ const InjuryPage = () => {
     }
   };
 
-  const handleSaveChanges = async () => {
+  const handleSaveChanges = () => {
     if (!selectedPlayerId) return;
 
-    try {
-      await fetch(`http://localhost:3000/api/players/${selectedPlayerId}`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          injuryDetails: description,
-        }),
-      });
-
-      const updatePlayerInjuryDetails = (players) => {
-        return players.map((player) => {
-          if (player._id === selectedPlayerId) {
-            return { ...player, injuryDetails: description };
-          }
-          return player;
-        });
-      };
-
-      if (teamType === 'home') {
-        const updatedHomePlayers = updatePlayerInjuryDetails(homePlayers);
-        setHomePlayers(updatedHomePlayers);
-        sessionStorage.setItem(
-          `${homeTeam}HomePlayers`,
-          JSON.stringify(updatedHomePlayers),
-        );
-      } else if (teamType === 'away') {
-        const updatedAwayPlayers = updatePlayerInjuryDetails(awayPlayers);
-        setAwayPlayers(updatedAwayPlayers);
-        sessionStorage.setItem(
-          `${awayTeam}AwayPlayers`,
-          JSON.stringify(updatedAwayPlayers),
-        );
-      }
-
-      setShowModal(false);
-      setEditMode(false);
-      setSelectedPlayerId(null);
-    } catch (error) {
-      console.error('Error updating player injury details:', error);
+    let players, setPlayers, teamKey;
+    if (teamType === 'home') {
+      players = homePlayers;
+      setPlayers = setHomePlayers;
+      teamKey = `${homeTeam}HomePlayers`;
+    } else if (teamType === 'away') {
+      players = awayPlayers;
+      setPlayers = setAwayPlayers;
+      teamKey = `${awayTeam}AwayPlayers`;
+    } else {
+      return;
     }
+
+    const updatedPlayers = players.map((player) => {
+      if (player._id === selectedPlayerId) {
+        return { ...player, injuryDetails: description };
+      }
+      return player;
+    });
+
+    setPlayers(updatedPlayers);
+    sessionStorage.setItem(teamKey, JSON.stringify(updatedPlayers));
+    setShowModal(false);
+    setEditMode(false);
+    setSelectedPlayerId(null);
   };
 
-  // Implement the handleAddInjury function
-  const handleAddInjury = async () => {
-    try {
-      let players, setPlayers, teamKey;
-      if (teamType === 'home') {
-        players = homePlayers;
-        setPlayers = setHomePlayers;
-        teamKey = `${homeTeam}HomePlayers`;
-      } else if (teamType === 'away') {
-        players = awayPlayers;
-        setPlayers = setAwayPlayers;
-        teamKey = `${awayTeam}AwayPlayers`;
-      } else {
-        return;
-      }
-
-      const selectedPlayer = players.find((p) => p.name === player);
-      if (!selectedPlayer) return;
-
-      // Update player injury status in backend
-      await fetch(`http://localhost:3000/api/players/${selectedPlayer._id}/injure`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          injuryDetails: description,
-        }),
-      });
-
-      // Update local state
-      const updatedPlayers = players.map((p) => {
-        if (p._id === selectedPlayer._id) {
-          return { ...p, isInjured: true, injuryDetails: description };
-        }
-        return p;
-      });
-
-      setPlayers(updatedPlayers);
-      sessionStorage.setItem(teamKey, JSON.stringify(updatedPlayers));
-    } catch (error) {
-      console.error('Error adding injury:', error);
+  const handleAddInjury = () => {
+    let players, setPlayers, teamKey;
+    if (teamType === 'home') {
+      players = homePlayers;
+      setPlayers = setHomePlayers;
+      teamKey = `${homeTeam}HomePlayers`;
+    } else if (teamType === 'away') {
+      players = awayPlayers;
+      setPlayers = setAwayPlayers;
+      teamKey = `${awayTeam}AwayPlayers`;
+    } else {
+      return;
     }
+
+    const selectedPlayer = players.find((p) => p.name === player);
+    if (!selectedPlayer) return;
+
+    const updatedPlayers = players.map((p) => {
+      if (p._id === selectedPlayer._id) {
+        return { ...p, isInjured: true, injuryDetails: description };
+      }
+      return p;
+    });
+
+    setPlayers(updatedPlayers);
+    sessionStorage.setItem(teamKey, JSON.stringify(updatedPlayers));
+    setShowModal(false);
+    setPlayer('');
+    setDescription('');
+    setTeamType('');
   };
 
   const placeholderImage = 'https://placehold.co/400?text=No+Data+Available';
@@ -310,6 +248,7 @@ const InjuryPage = () => {
       >
         <span className="text-white text-lg">Injury Reports</span>
         <button
+          type="button"
           className="bg-gray-800 text-white py-1 px-3 rounded"
           onClick={() => {
             setTeamType('');
@@ -354,6 +293,7 @@ const InjuryPage = () => {
                       {injury.injuryDetails}
                     </p>
                     <button
+                      type="button"
                       className="bg-gray-700 text-white px-2 py-1 rounded border border-white flex-shrink-0"
                       onClick={() => toggleDropdown(injury._id)}
                     >
@@ -366,12 +306,14 @@ const InjuryPage = () => {
                       style={{ width: '100%' }}
                     >
                       <button
+                        type="button"
                         className="bg-gray-700 text-white py-1 px-3 rounded w-full mb-2 border border-white"
                         onClick={() => confirmResolveInjury(injury._id)}
                       >
                         Mark as Resolved
                       </button>
                       <button
+                        type="button"
                         className="bg-gray-700 text-white py-1 px-3 rounded w-full border border-white"
                         onClick={() => handleEditInjury(injury._id)}
                       >
@@ -419,6 +361,7 @@ const InjuryPage = () => {
                       {injury.injuryDetails}
                     </p>
                     <button
+                      type="button"
                       className="bg-gray-700 text-white px-2 py-1 rounded border border-white flex-shrink-0"
                       onClick={() => toggleDropdown(injury._id)}
                     >
@@ -431,12 +374,14 @@ const InjuryPage = () => {
                       style={{ width: '100%' }}
                     >
                       <button
+                        type="button"
                         className="bg-gray-700 text-white py-1 px-3 rounded w-full mb-2 border border-white"
                         onClick={() => confirmResolveInjury(injury._id)}
                       >
                         Mark as Resolved
                       </button>
                       <button
+                        type="button"
                         className="bg-gray-700 text-white py-1 px-3 rounded w-full border border-white"
                         onClick={() => handleEditInjury(injury._id)}
                       >
@@ -456,15 +401,19 @@ const InjuryPage = () => {
       {showConfirmation && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-6 rounded-lg shadow-lg w-1/3 text-center">
-            <h2 className="text-xl mb-4">Are you sure you want to resolve this injury?</h2>
+            <h2 className="text-xl mb-4">
+              Are you sure you want to resolve this injury?
+            </h2>
             <div className="flex justify-center space-x-4 mt-4">
               <button
+                type="button"
                 className="btn border-white text-white"
                 onClick={handleResolveInjury}
               >
                 Yes
               </button>
               <button
+                type="button"
                 className="btn border-white text-white"
                 onClick={() => setShowConfirmation(false)}
               >
@@ -479,7 +428,9 @@ const InjuryPage = () => {
       {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-6 rounded-lg shadow-lg w-1/2">
-            <h2 className="text-xl mb-4">{editMode ? 'Edit Injury' : 'Add Injury'}</h2>
+            <h2 className="text-xl mb-4">
+              {editMode ? 'Edit Injury' : 'Add Injury'}
+            </h2>
             <div className="mb-4">
               <select
                 value={teamType}
@@ -519,20 +470,21 @@ const InjuryPage = () => {
             </div>
             <div className="flex justify-end">
               <button
+                type="button"
                 className="btn border-white text-white mr-2"
-                onClick={async () => {
+                onClick={() => {
                   if (editMode) {
-                    await handleSaveChanges();
+                    handleSaveChanges();
                   } else {
-                    await handleAddInjury();
+                    handleAddInjury();
                   }
-                  setShowModal(false);
                 }}
                 disabled={!teamType || !player || !description}
               >
                 {editMode ? 'Save Changes' : 'Add'}
               </button>
               <button
+                type="button"
                 className="btn border-white text-white"
                 onClick={() => {
                   setShowModal(false);
@@ -548,10 +500,7 @@ const InjuryPage = () => {
       )}
 
       <div className="flex justify-center py-10 mt-8 space-x-5">
-        <button
-          className="btn border-white text-white"
-          onClick={() => navigate('/')}
-        >
+        <button className="btn border-white text-white" onClick={() => navigate('/')}>
           Back
         </button>
         <button

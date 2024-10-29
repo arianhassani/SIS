@@ -13,7 +13,6 @@ const positions = [
 
 const positionAcronyms = ['PG', 'SG', 'SF', 'PF', 'C'];
 
-// Map your positions to acceptable player position codes
 const positionToPlayerPositionMap = {
   'Point Guard': ['G', 'G-F'],
   'Shooting Guard': ['G', 'G-F'],
@@ -25,14 +24,11 @@ const positionToPlayerPositionMap = {
 const MatchUpSelectionPage = () => {
   const navigate = useNavigate();
 
+  const homeTeam = sessionStorage.getItem('homeTeam') || 'No home team selected';
+  const awayTeam = sessionStorage.getItem('awayTeam') || 'No away team selected';
+
   const [homePlayers, setHomePlayers] = useState([]);
   const [awayPlayers, setAwayPlayers] = useState([]);
-
-  // Retrieve the team names from session storage or use fallback values
-  const homeTeam =
-    sessionStorage.getItem('homeTeam') || 'No home team selected';
-  const awayTeam =
-    sessionStorage.getItem('awayTeam') || 'No away team selected';
 
   const getMatchupFromSessionStorage = (team) => {
     const savedMatchup = sessionStorage.getItem(`${team}TeamMatchup`);
@@ -51,25 +47,11 @@ const MatchUpSelectionPage = () => {
   const [allowInjuredPlayers, setAllowInjuredPlayers] = useState(false);
 
   useEffect(() => {
-    const fetchPlayers = async (teamName, setPlayers) => {
-      try {
-        const response = await fetch(
-          `http://localhost:3000/api/teams/${teamName}/players`,
-        );
-        const data = await response.json();
-        setPlayers(data.players || []);
-      } catch (error) {
-        console.error('Error fetching players:', error);
-      }
-    };
+    const storedHomePlayers = sessionStorage.getItem(`${homeTeam}HomePlayers`);
+    const storedAwayPlayers = sessionStorage.getItem(`${awayTeam}AwayPlayers`);
 
-    if (homeTeam !== 'No home team selected') {
-      fetchPlayers(homeTeam, setHomePlayers);
-    }
-
-    if (awayTeam !== 'No away team selected') {
-      fetchPlayers(awayTeam, setAwayPlayers);
-    }
+    setHomePlayers(storedHomePlayers ? JSON.parse(storedHomePlayers) : []);
+    setAwayPlayers(storedAwayPlayers ? JSON.parse(storedAwayPlayers) : []);
   }, [homeTeam, awayTeam]);
 
   const handleAddPlayer = (team, positionIndex, player) => {
@@ -253,9 +235,7 @@ const MatchUpSelectionPage = () => {
             <div className="w-1/3 p-4">
               {homeTeamMatchup[index].length === 0 ? (
                 <AddPlayerForm
-                  onAddPlayer={(player) =>
-                    handleAddPlayer('home', index, player)
-                  }
+                  onAddPlayer={(player) => handleAddPlayer('home', index, player)}
                   availablePlayers={getAvailablePlayers(
                     homeTeamMatchup,
                     homePlayers,
@@ -273,18 +253,14 @@ const MatchUpSelectionPage = () => {
 
             {/* Position Acronym */}
             <div className="w-1/3 p-4 flex items-center justify-center">
-              <h3 className="text-xl font-semibold">
-                {positionAcronyms[index]}
-              </h3>
+              <h3 className="text-xl font-semibold">{positionAcronyms[index]}</h3>
             </div>
 
             {/* Away Team Player Selection */}
             <div className="w-1/3 p-4">
               {awayTeamMatchup[index].length === 0 ? (
                 <AddPlayerForm
-                  onAddPlayer={(player) =>
-                    handleAddPlayer('away', index, player)
-                  }
+                  onAddPlayer={(player) => handleAddPlayer('away', index, player)}
                   availablePlayers={getAvailablePlayers(
                     awayTeamMatchup,
                     awayPlayers,
@@ -308,10 +284,7 @@ const MatchUpSelectionPage = () => {
         <button className="btn border-white text-white" onClick={handleBack}>
           Back
         </button>
-        <button
-          className="btn border-white text-white"
-          onClick={handleNextClick}
-        >
+        <button className="btn border-white text-white" onClick={handleNextClick}>
           Next
         </button>
       </div>
