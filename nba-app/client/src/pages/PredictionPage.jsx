@@ -8,11 +8,23 @@ const PredictionPage = () => {
   const navigate = useNavigate();
 
   // eslint-disable-next-line no-unused-vars
-  const [selectedModel, setSelectedModel] = useState('SELECT ML MODEL');
+  const [selectedModel, setSelectedModel] = useState('');
   const [homeTopPerformerGraph, setHomeTopPerformerGraph] = useState('');
   const [awayTopPerformerGraph, setAwayTopPerformerGraph] = useState('');
   const [homeTeamPerformanceGraph, setHomeTeamPerformanceGraph] = useState('');
   const [awayTeamPerformanceGraph, setAwayTeamPerformanceGraph] = useState('');
+  const [jsonHomeScore, setJsonHomeScore] = useState('');
+  const [jsonAwayScore, setJsonAwayScore] = useState('');
+  const [jsonHomeScorePB, setJsonHomeScorePB] = useState('');
+  const [jsonAwayScorePB, setJsonAwayScorePB] = useState('');
+   // Example scores for each model
+   const modelScores = {
+    "Model 1": { homeScore: jsonHomeScore, awayScore: jsonAwayScore },
+    "Model 2": { homeScore: jsonHomeScorePB, awayScore: jsonAwayScorePB},
+    "Model 3": { homeScore: 100, awayScore: 0 },
+  };
+
+  // Retrieve prediction scores
 
   // Retrieve the team names from session storage or use fallback values
   const homeTeam =
@@ -20,12 +32,19 @@ const PredictionPage = () => {
   const awayTeam =
     sessionStorage.getItem('awayTeam') || 'No home team selected';
 
-  const { homeTopPerformer, awayTopPerformer } = location.state || {};
+  const homeTeamID = sessionStorage.getItem('homeTeamNBAID');
+  const awayTeamID = sessionStorage.getItem('awayTeamNBAID');
+  // Parse the JSON string from session storage
+  const homeTeamLineup = JSON.parse(sessionStorage.getItem('homeTeamMatchup'));
+  const homeTeamNBAIds = homeTeamLineup.map(playerArray => playerArray[0].nbaID);
+  console.log(homeTeamNBAIds);
+  const awayTeamLineup = JSON.parse(sessionStorage.getItem('awayTeamMatchup'));
+  const awayTeamNBAIds = awayTeamLineup.map(playerArray => playerArray[0].nbaID);
+  console.log(awayTeamNBAIds);
 
-  const predictedScores = {
-    left: 100, // Replace with actual predicted score
-    right: 98, // Replace with actual predicted score
-  };
+  const { homeTopPerformer, awayTopPerformer } = location.state || {};
+ 
+
 
   const placeholder = 'https://placehold.co/400?text=No+Data+Available';
 
@@ -79,6 +98,33 @@ const PredictionPage = () => {
       }
 
       try {
+        // Retrieve predict scores
+      const predictResponse = await fetch(
+        'http://localhost:3000/api/predict/final-score',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            homeTeam: homeTeamID,
+            homeTeamIDs: [homeTeamNBAIds],
+            awayTeam: awayTeamID,
+            awayTeamIDs: [awayTeamNBAIds]
+          }),
+        },
+      );
+
+      
+
+      const predictScore = await predictResponse.json();
+      setJsonHomeScorePB(predictScore.homePrediction);
+      setJsonAwayScorePB(predictScore.awayPrediction);
+      setJsonHomeScore(predictScore.TBhomePrediction);
+      setJsonAwayScore(predictScore.TBawayPrediction);
+
+      
+
         const homeImage = await getTopPerformerPerformance(
           homeTeam,
           homeTopPerformer,
@@ -104,6 +150,9 @@ const PredictionPage = () => {
     loadImages();
   }, [homeTeam, awayTeam, homeTopPerformer, awayTopPerformer]);
 
+  // Get scores based on selected model, default to empty if no model is selected
+  const { homeScore, awayScore } = modelScores[selectedModel] || { homeScore: '-', awayScore: '-' };
+
   return (
     <div className="min-h-screen bg-base-200 p-6">
       {/* Heading */}
@@ -122,20 +171,20 @@ const PredictionPage = () => {
           />
           <h2 className="text-2xl font-bold">{homeTeam}</h2>
           <div className="text-4xl font-bold md:hidden">
-            {predictedScores.left}
+            {homeScore}
           </div>{' '}
           {/* Show score here for small screens */}
         </div>
 
         {/* Scores */}
         <div className="hidden md:block text-4xl font-bold">
-          {predictedScores.left}
+          {homeScore}
         </div>
         <div className="text-center">
           <h2 className="text-2xl font-bold">VS</h2>
         </div>
         <div className="hidden md:block text-4xl font-bold">
-          {predictedScores.right}
+          {awayScore}
         </div>
 
         {/* Right Team */}
@@ -147,7 +196,7 @@ const PredictionPage = () => {
           />
           <h2 className="text-2xl font-bold">{awayTeam}</h2>
           <div className="text-4xl font-bold md:hidden">
-            {predictedScores.right}
+            {awayScore}
           </div>{' '}
           {/* Show score here for small screens */}
         </div>
@@ -161,8 +210,9 @@ const PredictionPage = () => {
         <select
           className="select select-bordered"
           onChange={(e) => handleModelSelect(e.target.value)}
+          value={selectedModel}
         >
-          <option value="SELECT ML MODEL" disabled>
+          <option value="" disabled>
             SELECT ML MODEL
           </option>
           <option value="Model 1">Model 1</option>
