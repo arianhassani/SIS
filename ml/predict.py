@@ -16,7 +16,7 @@ torch.set_float32_matmul_precision('medium')
 
 class NBA_Pred_Team_Only_Model:
   def __init__(self, best_tft_team_only=None, win_len=5, **kwargs):
-    self.model = TemporalFusionTransformer.load_from_checkpoint(best_tft_team_only)
+    self.model = TemporalFusionTransformer.load_from_checkpoint(best_tft_team_only, map_location='cpu')
     nba_data = NBA_data(**kwargs)
     # nba_data.download_games(start_year, end_year)
     # self.teams = nba_data.download_teams()
@@ -64,7 +64,11 @@ class NBA_Pred_Team_Only_Model:
 
 class NBA_Pred_Model:
   def __init__(self, best_tft, win_len=5, **kwargs):
-    self.model = TemporalFusionTransformer.load_from_checkpoint(best_tft)
+    checkpoint = torch.load(best_tft, map_location=torch.device('cpu'))
+    # torch.save(checkpoint, 'ml/best_model/version_98/checkpoints/epoch=39-step=2000_cpu.ckpt')
+    # print(torch.device('cpu'))
+    
+    self.model = TemporalFusionTransformer.load_from_checkpoint('ml/best_model/version_98/checkpoints/epoch=39-step=2000_cpu.ckpt', map_location='cpu')
     nba_data = NBA_data(**kwargs)
     # nba_data.download_games(start_year, end_year)
     # self.teams = nba_data.download_teams()
@@ -138,7 +142,7 @@ class NBA_Pred_Model:
 
 
 if __name__ == '__main__':
-  config = setup_data(start_year=2023, end_year=2024, is_train=False)
+  config = setup_data(start_year=2023, end_year=2024)
   model = NBA_Pred_Model(**config)
   res = []
   team_ids = list(model.teams.keys())

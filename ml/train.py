@@ -51,9 +51,9 @@ def train(log_dir, data_dir, base_dir, lightning_log_dir, device=None, **args):
 
     torch.set_float32_matmul_precision('medium')
     if not device:
-       device = 'gpu' if torch.cuda.is_available() else 'cpu'
+       device = 'cpu'
     trainer = pl.Trainer(
-        max_epochs=75,
+        max_epochs=30,
         accelerator=device,
         enable_model_summary=True,
         gradient_clip_val=0.1,

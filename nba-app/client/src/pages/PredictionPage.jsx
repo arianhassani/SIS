@@ -45,16 +45,6 @@ const PredictionPage = () => {
   const awayTeamNBAIds = awayTeamLineup.map(playerArray => playerArray[0].nbaID);
   console.log(awayTeamNBAIds);
 
-  const homeTeamID = sessionStorage.getItem('homeTeamNBAID');
-  const awayTeamID = sessionStorage.getItem('awayTeamNBAID');
-  // Parse the JSON string from session storage
-  const homeTeamLineup = JSON.parse(sessionStorage.getItem('homeTeamMatchup'));
-  const homeTeamNBAIds = homeTeamLineup.map(playerArray => playerArray[0].nbaID);
-  console.log(homeTeamNBAIds);
-  const awayTeamLineup = JSON.parse(sessionStorage.getItem('awayTeamMatchup'));
-  const awayTeamNBAIds = awayTeamLineup.map(playerArray => playerArray[0].nbaID);
-  console.log(awayTeamNBAIds);
-
   const { homeTopPerformer, awayTopPerformer } = location.state || {};
  
 
