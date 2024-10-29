@@ -17,6 +17,8 @@ const PredictionPage = () => {
   const [jsonAwayScore, setJsonAwayScore] = useState('');
   const [jsonHomeScorePB, setJsonHomeScorePB] = useState('');
   const [jsonAwayScorePB, setJsonAwayScorePB] = useState('');
+  const [jsonHomeScoreRF, setJsonHomeScoreRF] = useState('');
+  const [jsonAwayScoreRF, setJsonAwayScoreRF] = useState('');
    // Example scores for each model
    const modelScores = {
     "Model 1": { homeScore: jsonHomeScore, awayScore: jsonAwayScore },
