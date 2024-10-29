@@ -3,6 +3,7 @@ import Player from '../models/Player.js';
 
 // Get final score prediction
 const getFinalScore = async (req, res) => {
+  //console.log(req.body);
   const homeTeam = req.body.homeTeam;
   const homeTeamPlayers = req.body.homeTeamIDs;
   const awayTeam = req.body.awayTeam;
