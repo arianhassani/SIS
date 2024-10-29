@@ -8,10 +8,14 @@ const InjuryPage = () => {
     sessionStorage.getItem('homeTeam') || 'No home team selected',
   );
   const [awayTeam, setAwayTeam] = useState(
-    sessionStorage.getItem('awayTeam') || 'No home team selected',
+    sessionStorage.getItem('awayTeam') || 'No away team selected',
   );
 
   const [showModal, setShowModal] = useState(false);
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [selectedPlayerId, setSelectedPlayerId] = useState(null);
+  const [editMode, setEditMode] = useState(false); // State for edit mode
+  const [dropdownExpanded, setDropdownExpanded] = useState({}); // Track dropdown visibility for each player
   const [homePlayers, setHomePlayers] = useState(() => {
     const storedHomePlayers = sessionStorage.getItem(`${homeTeam}HomePlayers`);
     return storedHomePlayers ? JSON.parse(storedHomePlayers) : [];
@@ -25,7 +29,6 @@ const InjuryPage = () => {
   const [description, setDescription] = useState('');
   const [teamType, setTeamType] = useState('');
   const [availablePlayers, setAvailablePlayers] = useState([]);
-  // eslint-disable-next-line no-unused-vars
   const [playerImages, setPlayerImages] = useState({});
 
   const fetchUpdatedHomePlayers = useCallback(async (homeTeam) => {
@@ -92,94 +95,41 @@ const InjuryPage = () => {
   }, [homeTeam, awayTeam, initializePlayers]);
 
   useEffect(() => {
-    const availablePlayers =
-      teamType === 'home'
-        ? homePlayers.filter((player) => !player.isInjured)
-        : awayPlayers.filter((player) => !player.isInjured);
+    let players = [];
 
-    setAvailablePlayers(availablePlayers);
-  }, [teamType, homePlayers, awayPlayers]);
-
-  useEffect(() => {
-    const handleStorageChange = () => {
-      setHomeTeam(
-        sessionStorage.getItem('homeTeam') || 'No home team selected',
-      );
-      setAwayTeam(
-        sessionStorage.getItem('awayTeam') || 'No away team selected',
-      );
-    };
-
-    window.addEventListener('storage', handleStorageChange);
-
-    return () => {
-      window.removeEventListener('storage', handleStorageChange);
-    };
-  }, []);
-
-  const handleAddInjury = async () => {
-    if (player && description && teamType) {
-      const selectedPlayers = teamType === 'home' ? homePlayers : awayPlayers;
-      const selectedPlayer = selectedPlayers.find((p) => p.name === player);
-
-      if (selectedPlayer) {
-        try {
-          await fetch(
-            `http://localhost:3000/api/players/${selectedPlayer._id}/injured`,
-            {
-              method: 'PUT',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                description,
-              }),
-            },
-          );
-
-          setShowModal(false);
-          setPlayer('');
-          setDescription('');
-          setTeamType('');
-
-          // Update the local state and session storage after adding injury
-          const updatedPlayers = selectedPlayers.map((p) =>
-            p._id === selectedPlayer._id
-              ? { ...p, isInjured: true, injuryDetails: description }
-              : p,
-          );
-
-          if (teamType === 'home') {
-            setHomePlayers(updatedPlayers);
-            sessionStorage.setItem(
-              `${homeTeam}HomePlayers`,
-              JSON.stringify(updatedPlayers),
-            );
-          } else {
-            setAwayPlayers(updatedPlayers);
-            sessionStorage.setItem(
-              `${awayTeam}AwayPlayers`,
-              JSON.stringify(updatedPlayers),
-            );
-          }
-        } catch (error) {
-          console.error('Error updating player injury status:', error);
-        }
-      }
+    if (teamType === 'home') {
+      players = homePlayers;
+    } else if (teamType === 'away') {
+      players = awayPlayers;
     }
+
+    let filteredPlayers;
+    if (editMode && selectedPlayerId) {
+      // Include all players
+      filteredPlayers = players;
+    } else {
+      filteredPlayers = players.filter((player) => !player.isInjured);
+    }
+
+    setAvailablePlayers(filteredPlayers);
+  }, [teamType, homePlayers, awayPlayers, editMode, selectedPlayerId]);
+
+  const confirmResolveInjury = (playerId) => {
+    setSelectedPlayerId(playerId);
+    setShowConfirmation(true);
   };
 
-  const handleResolveInjury = async (playerId) => {
+  const handleResolveInjury = async () => {
+    if (!selectedPlayerId) return;
+
     try {
-      console.log(playerId);
-      await fetch(`http://localhost:3000/api/players/${playerId}/resolve`, {
+      await fetch(`http://localhost:3000/api/players/${selectedPlayerId}/resolve`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
       });
 
-      // Update the local state and session storage after resolving injury
       const homePlayers =
         JSON.parse(sessionStorage.getItem(`${homeTeam}HomePlayers`)) || [];
       const awayPlayers =
@@ -187,7 +137,7 @@ const InjuryPage = () => {
 
       const updatePlayerInjuryStatus = (players) => {
         return players.map((player) => {
-          if (player._id === playerId) {
+          if (player._id === selectedPlayerId) {
             return { ...player, isInjured: false, injuryDetails: '' };
           }
           return player;
@@ -208,18 +158,130 @@ const InjuryPage = () => {
 
       setHomePlayers(updatedHomePlayers);
       setAwayPlayers(updatedAwayPlayers);
-      console.log(updatedAwayPlayers);
+      setShowConfirmation(false);
+      setSelectedPlayerId(null);
     } catch (error) {
       console.error('Error resolving player injury status:', error);
     }
   };
 
-  const handleBack = () => {
-    navigate('/');
+  const toggleDropdown = (playerId) => {
+    setDropdownExpanded((prev) => ({
+      ...prev,
+      [playerId]: !prev[playerId],
+    }));
   };
 
-  const handleNext = () => {
-    navigate('/matchup-page');
+  const handleEditInjury = (playerId) => {
+    setEditMode(true);
+    let selectedPlayer = homePlayers.find((p) => p._id === playerId);
+    if (selectedPlayer) {
+      setTeamType('home');
+    } else {
+      selectedPlayer = awayPlayers.find((p) => p._id === playerId);
+      if (selectedPlayer) {
+        setTeamType('away');
+      }
+    }
+
+    if (selectedPlayer) {
+      setPlayer(selectedPlayer.name);
+      setDescription(selectedPlayer.injuryDetails || '');
+      setSelectedPlayerId(playerId);
+      setShowModal(true);
+    }
+  };
+
+  const handleSaveChanges = async () => {
+    if (!selectedPlayerId) return;
+
+    try {
+      await fetch(`http://localhost:3000/api/players/${selectedPlayerId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          injuryDetails: description,
+        }),
+      });
+
+      const updatePlayerInjuryDetails = (players) => {
+        return players.map((player) => {
+          if (player._id === selectedPlayerId) {
+            return { ...player, injuryDetails: description };
+          }
+          return player;
+        });
+      };
+
+      if (teamType === 'home') {
+        const updatedHomePlayers = updatePlayerInjuryDetails(homePlayers);
+        setHomePlayers(updatedHomePlayers);
+        sessionStorage.setItem(
+          `${homeTeam}HomePlayers`,
+          JSON.stringify(updatedHomePlayers),
+        );
+      } else if (teamType === 'away') {
+        const updatedAwayPlayers = updatePlayerInjuryDetails(awayPlayers);
+        setAwayPlayers(updatedAwayPlayers);
+        sessionStorage.setItem(
+          `${awayTeam}AwayPlayers`,
+          JSON.stringify(updatedAwayPlayers),
+        );
+      }
+
+      setShowModal(false);
+      setEditMode(false);
+      setSelectedPlayerId(null);
+    } catch (error) {
+      console.error('Error updating player injury details:', error);
+    }
+  };
+
+  // Implement the handleAddInjury function
+  const handleAddInjury = async () => {
+    try {
+      let players, setPlayers, teamKey;
+      if (teamType === 'home') {
+        players = homePlayers;
+        setPlayers = setHomePlayers;
+        teamKey = `${homeTeam}HomePlayers`;
+      } else if (teamType === 'away') {
+        players = awayPlayers;
+        setPlayers = setAwayPlayers;
+        teamKey = `${awayTeam}AwayPlayers`;
+      } else {
+        return;
+      }
+
+      const selectedPlayer = players.find((p) => p.name === player);
+      if (!selectedPlayer) return;
+
+      // Update player injury status in backend
+      await fetch(`http://localhost:3000/api/players/${selectedPlayer._id}/injure`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          injuryDetails: description,
+        }),
+      });
+
+      // Update local state
+      const updatedPlayers = players.map((p) => {
+        if (p._id === selectedPlayer._id) {
+          return { ...p, isInjured: true, injuryDetails: description };
+        }
+        return p;
+      });
+
+      setPlayers(updatedPlayers);
+      sessionStorage.setItem(teamKey, JSON.stringify(updatedPlayers));
+    } catch (error) {
+      console.error('Error adding injury:', error);
+    }
   };
 
   const placeholderImage = 'https://placehold.co/400?text=No+Data+Available';
@@ -227,55 +289,16 @@ const InjuryPage = () => {
   const homeInjuredPlayers = homePlayers.filter((player) => player.isInjured);
   const awayInjuredPlayers = awayPlayers.filter((player) => player.isInjured);
 
-  // Dynamically import player images based on team and player names
-  // const getPlayerImage = async (player) => {
-  //   try {
-  //     const module = await import(`../assets/player_headshots/${player.name}.png`);
-  //     return module.default;
-  //   } catch (error) {
-  //     console.error("Error fetching player image:", error);
-  //     return placeholderImage;
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   const loadImages = async () => {
-  //     try {
-  //       const images = {};
-  //       for (const player of [...homePlayers, ...awayPlayers]) {
-  //         const image = await getPlayerImage(player);
-  //         images[player.name] = image;
-  //       }
-  //       setPlayerImages(images);
-  //     } catch {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   loadImages();
-  // }, [homePlayers, awayPlayers]);
-
-  // if (loading) {
-  //   return (
-  //     <div className="flex justify-center items-center min-h-screen">
-  //       <div className="skeleton w-full h-full"></div>
-  //     </div>
-  //   );
-  // }
-
   return (
     <div className="relative min-h-screen flex flex-col w-full">
-      {/* Roster Selection Heading */}
       <div className="text-center" style={{ marginTop: '2cm' }}>
         <h1 className="text-5xl font-bold">Roster Selection</h1>
       </div>
 
-      {/* Live Roster Updates Heading */}
       <div className="text-center my-8" style={{ marginTop: '1.5cm' }}>
         <h1 className="text-3xl font-bold">Live Roster Updates</h1>
       </div>
 
-      {/* Rectangle with "Injury Reports" text inside and Add button */}
       <div
         className="w-full bg-gray-700 flex justify-between items-center"
         style={{
@@ -289,112 +312,180 @@ const InjuryPage = () => {
         <button
           className="bg-gray-800 text-white py-1 px-3 rounded"
           onClick={() => {
-            setTeamType(''); // Reset team type when opening the modal
-            setShowModal(true); // Open the modal when clicked
+            setTeamType('');
+            setPlayer('');
+            setDescription('');
+            setEditMode(false);
+            setShowModal(true);
           }}
         >
           + Add Injury
         </button>
       </div>
 
-      {/* Home Team Injuries */}
       <div className="mt-4" style={{ marginTop: '1cm' }}>
         <h2 className={`text-2xl font-bold mb-4 text-center`}>
           {`Home Team: ${homeTeam}`}
         </h2>
-        {loading ? (
-          <div className="grid grid-cols-4 gap-4">
-            {[...Array(4)].map((_, index) => (
-              <div key={index} className="p-4 rounded">
-                <div className="skeleton h-32 w-32 mx-auto mb-4 rounded-full"></div>
-                <div className="skeleton h-6 w-24 mx-auto mb-2"></div>
-                <div className="skeleton h-4 w-32 mx-auto"></div>
-                <div className="skeleton h-8 w-24 mx-auto mt-2"></div>
-              </div>
-            ))}
-          </div>
-        ) : homeInjuredPlayers.length > 0 ? (
-          <div className="grid grid-cols-4 gap-4">
-            {homeInjuredPlayers.map((injury, index) => (
-              <div key={index} className="p-4 rounded">
-                {/* Player Photo */}
-                <img
-                  src={playerImages[injury.name] || placeholderImage}
-                  alt={injury.name}
-                  className="w-32 h-32 mx-auto mb-4 rounded-full"
-                />
-                {/* Player Name */}
-                <h3 className="font-bold text-center">Player: {injury.name}</h3>
-                {/* Description */}
-                <p className="text-center mt-2">{injury.injuryDetails}</p>
-                <button
-                  className="btn btn-sm btn-success mt-2 mx-auto block"
-                  onClick={() => handleResolveInjury(injury._id)}
-                >
-                  Mark as Resolved
-                </button>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p className="text-center">No injuries reported for the Home Team.</p>
-        )}
+        <div className="px-10">
+          {loading ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {[...Array(4)].map((_, index) => (
+                <div key={index} className="p-4 rounded">
+                  <div className="skeleton h-32 w-32 mx-auto mb-4 rounded-full"></div>
+                  <div className="skeleton h-6 w-24 mx-auto mb-2"></div>
+                  <div className="skeleton h-4 w-32 mx-auto"></div>
+                  <div className="skeleton h-8 w-24 mx-auto mt-2"></div>
+                </div>
+              ))}
+            </div>
+          ) : homeInjuredPlayers.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {homeInjuredPlayers.map((injury, index) => (
+                <div key={index} className="p-4 rounded relative text-center">
+                  <img
+                    src={playerImages[injury.name] || placeholderImage}
+                    alt={injury.name}
+                    className="w-32 h-32 mx-auto mb-4 rounded-full"
+                  />
+                  <h3 className="font-bold">Player: {injury.name}</h3>
+                  <div className="mt-2 flex items-center justify-center flex-nowrap">
+                    <p className="text-center break-words flex-grow min-w-0 mr-2">
+                      {injury.injuryDetails}
+                    </p>
+                    <button
+                      className="bg-gray-700 text-white px-2 py-1 rounded border border-white flex-shrink-0"
+                      onClick={() => toggleDropdown(injury._id)}
+                    >
+                      ▼
+                    </button>
+                  </div>
+                  {dropdownExpanded[injury._id] && (
+                    <div
+                      className="bg-gray-700 text-white p-[10px] rounded mt-2"
+                      style={{ width: '100%' }}
+                    >
+                      <button
+                        className="bg-gray-700 text-white py-1 px-3 rounded w-full mb-2 border border-white"
+                        onClick={() => confirmResolveInjury(injury._id)}
+                      >
+                        Mark as Resolved
+                      </button>
+                      <button
+                        className="bg-gray-700 text-white py-1 px-3 rounded w-full border border-white"
+                        onClick={() => handleEditInjury(injury._id)}
+                      >
+                        Edit
+                      </button>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="text-center">No injuries reported for the Home Team.</p>
+          )}
+        </div>
       </div>
 
-      {/* Away Team Injuries */}
       <div className="mt-12" style={{ marginTop: '3cm' }}>
         <h2 className={`text-2xl font-bold mb-4 text-center`}>
           {`Away Team: ${awayTeam}`}
         </h2>
-        {loading ? (
-          <div className="grid grid-cols-4 gap-4">
-            {[...Array(4)].map((_, index) => (
-              <div key={index} className="p-4 rounded">
-                <div className="skeleton h-32 w-32 mx-auto mb-4 rounded-full"></div>
-                <div className="skeleton h-6 w-24 mx-auto mb-2"></div>
-                <div className="skeleton h-4 w-32 mx-auto"></div>
-                <div className="skeleton h-8 w-24 mx-auto mt-2"></div>
-              </div>
-            ))}
-          </div>
-        ) : awayInjuredPlayers.length > 0 ? (
-          <div className="grid grid-cols-4 gap-4">
-            {awayInjuredPlayers.map((injury, index) => (
-              <div key={index} className="p-4 rounded">
-                {/* Player Photo */}
-                <img
-                  src={playerImages[injury.name] || placeholderImage}
-                  alt={injury.name}
-                  className="w-32 h-32 mx-auto mb-4 rounded-full"
-                />
-                {/* Player Name */}
-                <h3 className="font-bold text-center">Player: {injury.name}</h3>
-                {/* Description */}
-                <p className="text-center mt-2">{injury.injuryDetails}</p>
-                <button
-                  className="btn btn-sm btn-success mt-2 mx-auto block"
-                  onClick={() => handleResolveInjury(injury._id)}
-                >
-                  Mark as Resolved
-                </button>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p className="text-center">No injuries reported for the Away Team.</p>
-        )}
+        <div className="px-10">
+          {loading ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {[...Array(4)].map((_, index) => (
+                <div key={index} className="p-4 rounded">
+                  <div className="skeleton h-32 w-32 mx-auto mb-4 rounded-full"></div>
+                  <div className="skeleton h-6 w-24 mx-auto mb-2"></div>
+                  <div className="skeleton h-4 w-32 mx-auto"></div>
+                  <div className="skeleton h-8 w-24 mx-auto mt-2"></div>
+                </div>
+              ))}
+            </div>
+          ) : awayInjuredPlayers.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {awayInjuredPlayers.map((injury, index) => (
+                <div key={index} className="p-4 rounded relative text-center">
+                  <img
+                    src={playerImages[injury.name] || placeholderImage}
+                    alt={injury.name}
+                    className="w-32 h-32 mx-auto mb-4 rounded-full"
+                  />
+                  <h3 className="font-bold">Player: {injury.name}</h3>
+                  <div className="mt-2 flex items-center justify-center flex-nowrap">
+                    <p className="text-center break-words flex-grow min-w-0 mr-2">
+                      {injury.injuryDetails}
+                    </p>
+                    <button
+                      className="bg-gray-700 text-white px-2 py-1 rounded border border-white flex-shrink-0"
+                      onClick={() => toggleDropdown(injury._id)}
+                    >
+                      ▼
+                    </button>
+                  </div>
+                  {dropdownExpanded[injury._id] && (
+                    <div
+                      className="bg-gray-700 text-white p-[10px] rounded mt-2"
+                      style={{ width: '100%' }}
+                    >
+                      <button
+                        className="bg-gray-700 text-white py-1 px-3 rounded w-full mb-2 border border-white"
+                        onClick={() => confirmResolveInjury(injury._id)}
+                      >
+                        Mark as Resolved
+                      </button>
+                      <button
+                        className="bg-gray-700 text-white py-1 px-3 rounded w-full border border-white"
+                        onClick={() => handleEditInjury(injury._id)}
+                      >
+                        Edit
+                      </button>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="text-center">No injuries reported for the Away Team.</p>
+          )}
+        </div>
       </div>
 
-      {/* Modal for adding an injury */}
+      {showConfirmation && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-1/3 text-center">
+            <h2 className="text-xl mb-4">Are you sure you want to resolve this injury?</h2>
+            <div className="flex justify-center space-x-4 mt-4">
+              <button
+                className="btn border-white text-white"
+                onClick={handleResolveInjury}
+              >
+                Yes
+              </button>
+              <button
+                className="btn border-white text-white"
+                onClick={() => setShowConfirmation(false)}
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal for adding/editing an injury */}
       {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-6 rounded-lg shadow-lg w-1/2">
-            <h2 className="text-xl mb-4">Add Injury</h2>
+            <h2 className="text-xl mb-4">{editMode ? 'Edit Injury' : 'Add Injury'}</h2>
             <div className="mb-4">
               <select
                 value={teamType}
                 onChange={(e) => setTeamType(e.target.value)}
                 className="select select-bordered w-full mb-4"
+                disabled={editMode}
               >
                 <option value="" disabled>
                   Select Team
@@ -406,7 +497,7 @@ const InjuryPage = () => {
                 value={player}
                 onChange={(e) => setPlayer(e.target.value)}
                 className="select select-bordered w-full mb-4"
-                disabled={!teamType}
+                disabled={editMode || !teamType}
               >
                 <option value="" disabled>
                   Select Player
@@ -422,21 +513,32 @@ const InjuryPage = () => {
                 placeholder="Description"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
-                className="input input-bordered w-full mb-2"
+                className="input input-bordered w-full mb-2 text-center"
                 disabled={!teamType || !player}
               />
             </div>
             <div className="flex justify-end">
               <button
-                className="btn btn-primary mr-2"
-                onClick={handleAddInjury}
+                className="btn border-white text-white mr-2"
+                onClick={async () => {
+                  if (editMode) {
+                    await handleSaveChanges();
+                  } else {
+                    await handleAddInjury();
+                  }
+                  setShowModal(false);
+                }}
                 disabled={!teamType || !player || !description}
               >
-                Add
+                {editMode ? 'Save Changes' : 'Add'}
               </button>
               <button
-                className="btn btn-secondary"
-                onClick={() => setShowModal(false)} // Close modal without adding
+                className="btn border-white text-white"
+                onClick={() => {
+                  setShowModal(false);
+                  setEditMode(false);
+                  setSelectedPlayerId(null);
+                }}
               >
                 Cancel
               </button>
@@ -445,12 +547,17 @@ const InjuryPage = () => {
         </div>
       )}
 
-      {/* Buttons */}
       <div className="flex justify-center py-10 mt-8 space-x-5">
-        <button className="btn btn-secondary btn-outline" onClick={handleBack}>
+        <button
+          className="btn border-white text-white"
+          onClick={() => navigate('/')}
+        >
           Back
         </button>
-        <button className="btn btn-primary btn-outline" onClick={handleNext}>
+        <button
+          className="btn border-white text-white"
+          onClick={() => navigate('/matchup-page')}
+        >
           Next
         </button>
       </div>

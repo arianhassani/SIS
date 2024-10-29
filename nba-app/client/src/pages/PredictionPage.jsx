@@ -7,7 +7,6 @@ const PredictionPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // eslint-disable-next-line no-unused-vars
   const [selectedModel, setSelectedModel] = useState('SELECT ML MODEL');
   const [homeTopPerformerGraph, setHomeTopPerformerGraph] = useState('');
   const [awayTopPerformerGraph, setAwayTopPerformerGraph] = useState('');
@@ -18,7 +17,7 @@ const PredictionPage = () => {
   const homeTeam =
     sessionStorage.getItem('homeTeam') || 'No home team selected';
   const awayTeam =
-    sessionStorage.getItem('awayTeam') || 'No home team selected';
+    sessionStorage.getItem('awayTeam') || 'No away team selected';
 
   const { homeTopPerformer, awayTopPerformer } = location.state || {};
 
@@ -68,13 +67,7 @@ const PredictionPage = () => {
 
   useEffect(() => {
     const loadImages = async () => {
-      if (!homeTopPerformer) {
-        setloadingHomeTopPerformer(true);
-        return;
-      }
-
-      if (!awayTopPerformer) {
-        setloadingAwayTopPerformer(true);
+      if (!homeTopPerformer || !awayTopPerformer) {
         return;
       }
 
@@ -103,6 +96,12 @@ const PredictionPage = () => {
 
     loadImages();
   }, [homeTeam, awayTeam, homeTopPerformer, awayTopPerformer]);
+
+  // State for tooltips
+  const [showHomeTeamTooltip, setShowHomeTeamTooltip] = useState(false);
+  const [showAwayTeamTooltip, setShowAwayTeamTooltip] = useState(false);
+  const [showHomePlayerTooltip, setShowHomePlayerTooltip] = useState(false);
+  const [showAwayPlayerTooltip, setShowAwayPlayerTooltip] = useState(false);
 
   return (
     <div className="min-h-screen bg-base-200 p-6">
@@ -228,12 +227,17 @@ const PredictionPage = () => {
       </div>
 
       {/* Statistics Container: 4 Quadrants */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         {/* Top Left: Home Team Graph */}
-        <div className="card shadow-lg bg-base-100 p-4">
+        <div className="card shadow-lg bg-base-100 p-4 relative">
+          {/* Info Icon */}
+          <div className="absolute top-2 right-2">
+            <button onClick={() => setShowHomeTeamTooltip(true)}>
+              <TooltipIcon />
+            </button>
+          </div>
+          {/* Graph */}
           <div className="card-body flex flex-col items-center">
-            <h3 className="card-title text-center">{`${homeTeam} Overall Performance`}</h3>
-            {/* Placeholder for Graph */}
             <figure className="flex justify-center items-center p-2">
               {homeTeamPerformanceGraph ? (
                 <img
@@ -245,13 +249,34 @@ const PredictionPage = () => {
                 <p>No available data</p>
               )}
             </figure>
+            <h3 className="card-title text-center mt-4">{`${homeTeam} Overall Performance`}</h3>
           </div>
+          {/* Tooltip Modal */}
+          {showHomeTeamTooltip && (
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+              <div className="bg-white p-4 rounded shadow-lg text-center">
+                <p>This graph shows the overall performance of {homeTeam}.</p>
+                <button
+                  className="btn mt-4"
+                  onClick={() => setShowHomeTeamTooltip(false)}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Top Right: Away Team Graph */}
-        <div className="card shadow-lg bg-base-100 p-4">
+        <div className="card shadow-lg bg-base-100 p-4 relative">
+          {/* Info Icon */}
+          <div className="absolute top-2 right-2">
+            <button onClick={() => setShowAwayTeamTooltip(true)}>
+              <TooltipIcon />
+            </button>
+          </div>
+          {/* Graph */}
           <div className="card-body flex flex-col items-center">
-            <h3 className="card-title text-center">{`${awayTeam} Overall Performance`}</h3>
             <figure className="flex justify-center items-center p-2">
               {awayTeamPerformanceGraph ? (
                 <img
@@ -263,13 +288,34 @@ const PredictionPage = () => {
                 <p>No available data</p>
               )}
             </figure>
+            <h3 className="card-title text-center mt-4">{`${awayTeam} Overall Performance`}</h3>
           </div>
+          {/* Tooltip Modal */}
+          {showAwayTeamTooltip && (
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+              <div className="bg-white p-4 rounded shadow-lg text-center">
+                <p>This graph shows the overall performance of {awayTeam}.</p>
+                <button
+                  className="btn mt-4"
+                  onClick={() => setShowAwayTeamTooltip(false)}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
         </div>
 
-        {/* Bottom Left: Team 1 Top Performer Scatterplot */}
-        <div className="card shadow-lg bg-base-100 p-2">
+        {/* Bottom Left: Home Top Performer Scatterplot */}
+        <div className="card shadow-lg bg-base-100 p-2 relative">
+          {/* Info Icon */}
+          <div className="absolute top-2 right-2">
+            <button onClick={() => setShowHomePlayerTooltip(true)}>
+              <TooltipIcon />
+            </button>
+          </div>
+          {/* Graph */}
           <div className="card-body flex flex-col items-center">
-            <h3 className="card-title text-center">{`${homeTeam} Top Performer Scatterplot`}</h3>
             <figure className="flex justify-center items-center p-2">
               {homeTopPerformerGraph ? (
                 <img
@@ -281,13 +327,37 @@ const PredictionPage = () => {
                 <p>No available data</p>
               )}
             </figure>
+            <h3 className="card-title text-center mt-4">{`${homeTeam} Top Performer Scatterplot`}</h3>
           </div>
+          {/* Tooltip Modal */}
+          {showHomePlayerTooltip && (
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+              <div className="bg-white p-4 rounded shadow-lg text-center">
+                <p>
+                  This scatterplot shows the performance of{' '}
+                  {homeTopPerformer?.name}.
+                </p>
+                <button
+                  className="btn mt-4"
+                  onClick={() => setShowHomePlayerTooltip(false)}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
         </div>
 
-        {/* Bottom Right: Team 2 Top Performer Scatterplot */}
-        <div className="card shadow-lg bg-base-100 p-2">
+        {/* Bottom Right: Away Top Performer Scatterplot */}
+        <div className="card shadow-lg bg-base-100 p-2 relative">
+          {/* Info Icon */}
+          <div className="absolute top-2 right-2">
+            <button onClick={() => setShowAwayPlayerTooltip(true)}>
+              <TooltipIcon />
+            </button>
+          </div>
+          {/* Graph */}
           <div className="card-body flex flex-col items-center">
-            <h3 className="card-title text-center">{`${awayTeam} Top Performer Scatterplot`}</h3>
             <figure className="flex justify-center items-center p-2">
               {awayTopPerformerGraph ? (
                 <img
@@ -299,19 +369,40 @@ const PredictionPage = () => {
                 <p>No available data</p>
               )}
             </figure>
+            <h3 className="card-title text-center mt-4">{`${awayTeam} Top Performer Scatterplot`}</h3>
           </div>
+          {/* Tooltip Modal */}
+          {showAwayPlayerTooltip && (
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+              <div className="bg-white p-4 rounded shadow-lg text-center">
+                <p>
+                  This scatterplot shows the performance of{' '}
+                  {awayTopPerformer?.name}.
+                </p>
+                <button
+                  className="btn mt-4"
+                  onClick={() => setShowAwayPlayerTooltip(false)}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
       {/* Buttons */}
       <div className="flex flex-col items-center py-10 mt-8 space-y-5">
         <button
-          className="btn btn-accent btn-lg transition-transform transform hover:scale-110 hover:bg-accent-focus"
+          className="btn btn-lg transition-transform transform hover:scale-110 hover:bg-accent-focus bg-white text-base-200"
           onClick={handleFinish}
         >
           Finish
         </button>
-        <button className="btn btn-secondary btn-outline" onClick={handleBack}>
+        <button
+          className="btn border-white text-white"
+          onClick={handleBack}
+        >
           Back
         </button>
       </div>

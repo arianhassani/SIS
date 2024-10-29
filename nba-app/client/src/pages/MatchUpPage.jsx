@@ -11,6 +11,17 @@ const positions = [
   'Center',
 ];
 
+const positionAcronyms = ['PG', 'SG', 'SF', 'PF', 'C'];
+
+// Map your positions to acceptable player position codes
+const positionToPlayerPositionMap = {
+  'Point Guard': ['G', 'G-F'],
+  'Shooting Guard': ['G', 'G-F'],
+  'Small Forward': ['F', 'G-F', 'F-G'],
+  'Power Forward': ['F', 'F-C', 'C-F'],
+  'Center': ['C', 'C-F', 'F-C'],
+};
+
 const MatchUpSelectionPage = () => {
   const navigate = useNavigate();
 
@@ -21,7 +32,7 @@ const MatchUpSelectionPage = () => {
   const homeTeam =
     sessionStorage.getItem('homeTeam') || 'No home team selected';
   const awayTeam =
-    sessionStorage.getItem('awayTeam') || 'No home team selected';
+    sessionStorage.getItem('awayTeam') || 'No away team selected';
 
   const getMatchupFromSessionStorage = (team) => {
     const savedMatchup = sessionStorage.getItem(`${team}TeamMatchup`);
@@ -34,6 +45,10 @@ const MatchUpSelectionPage = () => {
   const [awayTeamMatchup, setAwayTeamMatchup] = useState(
     getMatchupFromSessionStorage('away'),
   );
+
+  // State for checkboxes
+  const [unrestrictedPositions, setUnrestrictedPositions] = useState(false);
+  const [allowInjuredPlayers, setAllowInjuredPlayers] = useState(false);
 
   useEffect(() => {
     const fetchPlayers = async (teamName, setPlayers) => {
@@ -60,26 +75,26 @@ const MatchUpSelectionPage = () => {
   const handleAddPlayer = (team, positionIndex, player) => {
     if (team === 'home') {
       const updatedPlayers = [...homeTeamMatchup];
-      updatedPlayers[positionIndex].push(player);
+      updatedPlayers[positionIndex] = [player];
       setHomeTeamMatchup(updatedPlayers);
       sessionStorage.setItem('homeTeamMatchup', JSON.stringify(updatedPlayers));
     } else {
       const updatedPlayers = [...awayTeamMatchup];
-      updatedPlayers[positionIndex].push(player);
+      updatedPlayers[positionIndex] = [player];
       setAwayTeamMatchup(updatedPlayers);
       sessionStorage.setItem('awayTeamMatchup', JSON.stringify(updatedPlayers));
     }
   };
 
-  const handleDeletePlayer = (team, positionIndex, playerIndex) => {
+  const handleDeletePlayer = (team, positionIndex) => {
     if (team === 'home') {
       const updatedPlayers = [...homeTeamMatchup];
-      updatedPlayers[positionIndex].splice(playerIndex, 1);
+      updatedPlayers[positionIndex] = [];
       setHomeTeamMatchup(updatedPlayers);
       sessionStorage.setItem('homeTeamMatchup', JSON.stringify(updatedPlayers));
     } else {
       const updatedPlayers = [...awayTeamMatchup];
-      updatedPlayers[positionIndex].splice(playerIndex, 1);
+      updatedPlayers[positionIndex] = [];
       setAwayTeamMatchup(updatedPlayers);
       sessionStorage.setItem('awayTeamMatchup', JSON.stringify(updatedPlayers));
     }
@@ -155,40 +170,88 @@ const MatchUpSelectionPage = () => {
     }
   };
 
-  const getAvailablePlayers = (teamPlayers, allPlayers) => {
+  const getAvailablePlayers = (
+    teamPlayers,
+    allPlayers,
+    positionIndex,
+    teamType,
+  ) => {
     const selectedPlayers = teamPlayers.flat();
-    return allPlayers.filter(
+
+    let availablePlayers = allPlayers.filter(
       (player) =>
         !selectedPlayers.some((selected) => selected._id === player._id),
     );
+
+    if (!allowInjuredPlayers) {
+      availablePlayers = availablePlayers.filter((player) => !player.isInjured);
+    }
+
+    if (!unrestrictedPositions) {
+      const positionName = positions[positionIndex];
+      const acceptablePositions = positionToPlayerPositionMap[positionName];
+
+      availablePlayers = availablePlayers.filter((player) =>
+        acceptablePositions.some((pos) => player.position.includes(pos)),
+      );
+    }
+
+    return availablePlayers;
   };
 
   return (
     <div className="relative min-h-screen flex flex-col h-full w-full">
       {/* Roster Selection Heading */}
-      <div className="text-center my-8" style={{ marginTop: '2cm' }}>
-        <h1 className="text-5xl font-bold">Match Up Selection</h1>
+      <div
+        className="flex flex-col items-center my-8"
+        style={{ marginTop: '2cm', padding: '0 2cm' }}
+      >
+        <h1 className="text-5xl font-bold mb-4">Match Up Selection</h1>
+        <div className="flex items-center space-x-6">
+          <label className="flex items-center">
+            <input
+              type="checkbox"
+              className="checkbox mr-2"
+              checked={unrestrictedPositions}
+              onChange={(e) => setUnrestrictedPositions(e.target.checked)}
+            />
+            Unrestricted Positions
+          </label>
+          <label className="flex items-center">
+            <input
+              type="checkbox"
+              className="checkbox mr-2"
+              checked={allowInjuredPlayers}
+              onChange={(e) => setAllowInjuredPlayers(e.target.checked)}
+            />
+            Allow Injured Players
+          </label>
+        </div>
       </div>
-      <div className="flex justify-between w-full max-w-4xl mx-auto flex-grow">
-        <div className="w-1/2 p-4">
+
+      <div className="flex w-full max-w-6xl mx-auto flex-grow">
+        <div className="w-1/3 p-4">
           <h2 className="text-2xl font-bold mb-10 text-center">
             Home Team: {homeTeam}
           </h2>
-          {positions.map((position, index) => (
-            <div key={index} className="mb-4">
-              <h3 className="text-xl font-semibold">{position}</h3>
-              <ul>
-                {homeTeamMatchup[index].map((player, playerIndex) => (
-                  <Player
-                    key={playerIndex}
-                    player={player.name}
-                    onDelete={() =>
-                      handleDeletePlayer('home', index, playerIndex)
-                    }
-                  />
-                ))}
-              </ul>
-              {homeTeamMatchup[index].length === 0 && (
+        </div>
+        <div className="w-1/3 p-4 flex items-center justify-center">
+          <h2 className="text-3xl font-bold">Starters</h2>
+        </div>
+        <div className="w-1/3 p-4">
+          <h2 className="text-2xl font-bold mb-10 text-center">
+            Away Team: {awayTeam}
+          </h2>
+        </div>
+      </div>
+
+      {/* Positions and Player Selections */}
+      <div className="flex flex-col w-full max-w-6xl mx-auto flex-grow">
+        {positions.map((position, index) => (
+          <div key={index} className="flex w-full items-center mb-4">
+            {/* Home Team Player Selection */}
+            <div className="w-1/3 p-4">
+              {homeTeamMatchup[index].length === 0 ? (
                 <AddPlayerForm
                   onAddPlayer={(player) =>
                     handleAddPlayer('home', index, player)
@@ -196,31 +259,28 @@ const MatchUpSelectionPage = () => {
                   availablePlayers={getAvailablePlayers(
                     homeTeamMatchup,
                     homePlayers,
+                    index,
+                    'home',
                   )}
+                />
+              ) : (
+                <Player
+                  player={homeTeamMatchup[index][0].name}
+                  onDelete={() => handleDeletePlayer('home', index)}
                 />
               )}
             </div>
-          ))}
-        </div>
-        <div className="w-1/2 p-4">
-          <h2 className="text-2xl font-bold mb-10 text-center">
-            Away Team: {awayTeam}
-          </h2>
-          {positions.map((position, index) => (
-            <div key={index} className="mb-4">
-              <h3 className="text-xl font-semibold">{position}</h3>
-              <ul>
-                {awayTeamMatchup[index].map((player, playerIndex) => (
-                  <Player
-                    key={playerIndex}
-                    player={player.name}
-                    onDelete={() =>
-                      handleDeletePlayer('away', index, playerIndex)
-                    }
-                  />
-                ))}
-              </ul>
-              {awayTeamMatchup[index].length === 0 && (
+
+            {/* Position Acronym */}
+            <div className="w-1/3 p-4 flex items-center justify-center">
+              <h3 className="text-xl font-semibold">
+                {positionAcronyms[index]}
+              </h3>
+            </div>
+
+            {/* Away Team Player Selection */}
+            <div className="w-1/3 p-4">
+              {awayTeamMatchup[index].length === 0 ? (
                 <AddPlayerForm
                   onAddPlayer={(player) =>
                     handleAddPlayer('away', index, player)
@@ -228,20 +288,28 @@ const MatchUpSelectionPage = () => {
                   availablePlayers={getAvailablePlayers(
                     awayTeamMatchup,
                     awayPlayers,
+                    index,
+                    'away',
                   )}
+                />
+              ) : (
+                <Player
+                  player={awayTeamMatchup[index][0].name}
+                  onDelete={() => handleDeletePlayer('away', index)}
                 />
               )}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
+
       {/* Buttons */}
       <div className="flex justify-center py-10 mt-8 space-x-5">
-        <button className="btn btn-secondary btn-outline" onClick={handleBack}>
+        <button className="btn border-white text-white" onClick={handleBack}>
           Back
         </button>
         <button
-          className="btn btn-primary btn-outline"
+          className="btn border-white text-white"
           onClick={handleNextClick}
         >
           Next
@@ -281,7 +349,8 @@ const AddPlayerForm = ({ onAddPlayer, availablePlayers }) => {
         </option>
         {availablePlayers.map((player) => (
           <option key={player._id} value={player._id}>
-            {player.name}
+            {player.name} ({player.position}
+            {player.isInjured ? ' - Injured' : ''})
           </option>
         ))}
       </select>
@@ -296,6 +365,8 @@ AddPlayerForm.propTypes = {
     PropTypes.shape({
       _id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
+      position: PropTypes.string.isRequired,
+      isInjured: PropTypes.bool.isRequired,
     }),
   ).isRequired,
 };

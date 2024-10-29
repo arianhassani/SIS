@@ -94,13 +94,15 @@ const TeamSelectionPage = () => {
           Choose Your Teams
         </label>
 
-        {/* "Next" Button */}
-        <button
-          className="btn absolute top-[calc(50%+15px)] left-1/2 transform -translate-x-1/2 btn-primary btn-outline"
-          onClick={handleNextClick}
-        >
-          Next
-        </button>
+      {/* "Next" Button */}
+<button
+  className="btn absolute top-[calc(50%+15px)] left-1/2 transform -translate-x-1/2 btn-primary btn-outline border-white"
+  style={{ color: 'white' }}
+  onClick={handleNextClick}
+>
+  Next
+</button>
+
 
         {/* Home Team Selection */}
         <label className="absolute top-[calc(45%-200px)] left-[calc(50%-382px)] transform -translate-x-1/2 text-center">
