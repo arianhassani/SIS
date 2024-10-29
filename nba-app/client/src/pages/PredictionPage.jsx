@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import teamLogos from '../components/teamLogos';
 import TooltipIcon from '../components/TooltipIcon';
+import placeholderImg from '../assets/placeholder.png';
 
 const PredictionPage = () => {
   const location = useLocation();
@@ -13,6 +14,8 @@ const PredictionPage = () => {
   const [awayTopPerformerGraph, setAwayTopPerformerGraph] = useState('');
   const [homeTeamPerformanceGraph, setHomeTeamPerformanceGraph] = useState('');
   const [awayTeamPerformanceGraph, setAwayTeamPerformanceGraph] = useState('');
+  const [loadingScores, setLoadingScores] = useState(true);
+  const [predictedScores, setPredictedScores] = useState({ left: 0, right: 0 });
 
   // Retrieve the team names from session storage or use fallback values
   const homeTeam =
@@ -22,12 +25,7 @@ const PredictionPage = () => {
 
   const { homeTopPerformer, awayTopPerformer } = location.state || {};
 
-  const predictedScores = {
-    left: 100, // Replace with actual predicted score
-    right: 98, // Replace with actual predicted score
-  };
-
-  const placeholder = 'https://placehold.co/400?text=No+Data+Available';
+  const placeholder = placeholderImg;
 
   // Function to handle finish button click
   const handleFinish = () => {
@@ -52,7 +50,7 @@ const PredictionPage = () => {
       return module.default;
     } catch (error) {
       console.error('Error fetching player image:', error);
-      return null; // Placeholder image URL
+      return null;
     }
   };
 
@@ -68,16 +66,6 @@ const PredictionPage = () => {
 
   useEffect(() => {
     const loadImages = async () => {
-      if (!homeTopPerformer) {
-        setloadingHomeTopPerformer(true);
-        return;
-      }
-
-      if (!awayTopPerformer) {
-        setloadingAwayTopPerformer(true);
-        return;
-      }
-
       try {
         const homeImage = await getTopPerformerPerformance(
           homeTeam,
@@ -104,6 +92,23 @@ const PredictionPage = () => {
     loadImages();
   }, [homeTeam, awayTeam, homeTopPerformer, awayTopPerformer]);
 
+  // Function to fetch predicted scores & loading state
+  // const fetchPredictedScores = async () => {
+  //   try {
+  //     const response = await fetch('https://api.example.com/predicted-scores'); // Replace with actual API endpoint
+  //     const data = await response.json();
+  //     setPredictedScores({ left: data.homeScore, right: data.awayScore });
+  //     setLoadingScores(false);
+  //   } catch (error) {
+  //     console.error('Error fetching predicted scores:', error);
+  //     setLoadingScores(true);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   fetchPredictedScores();
+  // }, []);
+
   return (
     <div className="min-h-screen bg-base-200 p-6">
       {/* Heading */}
@@ -122,20 +127,32 @@ const PredictionPage = () => {
           />
           <h2 className="text-2xl font-bold">{homeTeam}</h2>
           <div className="text-4xl font-bold md:hidden">
-            {predictedScores.left}
+            {loadingScores ? (
+              <div className="skeleton w-16 h-8"></div>
+            ) : (
+              predictedScores.left
+            )}
           </div>{' '}
           {/* Show score here for small screens */}
         </div>
 
         {/* Scores */}
         <div className="hidden md:block text-4xl font-bold">
-          {predictedScores.left}
+          {loadingScores ? (
+            <div className="skeleton w-16 h-8"></div>
+          ) : (
+            predictedScores.left
+          )}
         </div>
         <div className="text-center">
           <h2 className="text-2xl font-bold">VS</h2>
         </div>
         <div className="hidden md:block text-4xl font-bold">
-          {predictedScores.right}
+          {loadingScores ? (
+            <div className="skeleton w-16 h-8"></div>
+          ) : (
+            predictedScores.right
+          )}
         </div>
 
         {/* Right Team */}
@@ -147,7 +164,11 @@ const PredictionPage = () => {
           />
           <h2 className="text-2xl font-bold">{awayTeam}</h2>
           <div className="text-4xl font-bold md:hidden">
-            {predictedScores.right}
+            {loadingScores ? (
+              <div className="skeleton w-16 h-8"></div>
+            ) : (
+              predictedScores.right
+            )}
           </div>{' '}
           {/* Show score here for small screens */}
         </div>
@@ -178,7 +199,7 @@ const PredictionPage = () => {
             Top Performers
           </h2>
           <div
-            className="tooltip ml-2"
+            className="tooltip ml-2 tooltip-right"
             data-tip="Top performers of each team based on impact: AVG (Average points/game), PPG (Points/game), RPG (Rebounds/game)"
           >
             <TooltipIcon />
