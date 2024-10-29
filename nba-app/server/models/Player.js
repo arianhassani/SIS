@@ -28,6 +28,10 @@ const PlayerSchema = new mongoose.Schema({
     assistsPerGame: { type: Number, default: 0 },
     totalAvg: { type: Number, default: 0 },
   },
+  nbaID: {
+    type: Number,
+    default: '0'
+  }
 });
 
 const Player = mongoose.model('Player', PlayerSchema);
