@@ -8,14 +8,27 @@ const PredictionPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // eslint-disable-next-line no-unused-vars
-  const [selectedModel, setSelectedModel] = useState('SELECT ML MODEL');
+  const [selectedModel, setSelectedModel] = useState('');
   const [homeTopPerformerGraph, setHomeTopPerformerGraph] = useState('');
   const [awayTopPerformerGraph, setAwayTopPerformerGraph] = useState('');
   const [homeTeamPerformanceGraph, setHomeTeamPerformanceGraph] = useState('');
   const [awayTeamPerformanceGraph, setAwayTeamPerformanceGraph] = useState('');
   const [loadingScores, setLoadingScores] = useState(true);
   const [predictedScores, setPredictedScores] = useState({ left: 0, right: 0 });
+  const [jsonHomeScore, setJsonHomeScore] = useState('');
+  const [jsonAwayScore, setJsonAwayScore] = useState('');
+  const [jsonHomeScorePB, setJsonHomeScorePB] = useState('');
+  const [jsonAwayScorePB, setJsonAwayScorePB] = useState('');
+  const [jsonHomeScoreRF, setJsonHomeScoreRF] = useState('');
+  const [jsonAwayScoreRF, setJsonAwayScoreRF] = useState('');
+  // Example scores for each model
+  const modelScores = {
+    'Model 1': { homeScore: jsonHomeScore, awayScore: jsonAwayScore },
+    'Model 2': { homeScore: jsonHomeScorePB, awayScore: jsonAwayScorePB },
+    'Model 3': { homeScore: jsonHomeScoreRF, awayScore: jsonAwayScoreRF },
+  };
+
+  // Retrieve prediction scores
 
   // Retrieve the team names from session storage or use fallback values
   const homeTeam =
@@ -23,9 +36,23 @@ const PredictionPage = () => {
   const awayTeam =
     sessionStorage.getItem('awayTeam') || 'No home team selected';
 
+  const homeTeamID = sessionStorage.getItem('homeTeamNBAID');
+  const awayTeamID = sessionStorage.getItem('awayTeamNBAID');
+  // Parse the JSON string from session storage
+  const homeTeamLineup = JSON.parse(sessionStorage.getItem('homeTeamMatchup'));
+  const homeTeamNBAIds = homeTeamLineup.map(
+    (playerArray) => playerArray[0].nbaID,
+  );
+  console.log(homeTeamNBAIds);
+  const awayTeamLineup = JSON.parse(sessionStorage.getItem('awayTeamMatchup'));
+  const awayTeamNBAIds = awayTeamLineup.map(
+    (playerArray) => playerArray[0].nbaID,
+  );
+  console.log(awayTeamNBAIds);
+
   const { homeTopPerformer, awayTopPerformer } = location.state || {};
 
-  const placeholder = placeholderImg;
+  const placeholder = 'https://placehold.co/400?text=No+Data+Available';
 
   // Function to handle finish button click
   const handleFinish = () => {
@@ -66,7 +93,42 @@ const PredictionPage = () => {
 
   useEffect(() => {
     const loadImages = async () => {
+      if (!homeTopPerformer) {
+        setloadingHomeTopPerformer(true);
+        return;
+      }
+
+      if (!awayTopPerformer) {
+        setloadingAwayTopPerformer(true);
+        return;
+      }
+
       try {
+        // Retrieve predict scores
+        const predictResponse = await fetch(
+          'http://localhost:3000/api/predict/final-score',
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              homeTeam: homeTeamID,
+              homeTeamIDs: [homeTeamNBAIds],
+              awayTeam: awayTeamID,
+              awayTeamIDs: [awayTeamNBAIds],
+            }),
+          },
+        );
+
+        const predictScore = await predictResponse.json();
+        setJsonHomeScorePB(predictScore.homePrediction);
+        setJsonAwayScorePB(predictScore.awayPrediction);
+        setJsonHomeScore(predictScore.TBhomePrediction);
+        setJsonAwayScore(predictScore.TBawayPrediction);
+        setJsonHomeScoreRF(predictScore.homePredScore);
+        setJsonAwayScoreRF(predictScore.awayPredScore);
+
         const homeImage = await getTopPerformerPerformance(
           homeTeam,
           homeTopPerformer,
@@ -92,22 +154,11 @@ const PredictionPage = () => {
     loadImages();
   }, [homeTeam, awayTeam, homeTopPerformer, awayTopPerformer]);
 
-  // Function to fetch predicted scores & loading state
-  // const fetchPredictedScores = async () => {
-  //   try {
-  //     const response = await fetch('https://api.example.com/predicted-scores'); // Replace with actual API endpoint
-  //     const data = await response.json();
-  //     setPredictedScores({ left: data.homeScore, right: data.awayScore });
-  //     setLoadingScores(false);
-  //   } catch (error) {
-  //     console.error('Error fetching predicted scores:', error);
-  //     setLoadingScores(true);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   fetchPredictedScores();
-  // }, []);
+  // Get scores based on selected model, default to empty if no model is selected
+  const { homeScore, awayScore } = modelScores[selectedModel] || {
+    homeScore: '-',
+    awayScore: '-',
+  };
 
   return (
     <div className="min-h-screen bg-base-200 p-6">
@@ -132,6 +183,7 @@ const PredictionPage = () => {
             ) : (
               predictedScores.left
             )}
+            {homeScore}
           </div>{' '}
           {/* Show score here for small screens */}
         </div>
@@ -143,6 +195,7 @@ const PredictionPage = () => {
           ) : (
             predictedScores.left
           )}
+          {homeScore}
         </div>
         <div className="text-center">
           <h2 className="text-2xl font-bold">VS</h2>
@@ -153,6 +206,7 @@ const PredictionPage = () => {
           ) : (
             predictedScores.right
           )}
+          {awayScore}
         </div>
 
         {/* Right Team */}
@@ -169,6 +223,7 @@ const PredictionPage = () => {
             ) : (
               predictedScores.right
             )}
+            {awayScore}
           </div>{' '}
           {/* Show score here for small screens */}
         </div>
@@ -182,8 +237,9 @@ const PredictionPage = () => {
         <select
           className="select select-bordered"
           onChange={(e) => handleModelSelect(e.target.value)}
+          value={selectedModel}
         >
-          <option value="SELECT ML MODEL" disabled>
+          <option value="" disabled>
             SELECT ML MODEL
           </option>
           <option value="Model 1">Model 1</option>
