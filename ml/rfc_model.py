@@ -36,8 +36,8 @@ import joblib
 class RandomClassifierPrediction:
 
     def get_prediction(team_1_id,_team_2_id,team_1_home_flag_init):
-        dataset = pd.read_csv('./ml/data/team_dataset_final.csv')
-        model = joblib.load('./ml/data/rcf_mod.pkl')
+        dataset = pd.read_csv('./ml/random_classifier_data/team_dataset_final.csv')
+        model = joblib.load('./ml/random_classifier_data/rcf_mod.pkl')
 
         dataset.sort_values(by='GAME_DATE', inplace=True)
 
@@ -182,4 +182,8 @@ class RandomClassifierPrediction:
         team_1_home_flag = True
 
         return RandomClassifierPrediction.get_prediction(team_id_1,team_id_2, team_1_home_flag)
+
+
+
+
 
