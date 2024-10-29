@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import teamLogos from '../components/teamLogos';
 import TooltipIcon from '../components/TooltipIcon';
+import placeholderImg from '../assets/placeholder.png';
 
 const PredictionPage = () => {
   const location = useLocation();
@@ -48,7 +49,7 @@ const PredictionPage = () => {
  
 
 
-  const placeholder = 'https://placehold.co/400?text=No+Data+Available';
+  const placeholder = placeholderImg;
 
   // Function to handle finish button click
   const handleFinish = () => {
