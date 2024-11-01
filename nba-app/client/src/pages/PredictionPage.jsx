@@ -54,6 +54,10 @@ const PredictionPage = () => {
 
   const { homeTopPerformer, awayTopPerformer } = location.state || {};
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
   const placeholder = placeholderImg;
 
   // Function to handle finish button click
