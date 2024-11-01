@@ -51,18 +51,17 @@ const TeamSelectionPage = () => {
     ) {
       alert('Please select a home team and away team before proceeding.');
     } else {
-      const theHomeTeam = Object.values(teamsByDivision).flat().find(
-        team => team.name === selectedHomeTeam
-      );
-      const theAwayTeam = Object.values(teamsByDivision).flat().find(
-        team => team.name === selectedAwayTeam
-      );
+      const theHomeTeam = Object.values(teamsByDivision)
+        .flat()
+        .find((team) => team.name === selectedHomeTeam);
+      const theAwayTeam = Object.values(teamsByDivision)
+        .flat()
+        .find((team) => team.name === selectedAwayTeam);
       sessionStorage.setItem('homeTeam', selectedHomeTeam);
       sessionStorage.setItem('awayTeam', selectedAwayTeam);
       // Set team nbaIDs into session storage
       sessionStorage.setItem('homeTeamNBAID', theHomeTeam.nbaID);
       sessionStorage.setItem('awayTeamNBAID', theAwayTeam.nbaID);
-
 
       navigate('/injury-page', {
         state: {

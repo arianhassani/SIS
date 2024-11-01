@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { json, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import teamLogos from '../components/teamLogos';
 import TooltipIcon from '../components/TooltipIcon';
 import placeholderImg from '../assets/placeholder.png';
